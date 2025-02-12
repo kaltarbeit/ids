@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_2cd4b28ddf3945f"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,7 @@
     "@storybook/html": "^8.5.4",
     "@storybook/html-webpack5": "^8.5.4",
     "@storybook/test": "^8.5.4",
+    "chromatic": "^11.25.2",
     "raw-loader": "^4.0.2",
     "storybook": "^8.5.4"
   }
