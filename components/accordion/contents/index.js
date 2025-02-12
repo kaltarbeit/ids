@@ -8,7 +8,7 @@ export const createAccordion = () => {
     /** Examples **/
     function toggleAccordion(e) {
         const item = e.currentTarget.parentElement;
-        const details = item.getElementsByClassName('accordion-details')
+        const details = item.getElementsByClassName('ids2-accordion-details')
 
         if(details.length > 0) {
             const opened = item.hasAttribute('open');
@@ -24,7 +24,7 @@ export const createAccordion = () => {
     }
 
     function initAccordion(wrapper) {
-        const items = wrapper.getElementsByClassName('accordion-item');
+        const items = wrapper.getElementsByClassName('ids2-accordion-item');
 
         for(var i = 0; i < items.length; i++) {
             items[i].firstElementChild.addEventListener('click', toggleAccordion);

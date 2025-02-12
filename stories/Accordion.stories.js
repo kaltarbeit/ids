@@ -1,4 +1,4 @@
-import { createAccordion } from '../components/accordion';
+import { createAccordion } from '../components/accordion/contents';
 
 export default {
     title: 'Components/Accordion',
