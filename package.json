@@ -24,5 +24,8 @@
     "chromatic": "^11.25.2",
     "raw-loader": "^4.0.2",
     "storybook": "^8.5.4"
+  },
+  "dependencies": {
+    "@storybook/addon-designs": "^8.2.0"
   }
 }
