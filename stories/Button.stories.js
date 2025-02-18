@@ -1,20 +1,10 @@
-import { createBadge as createBadgeDot } from '../components/badge/dot';
-import { createBadge as createBadgeCount } from '../components/badge/count';
-import { createBadge as createBadgeNew } from '../components/badge/new';
+import {createButton as createButtonPrimary } from '../components/button/primary';
 
 export default {
     title: 'Components/Button',
     tags: ['autodocs'],
 };
 
-export const Dot = {
-    render: () => createBadgeDot(),
-}
-
-export const Count = {
-    render: () => createBadgeCount(),
-}
-
-export const New = {
-    render: () => createBadgeNew(),
+export const Primary = {
+    render: () => createButtonPrimary(),
 }

@@ -1,0 +1,22 @@
+.ids2-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    box-shadow: none;
+    overflow:visible;
+    cursor:pointer;
+}
+
+.ids2-button-group {
+    display: flex;
+    gap: 12px;
+}
+
+.ids2-button-examples {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
