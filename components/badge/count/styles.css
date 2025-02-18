@@ -1,0 +1,9 @@
+@import "../badge.css";
+
+.ids2-badge-count {
+    font-family: 'Pretendard', sans-serif;
+    color: #2873e3;
+    font-size: 16px;
+    font-weight: 700;
+    vertical-align: middle;
+}

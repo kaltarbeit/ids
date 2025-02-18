@@ -1,0 +1,11 @@
+@import "../badge.css";
+
+.ids2-badge-dot {
+     width: 14px;
+     height: 14px;
+     background: #FD5E4F;
+     border-radius: 50%;
+     position: absolute;
+     top: 6px;
+     right: 6px;
+ }

@@ -3,7 +3,7 @@ import { createBadge as createBadgeCount } from '../components/badge/count';
 import { createBadge as createBadgeNew } from '../components/badge/new';
 
 export default {
-    title: 'Components/Button',
+    title: 'Components/Badge',
     tags: ['autodocs'],
 };
 
