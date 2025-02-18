@@ -1,11 +1,22 @@
 @import "../badge.css";
 
 .ids2-badge-dot {
-     width: 14px;
-     height: 14px;
+     width: 8px;
+     height: 8px;
      background: #FD5E4F;
      border-radius: 50%;
      position: absolute;
-     top: 6px;
-     right: 6px;
+     top: 1px;
+     right: 2px;
+     animation: popIn 500ms 1 cubic-bezier(1,.6,.72,2);
  }
+
+@keyframes popIn {
+     from {
+          scale: 0;
+     }
+
+     to {
+          scale: 100%;
+     }
+}
