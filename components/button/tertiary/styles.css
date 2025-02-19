@@ -1,0 +1,41 @@
+/**
+    Button Primary Default
+ */
+.ids2-button-tertiary {
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #737684;
+    border-radius: 20px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #30323B;
+}
+
+.ids2-button-tertiary:active {
+    background-color: #D3D6DE;
+    border-color: #C5C8D3;
+}
+
+.ids2-button-tertiary:disabled {
+    background-color: #F3F4F7;
+    border-color: #E1E3EA;
+    color: #737684;
+}
+
+.ids2-button-tertiary.ids2-button-sm {
+    font-size: 14px;
+    height: 32px;
+    padding: 0 12px;
+}
+
+.ids2-button-tertiary.ids2-button-xs {
+    font-size: 12px;
+    height: 24px;
+    padding: 0 8px;
+}
+
+.ids2-button-tertiary.ids2-button-square {
+    border-radius: 6px;
+}

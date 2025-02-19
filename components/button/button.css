@@ -1,3 +1,8 @@
+@import "primary/styles.css";
+@import "secondary/styles.css";
+@import "tertiary/styles.css";
+@import "text/styles.css";
+
 .ids2-button {
     display: flex;
     flex-direction: column;
@@ -8,15 +13,60 @@
     box-shadow: none;
     overflow:visible;
     cursor:pointer;
+    box-sizing: border-box;
 }
 
 .ids2-button-group {
     display: flex;
-    gap: 12px;
+    gap: 8px;
 }
 
 .ids2-button-examples {
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
+
+/**
+    Button Filled
+ */
+
+.ids2-button.ids2-button-fill {
+    border-color: transparent;
+    background-color: #4393F0;
+    color: #fff;
+}
+
+.ids2-button.ids2-button-fill:active {
+    background-color: #234EAA;
+    border-color: transparent;
+}
+
+.ids2-button.ids2-button-fill:disabled {
+    border-color: transparent;
+    background-color: #D3D6DE;
+    color: #737684;
+}
+
+
+/**
+    Button Tint
+ */
+
+.ids2-button.ids2-button-tint {
+    border-color: transparent;
+    background-color: #E4F2FF;
+    color: #235FD2;
+}
+
+.ids2-button.ids2-button-tint:active {
+    border-color: transparent;
+    background-color: #C1E0FC;
+    color: #235FD2;
+}
+
+.ids2-button.ids2-button-tint:disabled {
+    border-color: transparent;
+    background-color: #E1E3EA;
+    color: #737684;
 }

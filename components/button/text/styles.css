@@ -1,0 +1,34 @@
+/**
+    Button Primary Default
+ */
+.ids2-button-text {
+    height: 22px;
+    background-color: transparent;
+    border: transparent;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #30323B;
+}
+
+.ids2-button-text:disabled {
+    background-color: #F3F4F7;
+    border-color: #E1E3EA;
+    color: #737684;
+}
+
+.ids2-button-text.ids2-button-sm {
+    font-size: 14px;
+    line-height: 22px;
+    height: 18px;
+}
+
+.ids2-button-text.ids2-button-xs {
+    font-size: 12px;
+    height: 24px;
+}
+
+.ids2-button-text.ids2-button-square {
+    border-radius: 6px;
+}

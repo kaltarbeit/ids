@@ -1,25 +1,29 @@
 /**
     Button Primary Default
  */
-.ids2-button-primary {
+.ids2-button-secondary {
     width: 100%;
-    height: 56px;
+    height: 48px;
     background-color: #fff;
     border: 1px solid #737684;
     border-radius: 12px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 24px;
     color: #101116;
 }
 
-.ids2-button-primary:active {
+.ids2-button-secondary:active {
     background-color: #D3D6DE;
     border-color: #C5C8D3;
 }
 
-.ids2-button-primary:disabled {
+.ids2-button-secondary:disabled {
     background-color: #F3F4F7;
     border-color: #E1E3EA;
     color: #737684;
+}
+
+.ids2-button-secondary.ids2-button-sm {
+    height: 40px;
 }
