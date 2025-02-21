@@ -1,0 +1,16 @@
+/**
+    Button Primary Default
+ */
+.ids2-button-fab {
+    min-width: 40px;
+    height: 40px;
+    background-color: #454855;
+    border: transparent;
+    border-radius: 12px;
+    padding: 0 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #30323B;
+    box-shadow: 0 10px 34px 0 rgba(0, 0, 0, 0.14);
+}

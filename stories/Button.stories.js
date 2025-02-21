@@ -2,6 +2,7 @@ import {createButton as createButtonPrimary } from '../components/button/primary
 import {createButton as createButtonSecondary } from '../components/button/secondary';
 import {createButton as createButtonTertiary } from '../components/button/tertiary';
 import {createButton as createButtonText } from '../components/button/text';
+import {createButton as createButtonFAB } from '../components/button/fab';
 
 export default {
     title: 'Components/Button',
@@ -21,5 +22,15 @@ export const Tertiary = {
 }
 
 export const Text = {
+    parameters: {
+        title: 'Text Button',
+        backgrounds: {
+            default: 'dark',
+        }
+    },
     render: () => createButtonText(),
+}
+
+export const FAB = {
+    render: () => createButtonFAB(),
 }
