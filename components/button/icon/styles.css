@@ -1,0 +1,15 @@
+/**
+    Button Primary Default
+ */
+.ids2-button-icon {
+    min-width: 48px;
+    height: 48px;
+    background-color: #2873E3;
+    border: transparent;
+    border-radius: 20px;
+    padding: 0 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #30323B;
+}

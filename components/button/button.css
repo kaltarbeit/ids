@@ -3,6 +3,7 @@
 @import "tertiary/styles.css";
 @import "text/styles.css";
 @import "fab/styles.css";
+@import "icon/styles.css";
 
 .ids2-button {
     display: flex;
