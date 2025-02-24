@@ -10,15 +10,23 @@ export const createBottomSheet = () => {
     const button = wrapper.getElementsByClassName('ids2-button')[0];
     const closeButton = wrapper.getElementsByClassName('ids2-button-close')[0];
 
+    bottomSheet.classList.add('ids2-bottom-sheet-hide');
+
     button.addEventListener('click', () => {
-        bottomSheet.classList.remove('ids2-bottom-sheet-hide');
-        backdrop.classList.add('ids2-backdrop-open');
-    })
+        bottomSheet.display = 'block';
+        setTimeout(() => {
+            bottomSheet.classList.remove('ids2-bottom-sheet-hide');
+            backdrop.classList.remove('ids2-backdrop-hide');
+        });
+    });
 
     closeButton.addEventListener('click', () => {
         bottomSheet.classList.add('ids2-bottom-sheet-hide');
-        backdrop.classList.remove('ids2-backdrop-open');
-    })
+        backdrop.classList.add('ids2-backdrop-hide');
+        bottomSheet.addEventListener("transitionend", () => {
+            bottomSheet.display = 'none';
+        });
+    });
 
     return wrapper.firstElementChild;
 }

@@ -5,10 +5,9 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    display: none;
     z-index: 1000;
 }
 
-.ids2-backdrop.ids2-backdrop-open {
-    display: block;
+.ids2-backdrop.ids2-backdrop-hide {
+    display: none;
 }
