@@ -1,10 +1,12 @@
 @import "small/styles.css";
 @import "medium/styles.css";
+@import "large/styles.css";
 
 .ids2-banner-examples {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    min-width: 320px;
 }
 
 .ids2-banner-examples-open-button {
@@ -14,8 +16,27 @@
     text-align: center;
 }
 
+/**
+    Banner
+ */
+
 .ids2-banner {
+    transition: opacity 0.3s ease-in-out;
     background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.ids2-banner.ids2-banner-hide {
+    opacity: 0;
+}
+
+.ids2-banner.ids2-banner-justify-start {
+    justify-content: flex-start;
+}
+
+.ids2-banner .ids2-banner-content {
+    text-align: left;
+    width: 100%;
 }
 
 .ids2-banner .ids2-banner-icon {
@@ -27,28 +48,21 @@
     margin-right: 12px;
 }
 
-.ids2-banner .ids2-banner-text {
-    text-align: left;
-    width: 100%;
-}
-
-.ids2-banner .ids2-banner-text-title {
-    margin: 0 0 4px 0;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-}
-
-.ids2-banner .ids2-banner-text-desc {
-    line-height: 20px;
-}
-
 .ids2-banner .ids2-banner-close {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 16px;
-    height: 16px;
+    padding: 0;
     background-color: transparent;
     border: transparent;
+    cursor: pointer;
+}
+
+.ids2-label {
+    background-color: #fff;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 2px 8px;
+    font-weight: 700;
 }

@@ -1,4 +1,4 @@
-.ids2-banner.ids2-banner-small {
+.ids2-banner.ids2-banner-xs {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,22 +21,7 @@
     margin-right: 12px;
 }
 
-.ids2-banner-text {
-    text-align: left;
-    width: 100%;
-}
-
-.ids2-banner-close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 16px;
-    height: 16px;
-    background-color: transparent;
-    border: transparent;
-}
-
-.ids2-banner.ids2-banner-small-with-title {
+.ids2-banner.ids2-banner-small {
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -51,8 +36,23 @@
     color: #454855;
 }
 
-.ids2-banner.ids2-banner-small-with-title .ids2-banner-close {
+.ids2-banner.ids2-banner-small .ids2-banner-title {
+    margin: 0 0 4px 0;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.ids2-banner.ids2-banner-small .ids2-banner-text {
+    line-height: 20px;
+}
+
+.ids2-banner.ids2-banner-small .ids2-banner-close {
     position: absolute;
     top: 12px;
     right: 12px;
+}
+
+.ids2-banner-examples-open-button {
+    cursor: pointer;
 }

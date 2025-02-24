@@ -5,15 +5,17 @@ import html from '!!raw-loader!./index.html';
 export const createBottomSheet = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
-    const bottomSheet = wrapper.getElementsByClassName('ids2-bottom-sheet')[0];
-    const backdrop = wrapper.getElementsByClassName('ids2-backdrop')[0];
-    const button = wrapper.getElementsByClassName('ids2-button')[0];
-    const closeButton = wrapper.getElementsByClassName('ids2-button-close')[0];
+    const bottomSheet = wrapper.querySelector('.ids2-bottom-sheet');
+    const bottomSheetContainer = wrapper.querySelector('.ids2-bottom-sheet-container');
+    const backdrop = wrapper.querySelector('.ids2-backdrop');
+    const button = wrapper.querySelector('.ids2-button');
+    const closeButton = wrapper.querySelector('.ids2-bottom-sheet-close');
 
     bottomSheet.classList.add('ids2-bottom-sheet-hide');
 
     button.addEventListener('click', () => {
-        bottomSheet.display = 'block';
+        bottomSheet.style.display = 'block';
+        bottomSheetContainer.style.display = 'flex';
         setTimeout(() => {
             bottomSheet.classList.remove('ids2-bottom-sheet-hide');
             backdrop.classList.remove('ids2-backdrop-hide');
@@ -23,9 +25,13 @@ export const createBottomSheet = () => {
     closeButton.addEventListener('click', () => {
         bottomSheet.classList.add('ids2-bottom-sheet-hide');
         backdrop.classList.add('ids2-backdrop-hide');
-        bottomSheet.addEventListener("transitionend", () => {
-            bottomSheet.display = 'none';
-        });
+    });
+
+    bottomSheetContainer.addEventListener("transitionend", () => {
+        if(bottomSheet.classList.contains('ids2-bottom-sheet-hide')) {
+            bottomSheet.style.display = 'none';
+            bottomSheetContainer.style.display = 'none';
+        }
     });
 
     return wrapper.firstElementChild;

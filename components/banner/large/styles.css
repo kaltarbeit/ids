@@ -1,0 +1,68 @@
+
+.ids2-banner.ids2-banner-large {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 24px 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='375' height='234' viewBox='0 0 375 234' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='375' height='234' fill='%23C5C8D3'/%3E%3Cpath d='M256.724 157.091C259.313 157.091 261.412 154.993 261.412 152.404C261.412 149.815 259.313 147.716 256.724 147.716C254.136 147.716 252.037 149.815 252.037 152.404C252.037 154.993 254.136 157.091 256.724 157.091Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M252.167 122.334C240.661 122.334 231.334 131.661 231.334 143.167V184.834C231.334 196.34 240.661 205.667 252.167 205.667H293.834C305.34 205.667 314.667 196.34 314.667 184.834V143.167C314.667 131.661 305.34 122.334 293.834 122.334H252.167ZM293.834 127.751H252.167C243.653 127.751 236.75 134.653 236.75 143.167V181.531L248.411 170.679C249.394 169.765 250.899 169.708 251.947 170.546L261.09 177.852L280.529 155.282C281.027 154.704 281.745 154.363 282.508 154.342C283.27 154.321 284.006 154.623 284.534 155.172L309.25 180.887V143.167C309.25 134.653 302.348 127.751 293.834 127.751ZM252.167 200.251C244.923 200.251 238.845 195.254 237.193 188.519L250.391 176.236L259.747 183.713C260.886 184.623 262.539 184.469 263.49 183.365L282.691 161.072L308.86 188.297C307.288 195.144 301.157 200.251 293.834 200.251H252.167Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-position: right bottom;
+    background-color: #C5C8D3;
+    border-radius: 16px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #454855;
+}
+
+.ids2-banner.ids2-banner-large .ids2-banner-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.ids2-banner.ids2-banner-large .ids2-banner-title {
+    margin: 0 0 4px 0;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.ids2-banner.ids2-banner-large .ids2-banner-text {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.ids2-banner.ids2-banner-large .ids2-banner-footer-label {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 11px 12px 0;
+}
+
+.ids2-banner.ids2-banner-large .ids2-banner-footer-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 0 20px 24px;
+}
+
+.ids2-banner.ids2-banner-large.ids2-banner-h-sm {
+    height: 234px;
+}
+
+.ids2-banner.ids2-banner-large.ids2-banner-h-lg {
+    padding: 32px 32px;
+    height: 358px;
+}
+
+.ids2-banner.ids2-banner-large.ids2-banner-h-lg .ids2-banner-title {
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.ids2-banner.ids2-banner-large.ids2-banner-h-lg .ids2-banner-text {
+    font-size: 18px;
+    line-height: 26px;
+}
