@@ -1,6 +1,7 @@
 @import "small/styles.css";
 @import "medium/styles.css";
 @import "large/styles.css";
+@import "../button/button.css";
 
 .ids2-banner-examples {
     display: flex;
