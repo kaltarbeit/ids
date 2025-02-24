@@ -23,6 +23,22 @@
     gap: 8px;
 }
 
+.ids2-button-group-floating {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 10px 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    background-color: #fff;
+}
+
+
 .ids2-button-examples {
     display: flex;
     flex-direction: column;

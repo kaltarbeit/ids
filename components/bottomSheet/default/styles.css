@@ -1,0 +1,31 @@
+.ids2-bottom-sheet {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    max-height: 80%;
+    background-color: #fff;
+    z-index: 1001;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: bottom 0.3s ease-in-out;
+}
+
+.ids2-bottom-sheet.ids2-bottom-sheet-hide {
+    bottom: -100%;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.ids2-bottom-sheet-content {
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+.ids2-bottom-sheet-header {
+    padding: 24px 24px 36px;
+}

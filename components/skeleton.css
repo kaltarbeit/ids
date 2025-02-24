@@ -1,0 +1,52 @@
+.ids2-skeletons {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.ids2-skeleton-title {
+    border-radius: 4px;
+    background: #E1E3EA;
+    width: 50%;
+}
+
+.ids2-skeleton-banner {
+    border-radius: 16px;
+    background: #E1E3EA;
+    height: 160px;
+}
+
+.ids2-skeleton-subtext {
+    border-radius: 4px;
+    background: #E1E3EA;
+    height: 24px;
+    width: 30%;
+}
+
+.ids2-skeleton-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ids2-skeleton-list-item {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 100%;
+}
+
+.ids2-skeleton-list-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: calc(100% - 52px);
+}
+
+.ids2-skeleton-circle {
+    border-radius: 50%;
+    background: #E1E3EA;
+    width: 52px;
+    height: 52px;
+}
