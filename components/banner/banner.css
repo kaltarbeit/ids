@@ -1,0 +1,54 @@
+@import "small/styles.css";
+@import "medium/styles.css";
+
+.ids2-banner-examples {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ids2-banner-examples-open-button {
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 700;
+    text-align: center;
+}
+
+.ids2-banner {
+    background-repeat: no-repeat;
+}
+
+.ids2-banner .ids2-banner-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.ids2-banner .ids2-banner-text {
+    text-align: left;
+    width: 100%;
+}
+
+.ids2-banner .ids2-banner-text-title {
+    margin: 0 0 4px 0;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.ids2-banner .ids2-banner-text-desc {
+    line-height: 20px;
+}
+
+.ids2-banner .ids2-banner-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: transparent;
+}

@@ -1,0 +1,58 @@
+.ids2-banner.ids2-banner-small {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 12px;
+    background-image: url("data:image/svg+xml,%3Csvg width='342' height='68' viewBox='0 0 342 68' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='342' height='68' fill='%23C5C8D3'/%3E%3Cpath d='M166.594 32.3418C167.215 32.3418 167.719 31.8381 167.719 31.2168C167.719 30.5955 167.215 30.0918 166.594 30.0918C165.972 30.0918 165.469 30.5955 165.469 31.2168C165.469 31.8381 165.972 32.3418 166.594 32.3418Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M165.5 24C162.739 24 160.5 26.2386 160.5 29V39C160.5 41.7614 162.739 44 165.5 44H175.5C178.261 44 180.5 41.7614 180.5 39V29C180.5 26.2386 178.261 24 175.5 24H165.5ZM175.5 25.3H165.5C163.457 25.3 161.8 26.9565 161.8 29V38.2074L164.599 35.6028C164.835 35.3833 165.196 35.3697 165.447 35.5709L167.641 37.3243L172.307 31.9074C172.426 31.7688 172.599 31.6869 172.782 31.6819C172.965 31.6769 173.141 31.7493 173.268 31.8812L179.2 38.0527V29C179.2 26.9565 177.543 25.3 175.5 25.3ZM165.5 42.7C163.761 42.7 162.303 41.5007 161.906 39.8843L165.074 36.9365L167.319 38.731C167.592 38.9493 167.989 38.9123 168.218 38.6474L172.826 33.297L179.106 39.8311C178.729 41.4744 177.258 42.7 175.5 42.7H165.5Z' fill='white'/%3E%3C/svg%3E");
+    background-position: center;
+    background-color: #C5C8D3;
+    border-radius: 16px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #454855;
+}
+
+.ids2-banner-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.ids2-banner-text {
+    text-align: left;
+    width: 100%;
+}
+
+.ids2-banner-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: transparent;
+}
+
+.ids2-banner.ids2-banner-small-with-title {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 26px 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='342' height='102' viewBox='0 0 342 102' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='342' height='102' fill='%23C5C8D3'/%3E%3Cpath d='M166.594 49.3418C167.215 49.3418 167.719 48.8381 167.719 48.2168C167.719 47.5955 167.215 47.0918 166.594 47.0918C165.972 47.0918 165.469 47.5955 165.469 48.2168C165.469 48.8381 165.972 49.3418 166.594 49.3418Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M165.5 41C162.739 41 160.5 43.2386 160.5 46V56C160.5 58.7614 162.739 61 165.5 61H175.5C178.261 61 180.5 58.7614 180.5 56V46C180.5 43.2386 178.261 41 175.5 41H165.5ZM175.5 42.3H165.5C163.457 42.3 161.8 43.9565 161.8 46V55.2074L164.599 52.6028C164.835 52.3833 165.196 52.3697 165.447 52.5709L167.641 54.3243L172.307 48.9074C172.426 48.7688 172.599 48.6869 172.782 48.6819C172.965 48.6769 173.141 48.7493 173.268 48.8812L179.2 55.0527V46C179.2 43.9565 177.543 42.3 175.5 42.3ZM165.5 59.7C163.761 59.7 162.303 58.5007 161.906 56.8843L165.074 53.9365L167.319 55.731C167.592 55.9493 167.989 55.9123 168.218 55.6474L172.826 50.297L179.106 56.8311C178.729 58.4744 177.258 59.7 175.5 59.7H165.5Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-color: #C5C8D3;
+    border-radius: 16px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #454855;
+}
+
+.ids2-banner.ids2-banner-small-with-title .ids2-banner-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
