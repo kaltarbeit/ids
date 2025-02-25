@@ -1,0 +1,5 @@
+.ids2-agreement-example {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

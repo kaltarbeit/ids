@@ -1,0 +1,16 @@
+.ids2-divider {
+    display: block;
+    width: 100%;
+    background-color: rgba(225, 227, 234, 0.7);
+    border: 0 none;
+    color: rgba(225, 227, 234, 0.7);
+    height: 1px;
+}
+
+.ids2-divider.ids2-divider-middle {
+    height: 8px;
+}
+
+.ids2-divider.ids2-divider-thick {
+    height: 12px;
+}

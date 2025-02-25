@@ -1,0 +1,24 @@
+.ids2-card {
+    background: #fff;
+    min-height: 212px;
+    border-radius: 16px;
+    padding: 24px 20px 20px;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+}
+
+.ids2-card-blur {
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+}
+
+.ids2-card-filled {
+    border: 1px solid #E1E3EA;
+    background: #ECF5FF;
+    box-shadow: none;
+}
+
+.ids2-card-outlined {
+    border: 1px solid #E1E3EA;
+    background: transparent;
+    box-shadow: none;
+}
