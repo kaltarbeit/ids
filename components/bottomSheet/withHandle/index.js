@@ -43,6 +43,7 @@ export const createBottomSheet = () => {
         if(bottomSheet.classList.contains('ids2-bottom-sheet-hide')) {
             bottomSheet.style.display = 'none';
             bottomSheetContainer.style.display = 'none';
+            bottomSheetContainer.style.removeProperty('top'); // 원래 위치로 복귀
         }
     });
 

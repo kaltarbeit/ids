@@ -43,7 +43,7 @@
     z-index: 1001;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    transition: bottom 0.3s ease-in-out;
+    transition: top,bottom 0.3s ease-in-out;
 }
 
 .ids2-bottom-sheet.ids2-bottom-sheet-hide .ids2-bottom-sheet-container {
