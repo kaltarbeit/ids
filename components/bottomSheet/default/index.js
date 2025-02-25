@@ -1,4 +1,4 @@
-import './styles.css';
+import '../bottomSheet.css';
 import '../../button/button.css';
 import html from '!!raw-loader!./index.html';
 
