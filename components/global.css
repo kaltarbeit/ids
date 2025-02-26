@@ -16,6 +16,8 @@
 @import "label/label.css";
 @import "breadcrumb/breadcrumb.css";
 @import "chip/chip.css";
+@import "drawer/drawer.css";
+
 
 body {
     font-family: "Pretendard", sans-serif;
