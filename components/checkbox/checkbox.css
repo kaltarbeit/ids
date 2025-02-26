@@ -1,6 +1,6 @@
-@import "../card/card.css";
-@import "../divider/divider.css";
 @import "./multiple/styles.css";
+@import "./mark/styles.css";
+
 
 .ids2-checkbox {
     display: flex;

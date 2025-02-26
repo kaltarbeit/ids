@@ -1,4 +1,3 @@
-import '../divider.css';
 import html from '!!raw-loader!./index.html';
 
 

@@ -1,4 +1,3 @@
-import './styles.css';
 import html from '!!raw-loader!./index.html';
 
 export const createAccordion = () => {

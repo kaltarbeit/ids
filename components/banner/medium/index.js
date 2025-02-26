@@ -1,4 +1,3 @@
-import '../banner.css';
 import html from '!!raw-loader!./index.html';
 
 export const createButton = () => {

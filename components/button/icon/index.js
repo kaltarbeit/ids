@@ -1,4 +1,3 @@
-import '../button.css';
 import html from '!!raw-loader!./index.html';
 
 

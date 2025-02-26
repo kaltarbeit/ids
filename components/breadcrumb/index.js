@@ -1,7 +1,7 @@
 import html from '!!raw-loader!./index.html';
 
 
-export const createButton = () => {
+export const createBreadcrumb = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 

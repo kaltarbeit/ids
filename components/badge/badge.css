@@ -1,4 +1,8 @@
-.ids2-icon {
+@import "count/styles.css";
+@import "dot/styles.css";
+@import "new/styles.css";
+
+.ids2-icon-wrap {
     position: relative;
     width: 24px;
     height: 24px;
