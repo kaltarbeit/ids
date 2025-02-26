@@ -3,3 +3,11 @@
     flex-direction: column;
     gap: 20px;
 }
+
+.ids2-checkbox-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+}

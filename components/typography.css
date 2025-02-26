@@ -14,3 +14,18 @@
 .ids2-bold {
     font-weight: 700;
 }
+
+.ids2-anchor {
+    font-weight: 400;
+    color: #737684;
+    text-decoration: none;
+}
+
+.ids2-anchor.ids2-anchor-sm {
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.ids2-underline {
+    text-decoration: underline;
+}

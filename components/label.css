@@ -1,0 +1,13 @@
+.ids2-label {
+    background-color: #fff;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 2px 8px;
+    font-weight: 700;
+}
+
+.ids2-label.ids2-label-tint {
+    background-color: #2873E3;
+    color: #fff;
+}

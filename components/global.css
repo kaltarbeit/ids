@@ -4,6 +4,7 @@
 @import "skeleton.css";
 @import "backdrop.css";
 @import "typography.css";
+@import "label.css";
 
 body {
     font-family: "Pretendard", sans-serif;
