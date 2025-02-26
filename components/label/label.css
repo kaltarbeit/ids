@@ -3,11 +3,67 @@
     border-radius: 6px;
     font-size: 12px;
     line-height: 16px;
-    padding: 2px 8px;
+    padding: 3px 9px;
     font-weight: 700;
+    color: #454855;
+    box-sizing: border-box;
+}
+
+.ids2-label.ids2-label-line {
+    border: 1px solid #979BAA;
+    padding: 2px 8px;
+}
+
+.ids2-label.ids2-label-rounded {
+    border-radius: 10px;
 }
 
 .ids2-label.ids2-label-tint {
     background-color: #2873E3;
     color: #fff;
+}
+
+.ids2-label.ids2-label-ad.ids2-label-fill-gray {
+    background-color: #D3D6DE;
+    color: #454855;
+}
+
+.ids2-label.ids2-label-fill-gray {
+    background-color: #737684;
+    color: #fff;
+}
+
+.ids2-label.ids2-label-risk-high {
+    background-color: #F9E6E7;
+    color: #AA3331;
+}
+
+.ids2-label.ids2-label-risk-very-high {
+    background-color: #F9E6E7;
+    color: #A5315C;
+}
+
+.ids2-label.ids2-label-risk-some-high {
+    background-color: #F9ECDF;
+    color: #A2481B;
+}
+
+.ids2-label.ids2-label-risk-very-low {
+    background-color: #DDE2FA;
+    color: #5149C1;
+}
+
+.ids2-label.ids2-label-risk-normal {
+    background-color: #DEF2D8;
+    color: #366B20;
+}
+
+.ids2-label.ids2-label-risk-low {
+    background-color: #C8EDF1;
+    color: #116F98;
+}
+
+.ids2-label-example {
+    display: flex;
+    gap: 16px;
 }

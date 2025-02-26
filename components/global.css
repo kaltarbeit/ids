@@ -15,6 +15,7 @@
 @import "divider/divider.css";
 @import "label/label.css";
 @import "breadcrumb/breadcrumb.css";
+@import "chip/chip.css";
 
 body {
     font-family: "Pretendard", sans-serif;
