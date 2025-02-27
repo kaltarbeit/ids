@@ -17,6 +17,7 @@ export const createBottomSheet = () => {
         bottomSheet.style.display = 'block';
         bottomSheetContainer.style.display = 'flex';
         handler.style.display = 'block';
+        backdrop.style.display = 'block';
         closeButton.style.display = 'none';
         setTimeout(() => {
             bottomSheet.classList.remove('ids2-bottom-sheet-hide');
@@ -41,6 +42,7 @@ export const createBottomSheet = () => {
         if(bottomSheet.classList.contains('ids2-bottom-sheet-hide')) {
             bottomSheet.style.display = 'none';
             bottomSheetContainer.style.display = 'none';
+            backdrop.style.display = 'none';
             bottomSheetContainer.style.removeProperty('top'); // 원래 위치로 복귀
         }
     });
@@ -85,6 +87,7 @@ export const createBottomSheet = () => {
             bottomSheetContainer.style.top = ''; // 원래 위치로 복귀
             handler.style.display = 'none';
             closeButton.style.display = 'block';
+            backdrop.style.display = 'none';
         } else {
             bottomSheetContainer.style.top = '60%'; // 원래 위치로 복귀
         }

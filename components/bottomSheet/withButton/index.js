@@ -15,6 +15,7 @@ export const createBottomSheet = () => {
     const showBottomSheet = () => {
         bottomSheet.style.display = 'block';
         bottomSheetContainer.style.display = 'flex';
+        backdrop.style.display = 'block';
         setTimeout(() => {
             bottomSheet.classList.remove('ids2-bottom-sheet-hide');
             backdrop.classList.remove('ids2-backdrop-hide');
@@ -33,6 +34,7 @@ export const createBottomSheet = () => {
         if(bottomSheet.classList.contains('ids2-bottom-sheet-hide')) {
             bottomSheet.style.display = 'none';
             bottomSheetContainer.style.display = 'none';
+            backdrop.style.display = 'none';
         }
     });
 
