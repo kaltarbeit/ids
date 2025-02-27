@@ -1,10 +1,10 @@
-import { createLabel as createLabelInfo } from '../components/label/info';
+import { createDropdown as createDropdownDefault } from '../components/dropdown/default';
 
 export default {
-    title: 'Components/Label',
+    title: 'Components/Dropdown',
     tags: ['autodocs'],
 };
 
 export const Default = {
-    render: () => createLabelInfo(),
+    render: () => createDropdownDefault(),
 }

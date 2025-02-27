@@ -1,0 +1,48 @@
+.ids2-dropdown-example {
+    height: 300px;
+}
+
+.ids2-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 90%;
+    width: 300px;
+}
+.ids2-dropdown-label {
+    font-size: 14px;
+    color: #555;
+}
+.ids2-dropdown-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    background: white;
+    cursor: pointer;
+    width: 100%;
+}
+.ids2-dropdown-button {
+    appearance: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    cursor: pointer;
+    padding-right: 20px;
+}
+.ids2-dropdown-container::after {
+    content: " ";
+    position: absolute;
+    right: 15px;
+    width: 18px;
+    height: 18px;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='8' viewBox='0 0 16 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.82515 0.20015C1.05946 -0.0341646 1.43936 -0.0341646 1.67368 0.20015L7.99941 6.52589L14.3251 0.20015C14.5595 -0.0341646 14.9394 -0.0341646 15.1737 0.20015C15.408 0.434465 15.408 0.814364 15.1737 1.04868L8.42368 7.79868C8.18936 8.03299 7.80946 8.03299 7.57515 7.79868L0.82515 1.04868C0.590835 0.814364 0.590835 0.434465 0.82515 0.20015Z' fill='%23101116'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+}
