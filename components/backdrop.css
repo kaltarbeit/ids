@@ -6,8 +6,9 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .ids2-backdrop.ids2-backdrop-hide {
-    display: none;
+    opacity: 0;
 }
