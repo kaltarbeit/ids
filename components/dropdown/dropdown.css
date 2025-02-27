@@ -6,23 +6,24 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    max-width: 90%;
-    width: 300px;
+    box-sizing: border-box;
 }
 .ids2-dropdown-label {
     font-size: 14px;
-    color: #555;
+    color: #454855;
+    line-height: 18px;
+    padding-left: 4px;
 }
 .ids2-dropdown-container {
     display: flex;
     align-items: center;
     position: relative;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 12px;
+    border: 1px solid #C5C8D3;
+    border-radius: 12px;
+    padding: 16px 16px;
     background: white;
     cursor: pointer;
-    width: 100%;
+    box-sizing: border-box;
 }
 .ids2-dropdown-button {
     appearance: none;
@@ -31,10 +32,12 @@
     width: 100%;
     background: transparent;
     font-size: 16px;
-    color: #333;
+    color: #737684;
     text-align: left;
+    vertical-align: middle;
+    padding: 0;
+    line-height: 22px;
     cursor: pointer;
-    padding-right: 20px;
 }
 .ids2-dropdown-container::after {
     content: " ";
