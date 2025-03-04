@@ -81,16 +81,38 @@
 
 .ids2-label-highlight {
     color: #2873E3;
+    vertical-align: middle;
+}
+
+.ids2-label-optional {
+    color: #737684;
+    vertical-align: middle;
+}
+
+.ids2-label-highlight:before,
+.ids2-label-optional:before {
+    content: ' ';
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    line-height: 18px;
+    background: #454855;
+    font-size: 0;
+    color: transparent;
+    margin: 0 6px 2px;
+    vertical-align: middle;
+
 }
 
 .ids2-text-divider {
     display: inline-block;
     width: 1px;
-    height: 12px;
+    height: 13px;
     background: #101116;
     font-size: 0;
     color: transparent;
-    margin: 0 6px;
+    margin: 0 4px;
+    vertical-align: middle;
 }
 
 .ids2-checkbox-list {

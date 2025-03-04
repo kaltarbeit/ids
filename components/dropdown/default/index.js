@@ -10,6 +10,8 @@ export const createDropdown = () => {
     const button = wrapper.querySelector('.ids2-dropdown-button');
     const closeButton = wrapper.querySelector('.ids2-bottom-sheet-close');
 
+    const dropdownItem = wrapper.querySelectorAll('.ids2-dropdown-item');
+
 
     bottomSheet.classList.add('ids2-bottom-sheet-hide');
 
@@ -38,6 +40,22 @@ export const createDropdown = () => {
             backdrop.style.display = 'none';
         }
     });
+
+    const selectItem = (selectedItem) => {
+        selectedItem.classList.add('ids2-dropdown-item-selected');
+        button.classList.add('ids2-dropdown-button-selected');
+
+        dropdownItem.forEach(item => {
+            if(item !== selectedItem) item.classList.remove('ids2-dropdown-item-selected');
+        })
+    }
+
+
+    dropdownItem.forEach(item => {
+        item.addEventListener('click', () => {
+            selectItem(item);
+        })
+    })
 
     return wrapper.firstElementChild;
 }

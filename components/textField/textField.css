@@ -1,0 +1,77 @@
+.ids2-textField .ids2-textField-container {
+    position: relative;
+}
+
+.ids2-textField .ids2-textField-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #454855;
+    margin: 0 4px 8px;
+    vertical-align: middle;
+}
+
+.ids2-textField .ids2-textField-label * {
+    vertical-align: middle;
+}
+
+.ids2-textField .ids2-textField-input {
+    border: 1px solid #C5C8D3;
+    border-radius: 12px;
+    padding: 17px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #101116;
+    background: #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ids2-textField.ids2-textField-amount .ids2-textField-input {
+    text-align: right;
+}
+
+
+.ids2-textField.ids2-textField-date .ids2-textField-container:after {
+    content: ' ';
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.00117 0.275391C6.443 0.275391 6.80117 0.633563 6.80117 1.07539V2.27539H11.2012V1.07539C11.2012 0.633563 11.5593 0.275391 12.0012 0.275391C12.443 0.275391 12.8012 0.633563 12.8012 1.07539V2.27539H15.0012C16.5476 2.27539 17.8012 3.52899 17.8012 5.07539V15.0754C17.8012 16.6218 16.5476 17.8754 15.0012 17.8754H3.00117C1.45477 17.8754 0.201172 16.6218 0.201172 15.0754V5.07539C0.201172 3.52899 1.45477 2.27539 3.00117 2.27539H5.20117V1.07539C5.20117 0.633563 5.55934 0.275391 6.00117 0.275391ZM11.2012 3.87539V5.07539C11.2012 5.51722 11.5593 5.87539 12.0012 5.87539C12.443 5.87539 12.8012 5.51722 12.8012 5.07539V3.87539H15.0012C15.6639 3.87539 16.2012 4.41265 16.2012 5.07539V7.27539H1.80117V5.07539C1.80117 4.41265 2.33843 3.87539 3.00117 3.87539H5.20117V5.07539C5.20117 5.51722 5.55934 5.87539 6.00117 5.87539C6.443 5.87539 6.80117 5.51722 6.80117 5.07539V3.87539H11.2012ZM1.80117 8.87539H16.2012V15.0754C16.2012 15.7381 15.6639 16.2754 15.0012 16.2754H3.00117C2.33843 16.2754 1.80117 15.7381 1.80117 15.0754V8.87539Z' fill='%23101116'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.ids2-textField .ids2-textField-input::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+    color: #737684;
+}
+
+.ids2-textField .ids2-textField-input:focus {
+    outline: none;
+    border: 1px solid #30323B;
+}
+
+.ids2-textField .ids2-textField-note {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #737684;
+    margin: 4px;
+}
+
+.ids2-exchange-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ids2-exchange-separator {
+    display: flex;
+    gap: 16px;
+}
