@@ -1,0 +1,71 @@
+.ids2-table {
+    width: 100%;
+    border-top: 1px solid #101116;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+.ids2-table th, .ids2-table td {
+    position: relative;
+    border-bottom: 1px solid #E1E3EA;
+    text-align: center;
+    font-size: 14px;
+    padding: 22px 10px;
+    line-height: 20px;
+}
+.ids2-table th {
+    background-color: #F3F4F7;
+    font-weight: 700;
+}
+.ids2-table td {
+    background-color: #fff;
+}
+.ids2-table .ids2-cell-left {
+    text-align: left;
+}
+
+.ids2-table{
+
+}
+.ids2-table.ids2-table-sm th, .ids2-table.ids2-table-sm td {
+    padding: 12px 10px;
+}
+.ids2-table .ids2-row-expandable > th:after {
+    content: ' ';
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='8' viewBox='0 0 16 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.90865 0.20015C8.14296 -0.0341646 8.52286 -0.0341646 8.75717 0.20015L15.5072 6.95015C15.7415 7.18446 15.7415 7.56436 15.5072 7.79868C15.2729 8.03299 14.893 8.03299 14.6586 7.79868L8.33291 1.47294L2.00717 7.79868C1.77286 8.03299 1.39296 8.03299 1.15865 7.79868C0.924332 7.56436 0.924332 7.18446 1.15865 6.95015L7.90865 0.20015Z' fill='%23454855'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 10px;
+    transition: transform 0.3s cubic-bezier(.7,.2,.9,.6);
+}
+
+.ids2-table .ids2-row-expandable {
+    cursor: pointer;
+}
+
+.ids2-table .ids2-row-expandable.ids2-row-expendable-collapsed > th:after {
+    transform:  translateY(-50%) rotate(180deg);
+}
+
+.ids2-table .ids2-row-sub.ids2-row-sub-collapsed {
+    display: none;
+}
+
+.ids2-table .ids2-row-sub th {
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.ids2-row-selectable:has(input:checked) th {
+    background-color: #E4F2FF;
+}
+
+.ids2-row-selectable:has(input:checked) td {
+    background-color: #F3F9FF;
+}
