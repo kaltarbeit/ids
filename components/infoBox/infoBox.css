@@ -1,0 +1,56 @@
+
+.ids2-info-box {
+    background-color: #F3F4F7;
+    padding: 16px;
+    border-radius: 12px;
+    width: 300px;
+    font-family: Arial, sans-serif;
+}
+
+.ids2-info-box-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #101116;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    gap: 6px;
+}
+
+.ids2-info-box-text {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #5A5E6C;
+    margin-top: 8px;
+}
+
+
+.ids2-info-box-button-container {
+    margin-top: 12px;
+}
+
+.ids2-info-box-list {
+    margin: 0;
+    padding: 0 24px;
+}
+
+.ids2-info-box-list li {
+    list-style: none;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #454855;
+    margin-top: 8px;
+}
+
+.ids2-info-box-list li:before {
+    content: ' ';
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    background-image: url("data:image/svg+xml,%3Csvg width='2' height='2' viewBox='0 0 2 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='1' fill='%23454855'/%3E%3C/svg%3E%0A");
+    margin-right: 8px;
+    vertical-align: middle;
+    margin-top: -3px;
+}

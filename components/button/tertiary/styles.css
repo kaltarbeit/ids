@@ -28,12 +28,14 @@
     font-size: 14px;
     height: 32px;
     padding: 0 12px;
+    gap: 4px;
 }
 
 .ids2-button-tertiary.ids2-button-xs {
     font-size: 12px;
     height: 24px;
     padding: 0 8px;
+    gap: 4px;
 }
 
 .ids2-button-tertiary.ids2-button-square {
