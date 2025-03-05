@@ -22,6 +22,8 @@
 @import "table/table.css";
 @import "footer/footer.css";
 @import "infoBox/infoBox.css";
+@import "inputStepper/inputStepper.css";
+@import "textArea/textArea.css";
 
 
 body {

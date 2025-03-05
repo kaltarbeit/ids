@@ -1,0 +1,86 @@
+.ids2-text-area-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.ids2-text-area-label {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #454855;
+    margin: 0 0 4px 8px;
+}
+
+.ids2-text-area {
+    position: relative;
+    width: 100%;
+    height: 120px;
+}
+
+.ids2-text-area-input {
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    font-size: 16px;
+    border: 1px solid #C5C8D3;
+    border-radius: 12px;
+    resize: none;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.ids2-text-area-input::placeholder {
+    color: #737684;
+}
+
+.ids2-text-area-input:focus {
+    outline: none;
+    border: 1px solid #30323B;
+}
+
+.ids2-text-area-footer {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #737684;
+    margin-top: 6px;
+    padding-right: 4px;
+}
+
+.ids2-text-area-count {
+    color: #101116;
+}
+
+.ids2-text-area-footer b {
+    font-weight: bold;
+}
+
+.ids2-text-area-clear {
+    position: absolute;
+    right: 13px;
+    bottom: 13px;
+    width: 24px;
+    height: 24px;
+    appearance: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.ids2-text-area-filled .ids2-text-area-clear {
+    display: block;
+}
+
+.ids2-text-area.ids2-text-area-lg .ids2-text-area-input {
+    font-size: 24px;
+    padding: 24px;
+}
