@@ -1,9 +1,3 @@
-.ids2-agreement-example {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .ids2-checkbox-list-item {
     display: flex;
     flex-direction: row;

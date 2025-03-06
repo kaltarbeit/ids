@@ -1,5 +1,7 @@
 import { createAccordion as createAccordionContents } from '../components/accordion/contents';
 import { createAccordion as createAccordionList } from '../components/accordion/lists';
+import { createAccordion as createAccordionMix } from '../components/accordion/mix';
+import { createAccordion as createAccordionHelp } from '../components/accordion/help';
 
 export default {
     title: 'Components/Accordion',
@@ -8,20 +10,16 @@ export default {
 
 export const 콘텐츠형 = {
     render: () => createAccordionContents(),
-    parameters: {
-        design: {
-            type: 'figma',
-            url: 'https://www.figma.com/design/11d108ECbmLz7kBY2ryXSz/Zeroheight-(IDS-2.0)?node-id=2833-56437&t=0W0vrq6hhndfKw5D-4',
-        },
-    },
 }
 
 export const 리스트형 = {
     render: () => createAccordionList(),
-    parameters: {
-        design: {
-            type: 'figma',
-            url: 'https://www.figma.com/design/11d108ECbmLz7kBY2ryXSz/Zeroheight-(IDS-2.0)?node-id=2833-56860&t=GudufYg3CtOqhAbu-4',
-        },
-    },
+}
+
+export const 조합형 = {
+    render: () => createAccordionMix(),
+}
+
+export const 도움말형 = {
+    render: () => createAccordionHelp(),
 }

@@ -84,3 +84,7 @@
     border-radius: 12px;
     box-sizing: border-box;
 }
+
+.ids2-sub-content-label-container {
+    margin-bottom: 8px;
+}

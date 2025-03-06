@@ -1,2 +1,4 @@
 @import "./contents/styles.css";
 @import "./lists/styles.css";
+@import "./mix/styles.css";
+@import "./help/styles.css";
