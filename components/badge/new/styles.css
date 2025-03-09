@@ -25,7 +25,6 @@
     height: 20px;
     text-align: center;
     line-height: 20px;
-    vertical-align: middle;
     color: transparent;
     background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.1091 0V10H7.50689L2.76932 3.16298H2.68645V10H0.890869V0H2.5207L7.23065 6.83702H7.32733V0H9.1091Z' fill='white'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;

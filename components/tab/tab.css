@@ -1,0 +1,31 @@
+.ids2-tab-example {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.ids2-tab {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+}
+.ids2-tab-item {
+    width: 25%;
+    font-size: 18px;
+    font-weight: 500;
+    color: #737684;
+    position: relative;
+    padding: 16px 12px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #E1E3EA;
+    line-height: 24px;
+    margin: 0;
+}
+.ids2-tab-item.active {
+    color: #101116;
+    font-weight: 700;
+    padding: 16px 12px 12px;
+    border-bottom: 3px solid #101116;
+}

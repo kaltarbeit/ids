@@ -1,0 +1,26 @@
+.ids2-top-navigation {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    height: 56px;
+    padding: 0 24px 0 16px;
+}
+.ids2-icons {
+    display: flex;
+    gap: 8px;
+}
+
+.ids2-top-label {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.ids2-top-label-text {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #101116;
+}

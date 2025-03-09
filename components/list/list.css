@@ -1,0 +1,165 @@
+.ids2-list-example {
+    min-width: 380px;
+}
+
+.ids2-list {
+    background: white;
+    margin: auto;
+}
+
+.ids2-list.ids2-list-underlined > .ids2-item:not(:last-child) {
+    border-bottom: 1px solid #E1E3EAB2;
+}
+
+.ids2-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+}
+.ids2-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.ids2-item-wrap {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 30px;
+    margin: 24px;
+}
+.ids2-info {
+    display: flex;
+    align-items: center;
+}
+.ids2-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.ids2-details {
+    margin-left: 12px;
+}
+.ids2-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #30323B;
+}
+.ids2-bank {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #737684;
+    margin-top: 6px;
+}
+.ids2-star {
+    color: #007bff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.ids2-card .ids2-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ids2-card-header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+.ids2-account-type {
+    color: #737684;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+}
+.ids2-menu-button {
+    font-size: 18px;
+    color: #101116;
+    cursor: pointer;
+}
+.ids2-account {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 4px;
+    color: #000;
+}
+.ids2-balance {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000;
+    text-align: right;
+    margin-top: 6px;
+}
+
+.ids2-menu {
+     margin: auto;
+     background: white;
+     padding: 20px;
+ }
+.ids2-menu-section {
+    margin: 40px 24px;
+}
+.ids2-menu-title {
+    font-size: 14px;
+    color: #737684;
+    font-weight: 700;
+    line-height: 18px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+.ids2-menu-item {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #101116;
+    padding: 13px 0;
+    cursor: pointer;
+}
+.ids2-item.read {
+    background: #e8f2ff;
+}
+.ids2-point-icon {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 32px;
+}
+.ids2-point-icon > svg {
+    top: 0;
+}
+.ids2-list-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.ids2-list-title {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+}
+.ids2-list-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #555;
+}
+.ids2-list-time {
+    font-size: 12px;
+    line-height: 16px;
+    color: #737684;
+    margin-top: 5px;
+}
+.ids2-list-arrow {
+    font-size: 18px;
+    color: #777;
+}
