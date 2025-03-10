@@ -24,8 +24,8 @@
 .ids2-popover .ids2-popover-content {
     display: flex;
     align-items: flex-start;
-    gap: 8px;
-    background-color: #333;
+    gap: 4px;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 6px 8px;
     border-radius: 8px;
@@ -41,28 +41,28 @@
 
 .ids2-popover-arrow.arrow-side-bottom {
     bottom: -6px;
-    border-top: 6px solid #333;
+    border-top: 6px solid rgba(0, 0, 0, 0.7);
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
 }
 
 .ids2-popover-arrow.arrow-side-top {
     top: -6px;
-    border-bottom: 6px solid #333;
+    border-bottom: 6px solid rgba(0, 0, 0, 0.7);
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
 }
 
 .ids2-popover-arrow.arrow-side-left {
     left: -6px;
-    border-right: 6px solid #333;
+    border-right: 6px solid rgba(0, 0, 0, 0.7);
     border-top: 6px solid transparent;
     border-bottom: 6px solid transparent;
 }
 
 .ids2-popover-arrow.arrow-side-right {
     right: -6px;
-    border-left: 6px solid #333;
+    border-left: 6px solid rgba(0, 0, 0, 0.7);
     border-top: 6px solid transparent;
     border-bottom: 6px solid transparent;
 }
