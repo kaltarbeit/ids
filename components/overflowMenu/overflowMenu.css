@@ -1,0 +1,102 @@
+
+
+.ids2-overflow-menu-list {
+    margin: 0;
+    padding: 0;
+}
+
+.ids2-overflow-menu-list .ids2-overflow-menu-item {
+    list-style: none;
+    padding: 12px 24px;
+    margin: 0 -24px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #737684;
+    cursor: pointer;
+}
+
+.ids2-overflow-menu-list .ids2-overflow-menu-item.ids2-overflow-menu-item-selected {
+    position: relative;
+    color: #101116;
+    background: #E1E3EA;
+    font-weight: 700;
+}
+
+
+.ids2-fab-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1001;
+    gap: 12px;
+}
+
+.ids2-fab-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.ids2-fab-menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.ids2-fab-menu.show .ids2-fab-menu-list {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ids2-fab-menu-text {
+    font-size: 13px;
+    line-height: 16px;
+    color: #ffffff;
+}
+
+.ids2-fab-menu-icon {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 10px 23px 0 rgba(0, 0, 0, 0.24);
+}
+
+.ids2-fab-menu-toggle {
+    width: 38px;
+    height: 38px;
+    background-color: #4393F0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 10px 23px 0 rgba(0, 0, 0, 0.24);
+}
+
+.ids2-fab-menu-toggle .ids2-fab-menu-toggle-icon {
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+}
+
+.ids2-fab-menu-toggle .ids2-fab-menu-toggle-icon > svg {
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(45deg);
+}
+
+.ids2-fab-menu.show .ids2-fab-menu-toggle .ids2-fab-menu-toggle-icon > svg {
+    transform: rotate(0deg);
+}
