@@ -29,6 +29,7 @@
 @import "tab/tab.css";
 @import "topNavigation/topNavigation.css";
 @import "overflowMenu/overflowMenu.css";
+@import "pagination/pagination.css";
 
 
 body {
