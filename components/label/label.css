@@ -15,7 +15,7 @@
 }
 
 .ids2-label.ids2-label-rounded {
-    border-radius: 10px;
+    border-radius: 100px;
 }
 
 .ids2-label.ids2-label-tint {
@@ -31,6 +31,11 @@
 .ids2-label.ids2-label-fill-gray {
     background-color: #737684;
     color: #fff;
+}
+
+.ids2-label.ids2-label-line-green {
+    border-color: #158463;
+    color: #158463;
 }
 
 .ids2-label.ids2-label-risk-high {
@@ -66,4 +71,11 @@
 .ids2-label-example {
     display: flex;
     gap: 16px;
+}
+
+.ids2-label.ids2-label-lg {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    padding: 6px 12px;
 }

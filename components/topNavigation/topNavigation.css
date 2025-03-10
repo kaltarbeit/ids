@@ -1,3 +1,11 @@
+.ids2-top-navigation-example {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    min-width: 380px;
+}
+
 .ids2-top-navigation {
     background: white;
     display: flex;
@@ -6,6 +14,12 @@
     margin: auto;
     height: 56px;
     padding: 0 24px 0 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ids2-top-navigation.ids2-top-navigation-search {
+    height: 80px;
 }
 .ids2-icons {
     display: flex;

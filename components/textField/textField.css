@@ -1,8 +1,8 @@
-.ids2-textField .ids2-textField-container {
+.ids2-text-field .ids2-text-field-container {
     position: relative;
 }
 
-.ids2-textField .ids2-textField-label {
+.ids2-text-field .ids2-text-field-label {
     display: block;
     font-size: 14px;
     font-weight: 500;
@@ -12,11 +12,11 @@
     vertical-align: middle;
 }
 
-.ids2-textField .ids2-textField-label * {
+.ids2-text-field .ids2-text-field-label * {
     vertical-align: middle;
 }
 
-.ids2-textField .ids2-textField-input {
+.ids2-text-field .ids2-text-field-input {
     border: 1px solid #C5C8D3;
     border-radius: 12px;
     padding: 17px 16px;
@@ -28,12 +28,12 @@
     box-sizing: border-box;
 }
 
-.ids2-textField.ids2-textField-amount .ids2-textField-input {
+.ids2-text-field.ids2-text-field-amount .ids2-text-field-input {
     text-align: right;
 }
 
 
-.ids2-textField.ids2-textField-date .ids2-textField-container:after {
+.ids2-text-field.ids2-text-field-date .ids2-text-field-container:after {
     content: ' ';
     width: 24px;
     height: 24px;
@@ -46,18 +46,18 @@
     cursor: pointer;
 }
 
-.ids2-textField .ids2-textField-input::placeholder {
+.ids2-text-field .ids2-text-field-input::placeholder {
     font-size: 16px;
     font-weight: 500;
     color: #737684;
 }
 
-.ids2-textField .ids2-textField-input:focus {
+.ids2-text-field .ids2-text-field-input:focus {
     outline: none;
     border: 1px solid #30323B;
 }
 
-.ids2-textField .ids2-textField-note {
+.ids2-text-field .ids2-text-field-note {
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
@@ -74,4 +74,28 @@
 .ids2-exchange-separator {
     display: flex;
     gap: 16px;
+}
+
+.ids2-text-field.ids2-input-top-search {
+    position: relative;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.ids2-text-field.ids2-input-top-search .ids2-text-field-input {
+    width: 100%;
+    background: #F3F4F7;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 13px 16px;
+    box-sizing: border-box;
+}
+
+.ids2-text-field.ids2-input-top-search .ids2-top-search-button {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
 }
