@@ -1,0 +1,74 @@
+.ids2-popup {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.ids2-popup-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.ids2-popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.ids2-popup-button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.ids2-popup-button.cancel {
+    border: 1px solid #333;
+    background: white;
+    color: #333;
+    margin-right: 8px;
+}
+
+.ids2-popup-button.cancel:hover {
+    background: #f0f0f0;
+}
+
+.ids2-popup-button.confirm {
+    background: #3d8bf5;
+    color: white;
+    border: none;
+}
+
+.ids2-popup-button.confirm:hover {
+    background: #3076e0;
+}
+
+/* 체크박스 */
+.ids2-popup-checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.ids2-popup-checkbox input {
+    margin-right: 6px;
+}
+
+/* 팝업 보이기/숨기기 */
+.ids2-popup-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ids2-popup .ids2-popup-button-group {
+    display: flex;
+    gap: 8px;
+}
