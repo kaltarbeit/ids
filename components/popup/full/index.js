@@ -5,16 +5,15 @@ export const createPopup = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const popup = wrapper.querySelector('.ids2-popup');
+    const popup = wrapper.querySelector('.ids2-popup-full');
     const backdrop = wrapper.querySelector('.ids2-backdrop');
     const openButton = wrapper.querySelector('.ids2-popup-examples-open-button');
-    const closeButtons = wrapper.querySelectorAll('.ids2-button, input[name="checkbox"]');
+    const closeButtons = wrapper.querySelectorAll('.ids2-button, .ids2-popup-navigation-close');
 
     closeButtons.forEach((button) => {
         button.addEventListener('click', (e) => {
             e.preventDefault();
-
-            popup.classList.add('ids2-popup-hide');
+            popup.classList.add('ids2-popup-full-hide');
             backdrop.classList.add('ids2-backdrop-hide');
         });
     });
@@ -23,7 +22,7 @@ export const createPopup = () => {
         backdrop.style.display = 'block';
 
         setTimeout(() => {
-            popup.classList.remove('ids2-popup-hide');
+            popup.classList.remove('ids2-popup-full-hide');
             backdrop.classList.remove('ids2-backdrop-hide');
         }, 10);
     });

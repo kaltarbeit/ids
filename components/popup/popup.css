@@ -1,1 +1,91 @@
-@import "./layer/styles.css";
+@import "full/styles.css";
+
+.ids2-popup-examples-open-button {
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ids2-popup {
+    width: calc(100% - 75px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    z-index: 1001;
+}
+
+.ids2-popup-hide {
+    display: none;
+}
+
+.ids2-popup-body {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+}
+
+.ids2-popup-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    color: #454855;
+
+}
+
+.ids2-popup-title {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin-left: 4px;
+    text-align: left;
+}
+
+.ids2-popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* 체크박스 */
+.ids2-popup-checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 14px;
+    margin-left: 20px;
+}
+
+.ids2-popup-checkbox input {
+    margin-right: 6px;
+}
+
+/* 팝업 보이기/숨기기 */
+.ids2-popup-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ids2-popup .ids2-popup-button-group {
+    display: flex;
+    gap: 8px;
+    padding: 0 20px 24px;
+}
+
+.ids2-popup-close {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0
+}
