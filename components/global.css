@@ -32,6 +32,8 @@
 @import "pagination/pagination.css";
 @import "popover/popover.css";
 @import "popup/popup.css";
+@import "profile/profile.css";
+@import "progressStep/progressStep.css";
 
 
 body {
