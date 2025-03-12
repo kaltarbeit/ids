@@ -1,0 +1,70 @@
+
+.ids2-snackbar-examples-open-button {
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ids2-snackbar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #3a3d45;
+    color: white;
+    padding: 16px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ids2-snackbar-hide {
+    display: none;
+}
+
+.ids2-snackbar-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.ids2-snackbar-title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    display: flex;
+}
+
+.ids2-snackbar-title .icon {
+    margin-right: 8px;
+}
+
+.ids2-snackbar-description {
+    font-size: 12px;
+    line-height: 16px;
+    color: #C5C8D3;
+    margin-top: 4px;
+    vertical-align: middle;
+}
+
+.ids2-snackbar-action {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.ids2-snackbar-close {
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 16px;
+}

@@ -35,6 +35,7 @@
 @import "profile/profile.css";
 @import "progressStep/progressStep.css";
 @import "radio/radio.css";
+@import "snackbar/snackbar.css";
 
 
 body {

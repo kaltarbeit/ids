@@ -33,7 +33,7 @@
     cursor: pointer;
 }
 
-.ids2-radio label:before {
+.ids2-radio:before {
     content: "";
     width: 24px;
     height: 24px;
@@ -47,7 +47,7 @@
     box-sizing: border-box;
 }
 
-.ids2-radio:has(.ids2-radio-input:checked)  label:before {
+.ids2-radio:has(.ids2-radio-input:checked):before {
     border: 7px solid #3d8bf5;
 }
 
