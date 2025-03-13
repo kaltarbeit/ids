@@ -1,0 +1,54 @@
+/* 전체 컨테이너 (label) */
+.ids2-toggle {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none; /* 드래그 방지 */
+}
+
+/* 실제 체크박스 숨기기 */
+.ids2-toggle-input {
+    display: none;
+}
+
+/* 토글 슬라이더 */
+.ids2-toggle-slider {
+    position: relative;
+    width: 44px;
+    height: 24px;
+    background-color: #ccc;      /* 토글 OFF 상태 배경색 */
+    border-radius: 20px;         /* 둥근 모서리 */
+    transition: background-color 0.3s;
+    margin-left: 6px;           /* 슬라이더와 라벨 사이 간격 */
+}
+
+/* 토글 핸들 (슬라이더 위의 원) */
+.ids2-toggle-slider::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 4px;
+    left: 4px;
+    background-color: #fff;      /* 흰색 원 */
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+/* 체크되었을 때 (ON 상태) */
+.ids2-toggle-input:checked + .ids2-toggle-slider {
+    background-color: #4285f4;
+}
+
+/* 체크되었을 때 핸들 이동 */
+.ids2-toggle-input:checked + .ids2-toggle-slider::before {
+    transform: translateX(20px);
+}
+
+/* 라벨 텍스트 */
+.ids2-toggle-label {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #101116;
+}

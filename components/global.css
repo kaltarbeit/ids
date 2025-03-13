@@ -36,6 +36,8 @@
 @import "progressStep/progressStep.css";
 @import "radio/radio.css";
 @import "snackbar/snackbar.css";
+@import "toast/toast.css";
+@import "toggleSwitch/toggleSwitch.css";
 
 
 body {

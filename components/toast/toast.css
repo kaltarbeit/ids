@@ -1,0 +1,52 @@
+.ids2-toast-example {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    height: 200px;
+}
+
+
+.ids2-toast-examples-open-button {
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ids2-toast {
+    /* 레이아웃 */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 50%;
+    bottom: 30px;
+
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 24px;
+    padding: 8px 20px;
+
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.ids2-toast-icon {
+    margin-right: 8px;
+    color: #4caf50; /* 초록색 체크 아이콘 */
+    font-size: 16px;
+}
+
+.ids2-toast-hide {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+}
+
+.ids2-toast-message {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #fff;
+}
