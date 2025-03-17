@@ -1,0 +1,76 @@
+.ids2-tooltip-example {
+    height: 300px;
+}
+/* ==================================
+   2. 툴팁 아이콘 (버튼)
+================================== */
+.ids2-tooltip-icon {
+    width: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* ==================================
+   3. 툴팁 컨테이너
+================================== */
+.ids2-tooltip {
+    position: absolute;
+    top: 34px;         /* 아이콘 아래쪽에 위치 */
+    left: 1px;
+    z-index: 999;
+
+    /* 기본적으로 숨김 처리 */
+    display: none;
+}
+
+/* 툴팁 내용 박스 */
+.ids2-tooltip__content {
+    position: relative;
+    background: #fff;
+    color: #4285f4;            /* 파란색 텍스트 */
+    border: 1px solid #4285f4;
+    border-radius: 8px;
+    padding: 12px;
+    min-width: 180px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 흰색 내부 화살표(안쪽) */
+.ids2-tooltip__content::after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 9px solid transparent;
+    border-bottom-color: #fff;
+}
+
+/* ==================================
+   5. 툴팁 닫기 버튼
+================================== */
+.ids2-tooltip__close {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #4285f4;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+}
+
+.ids2-popover-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.ids2-popover-arrow.arrow-side-bottom {
+    bottom: -6px;
+    border-top: 6px solid rgba(0, 0, 0, 0.7);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}

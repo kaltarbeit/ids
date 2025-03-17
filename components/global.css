@@ -38,6 +38,7 @@
 @import "snackbar/snackbar.css";
 @import "toast/toast.css";
 @import "toggleSwitch/toggleSwitch.css";
+@import "tooltip/tooltip.css";
 
 
 body {
