@@ -1,0 +1,47 @@
+/* 슬라이더 컨테이너 */
+.ids2-slider-vertical {
+    position: relative;
+    width: 40px;         /* 컨테이너 너비 */
+    height: 200px;       /* 컨테이너 높이 */
+    margin: 20px;
+    background-color: #eee;
+    display: inline-block;
+    user-select: none;   /* 드래그 시 텍스트가 선택되지 않도록 방지 */
+}
+
+/* 슬라이더 트랙 */
+.ids2-slider-vertical-track {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: #ccc;
+}
+
+/* 슬라이더 핸들(드래그할 부분) */
+.ids2-slider-vertical-handle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #4285f4;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* 툴팁 */
+.ids2-slider-vertical-tooltip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, -50%); /* 핸들의 왼쪽에 툴팁이 오도록 조정 */
+    background-color: #333;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    pointer-events: none; /* 툴팁 자체는 클릭 불가 */
+}
