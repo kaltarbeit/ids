@@ -10,9 +10,9 @@ export const createSlider = () => {
     let currentValue = 25; // 초기값
 
     // 요소 참조
-    const slider = document.getElementById('verticalSlider');
-    const handle = document.getElementById('sliderHandle');
-    const tooltip = document.getElementById('sliderTooltip');
+    const slider = wrapper.querySelector('#verticalSlider');
+    const handle = wrapper.querySelector('#sliderHandle');
+    const tooltip = wrapper.querySelector('#sliderTooltip');
 
     /**
      * 슬라이더 위치와 툴팁을 갱신하는 함수
@@ -39,7 +39,6 @@ export const createSlider = () => {
 
         // 툴팁 위치도 핸들과 동일한 세로 좌표로
         tooltip.style.top = handle.style.top;
-        tooltip.textContent = Math.round(currentValue);
     }
 
     // 드래그 상태 관리

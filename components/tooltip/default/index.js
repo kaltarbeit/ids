@@ -6,6 +6,7 @@ export const createTooltip = () => {
     wrapper.insertAdjacentHTML('afterbegin', html);
 
     const tooltipIcons = wrapper.querySelectorAll('.ids2-tooltip-icon');
+    const tooltips = wrapper.querySelectorAll('.ids2-tooltip');
 
     const getPositionHorizontalAlign = (targetElement, sourceElement) => {
         if(targetElement.className.match(/ids2-tooltip__.+-left/)) {
@@ -45,7 +46,10 @@ export const createTooltip = () => {
         const tooltip = wrapper.querySelector(`#${tooltipIcon.dataset.tooltipId}`);
 
         tooltipIcon.addEventListener('click', () => {
+            tooltips.forEach(anotherTooltip => anotherTooltip.style.display = 'none')
+
             tooltip.style.display = 'block';
+
 
             if(tooltip.className.match(/ids2-tooltip__(top|bottom)-.+/)) {
                 getPositionHorizontalAlign(tooltip, tooltipIcon);
