@@ -5,6 +5,8 @@ export const createList = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
+    const stars = wrapper.querySelectorAll('.ids2-star');
+
     /** Examples **/
     function toggleAccordion(e) {
         const item = e.currentTarget.parentElement;
@@ -40,6 +42,14 @@ export const createList = () => {
             openAccordion(item);
         });
     }
+
+    stars.forEach(star => {
+        star.addEventListener('click', () => {
+            const starIcon = star.querySelector('.ids2-icon');
+            starIcon.classList.toggle('ids2-icon-star-fill');
+            starIcon.classList.toggle('ids2-icon-star');
+        })
+    })
 
     initAccordion(wrapper);
     // initAccordion(document);

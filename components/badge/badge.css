@@ -2,6 +2,12 @@
 @import "dot/styles.css";
 @import "new/styles.css";
 
+.ids2-badge-example {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .ids2-icon-wrap {
     position: relative;
     width: 24px;

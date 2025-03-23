@@ -47,7 +47,7 @@
     justify-content: center;
     width: 24px;
     height: 24px;
-    margin-right: 12px;
+    margin-right: 8px;
 }
 
 .ids2-banner .ids2-banner-close {
@@ -58,4 +58,8 @@
     background-color: transparent;
     border: transparent;
     cursor: pointer;
+}
+
+.ids2-banner.ids2-banner-notice {
+    background-color: #E4F2FF;
 }

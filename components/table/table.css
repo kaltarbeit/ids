@@ -45,6 +45,10 @@
     transition: transform 0.3s cubic-bezier(.7,.2,.9,.6);
 }
 
+.ids2-table .ids2-row-expandable > th {
+    padding-right: 28px;
+}
+
 .ids2-table .ids2-row-expandable {
     cursor: pointer;
 }

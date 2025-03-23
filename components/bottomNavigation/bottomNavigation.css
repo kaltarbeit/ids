@@ -6,7 +6,8 @@
     border-radius: 50px;
     padding: 19px 37px 17px;
     box-shadow: 0 9.49px 14.24px 0 rgba(0, 0, 0, 0.08);
-    min-width: 480px;
+    min-width: 320px;
+    box-sizing: border-box;
 }
 
 .ids2-bottom-navigation .nav-item {

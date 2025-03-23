@@ -1,3 +1,9 @@
+.ids2-chip-examples {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
 .ids2-chip {
     display: flex;
     align-items: center;
@@ -51,4 +57,13 @@
     cursor: pointer;
     font-size: 0;
     color: transparent;
+}
+
+
+.ids2-chip-examples-open-button {
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
 }

@@ -21,3 +21,12 @@
     background: transparent;
     box-shadow: none;
 }
+
+.ids2-card-example {
+    padding: 24px;
+}
+
+.ids2-card-example-backboard {
+    background: #F3F3F3;
+    padding: 24px;
+}

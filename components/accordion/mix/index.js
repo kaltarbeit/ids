@@ -7,7 +7,7 @@ export const createAccordion = () => {
     /** Examples **/
     function toggleAccordion(e) {
         const item = e.currentTarget.parentElement;
-        const details = item.getElementsByClassName('ids2-accordion-details')
+        const details = item.getElementsByClassName('ids2-accordion-details');
 
         if(details.length > 0) {
             const opened = item.hasAttribute('open');
@@ -30,24 +30,26 @@ export const createAccordion = () => {
         }
     }
 
-    const checkboxAll = wrapper.querySelector('#checkAll');
-    const checkboxes = wrapper.querySelectorAll('input[name="checkbox"]');
+    const checkboxAlls = wrapper.querySelectorAll('.ids2-checkbox-all');
 
-    checkboxAll.addEventListener('change', () => {
-        checkboxes.forEach(checkbox => checkbox.checked = checkAll.checked);
-    });
+    checkboxAlls.forEach((checkboxAll) => {
+        const checkboxes = wrapper.querySelectorAll(`input[name="${checkboxAll.getAttribute('name')}"]`);
+        checkboxAll.addEventListener('change', () => {
+            checkboxes.forEach(checkbox => checkbox.checked = checkboxAll.checked);
+        });
 
-    checkboxes.forEach(checkbox => checkbox.addEventListener('change', () => {
-        let checkedAll = true;
-        for(let i = 0; checkboxes.length > i; i++) {
-            if(!checkboxes[i].checked) {
-                checkedAll = false;
-                break;
+        checkboxes.forEach(checkbox => checkbox.addEventListener('change', () => {
+            let checkedAll = true;
+            for(let i = 0; checkboxes.length > i; i++) {
+                if(!checkboxes[i].checked) {
+                    checkedAll = false;
+                    break;
+                }
             }
-        }
 
-        checkboxAll.checked = checkedAll;
-    }))
+            checkboxAll.checked = checkedAll;
+        }));
+    })
 
     initAccordion(wrapper);
     // initAccordion(document);

@@ -8,6 +8,7 @@ export const createBottomSheet = () => {
     const backdrop = wrapper.querySelector('.ids2-backdrop');
     const button = wrapper.querySelector('.ids2-button');
     const closeButton = wrapper.querySelector('.ids2-bottom-sheet-close');
+    const todayHide = wrapper.querySelector('.ids2-checkbox-input');
 
 
     bottomSheet.classList.add('ids2-bottom-sheet-hide');
@@ -29,6 +30,10 @@ export const createBottomSheet = () => {
 
     button.addEventListener('click', showBottomSheet);
     closeButton.addEventListener('click', hideBottomSheet);
+    todayHide.addEventListener('change', (e) => {
+        hideBottomSheet();
+        e.target.checked = false;
+    });
 
     bottomSheetContainer.addEventListener("transitionend", () => {
         if(bottomSheet.classList.contains('ids2-bottom-sheet-hide')) {

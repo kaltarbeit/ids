@@ -95,3 +95,9 @@
     top: 0;
     border-radius: 0;
 }
+
+.ids2-bottom-sheet-function {
+    position: absolute;
+    top: -34px;
+    padding: 0 24px 14px;
+}

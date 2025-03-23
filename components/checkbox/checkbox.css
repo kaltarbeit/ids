@@ -1,6 +1,14 @@
 @import "./multiple/styles.css";
 @import "./mark/styles.css";
 
+.ids2-checkbox-examples {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 380px;
+}
 
 .ids2-checkbox {
     display: flex;
@@ -23,6 +31,10 @@
     content: '';
     width: 24px;
     height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    max-width: 24px;
+    max-height: 24px;
     border-radius: 6px;
     background-color: #ffffff;
     border: 1px solid #737684;
@@ -64,6 +76,10 @@
 .ids2-checkbox.ids2-checkbox-sm label::before {
     width: 20px;
     height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
 }
 
 .ids2-checkbox.ids2-checkbox-sm label:has(input:checked)::before {

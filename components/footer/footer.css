@@ -1,8 +1,13 @@
+.ids2-footer-example {
+    background: #F4F4F4;
+}
+
 .ids2-footer {
     background: #ffffff;
     padding: 24px;
     font-size: 14px;
     line-height: 18px;
+    border-top: 1px solid #E1E3EA;
 }
 .ids2-footer-logo {
     margin-bottom: 16px;

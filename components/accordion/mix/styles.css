@@ -1,3 +1,13 @@
+.ids2-accordion-examples {
+    display: flex;
+    gap: 20px;
+
+}
+
+.ids2-accordion-example {
+    width: 50%;
+}
+
 .ids2-accordion-card {
     width: 100%;
     min-width: 320px;

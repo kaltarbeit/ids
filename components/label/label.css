@@ -1,3 +1,9 @@
+.ids2-label-example {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
 .ids2-label {
     background-color: #fff;
     border-radius: 6px;

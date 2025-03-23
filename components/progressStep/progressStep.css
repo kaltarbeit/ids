@@ -1,3 +1,8 @@
+.ids2-progress-step-example {
+    display: flex;
+    justify-content: center;
+}
+
 .ids2-progress-step {
     display: flex;
     align-items: center;

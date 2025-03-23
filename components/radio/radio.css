@@ -51,6 +51,15 @@
     border: 7px solid #3d8bf5;
 }
 
+.ids2-radio:has(.ids2-radio-input:disabled):before {
+    background-color: #979BAA;
+}
+
+.ids2-radio:has(.ids2-radio-input:disabled:checked):before {
+    background-color: #454855;
+    border: 7px solid #E1E3EA;
+}
+
 .ids2-radio.ids2-radio-check:before {
     content: "";
     width: 24px;

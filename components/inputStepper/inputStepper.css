@@ -1,3 +1,8 @@
+.ids2-input-stepper-example {
+    display: flex;
+    justify-content: center;
+}
+
 .ids2-input-stepper-vertical {
     width: 34px;
     display: flex;

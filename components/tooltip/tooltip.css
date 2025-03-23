@@ -8,9 +8,14 @@
 .ids2-tooltip-example-group {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 40px;
     background-color: #E1E3EA;
-    padding:50px 100px 100px;
+    padding:100px 100px 50px;
+}
+
+.ids2-tooltip-example-group h4 {
+    text-align: center;
 }
 
 .ids2-tooltip-wrapper {
