@@ -1,5 +1,28 @@
+.ids2-slider-examples {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 380px;
+}
+
+
+.ids2-slider-example {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 300px;
+    background-color: #F4F5F7;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
 /* 슬라이더 컨테이너 */
-.ids2-slider-vertical {
+.ids2-slider.ids2-slider__vertical {
     position: relative;
     width: 40px;         /* 컨테이너 너비 */
     height: 282px;       /* 컨테이너 높이 */
@@ -9,7 +32,7 @@
 }
 
 /* 슬라이더 트랙 */
-.ids2-slider-vertical-track {
+.ids2-slider.ids2-slider__vertical .ids2-slider__track {
     position: absolute;
     left: 50%;
     top: 0;
@@ -21,7 +44,7 @@
 }
 
 /* 슬라이더 핸들(드래그할 부분) */
-.ids2-slider-vertical-handle {
+.ids2-slider.ids2-slider__vertical .ids2-slider__handle {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -34,13 +57,24 @@
     background-color: #fff;
 }
 
+.ids2-slider.ids2-slider__vertical .ids2-slider__track-range {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 4px;
+    border-radius: 2px;
+    z-index: 2;
+    background-color: #2873E3;
+}
+
 /* 툴팁 */
-.ids2-slider-vertical-tooltip {
+.ids2-slider.ids2-slider__vertical .ids2-slider__tooltip {
     position: absolute;
     left: 0;
     top: 0;
     transform: translateX(-100%); /* 핸들의 왼쪽에 툴팁이 오도록 조정 */
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #4D4D4D;
     color: #fff;
     padding: 6px 8px;
     border-radius: 4px;
@@ -50,15 +84,139 @@
     font-size: 12px;
 }
 
-.ids2-slider-vertical-tooltip:after {
+.ids2-slider.ids2-slider__vertical .ids2-slider__tooltip:after {
     content: '';
     position: absolute;
     width: 0;
     height: 0;
     right: -6px;
-    border-left: 7px solid rgba(0, 0, 0, 0.7);
+    border-left: 7px solid #4D4D4D;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.ids2-slider.ids2-slider__vertical .ids2-slider__range-end {
+    position: absolute;
+    top: 0;
+    right: -16px;
+    width: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #737684;
+}
+
+.ids2-slider.ids2-slider__vertical .ids2-slider__range-start {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+    right: -16px;
+    width: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #737684;
+}
+
+/*
+    Horizontal Slider
+ */
+
+
+
+/* 슬라이더 컨테이너 */
+.ids2-slider.ids2-slide__horizontal {
+    position: relative;
+    width: 282px;         /* 컨테이너 너비 */
+    height: 40px;       /* 컨테이너 높이 */
+    margin: 20px;
+    display: inline-block;
+    user-select: none;   /* 드래그 시 텍스트가 선택되지 않도록 방지 */
+}
+
+/* 슬라이더 트랙 */
+.ids2-slider.ids2-slide__horizontal .ids2-slider__track {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #E1E3EA;
+}
+
+/* 슬라이더 핸들(드래그할 부분) */
+.ids2-slider.ids2-slide__horizontal .ids2-slider__handle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border: 3px solid #2873E3;
+    border-radius: 50%;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.ids2-slider.ids2-slide__horizontal .ids2-slider__track-range {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    border-radius: 2px;
+    z-index: 2;
+    background-color: #2873E3;
+}
+
+/* 툴팁 */
+.ids2-slider.ids2-slide__horizontal .ids2-slider__tooltip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-100%); /* 핸들의 왼쪽에 툴팁이 오도록 조정 */
+    background-color: #4D4D4D;
+    color: #fff;
+    padding: 6px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    pointer-events: none; /* 툴팁 자체는 클릭 불가 */
+    margin-top: -5px;
+    margin-left: -12px;
+    font-size: 12px;
+}
+
+
+.ids2-slider.ids2-slide__horizontal .ids2-slider__tooltip:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -6px;
+    border-top: 7px solid #4D4D4D;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ids2-slider.ids2-slide__horizontal .ids2-slider__range-start {
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    width: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #737684;
+}
+.ids2-slider.ids2-slide__horizontal .ids2-slider__range-end {
+    position: absolute;
+    bottom: -16px;
+    right: 0;
+    width: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #737684;
 }
