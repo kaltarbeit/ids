@@ -1,7 +1,8 @@
 /**
     Button Primary Default
  */
-.ids2-button-text {
+.ids2-button.ids2-button-text {
+    min-width: 0;
     height: 22px;
     background-color: transparent;
     border: transparent;
@@ -12,23 +13,23 @@
     color: #30323B;
 }
 
-.ids2-button-text:disabled {
+.ids2-button.ids2-button-text:disabled {
     background-color: #F3F4F7;
     border-color: #E1E3EA;
     color: #737684;
 }
 
-.ids2-button-text.ids2-button-sm {
+.ids2-button.ids2-button-text.ids2-button-sm {
     font-size: 14px;
     line-height: 22px;
     height: 18px;
 }
 
-.ids2-button-text.ids2-button-xs {
+.ids2-button.ids2-button-text.ids2-button-xs {
     font-size: 12px;
     height: 24px;
 }
 
-.ids2-button-text.ids2-button-square {
+.ids2-button.ids2-button-text.ids2-button-square {
     border-radius: 6px;
 }
