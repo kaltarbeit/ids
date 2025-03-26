@@ -1,4 +1,12 @@
+@import "authCode/styles.css";
+@import "secretCard/styles.css";
+
 .ids2-text-field {
+    position: relative;
+}
+
+.ids2-text-field-full-width {
+    width: 100%;
     position: relative;
 }
 
@@ -278,10 +286,6 @@
 }
 
 .ids2-input-group.ids2-input-verify-number .ids2-input-timer {
-    position: absolute;
-    top: 50%;
-    right: 16px;
-    transform: translateY(-50%);
     font-size: 14px;
     line-height: 18px;
     color: #454855;
@@ -328,4 +332,65 @@
     top: 50%;
     right: -10px;
     transform: translateY(-50%);
+}
+
+.ids2-text-field .ids2-input-function {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+}
+.ids2-text-field .ids2-input-function .ids2-input-clear {
+    position: static;
+    right: unset;
+    top: unset;
+    transform: none;
+}
+
+.ids2-text-field.ids2-text-field-line .ids2-text-field-container {
+    border: none;
+    border-radius: 0;
+    border-bottom: 3px solid #C5C8D3;
+}
+
+.ids2-text-field.ids2-text-field-line .ids2-text-field-container:has(.ids2-text-field-input:focus) {
+    outline: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 3px solid #2873E3;
+}
+
+.ids2-text-field.ids2-text-field-line .ids2-text-field-input {
+    font-size: 20px;
+    line-height: 26px;
+    color: #101116;
+    padding: 15px 0;
+}
+
+.ids2-text-field.ids2-text-field-line .ids2-text-field-input::placeholder {
+    font-size: 20px;
+    line-height: 26px;
+    color: #737684;
+}
+
+.ids2-text-field.ids2-text-field-line-large .ids2-text-field-input {
+    font-size: 28px;
+    text-align: right;
+    line-height: 26px;
+    color: #101116;
+    padding: 15px 0;
+}
+
+.ids2-text-field.ids2-text-field-line-large.ids2-text-field-filled .ids2-text-field-input {
+    padding-right: 60px;
+}
+
+.ids2-text-field.ids2-text-field-line-large .ids2-text-field-input::placeholder {
+    font-size: 28px;
+    text-align: right;
+    line-height: 26px;
+    color: #737684;
 }

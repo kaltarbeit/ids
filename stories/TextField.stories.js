@@ -16,6 +16,14 @@ import { createTextField as createTextFieldFax } from '../components/textField/f
 import { createTextField as createTextFieldBusinessNumber } from '../components/textField/businessNumber';
 import { createTextField as createTextFieldEnglishName } from '../components/textField/englishName';
 import { createTextField as createTextFieldCardNumber } from '../components/textField/cardNumber';
+import { createTextField as createTextFieldPassword } from '../components/textField/password';
+import { createTextField as createTextFieldAuthCode } from '../components/textField/authCode';
+import { createTextField as createTextFieldAuthPassword } from '../components/textField/authPassword';
+import { createTextField as createTextFieldAuthTime } from '../components/textField/authTime';
+import { createTextField as createTextFieldSecretCard } from '../components/textField/secretCard';
+import { createTextField as createTextFieldLine } from '../components/textField/line';
+import { createTextField as createTextFieldLineLarge } from '../components/textField/lineLarge';
+import { createTextField as createTextFieldLineSearch } from '../components/textField/lineSearch';
 
 export default {
     title: 'Components/TextField',
@@ -92,4 +100,36 @@ export const 영문_이름 = {
 
 export const 카드번호 = {
     render: () => createTextFieldCardNumber(),
+}
+
+export const Password = {
+    render: () => createTextFieldPassword(),
+}
+
+export const AuthCode = {
+    render: () => createTextFieldAuthCode(),
+}
+
+export const AuthPassword = {
+    render: () => createTextFieldAuthPassword(),
+}
+
+export const AuthTime = {
+    render: () => createTextFieldAuthTime(),
+}
+
+export const SecretCard = {
+    render: () => createTextFieldSecretCard(),
+}
+
+export const 라인 = {
+    render: () => createTextFieldLine(),
+}
+
+export const 라인_큰글씨 = {
+    render: () => createTextFieldLineLarge(),
+}
+
+export const 라인_검색 = {
+    render: () => createTextFieldLineSearch(),
 }
