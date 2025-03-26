@@ -1,6 +1,24 @@
-.ids2-badge-count {
-    font-family: 'Pretendard', sans-serif;
-    color: #2873e3;
-    font-size: 16px;
+.ids2-icon-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    position: relative;
+    height: 32px;
+}
+
+.ids2-icon-menu-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #E4F2FF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ids2-icon-menu-label {
     font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
 }

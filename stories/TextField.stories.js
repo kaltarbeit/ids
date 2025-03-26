@@ -4,6 +4,7 @@ import { createTextField as createTextFieldAmount } from '../components/textFiel
 import { createTextField as createTextFieldDate } from '../components/textField/date';
 import { createTextField as createTextFieldExchange } from '../components/textField/exchange';
 import { createTextField as createTextFieldCurrency } from '../components/textField/currency';
+import { createTextField as createTextFieldRange } from '../components/textField/range';
 
 export default {
     title: 'Components/TextField',
@@ -32,4 +33,8 @@ export const 외환입력 = {
 
 export const 통화표기 = {
     render: () => createTextFieldCurrency(),
+}
+
+export const 일반범위 = {
+    render: () => createTextFieldRange(),
 }

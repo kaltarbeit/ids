@@ -11,10 +11,10 @@ export const Dot = {
     render: () => createBadgeDot(),
 }
 
-export const Count = {
-    render: () => createBadgeCount(),
-}
-
 export const New = {
     render: () => createBadgeNew(),
+}
+
+export const Count = {
+    render: () => createBadgeCount(),
 }

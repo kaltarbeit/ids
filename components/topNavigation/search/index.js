@@ -12,9 +12,6 @@ export const createTopNavigation = () => {
         const count = e.target.value.length;
 
         count > 0 ? textFieldInput.parentElement.classList.add('ids2-text-field-filled') : textFieldInput.parentElement.classList.remove('ids2-text-field-filled');
-
-        countArea.innerHTML = count;
-
     });
 
     clearButton.addEventListener('click', () => {

@@ -1,8 +1,12 @@
+.ids2-text-field {
+    position: relative;
+}
+
 .ids2-text-field .ids2-text-field-container {
     position: relative;
 }
 
-.ids2-text-field .ids2-text-field-label {
+.ids2-text-field-label {
     display: block;
     font-size: 14px;
     font-weight: 500;
@@ -12,7 +16,7 @@
     vertical-align: middle;
 }
 
-.ids2-text-field .ids2-text-field-label * {
+.ids2-text-field-label * {
     vertical-align: middle;
 }
 
@@ -30,6 +34,21 @@
 
 .ids2-text-field.ids2-text-field-amount .ids2-text-field-input {
     text-align: right;
+}
+
+.ids2-text-field.ids2-text-field-amount.ids2-text-field-filled .ids2-text-field-container:after {
+    content: '원';
+    font-size: 16px;
+    font-weight: 500;
+    color: #101116;
+    position: absolute;
+    top: 50%;
+    right: 52px;
+    transform: translateY(-50%);
+}
+
+.ids2-text-field.ids2-text-field-amount.ids2-text-field-filled .ids2-text-field-input {
+    padding-right: 68px;
 }
 
 
@@ -57,14 +76,6 @@
     border: 1px solid #30323B;
 }
 
-.ids2-text-field .ids2-text-field-note {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 16px;
-    color: #737684;
-    margin: 4px;
-}
-
 .ids2-text-field .ids2-input-clear {
     position: absolute;
     right: 13px;
@@ -89,11 +100,6 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-}
-
-.ids2-exchange-separator {
-    display: flex;
-    gap: 16px;
 }
 
 .ids2-text-field.ids2-input-top-search {
@@ -124,4 +130,82 @@
 
 .ids2-text-field.ids2-input-top-search .ids2-input-clear {
     right: 46px;
+}
+
+.ids2-text-field .ids2-text-field-functions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ids2-text-field .ids2-text-field-note {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #737684;
+    margin: 4px;
+}
+
+.ids2-text-field .ids2-text-field-counter {
+    display: none;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #737684;
+    margin: 4px;
+}
+
+.ids2-text-field .ids2-text-field-counter.visible,
+.ids2-text-field.ids2-text-field-filled .ids2-text-field-counter {
+    display: block;
+}
+
+.ids2-text-field .ids2-text-field-counter .ids2-text-field-count {
+    color: #101116;
+}
+
+.ids2-exchange-separator {
+    display: flex;
+    gap: 16px;
+}
+
+.ids2-exchange-separator > .ids2-text-field:first-child {
+    width: 68%;
+}
+
+.ids2-exchange-separator > .ids2-text-field:last-child {
+    width: 32%;
+}
+
+.ids2-exchange-separator > .ids2-text-field:first-child:after {
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    content: ".";
+    font-size: 20px;
+    color: #101116;
+    font-weight: 700;
+}
+
+.ids2-range-separator {
+    display: flex;
+    gap: 16px;
+}
+
+.ids2-range-separator > .ids2-text-field:first-child:after {
+    position: absolute;
+    top: 50%;
+    right: -13px;
+    transform: translateY(-50%);
+    content: "~";
+    font-size: 16px;
+    line-height: 22px;
+    color: #101116;
+}
+
+.ids2-range-separator > .ids2-text-field:first-child {
+    width: 50%;
+}
+
+.ids2-range-separator > .ids2-text-field:last-child {
+    width: 50%;
 }
