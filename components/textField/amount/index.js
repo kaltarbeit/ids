@@ -7,18 +7,57 @@ export const createTextField = () => {
 
     const amountField = wrapper.querySelector('.ids2-text-field-amount');
     const amountFieldInput = wrapper.querySelector('.ids2-text-field-amount input');
+    const amountNote = wrapper.querySelector('.ids2-text-field-amount-note');
     const clearButton = wrapper.querySelector('.ids2-text-field-amount .ids2-input-clear');
+    const numberTexts = ["", "일", "이", "삼", "사","오","육","칠","팔","구","십"];
+    const digitTexts = ["", "십", "백", "천", "", "십", "백", "천", "", "십", "백", "천", "", "십", "백", "천"];
 
+    const numberToKor = (number) => {
+        const numberArray = number.split("");
+        let result = "";
+        numberArray.forEach((item, index) => {
+            let numberUnit = "";
+            let transNumber = numberTexts[number.charAt(numberArray.length - (index + 1))];
+
+            if (transNumber !== "") {
+                numberUnit += transNumber + digitTexts[index];
+            }
+            switch (index) {
+                case 4:
+                    numberUnit += "만";
+                    break;
+                case 8:
+                    numberUnit += "억";
+                    break;
+                case 12:
+                    numberUnit += "조";
+                    break;
+            }
+            if (numberUnit !== "") {
+                result = numberUnit + result;
+            }
+        });
+
+        const zeroCount = numberArray.filter((item) => item === "0").length;
+        if (zeroCount === 8) {
+            result = result.replace("만", "");
+        }
+
+        return result;
+    };
 
     amountFieldInput.addEventListener('input', (e) => {
         const count = e.target.value.length;
         count > 0 ? amountField.classList.add('ids2-text-field-filled') : amountField.classList.remove('ids2-text-field-filled');
-        amountFieldInput.value = e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        const formattedValue = e.target.value.replace(/\D/g, "");
+        amountFieldInput.value = formattedValue.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        amountNote.textContent = count > 0 ? numberToKor(formattedValue)+'원' : '';
     });
 
     clearButton.addEventListener('click', () => {
         amountFieldInput.value = '';
         amountField.classList.remove('ids2-text-field-filled');
+        amountNote.textContent = '';
         amountFieldInput.focus();
     });
 
