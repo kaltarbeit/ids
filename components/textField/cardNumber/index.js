@@ -6,13 +6,22 @@ export const createTextField = () => {
     wrapper.insertAdjacentHTML('afterbegin', html);
 
     const textFields = wrapper.querySelectorAll('.ids2-text-field');
+    const textFieldInputs = wrapper.querySelectorAll('.ids2-text-field input');
 
-    textFields.forEach(textField => {
+    textFields.forEach((textField, i) => {
         const textFieldInput = textField.querySelector('.ids2-text-field input');
         const clearButton = textField.querySelector('.ids2-text-field .ids2-input-clear');
         textFieldInput.addEventListener('input', (e) => {
             const count = e.target.value.length;
             count > 0 ? textField.classList.add('ids2-text-field-filled') : textField.classList.remove('ids2-text-field-filled');
+
+            if(count === 4 && i < textFieldInputs.length - 1) textFieldInputs[i + 1].focus();
+        });
+
+        textField.addEventListener('keydown', function (e) {
+            if (e.key === 'Backspace' && e.target.value === '') {
+                if(i > 0) textFieldInputs[i - 1].focus();
+            }
         });
 
         clearButton.addEventListener('click', () => {
