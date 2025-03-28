@@ -8,11 +8,13 @@ export const createTextField = () => {
     const textField = wrapper.querySelector('.ids2-text-field');
     const textFieldInput = wrapper.querySelector('.ids2-text-field input');
     const clearButton = wrapper.querySelector('.ids2-text-field .ids2-input-clear');
+    const submitButton = wrapper.querySelector('button[name="submit"]');
     const counter = wrapper.querySelector('.ids2-text-field-counter');
 
     textFieldInput.addEventListener('input', (e) => {
         const count = e.target.value.length;
         count > 0 ? textField.classList.add('ids2-text-field-filled') : textField.classList.remove('ids2-text-field-filled');
+        submitButton.disabled = count !== 6
 
         if(counter) {
             const countWrapper = counter.querySelector('.ids2-text-field-count');

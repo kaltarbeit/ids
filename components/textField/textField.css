@@ -402,3 +402,11 @@
     line-height: 16px;
     color: #737684;
 }
+
+.ids2-text-field.ids2-input-auth-time .ids2-input-function {
+    display: none;
+}
+
+.ids2-text-field.ids2-input-auth-time:has(.ids2-text-field-input:focus) .ids2-input-function {
+    display: flex;
+}

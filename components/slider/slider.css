@@ -10,9 +10,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 300px;
-    background-color: #F4F5F7;
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
@@ -41,6 +38,15 @@
     height: 100%;
     border-radius: 2px;
     background-color: #E1E3EA;
+}
+
+/* 슬라이더 트랙 */
+.ids2-slider.ids2-slider__vertical .ids2-slider__track .ids2-slider__track-snap {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    z-index: 3;
 }
 
 /* 슬라이더 핸들(드래그할 부분) */
@@ -118,6 +124,19 @@
     color: #737684;
 }
 
+/* 슬라이더 트랙 */
+.ids2-slider.ids2-slider__vertical.ids2-slider__large .ids2-slider__track {
+    width: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* 슬라이더 트랙 */
+.ids2-slider.ids2-slider__vertical.ids2-slider__large .ids2-slider__track-range {
+    width: 16px;
+    border-radius: 8px;
+}
+
 /*
     Horizontal Slider
  */
@@ -134,6 +153,7 @@
     user-select: none;   /* 드래그 시 텍스트가 선택되지 않도록 방지 */
 }
 
+
 /* 슬라이더 트랙 */
 .ids2-slider.ids2-slide__horizontal .ids2-slider__track {
     position: absolute;
@@ -144,6 +164,14 @@
     height: 4px;
     border-radius: 2px;
     background-color: #E1E3EA;
+}
+/* 슬라이더 트랙 */
+.ids2-slider.ids2-slide__horizontal .ids2-slider__track .ids2-slider__track-snap {
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: #ffffff;
+    z-index: 3;
 }
 
 /* 슬라이더 핸들(드래그할 부분) */
@@ -219,4 +247,29 @@
     font-size: 14px;
     font-weight: 500;
     color: #737684;
+}
+
+/* 슬라이더 컨테이너 */
+.ids2-slider.ids2-slide__horizontal.ids2-slider__large {
+    position: relative;
+    width: 282px;         /* 컨테이너 너비 */
+    height: 40px;       /* 컨테이너 높이 */
+    margin: 20px;
+    display: inline-block;
+    user-select: none;   /* 드래그 시 텍스트가 선택되지 않도록 방지 */
+}
+
+/* 슬라이더 트랙 */
+.ids2-slider.ids2-slide__horizontal.ids2-slider__large .ids2-slider__track {
+    height: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* 슬라이더 트랙 */
+.ids2-slider.ids2-slide__horizontal.ids2-slider__large .ids2-slider__track-range {
+    height: 16px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding-left: 5px;
 }
