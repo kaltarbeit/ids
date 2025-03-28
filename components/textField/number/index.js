@@ -7,6 +7,7 @@ export const createTextField = () => {
 
     const textField = wrapper.querySelector('.ids2-text-field');
     const textFieldInput = wrapper.querySelector('.ids2-text-field input');
+    const clearButton = wrapper.querySelector('.ids2-text-field .ids2-input-clear');
 
     textFieldInput.addEventListener('input', (e) => {
 
@@ -15,6 +16,12 @@ export const createTextField = () => {
         count > 0 ? textField.classList.add('ids2-text-field-filled') : textField.classList.remove('ids2-text-field-filled');
 
         textFieldInput.value =  formattedValue;
+    });
+
+    clearButton.addEventListener('click', () => {
+        textFieldInput.value = '';
+        textField.classList.remove('ids2-text-field-filled');
+        textFieldInput.focus();
     });
 
     return wrapper.firstElementChild;

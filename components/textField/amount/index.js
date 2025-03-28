@@ -7,8 +7,8 @@ export const createTextField = () => {
 
     const amountField = wrapper.querySelector('.ids2-text-field-amount');
     const amountFieldInput = wrapper.querySelector('.ids2-text-field-amount input');
-    const amountNote = wrapper.querySelector('.ids2-text-field-amount-note');
     const clearButton = wrapper.querySelector('.ids2-text-field-amount .ids2-input-clear');
+    const amountNote = wrapper.querySelector('.ids2-text-field-amount-note');
     const numberTexts = ["", "일", "이", "삼", "사","오","육","칠","팔","구","십"];
     const digitTexts = ["", "십", "백", "천", "", "십", "백", "천", "", "십", "백", "천", "", "십", "백", "천"];
 
