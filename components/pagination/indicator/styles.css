@@ -13,9 +13,10 @@
 .ids2-indicator-dot-item {
     width: 6px;
     height: 6px;
-    border-radius: 50%;
+    border-radius: 6px;
     border: 1px solid #737684;
-    transition: background-color 0.3s ease, width 0.3s ease;
+    cursor: pointer;
+    transition: width 0.3s ease;
 }
 
 .ids2-indicator-dot-item.active {
