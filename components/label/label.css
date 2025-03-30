@@ -29,6 +29,16 @@
     color: #fff;
 }
 
+.ids2-label.ids2-label-black {
+    background-color: #0D1B40;
+    color: #fff;
+}
+
+.ids2-label.ids2-label-violet {
+    background-color: #616DD6;
+    color: #fff;
+}
+
 .ids2-label.ids2-label-ad.ids2-label-fill-gray {
     background-color: #D3D6DE;
     color: #454855;

@@ -1,5 +1,4 @@
 .ids2-dropdown-example {
-    height: 300px;
 }
 
 .ids2-dropdown {
@@ -14,7 +13,9 @@
     line-height: 18px;
     padding-left: 4px;
 }
-.ids2-dropdown-container {
+
+
+.ids2-dropdown .ids2-dropdown-container {
     display: flex;
     align-items: center;
     position: relative;
@@ -25,7 +26,7 @@
     cursor: pointer;
     box-sizing: border-box;
 }
-.ids2-dropdown-button {
+.ids2-dropdown .ids2-dropdown-button {
     appearance: none;
     border: none;
     outline: none;
@@ -39,7 +40,7 @@
     line-height: 22px;
     cursor: pointer;
 }
-.ids2-dropdown-container::after {
+.ids2-dropdown .ids2-dropdown-container::after {
     content: " ";
     position: absolute;
     right: 15px;
@@ -48,6 +49,52 @@
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='8' viewBox='0 0 16 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.82515 0.20015C1.05946 -0.0341646 1.43936 -0.0341646 1.67368 0.20015L7.99941 6.52589L14.3251 0.20015C14.5595 -0.0341646 14.9394 -0.0341646 15.1737 0.20015C15.408 0.434465 15.408 0.814364 15.1737 1.04868L8.42368 7.79868C8.18936 8.03299 7.80946 8.03299 7.57515 7.79868L0.82515 1.04868C0.590835 0.814364 0.590835 0.434465 0.82515 0.20015Z' fill='%23101116'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     background-position: center;
+}
+
+
+.ids2-dropdown.ids2-dropdown-sm .ids2-dropdown-container {
+    padding: 12px 42px 12px 16px;
+    border-radius: 6px;
+}
+.ids2-dropdown.ids2-dropdown-sm .ids2-dropdown-button {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.ids2-dropdown.ids2-dropdown-xs {
+    display: inline-flex;
+}
+
+.ids2-dropdown.ids2-dropdown-text .ids2-dropdown-button {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.ids2-dropdown.ids2-dropdown-text .ids2-dropdown-container {
+    padding: 0 26px 0 0;
+    border: none;
+}
+.ids2-dropdown.ids2-dropdown-text .ids2-dropdown-container:after {
+    right: 0;
+}
+
+.ids2-dropdown.ids2-dropdown-text.ids2-dropdown-sm {
+
+}
+
+.ids2-dropdown.ids2-dropdown-xs .ids2-dropdown-container {
+    padding: 7px 24px 7px 12px;
+    border-radius: 6px;
+}
+.ids2-dropdown.ids2-dropdown-xs .ids2-dropdown-container:after {
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.216767 0.466767C0.372976 0.310557 0.626242 0.310557 0.782452 0.466767L4.99961 4.68392L9.21677 0.466767C9.37298 0.310557 9.62624 0.310557 9.78245 0.466767C9.93866 0.622976 9.93866 0.876242 9.78245 1.03245L5.28245 5.53245C5.12624 5.68866 4.87298 5.68866 4.71677 5.53245L0.216767 1.03245C0.0605569 0.876242 0.0605569 0.622976 0.216767 0.466767Z' fill='%23101116'/%3E%3C/svg%3E%0A");
+    right: 8px;
+    width: 12px;
+    height: 12px;
+}
+.ids2-dropdown.ids2-dropdown-xs .ids2-dropdown-button {
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .ids2-dropdown-list {
@@ -88,4 +135,106 @@
 .ids2-dropdown.ids2-dropdown-selected .ids2-dropdown-button {
     color: #101116;
     font-weight: 700;
+}
+
+.ids2-dropdown-button .ids2-dropdown-bank-title {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: #737684;
+}
+
+.ids2-dropdown-button .ids2-dropdown-bank-account {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #101116;
+    padding: 0;
+    margin: 8px 0 0;
+}
+
+.ids2-dropdown-bank-icon .ids2-dropdown-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.ids2-dropdown-bank-icon .ids2-bank-icon-dropdown-icon {
+    padding-top: 7px;
+}
+
+
+
+.ids2-bank-icon-dropdown .ids2-dropdown-bank-title {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: #737684;
+}
+
+.ids2-dropdown-bank-icon .ids2-dropdown-container {
+    border: none;
+}
+
+.ids2-dropdown-bank-icon .ids2-dropdown-container:after {
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.419398 1.04464C0.601643 0.862398 0.89712 0.862398 1.07936 1.04464L5.99938 5.96466L10.9194 1.04464C11.1016 0.862398 11.3971 0.862398 11.5794 1.04464C11.7616 1.22689 11.7616 1.52236 11.5794 1.70461L6.32937 6.95461C6.14712 7.13685 5.85164 7.13685 5.6694 6.95461L0.419398 1.70461C0.237154 1.52236 0.237154 1.22689 0.419398 1.04464Z' fill='%23101116'/%3E%3C/svg%3E%0A");
+}
+
+.ids2-dropdown-bank-icon .ids2-dropdown-bank-account-alias {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #101116;
+}
+
+.ids2-dropdown-bank-icon .ids2-dropdown-bank-account-alias .ids2-icon {
+    margin-bottom: 1px;
+}
+
+.ids2-dropdown-bank-icon .ids2-dropdown-bank-account {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #737684;
+    padding: 0;
+    margin: 4px 0 0;
+}
+
+.ids2-dropdown-bank-icon .ids2-dropdown-bank-balance {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #737684;
+    padding: 0;
+    margin: 0;
+}
+
+.ids2-dropdown-bank-icon .ids2-dropdown-bank-account .ids2-dropdown-bank-account-spacer {
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #C5C8D3;
 }
