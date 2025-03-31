@@ -1,4 +1,6 @@
-.ids2-dropdown-example {
+.ids2-dropdown-examples {
+    display: flex;
+    justify-content: center;
 }
 
 .ids2-dropdown {

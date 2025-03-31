@@ -1,7 +1,18 @@
+.ids2-tab-examples {
+    display: flex;
+    flex-direction: column;
+    min-width: 375px;
+    width: 100%;
+}
+
 .ids2-tab-example {
     display: flex;
     flex-direction: column;
     gap: 48px;
+    background-color: #E1E3EA;
+    padding: 24px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .ids2-tab {
@@ -9,8 +20,10 @@
     justify-content: space-around;
     background: white;
 }
+
 .ids2-tab-item {
     width: 25%;
+    box-sizing: border-box;
     font-size: 18px;
     font-weight: 500;
     color: #737684;
@@ -19,13 +32,39 @@
     cursor: pointer;
     text-align: center;
     vertical-align: middle;
-    border-bottom: 1px solid #E1E3EA;
     line-height: 24px;
     margin: 0;
+    white-space: nowrap;
 }
-.ids2-tab-item.active {
+.ids2-tab-item.ids2-tab-item-active {
     color: #101116;
     font-weight: 700;
-    padding: 16px 12px 12px;
+    padding: 16px 12px 13px;
     border-bottom: 3px solid #101116;
+}
+
+.ids2-tab-overflow {
+    display: block;
+    overflow: scroll;
+    height: 58px;
+}
+
+.ids2-tab-overflow .ids2-tab {
+    display: block;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.ids2-tab-overflow .ids2-tab-item {
+    display: block;
+    width: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    float: left;
+    box-sizing: border-box;
+}
+
+.ids2-tab-overflow::-webkit-scrollbar {
+    display: none;
 }

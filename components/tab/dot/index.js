@@ -32,7 +32,7 @@ export const createTab = () => {
                 totalWidth += overflowItem.getBoundingClientRect().width;
             });
 
-            tab.style.width = Math.ceil(totalWidth)+'px';
+            tab.style.width = totalWidth+'px';
         });
     }, 100);
 
