@@ -54,7 +54,8 @@
     box-sizing: border-box;
 }
 
-.ids2-text-field.ids2-text-field-amount .ids2-text-field-input {
+.ids2-text-field.ids2-text-field-amount .ids2-text-field-input,
+.ids2-text-field.ids2-text-field-currency .ids2-text-field-input {
     text-align: right;
 }
 
