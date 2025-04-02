@@ -50,17 +50,23 @@
 }
 
 /* 슬라이더 핸들(드래그할 부분) */
-.ids2-slider.ids2-slider__vertical .ids2-slider__handle {
+.ids2-slider .ids2-slider__handle,
+.ids2-slider .ids2-slider__handle-min {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     width: 24px;
     height: 24px;
     border: 3px solid #2873E3;
     border-radius: 50%;
     cursor: pointer;
     box-sizing: border-box;
-    background-color: #fff;
+    background-color: #ffffff;
+}
+
+/* 슬라이더 핸들(드래그할 부분) */
+.ids2-slider.ids2-slider__vertical .ids2-slider__handle,
+.ids2-slider.ids2-slider__vertical .ids2-slider__handle-min {
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .ids2-slider.ids2-slider__vertical .ids2-slider__track-range {
@@ -75,11 +81,12 @@
 }
 
 /* 툴팁 */
-.ids2-slider.ids2-slider__vertical .ids2-slider__tooltip {
+.ids2-slider .ids2-slider__handle .ids2-slider__tooltip,
+.ids2-slider .ids2-slider__handle-min .ids2-slider__tooltip {
     position: absolute;
+    display: none;
     left: 0;
-    top: 0;
-    transform: translateX(-100%); /* 핸들의 왼쪽에 툴팁이 오도록 조정 */
+    transform: translate(calc(-100% - 12px), -5px); /* 핸들의 왼쪽에 툴팁이 오도록 조정 */
     background-color: #4D4D4D;
     color: #fff;
     padding: 6px 8px;
@@ -88,6 +95,12 @@
     pointer-events: none; /* 툴팁 자체는 클릭 불가 */
     margin-top: -2px;
     font-size: 12px;
+}
+
+/* 툴팁 */
+.ids2-slider .ids2-slider__handle:hover .ids2-slider__tooltip,
+.ids2-slider .ids2-slider__handle-min:hover .ids2-slider__tooltip {
+    display: block;
 }
 
 .ids2-slider.ids2-slider__vertical .ids2-slider__tooltip:after {
@@ -175,17 +188,9 @@
 }
 
 /* 슬라이더 핸들(드래그할 부분) */
-.ids2-slider.ids2-slide__horizontal .ids2-slider__handle {
-    position: absolute;
+.ids2-slider.ids2-slide__horizontal .ids2-slider__handle, .ids2-slider.ids2-slide__horizontal .ids2-slider__handle-min {
     top: 50%;
-    transform: translateY(-50%);
-    width: 24px;
-    height: 24px;
-    border: 3px solid #2873E3;
-    border-radius: 50%;
-    cursor: pointer;
-    box-sizing: border-box;
-    background-color: #fff;
+    transform: translate(-50%, -50%);
 }
 
 .ids2-slider.ids2-slide__horizontal .ids2-slider__track-range {
@@ -200,20 +205,9 @@
 }
 
 /* 툴팁 */
-.ids2-slider.ids2-slide__horizontal .ids2-slider__tooltip {
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translateY(-100%); /* 핸들의 왼쪽에 툴팁이 오도록 조정 */
-    background-color: #4D4D4D;
-    color: #fff;
-    padding: 6px 8px;
-    border-radius: 4px;
-    white-space: nowrap;
-    pointer-events: none; /* 툴팁 자체는 클릭 불가 */
-    margin-top: -5px;
-    margin-left: -12px;
-    font-size: 12px;
+.ids2-slider.ids2-slide__horizontal .ids2-slider__handle .ids2-slider__tooltip,
+.ids2-slider.ids2-slide__horizontal .ids2-slider__handle-min .ids2-slider__tooltip {
+    transform: translate(calc(-50% + 8px), calc(-100% - 10px)); /* 핸들의 왼쪽에 툴팁이 오도록 조정 */
 }
 
 

@@ -18,7 +18,6 @@ export const createSlider = () => {
      */
     function updateSliderPosition(slider, value) {
         const handle = slider.querySelector('.ids2-slider__handle');
-        const tooltip = slider.querySelector('.ids2-slider__tooltip');
         const trackRange = slider.querySelector('.ids2-slider__track-range');
 
         const isVertical = slider.classList.contains('ids2-slider__vertical');
@@ -27,7 +26,7 @@ export const createSlider = () => {
         if (value < MIN_VALUE) value = MIN_VALUE;
         if (value > MAX_VALUE) value = MAX_VALUE;
 
-        slider.dataset.value = value;
+        slider.dataset.value = isVertical ? value : MAX_VALUE - value;
 
         // 0~1 사이 비율(ratio) 계산
         const ratio = (value - MIN_VALUE) / (MAX_VALUE - MIN_VALUE);
@@ -36,9 +35,9 @@ export const createSlider = () => {
         let sliderPos;
 
         if(isVertical)
-            sliderPos = slider.clientHeight - handle.offsetHeight;
+            sliderPos = slider.clientHeight;
         else
-            sliderPos = slider.clientWidth - handle.offsetWidth;
+            sliderPos = slider.clientWidth;
 
         // (비율이 1일 때 맨 위, 0일 때 맨 아래가 되도록)
         // 세로 방향 위치를 반전하여 계산
@@ -46,11 +45,9 @@ export const createSlider = () => {
 
         if(isVertical) {
             handle.style.top = handlePos + 'px';
-            tooltip.style.top = handle.style.top;
             trackRange.style.top = handle.style.top;
         } else {
             handle.style.left = handlePos + 'px';
-            tooltip.style.left = handle.style.left;
             trackRange.style.width = handle.style.left;
         }
     }
@@ -75,8 +72,6 @@ export const createSlider = () => {
 
         if (!isDragging || !currentSlider) return;
 
-        const handle = currentSlider.querySelector('.ids2-slider__handle');
-
         const isVertical = currentSlider.classList.contains('ids2-slider__vertical');
         const isSnap = currentSlider.classList.contains('ids2-slider__snap');
 
@@ -88,10 +83,10 @@ export const createSlider = () => {
         let offset;
 
         if(isVertical) {
-            sliderPos = currentSlider.clientHeight - handle.offsetHeight;
+            sliderPos = currentSlider.clientHeight;
             offset = e.clientY - rect.top;
         } else {
-            sliderPos = currentSlider.clientWidth - handle.offsetWidth;
+            sliderPos = currentSlider.clientWidth;
             offset = e.clientX - rect.left;
         }
 
@@ -106,13 +101,15 @@ export const createSlider = () => {
 
         if(isSnap) {
 
-            const steps = [0, 6.78, 15.89, 25, 34.10, 43, 50];
+            const steps = [0, 8, 17, 25, 33, 42, 50];
 
             const step = steps.find(step => (
                 value >= (step - 1) && value < (step + 1)
             ));
 
-            updateSliderPosition(currentSlider, step);
+            if(!isNaN(step)) {
+                updateSliderPosition(currentSlider, step);
+            }
         } else {
             updateSliderPosition(currentSlider, value);
         }
@@ -128,61 +125,14 @@ export const createSlider = () => {
         document.removeEventListener('mouseup', e => onMouseUp(e));
     }
 
-    /**
-     * 마우스 뗐을 때 (드래그 종료)
-     */
-    function onMouseHover(slider) {
-        const tooltip = slider.querySelector('.ids2-slider__tooltip');
-        tooltip.style.display = 'block';
-    }
-
-    /**
-     * 마우스 뗐을 때 (드래그 종료)
-     */
-    function onMouseLeave(slider) {
-        if(isDragging) return;
-        const tooltip = slider.querySelector('.ids2-slider__tooltip');
-        tooltip.style.display = 'none';
-    }
-
     setTimeout(() => {
 
         sliders.forEach(slider => {
 
             const handle = slider.querySelector('.ids2-slider__handle');
 
-            const isVertical = slider.classList.contains('ids2-slider__vertical');
-
             // 핸들에 마우스 이벤트 연결
             handle.addEventListener('mousedown', () => onMouseDown(slider));
-            handle.addEventListener('mouseenter', () => onMouseHover(slider));
-            handle.addEventListener('mouseleave', () => onMouseLeave(slider));
-
-            // 슬라이더 트랙 아무 곳이나 클릭했을 때도 핸들이 해당 위치로 이동하도록 설정
-            slider.addEventListener('click', (e) => {
-                // 이미 핸들을 클릭했다면(드래그 시작 시) 따로 처리할 필요 없음
-                if (e.target === handle) return;
-
-                const rect = slider.getBoundingClientRect();
-
-
-                let sliderPos;
-                let offset;
-
-                if(isVertical) {
-                    sliderPos = slider.clientHeight - handle.offsetHeight;
-                    offset = e.clientY - rect.top;
-                } else {
-                    sliderPos = slider.clientWidth - handle.offsetWidth;
-                    offset = e.clientX - rect.left;
-                }
-
-                let ratio = offset / sliderPos;
-                ratio = 1 - ratio;
-
-                const value = MIN_VALUE + ratio * (MAX_VALUE - MIN_VALUE);
-                updateSliderPosition(slider, value);
-            });
 
             // 초기 위치 설정
             updateSliderPosition(slider, Number(slider.dataset.value));

@@ -9,6 +9,7 @@ export const createSlider = () => {
     const MAX_VALUE = 50;
 
     let currentSlider;
+    let isBetweenMin = false;
 
     // 요소 참조
     const sliders = wrapper.querySelectorAll('.ids2-slider');
@@ -16,8 +17,9 @@ export const createSlider = () => {
     /**
      * 슬라이더 위치와 툴팁을 갱신하는 함수
      */
-    function updateSliderPosition(slider, value) {
-        const handle = slider.querySelector('.ids2-slider__handle');
+    function updateSliderPosition(slider, value, isMin = false) {
+        const handleMax = slider.querySelector('.ids2-slider__handle');
+        const handleMin = slider.querySelector('.ids2-slider__handle-min');
         const trackRange = slider.querySelector('.ids2-slider__track-range');
 
         const isVertical = slider.classList.contains('ids2-slider__vertical');
@@ -26,7 +28,11 @@ export const createSlider = () => {
         if (value < MIN_VALUE) value = MIN_VALUE;
         if (value > MAX_VALUE) value = MAX_VALUE;
 
-        slider.dataset.value = isVertical ? value : MAX_VALUE - value;
+        if(isMin) {
+            slider.dataset.minValue = isVertical ? value : MAX_VALUE - value;
+        } else {
+            slider.dataset.value = isVertical ? value : MAX_VALUE - value;
+        }
 
         // 0~1 사이 비율(ratio) 계산
         const ratio = (value - MIN_VALUE) / (MAX_VALUE - MIN_VALUE);
@@ -44,11 +50,21 @@ export const createSlider = () => {
         const handlePos = sliderPos - (sliderPos * ratio);
 
         if(isVertical) {
-            handle.style.top = handlePos + 'px';
-            trackRange.style.top = handle.style.top;
+            if(isMin) {
+                handleMin.style.top = handlePos + 'px';
+                trackRange.style.bottom = sliderPos - handlePos + 'px';
+            } else {
+                handleMax.style.top = handlePos + 'px';
+                trackRange.style.top = handleMax.style.top;
+            }
         } else {
-            handle.style.left = handlePos + 'px';
-            trackRange.style.width = handle.style.left;
+            if(isMin) {
+                handleMin.style.left = handlePos + 'px';
+                trackRange.style.left = handlePos + 'px';
+            } else {
+                handleMax.style.left = handlePos + 'px';
+                trackRange.style.right = sliderPos - handlePos + 'px';
+            }
         }
     }
 
@@ -58,9 +74,10 @@ export const createSlider = () => {
     /**
      * 마우스 눌렀을 때 (드래그 시작)
      */
-    function onMouseDown(slider) {
+    function onMouseDown(slider, isMin = false) {
         isDragging = true;
         currentSlider = slider;
+        isBetweenMin = isMin;
         document.addEventListener('mousemove', onMouseMove);
         document.addEventListener('mouseup', onMouseUp);
     }
@@ -108,10 +125,41 @@ export const createSlider = () => {
             ));
 
             if(!isNaN(step)) {
-                updateSliderPosition(currentSlider, step);
+                if(isVertical) {
+                    if(isBetweenMin) {
+                        if(step > Number(currentSlider.dataset.value) - 5) return;
+                    } else {
+                        if(step < Number(currentSlider.dataset.minValue) + 5) return;
+                    }
+                } else {
+                    const currentValue = MAX_VALUE - step;
+                    if(isBetweenMin) {
+                        if(currentValue > Number(currentSlider.dataset.value) - 5) return;
+                    } else {
+                        if(currentValue < Number(currentSlider.dataset.minValue) + 5) return;
+                    }
+                }
+
+                updateSliderPosition(currentSlider, step, isBetweenMin);
             }
         } else {
-            updateSliderPosition(currentSlider, value);
+
+            if(isVertical) {
+                if(isBetweenMin) {
+                    if(value > Number(currentSlider.dataset.value) - 5) return;
+                } else {
+                    if(value < Number(currentSlider.dataset.minValue) + 5) return;
+                }
+            } else {
+                const currentValue = MAX_VALUE - value;
+                if(isBetweenMin) {
+                    if(currentValue > Number(currentSlider.dataset.value) - 5) return;
+                } else {
+                    if(currentValue < Number(currentSlider.dataset.minValue) + 5) return;
+                }
+            }
+
+            updateSliderPosition(currentSlider, value, isBetweenMin);
         }
     }
 
@@ -126,14 +174,28 @@ export const createSlider = () => {
     }
 
     setTimeout(() => {
+
         sliders.forEach(slider => {
+
             const handle = slider.querySelector('.ids2-slider__handle');
+            const handleMin = slider.querySelector('.ids2-slider__handle-min');
+
+            const isVertical = slider.classList.contains('ids2-slider__vertical');
 
             // 핸들에 마우스 이벤트 연결
             handle.addEventListener('mousedown', () => onMouseDown(slider));
 
+            // 핸들에 마우스 이벤트 연결
+            handleMin.addEventListener('mousedown', () => onMouseDown(slider, true));
+
             // 초기 위치 설정
-            updateSliderPosition(slider, MAX_VALUE - Number(slider.dataset.value));
+            if(isVertical) {
+                updateSliderPosition(slider, Number(slider.dataset.value));
+                updateSliderPosition(slider, Number(slider.dataset.minValue), true);
+            } else {
+                updateSliderPosition(slider, MAX_VALUE - Number(slider.dataset.value));
+                updateSliderPosition(slider, MAX_VALUE - Number(slider.dataset.minValue), true);
+            }
         });
     }, 10);
 
