@@ -26,6 +26,7 @@ export const createPagination = () => {
         pageNumber.type = 'button';
         pageNumber.innerText = page;
         pageNumber.classList.add('ids2-pagination-number');
+        pageNumber.classList.add('ids2-pagination-button');
         if(page === currentPage) {
             pageNumber.classList.add('ids2-pagination-number-active');
         }
@@ -42,6 +43,7 @@ export const createPagination = () => {
         moreButton.type = 'button';
         moreButton.innerText = '...';
         moreButton.classList.add('ids2-pagination-ellipsis');
+        moreButton.classList.add('ids2-pagination-button');
 
         moreButton.addEventListener('click', () => {
             changePage(page);
