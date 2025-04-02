@@ -125,6 +125,13 @@
     width: 100%;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 
 
 .ids2-text-field.ids2-input-top-search .ids2-text-field-input {
@@ -407,6 +414,6 @@
     display: none;
 }
 
-.ids2-text-field.ids2-input-auth-time:has(.ids2-text-field-input:focus) .ids2-input-function {
+.ids2-text-field.ids2-input-auth-time.ids2-text-field-focused .ids2-input-function {
     display: flex;
 }

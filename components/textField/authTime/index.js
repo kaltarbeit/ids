@@ -10,6 +10,17 @@ export const createTextField = () => {
     const clearButton = wrapper.querySelector('.ids2-text-field .ids2-input-clear');
     const counter = wrapper.querySelector('.ids2-text-field-counter');
 
+
+    textFieldInput.addEventListener('focus', () => {
+        textField.classList.add('ids2-text-field-focused');
+    });
+
+    textFieldInput.addEventListener('blur', () => {
+        if(textFieldInput.value.length === 0) {
+            textField.classList.remove('ids2-text-field-focused');
+        }
+    });
+
     textFieldInput.addEventListener('input', (e) => {
         const count = e.target.value.length;
         count > 0 ? textField.classList.add('ids2-text-field-filled') : textField.classList.remove('ids2-text-field-filled');
