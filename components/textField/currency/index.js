@@ -14,7 +14,8 @@ export const createTextField = () => {
     });
 
     textField.addEventListener('input', (e) => {
-        e.target.value = (Number(e.target.value.replace(/\D/g, "")) / 100).toFixed(2);
+        const amounts = String((Number(e.target.value.replace(/\D/g, "")) / 100).toFixed(2)).split('.');
+        e.target.value = amounts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "." + amounts[1];
     });
 
     return wrapper.firstElementChild;
