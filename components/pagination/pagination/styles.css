@@ -8,9 +8,17 @@
 
 .ids2-pagination {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 8px;
-    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.ids2-pagination-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
     font-size: 14px;
 }
 
@@ -67,6 +75,7 @@
     justify-content: center;
     border: none;
     padding: 0;
+    width: 24px;
     background-color: transparent;
     cursor: pointer;
 }
