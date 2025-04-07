@@ -6,6 +6,7 @@
 
 .ids2-accordion-example {
     width: 50%;
+    min-width: 320px;
 }
 
 .ids2-accordion-card {

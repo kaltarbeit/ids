@@ -74,6 +74,10 @@
     padding-right: 68px;
 }
 
+.ids2-text-field-currency.ids2-text-field-filled .ids2-text-field-input {
+    padding-right: 48px;
+}
+
 
 .ids2-text-field.ids2-text-field-date .ids2-text-field-container:after {
     content: ' ';
