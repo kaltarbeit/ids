@@ -5,31 +5,34 @@ export const createTextField = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const textField = wrapper.querySelector('.ids2-text-field');
-    const textFieldInput = wrapper.querySelector('.ids2-text-field input');
-    const clearButton = wrapper.querySelector('.ids2-text-field .ids2-input-clear');
-    const counter = wrapper.querySelector('.ids2-text-field-counter');
+    const textFields = wrapper.querySelectorAll('.ids2-text-field');
 
-    textFieldInput.addEventListener('input', (e) => {
-        const count = e.target.value.length;
-        count > 0 ? textField.classList.add('ids2-text-field-filled') : textField.classList.remove('ids2-text-field-filled');
+    textFields.forEach((el) => {
+        const textFieldInput = el.querySelector('.ids2-text-field input');
+        const clearButton = el.querySelector('.ids2-text-field .ids2-input-clear');
+        const counter = el.querySelector('.ids2-text-field-counter');
+
+        textFieldInput.addEventListener('input', (e) => {
+            const count = e.target.value.length;
+            count > 0 ? el.classList.add('ids2-text-field-filled') : el.classList.remove('ids2-text-field-filled');
+
+            if(counter) {
+                const countWrapper = counter.querySelector('.ids2-text-field-count');
+                countWrapper.textContent = count;
+            }
+        });
+
+        clearButton.addEventListener('click', () => {
+            textFieldInput.value = '';
+            el.classList.remove('ids2-text-field-filled');
+            textFieldInput.focus();
+        });
 
         if(counter) {
-            const countWrapper = counter.querySelector('.ids2-text-field-count');
-            countWrapper.textContent = count;
+            const maxLength = counter.querySelector('.ids2-text-field-maxlength');
+            maxLength.textContent = textFieldInput.maxLength;
         }
     });
-
-    clearButton.addEventListener('click', () => {
-        textFieldInput.value = '';
-        textField.classList.remove('ids2-text-field-filled');
-        textFieldInput.focus();
-    });
-
-    if(counter) {
-        const maxLength = counter.querySelector('.ids2-text-field-maxlength');
-        maxLength.textContent = textFieldInput.maxLength;
-    }
 
     return wrapper.firstElementChild;
 }
