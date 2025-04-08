@@ -13,7 +13,8 @@
     color: #101116;
 }
 
-.ids2-button.ids2-button-primary:active {
+.ids2-button.ids2-button-primary:active,
+.ids2-button.ids2-button-primary-active {
     background-color: #D3D6DE;
     border-color: #C5C8D3;
 }

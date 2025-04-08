@@ -9,8 +9,9 @@
     padding: 0;
     font-size: 16px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 23px;
     color: #30323B;
+    gap: 6px;
 }
 
 .ids2-button.ids2-button-text:disabled {
@@ -23,6 +24,7 @@
     font-size: 14px;
     line-height: 22px;
     height: 18px;
+    gap: 2px;
 }
 
 .ids2-button.ids2-button-text.ids2-button-xs {

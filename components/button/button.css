@@ -2,7 +2,6 @@
 @import "secondary/styles.css";
 @import "tertiary/styles.css";
 @import "text/styles.css";
-@import "fab/styles.css";
 @import "icon/styles.css";
 
 .ids2-button {
@@ -18,9 +17,32 @@
     box-sizing: border-box;
 }
 
+.ids2-button-group-example {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 20px;
+    background-color: #F3F4F7;
+}
+
 .ids2-button-group {
     padding: 10px 20px 24px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #fff;
+}
+
+.ids2-button-group.ids2-button-group-vertical {
+    flex-direction: column;
+}
+
+.ids2-button-icon-example {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 8px;
 }
 
@@ -42,7 +64,29 @@
 .ids2-button-examples {
     display: flex;
     flex-direction: column;
+    gap: 36px;
+}
+
+.ids2-button-example {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
     gap: 24px;
+}
+
+.ids2-button-example-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 46px;
+    padding: 16px;
+}
+
+.ids2-button-example-label label {
+    width: 200px;
+    text-align: center;
+    font-weight: 700;
 }
 
 .ids2-button.ids2-button-full-width {
@@ -59,7 +103,8 @@
     color: #fff;
 }
 
-.ids2-button.ids2-button-fill:active {
+.ids2-button.ids2-button-fill:active,
+.ids2-button.ids2-button-fill.ids2-button-active {
     background-color: #234EAA;
     border-color: transparent;
 }
@@ -68,6 +113,26 @@
     border-color: transparent;
     background-color: #D3D6DE;
     color: #737684;
+}
+
+.ids2-loading-indicator {
+    width: 28px;
+    height: 28px;
+    background-image: url("data:image/svg+xml,%3Csvg width='29' height='28' viewBox='0 0 29 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.2' fill-rule='evenodd' clip-rule='evenodd' d='M14.5 22.4C19.1392 22.4 22.9 18.6392 22.9 14C22.9 9.36081 19.1392 5.6 14.5 5.6C9.86081 5.6 6.1 9.36081 6.1 14C6.1 18.6392 9.86081 22.4 14.5 22.4ZM14.5 24.5C20.299 24.5 25 19.799 25 14C25 8.20101 20.299 3.5 14.5 3.5C8.70101 3.5 4 8.20101 4 14C4 19.799 8.70101 24.5 14.5 24.5Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.4996 5.6C11.3917 5.6 8.67672 7.28726 7.22273 9.80076C6.93236 10.3027 6.29005 10.4743 5.78808 10.1839C5.28612 9.89352 5.11459 9.2512 5.40496 8.74924C7.21887 5.61352 10.6118 3.5 14.4996 3.5C20.2986 3.5 24.9996 8.20101 24.9996 14C24.9996 19.799 20.2986 24.5 14.4996 24.5C13.9197 24.5 13.4496 24.0299 13.4496 23.45C13.4496 22.8701 13.9197 22.4 14.4996 22.4C19.1388 22.4 22.8996 18.6392 22.8996 14C22.8996 9.36081 19.1388 5.6 14.4996 5.6Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: spin 1s linear infinite;
+    font-size: 0;
+    color: transparent;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -93,15 +158,57 @@
     color: #737684;
 }
 
-.ids2-button-icon {
-    font-size: 1px;
-    color: transparent;
+.ids2-button.ids2-button-icon + .ids2-button-label {
+    font-size: 14px;
+    line-height: 18px;
+    color: #5A5E6C;
 }
 
-.ids2-button-icon-only {
-    padding: 0;
-    border-color: transparent;
-    background-color: transparent;
+.ids2-button.ids2-button-secondary.ids2-button-icon {
+    min-width: 48px;
+    height: 48px;
+    background-color: #2873E3;
+    border: transparent;
+    border-radius: 20px;
+    padding: 0 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #30323B;
+}
+
+.ids2-button.ids2-button-primary.ids2-button-icon {
+    min-width: 64px;
     font-size: 1px;
-    color: transparent;
+    padding: 12px 16px;
+}
+
+/**
+    Button Primary Default
+ */
+.ids2-button.ids2-button-fab {
+    min-width: 40px;
+    height: 40px;
+    background-color: #454855;
+    border: transparent;
+    border-radius: 12px;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #ffffff;
+    gap: 4px;
+    box-shadow: 0 10px 34px 0 rgba(0, 0, 0, 0.14);
+}
+
+.ids2-button.ids2-button-fab.ids2-button-sm {
+    background-color: #234EAA;
+}
+
+.ids2-col-1 {
+    width: 33.33%;
+}
+
+.ids2-col-2 {
+    width: 66.66%;
 }

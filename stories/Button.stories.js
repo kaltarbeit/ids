@@ -4,7 +4,7 @@ import {createButton as createButtonTertiary } from '../components/button/tertia
 import {createButton as createButtonText } from '../components/button/text';
 import {createButton as createButtonFAB } from '../components/button/fab';
 import {createButton as createButtonIcon } from '../components/button/icon';
-import {createButton as createButtonDefault } from '../components/button/default';
+import {createButton as createButtonBottom } from '../components/button/bottom';
 import {createButton as createButtonStates } from '../components/button/states';
 
 export default {
@@ -12,12 +12,16 @@ export default {
     tags: ['autodocs'],
 };
 
-export const Default = {
-    render: () => createButtonDefault(),
+export const States = {
+    render: () => createButtonStates(),
 }
 
 export const Primary = {
     render: () => createButtonPrimary(),
+}
+
+export const Bottom = {
+    render: () => createButtonBottom(),
 }
 
 export const Secondary = {
