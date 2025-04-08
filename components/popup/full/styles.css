@@ -4,13 +4,14 @@
     right: 0;
     top: 0;
     height: 100%;
-    transition: top 0.2s ease-in-out;
     background: #ffffff;
     z-index: 1001;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .ids2-popup-full.ids2-popup-full-hide {
-    top: 100%;
+    opacity: 0;
 }
 
 .ids2-popup-navigation {

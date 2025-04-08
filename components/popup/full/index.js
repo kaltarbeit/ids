@@ -20,6 +20,7 @@ export const createPopup = () => {
 
     openButton.addEventListener('click', (e) => {
         backdrop.style.display = 'block';
+        popup.style.display = 'block';
 
         setTimeout(() => {
             popup.classList.remove('ids2-popup-full-hide');
@@ -30,6 +31,11 @@ export const createPopup = () => {
     backdrop.addEventListener('transitionend', () => {
         if(backdrop.classList.contains('ids2-backdrop-hide'))
             backdrop.style.display = 'none';
+    });
+
+    popup.addEventListener('transitionend', () => {
+        if(popup.classList.contains('ids2-popup-full-hide'))
+            popup.style.display = 'none';
     });
 
 

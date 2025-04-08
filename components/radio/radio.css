@@ -9,16 +9,18 @@
 .ids2-radio-group {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 36px;
     font-family: Arial, sans-serif;
+    width: 100%;
 }
 
 .ids2-radio {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     cursor: pointer;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 23px;
     vertical-align: middle;
     color: #333;
 }
@@ -45,6 +47,7 @@
     margin-right: 8px;
     transition: border-color 0.2s ease-in-out;
     box-sizing: border-box;
+    flex-shrink: 0;
 }
 
 .ids2-radio:has(.ids2-radio-input:checked):before {
