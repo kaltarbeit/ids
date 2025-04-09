@@ -269,6 +269,10 @@ input::-webkit-inner-spin-button {
     color: #101116;
 }
 
+.ids2-text-field.ids2-text-field-error .ids2-text-field-counter .ids2-text-field-count {
+    color: #E32502;
+}
+
 .ids2-input-form {
     display: flex;
     flex-direction: column;
