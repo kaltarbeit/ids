@@ -1,5 +1,5 @@
 import { createToggleSwitch } from '../components/toggleSwitch/default';
-import { createToggleSwitch as createToggleSwitchMain } from '../components/toggleSwitch/main';
+import { createToggleSwitch as createToggleSwitchMain } from '../components/toggleSwitch/withLabel';
 
 export default {
     title: 'Components/ToggleSwitch',

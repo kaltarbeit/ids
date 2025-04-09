@@ -150,7 +150,7 @@ input::-webkit-inner-spin-button {
     box-sizing: border-box;
 }
 
-.ids2-text-field.ids2-input-top-search .ids2-top-search-button {
+.ids2-text-field.ids2-input-top-search .ids2-search-button {
     position: absolute;
     top: 50%;
     right: 16px;
