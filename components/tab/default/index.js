@@ -17,7 +17,7 @@ export const createTab = () => {
                 tabItems.forEach(anotherTabItem => {
                     anotherTabItem.classList.remove('ids2-tab-item-active');
                 });
-                tabItem.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
+                tabItem.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
                 tabItem.classList.add('ids2-tab-item-active');
             });
         });
@@ -26,7 +26,7 @@ export const createTab = () => {
 
     setTimeout(() => {
         overflowTabs.forEach(overflowTab => {
-            let totalWidth = 0;
+            let totalWidth = 1;
             const tab = overflowTab.querySelector('.ids2-tab');
             overflowTab.querySelectorAll('.ids2-tab-item').forEach(overflowItem => {
                 totalWidth += overflowItem.getBoundingClientRect().width;
