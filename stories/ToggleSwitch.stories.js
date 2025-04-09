@@ -15,6 +15,6 @@ export const Default = {
     render: () => createToggleSwitch(),
 }
 
-export const Main = {
+export const WithLabel = {
     render: () => createToggleSwitchMain(),
 }
