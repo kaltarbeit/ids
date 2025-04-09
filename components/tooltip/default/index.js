@@ -40,9 +40,7 @@ export const createTooltip = () => {
         }
     }
 
-
     tooltipIcons.forEach((tooltipIcon) => {
-
         const tooltip = wrapper.querySelector(`#${tooltipIcon.dataset.tooltipId}`);
 
         tooltipIcon.addEventListener('click', () => {
@@ -50,18 +48,36 @@ export const createTooltip = () => {
 
             tooltip.style.display = 'block';
 
-
             if(tooltip.className.match(/ids2-tooltip__(top|bottom)-.+/)) {
                 getPositionHorizontalAlign(tooltip, tooltipIcon);
             } else if(tooltip.className.match(/ids2-tooltip__(left|right)-.+/)) {
                 getPositionVerticalAlign(tooltip, tooltipIcon);
             }
+
         });
 
         tooltip.querySelector('.ids2-tooltip__close').addEventListener('click', () => {
             tooltip.style.display = 'none';
         });
-    })
+    });
+
+    setTimeout(() =>{
+        document.body.addEventListener('click', (e) => {
+            let clickedIcon = false;
+
+            tooltipIcons.forEach(tooltipIcon => {
+                if(tooltipIcon.contains(e.target)) clickedIcon = true;
+            });
+
+            if (!clickedIcon) {
+                tooltips.forEach(tooltip => {
+                    if(!tooltip.contains(e.target)) {
+                        tooltip.style.display = 'none';
+                    }
+                });
+            }
+        });
+    }, 100);
 
 
     return wrapper.firstElementChild;

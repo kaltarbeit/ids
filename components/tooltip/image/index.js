@@ -64,5 +64,23 @@ export const createTooltip = () => {
     })
 
 
+    setTimeout(() =>{
+        document.body.addEventListener('click', (e) => {
+            let clickedIcon = false;
+
+            tooltipIcons.forEach(tooltipIcon => {
+                if(tooltipIcon.contains(e.target)) clickedIcon = true;
+            });
+
+            if (!clickedIcon) {
+                tooltips.forEach(tooltip => {
+                    if(!tooltip.contains(e.target)) {
+                        tooltip.style.display = 'none';
+                    }
+                });
+            }
+        });
+    }, 100);
+
     return wrapper.firstElementChild;
 }
