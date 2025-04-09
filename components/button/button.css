@@ -22,6 +22,7 @@
     flex-direction: column;
     gap: 32px;
     padding: 20px;
+    min-width: 380px;
     background-color: #F3F4F7;
 }
 

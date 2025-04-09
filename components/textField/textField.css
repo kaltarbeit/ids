@@ -68,12 +68,9 @@
     line-height: 18px;
     color: #454855;
     margin: 0 4px;
-    vertical-align: middle;
+    min-height: 18px;
 }
 
-.ids2-text-field-label * {
-    vertical-align: middle;
-}
 
 .ids2-text-field .ids2-text-field-label {
     margin-bottom: 8px;
@@ -222,6 +219,7 @@ input::-webkit-inner-spin-button {
 .ids2-text-field .ids2-text-field-functions {
     display: flex;
     justify-content: space-between;
+    min-height: 24px;
 }
 
 .ids2-text-field .ids2-text-field-note {

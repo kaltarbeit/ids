@@ -1,5 +1,11 @@
 @import "full/styles.css";
 
+.ids2-popup-examples {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .ids2-popup-examples-open-button {
     font-size: 18px;
     text-decoration: underline;

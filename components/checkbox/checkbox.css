@@ -106,12 +106,10 @@
 
 .ids2-label-highlight {
     color: #2873E3;
-    vertical-align: middle;
 }
 
 .ids2-label-optional {
     color: #737684;
-    vertical-align: middle;
 }
 
 .ids2-label-highlight:before,
@@ -126,7 +124,6 @@
     color: transparent;
     margin: 0 6px 2px;
     vertical-align: middle;
-
 }
 
 .ids2-text-divider {
