@@ -10,6 +10,15 @@
     min-width: 380px;
 }
 
+.ids2-checkbox-state {
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
 .ids2-checkbox {
     display: flex;
     align-items: center;

@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 48px;
     height: 200px;
+    min-width: 380px;
 }
 
 
@@ -16,12 +17,16 @@
 
 .ids2-toast {
     /* 레이아웃 */
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: absolute;
     left: 50%;
     bottom: 30px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+    min-width: 180px;
 
     background-color: rgba(0, 0, 0, 0.85);
     border-radius: 24px;

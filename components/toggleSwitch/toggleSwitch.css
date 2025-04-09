@@ -1,7 +1,28 @@
-.ids2-toggle-switch-example {
+.ids2-toggle-switch-examples {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 48px;
+    min-width: 380px;
+}
+
+.ids2-toggle-switch-example {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 380px;
+}
+
+.ids2-toggle-switch-state {
+    display: flex;
+    width: 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
 }
 
 /* 전체 컨테이너 (label) */
@@ -28,6 +49,7 @@
     transition: background-color 0.3s;
     margin-left: 6px;           /* 슬라이더와 라벨 사이 간격 */
     box-sizing: border-box;
+    flex-shrink: 0;
 }
 
 /* 토글 슬라이더 */
@@ -123,6 +145,22 @@
 .ids2-toggle .ids2-toggle-input:checked + .ids2-toggle-slider {
     background-color: #4285f4;
     border: 2px solid #4285f4;
+}
+
+/* 체크되었을 때 (ON 상태) */
+.ids2-toggle .ids2-toggle-input:disabled + .ids2-toggle-slider {
+    background-color: #979BAA;
+}
+
+/* 체크되었을 때 (ON 상태) */
+.ids2-toggle .ids2-toggle-input:disabled:checked + .ids2-toggle-slider {
+    background-color: #E1E3EA;
+    border: 2px solid #E1E3EA;
+}
+
+/* 체크되었을 때 (ON 상태) */
+.ids2-toggle .ids2-toggle-input:disabled:checked + .ids2-toggle-slider:before {
+    background-color: #454855;
 }
 
 /* 체크되었을 때 (ON 상태) */

@@ -4,6 +4,7 @@
     padding: 24px 20px 20px;
     box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.06);
     box-sizing: border-box;
+    width: 100%;
 }
 
 .ids2-card-blur {
