@@ -83,7 +83,7 @@
     padding: 16px;
 }
 
-.ids2-button-example-label label {
+.ids2-button-example-label > label {
     width: 200px;
     text-align: center;
     font-weight: 700;

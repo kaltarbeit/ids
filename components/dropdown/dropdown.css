@@ -1,6 +1,31 @@
 .ids2-dropdown-examples {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+}
+
+.ids2-dropdown-example-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 46px;
+    padding: 16px;
+    width: 100%;
+}
+
+.ids2-dropdown-example-label .ids2-dropdown {
+    width: 100%;
+    text-align: left;
+}
+
+.ids2-dropdown-example-label > label {
+    display: block;
+    width: 200px;
+    text-align: center;
+    font-weight: 700;
 }
 
 .ids2-dropdown {
@@ -136,7 +161,11 @@
 
 .ids2-dropdown.ids2-dropdown-selected .ids2-dropdown-button {
     color: #101116;
-    font-weight: 700;
+    font-weight: 500;
+}
+
+.ids2-dropdown:has(.ids2-dropdown-button:disabled) .ids2-dropdown-container {
+    background-color: #F3F4F7;
 }
 
 .ids2-dropdown-button .ids2-dropdown-bank-title {

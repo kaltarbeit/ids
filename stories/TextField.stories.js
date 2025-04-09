@@ -24,11 +24,16 @@ import { createTextField as createTextFieldSecretCard } from '../components/text
 import { createTextField as createTextFieldLine } from '../components/textField/line';
 import { createTextField as createTextFieldLineLarge } from '../components/textField/lineLarge';
 import { createTextField as createTextFieldLineSearch } from '../components/textField/lineSearch';
+import { createTextField as createTextFieldLineStates } from '../components/textField/states';
 
 export default {
     title: 'Components/TextField',
     tags: ['autodocs'],
 };
+
+export const States = {
+    render: () => createTextFieldLineStates(),
+}
 
 export const Default = {
     render: () => createTextFieldDefault(),

@@ -1,7 +1,31 @@
 @import "authCode/styles.css";
 @import "secretCard/styles.css";
 
+.ids2-text-field-examples {
+    display: flex;
+    gap: 48px 2%;
+    margin-top: 16px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ids2-text-field-state-example {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    width: 48%;
+    text-align: center;
+}
+
+.ids2-text-field-state-example > label {
+    display: inline-block;
+    padding-top: 24px;
+    font-weight: 700;
+}
+
 .ids2-text-field {
+    text-align: left;
     position: relative;
 }
 
@@ -18,9 +42,23 @@
     box-sizing: border-box;
 }
 
-.ids2-text-field .ids2-text-field-container:has(.ids2-text-field-input:focus) {
+.ids2-text-field .ids2-text-field-container:has(.ids2-text-field-input:focus),
+.ids2-text-field.ids2-text-field-focused .ids2-text-field-container {
     outline: none;
     border: 1px solid #30323B;
+}
+
+.ids2-text-field .ids2-text-field-container:has(.ids2-text-field-input:disabled) {
+    background: #F3F4F7;
+    border: 1px solid #C5C8D3;
+}
+
+.ids2-text-field .ids2-text-field-input:disabled {
+    color: #737684;
+}
+
+.ids2-text-field.ids2-text-field-error .ids2-text-field-container {
+    border: 1px solid #E32502;
 }
 
 .ids2-text-field-label {
@@ -114,6 +152,26 @@
     display: none;
 }
 
+.ids2-text-field .ids2-input-success {
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    appearance: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.ids2-text-field.ids2-text-field-success .ids2-input-success {
+    display: block;
+}
+
 .ids2-text-field.ids2-text-field-filled .ids2-input-clear {
     display: block;
 }
@@ -171,6 +229,22 @@ input::-webkit-inner-spin-button {
     font-weight: 700;
     line-height: 16px;
     color: #737684;
+    margin: 4px;
+}
+
+.ids2-text-field .ids2-text-field-error-note {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #E32502;
+    margin: 4px;
+}
+
+.ids2-text-field .ids2-text-field-success-note {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #158463;
     margin: 4px;
 }
 
