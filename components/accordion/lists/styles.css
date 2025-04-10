@@ -28,7 +28,7 @@
     transition: transform 0.3s cubic-bezier(.7,.2,.9,.6);
 }
 .ids2-accordion-list .ids2-accordion-item[open] .ids2-arrow {
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
 }
 .ids2-accordion-list .ids2-accordion-details {
     height: 0;

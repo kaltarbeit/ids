@@ -41,7 +41,7 @@
     justify-content: right;
 }
 .ids2-accordion-card .ids2-accordion-item[open] .ids2-arrow {
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
 }
 .ids2-accordion-card .ids2-accordion-details {
     height: 0;
