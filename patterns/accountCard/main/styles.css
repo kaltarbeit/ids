@@ -1,0 +1,165 @@
+.ids2-account-card-example {
+    min-width: 375px;
+}
+
+/**********************************************
+ * 계좌 카드 전체 컨테이너
+ **********************************************/
+.ids2-account-card {
+    width: 100%;                 /* 필요에 따라 너비 조정 */
+    color: #FFFFFF;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ids2-account-card-body {
+    padding: 20px 20px 2px;
+    background-color: #1654D1;    /* 파란색 계열 배경 */
+}
+
+/**********************************************
+ * 하단 버튼 (거래내역 닫기)
+ **********************************************/
+.ids2-account-card-footer {
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: #0040A4;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/**********************************************
+ * 카드 상단 영역 (제목, 메뉴 버튼)
+ **********************************************/
+.ids2-account-card-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ids2-account-card-title {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.ids2-account-card-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+/**********************************************
+ * 계좌번호, 잔액
+ **********************************************/
+.ids2-account-card-number {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 4px;
+}
+
+.ids2-account-card-number svg {
+    vertical-align: middle;
+    padding-bottom: 2px;
+}
+
+.ids2-account-card-balance {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.ids2-account-card-balance-won {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+/**********************************************
+ * 버튼 영역 (모으기, 보내기)
+ **********************************************/
+.ids2-account-card-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.ids2-account-card-button {
+    flex: 1;
+    background-color: #FFFFFF; /* 흰색 배경에 */
+    color: #0052D1;            /* 파란색 텍스트 */
+    border: none;
+    border-radius: 16px;
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-sizing: border-box;
+}
+
+.ids2-account-card-button:hover {
+    background-color: #E6EAED; /* 살짝 회색 */
+}
+
+/**********************************************
+ * 거래내역 리스트 영역
+ **********************************************/
+.ids2-account-card-transactions {
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+/* 개별 거래내역 아이템 */
+.ids2-transaction-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 왼쪽: 거래 제목/정보 */
+.ids2-transaction-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.ids2-transaction-title {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 4px 0;
+}
+
+.ids2-transaction-info {
+    font-size: 12px;
+}
+
+/* 오른쪽: 거래금액 (양수/음수 구분) */
+.ids2-transaction-right {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ids2-account-card-close {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: underline;
+}
