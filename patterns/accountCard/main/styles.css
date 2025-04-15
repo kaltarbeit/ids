@@ -97,22 +97,16 @@
     margin: 16px 0;
 }
 
-.ids2-account-card-button {
-    flex: 1;
-    background-color: #FFFFFF; /* 흰색 배경에 */
-    color: #0052D1;            /* 파란색 텍스트 */
-    border: none;
-    border-radius: 16px;
-    padding: 8px 0;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    box-sizing: border-box;
+.ids2-button.ids2-account-card-button-collect {
+    background-color: transparent; /* 흰색 배경에 */
+    color: #FFFFFF;
+    border-color: #FFFFFF;
 }
 
-.ids2-account-card-button:hover {
-    background-color: #E6EAED; /* 살짝 회색 */
+.ids2-button.ids2-account-card-button-send {
+    color: #2873E3;
+    font-weight: 700;
+    border-color: #FFFFFF;
 }
 
 /**********************************************
