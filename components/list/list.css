@@ -69,30 +69,30 @@
     align-items: center;
     justify-content: space-between;
 }
-.ids2-card-header-wrap {
+.ids2-card .ids2-card-header .ids2-card-header-wrap {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 4px;
 }
-.ids2-account-type {
+.ids2-card .ids2-card-header .ids2-account-type {
     color: #737684;
     font-size: 12px;
     font-weight: 600;
     line-height: 16px;
 }
-.ids2-menu-button {
+.ids2-card .ids2-card-header .ids2-menu-button {
     font-size: 18px;
     color: #101116;
     cursor: pointer;
 }
-.ids2-account {
+.ids2-card .ids2-account {
     font-size: 14px;
     font-weight: 600;
     margin-top: 4px;
     color: #000;
 }
-.ids2-balance {
+.ids2-card .ids2-balance {
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;

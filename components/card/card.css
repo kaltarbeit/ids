@@ -1,7 +1,7 @@
 .ids2-card {
     background: #fff;
     border-radius: 16px;
-    padding: 24px 20px 20px;
+    padding: 20px;
     box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.06);
     box-sizing: border-box;
     width: 100%;
@@ -13,7 +13,7 @@
 
 .ids2-card-filled {
     border: 1px solid #E1E3EA;
-    background: #ECF5FF;
+    background: #F3F9FF;
     box-shadow: none;
 }
 

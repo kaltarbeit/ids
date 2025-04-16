@@ -38,7 +38,7 @@ export const createBottomSheet = () => {
     button.addEventListener('click', showBottomSheet);
     closeButton.addEventListener('click', hideBottomSheet);
 
-    bottomSheetContainer.addEventListener("transitionend", () => {
+    bottomSheet.addEventListener("transitionend", () => {
         if(bottomSheet.classList.contains('ids2-bottom-sheet-hide')) {
             bottomSheet.style.display = 'none';
             bottomSheetContainer.style.display = 'none';

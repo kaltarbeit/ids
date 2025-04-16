@@ -1,11 +1,8 @@
-.ids2-account-card-example {
-    min-width: 375px;
-}
 
 /**********************************************
  * 계좌 카드 전체 컨테이너
  **********************************************/
-.ids2-account-card {
+.ids2-account-card-main {
     width: 100%;                 /* 필요에 따라 너비 조정 */
     color: #FFFFFF;
     box-sizing: border-box;
@@ -15,7 +12,31 @@
     position: relative;
 }
 
-.ids2-account-card-body {
+.ids2-account-card-main .ids2-account-card-title {
+    display:flex;
+}
+
+.ids2-account-card-main .ids2-account-card-header .ids2-account-type {
+    display: inline-block;
+    position: relative;
+    margin-left: 6px;
+    padding-left: 7px;
+}
+
+.ids2-account-card-main .ids2-account-card-header .ids2-account-type:before {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 1px;
+    height: 10px;
+    background-color: #FFFFFF;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.ids2-account-card-main .ids2-account-card-body {
     padding: 20px 20px 2px;
     background-color: #1654D1;    /* 파란색 계열 배경 */
 }
@@ -23,7 +44,7 @@
 /**********************************************
  * 하단 버튼 (거래내역 닫기)
  **********************************************/
-.ids2-account-card-footer {
+.ids2-account-card-main .ids2-account-card-footer {
     padding: 15px 20px;
     text-align: center;
     font-size: 14px;
@@ -36,20 +57,20 @@
 /**********************************************
  * 카드 상단 영역 (제목, 메뉴 버튼)
  **********************************************/
-.ids2-account-card-header {
+.ids2-account-card-main .ids2-account-card-header {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.ids2-account-card-title {
+.ids2-account-card-main .ids2-account-card-title {
     margin: 0;
     font-size: 14px;
     font-weight: 400;
 }
 
-.ids2-account-card-menu {
+.ids2-account-card-main .ids2-account-card-menu {
     position: absolute;
     right: 0;
     top: 0;
@@ -59,7 +80,7 @@
 /**********************************************
  * 계좌번호, 잔액
  **********************************************/
-.ids2-account-card-number {
+.ids2-account-card-main .ids2-account-card-number {
     display: inline-block;
     font-size: 14px;
     font-weight: 400;
@@ -68,19 +89,19 @@
     margin-top: 4px;
 }
 
-.ids2-account-card-number svg {
+.ids2-account-card-main .ids2-account-card-number svg {
     vertical-align: middle;
     padding-bottom: 2px;
 }
 
-.ids2-account-card-balance {
+.ids2-account-card-main .ids2-account-card-balance {
     margin-top: 8px;
     font-size: 20px;
     font-weight: 700;
     line-height: 28px;
 }
 
-.ids2-account-card-balance-won {
+.ids2-account-card-main .ids2-account-card-balance-won {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -90,20 +111,21 @@
 /**********************************************
  * 버튼 영역 (모으기, 보내기)
  **********************************************/
-.ids2-account-card-buttons {
+
+.ids2-account-card-main .ids2-account-card-buttons {
     display: flex;
     justify-content: flex-end;
-    gap: 8px;
-    margin: 16px 0;
+    gap: 4px;
+    margin: 12px 0;
 }
 
-.ids2-button.ids2-account-card-button-collect {
+.ids2-account-card-main .ids2-button.ids2-account-card-button-collect {
     background-color: transparent; /* 흰색 배경에 */
     color: #FFFFFF;
     border-color: #FFFFFF;
 }
 
-.ids2-button.ids2-account-card-button-send {
+.ids2-account-card-main .ids2-button.ids2-account-card-button-send {
     color: #2873E3;
     font-weight: 700;
     border-color: #FFFFFF;
@@ -112,14 +134,14 @@
 /**********************************************
  * 거래내역 리스트 영역
  **********************************************/
-.ids2-account-card-transactions {
+.ids2-account-card-main .ids2-account-card-transactions {
     color: #ffffff;
     border-radius: 8px;
     padding: 4px;
 }
 
 /* 개별 거래내역 아이템 */
-.ids2-transaction-item {
+.ids2-account-card-main .ids2-transaction-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -128,32 +150,101 @@
 }
 
 /* 왼쪽: 거래 제목/정보 */
-.ids2-transaction-left {
+.ids2-account-card-main .ids2-transaction-left {
     display: flex;
     flex-direction: column;
 }
 
-.ids2-transaction-title {
+.ids2-account-card-main .ids2-transaction-title {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 700;
+    line-height: 20px;
     margin: 0 0 4px 0;
 }
 
-.ids2-transaction-info {
+.ids2-account-card-main .ids2-transaction-info {
     font-size: 12px;
+    font-weight: 400;
+    display:flex;
+}
+
+.ids2-account-card-main .ids2-transaction-info .ids2-transaction-date {
+    display: inline-block;
+    position: relative;
+    margin-left: 4px;
+    padding-left: 5px;
+}
+
+.ids2-account-card-main .ids2-transaction-info .ids2-transaction-date:before {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 1px;
+    height: 10px;
+    background-color: #FFFFFF;
+    opacity: 0.2;
+    z-index: 1;
 }
 
 /* 오른쪽: 거래금액 (양수/음수 구분) */
-.ids2-transaction-right {
-    font-size: 14px;
-    font-weight: bold;
+.ids2-account-card-main .ids2-transaction-right {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
 }
 
-.ids2-account-card-close {
+.ids2-account-card-main .ids2-account-card-close {
     background: none;
     border: none;
     color: #FFFFFF;
     font-size: 12px;
     cursor: pointer;
     text-decoration: underline;
+}
+
+/**
+    Empty
+ */
+
+.ids2-account-card-empty {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 206px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #101116;
+
+    border-width: 20px; /* 테두리 두께 설정 */
+    border-style: solid;
+    border-image-source: url("data:image/svg+xml,%3Csvg width='327' height='206' viewBox='0 0 327 206' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='327' height='206' rx='16' fill='white'/%3E%3Crect x='0.5' y='0.5' width='326' height='205' rx='15.5' stroke='%23979BAA' stroke-dasharray='4 4'/%3E%3C/svg%3E%0A");
+    border-image-slice: 20; /* 이미지 자르기 비율, fill로 내부까지 채움 */
+    border-image-repeat: repeat; /* 반복 없이 이미지 늘리기 */
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.ids2-account-card-empty-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #101116;
+    margin-bottom: 12px;
+}
+
+.ids2-account-card-empty-info {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #454855;
+    margin-top: 8px;
+}
+
+.ids2-account-card-empty-buttons {
+    margin-top: 12px;
 }
