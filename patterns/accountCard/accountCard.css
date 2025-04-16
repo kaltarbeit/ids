@@ -1,5 +1,6 @@
 @import "./main/styles.css";
 @import "./transaction/styles.css";
+@import "./list/styles.css";
 
 .ids2-account-card-examples {
     min-width: 327px;
@@ -43,7 +44,7 @@
     line-height: 20px;
 }
 
-.ids2-account-card .ids2-account-card-header .ids2-account-type + .ids2-account-name  {
+.ids2-account-card .ids2-account-card-header .ids2-account-type + .ids2-account-name {
     margin-left: 8px;
     padding-left: 9px;
 }

@@ -22,6 +22,13 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
+    background: white;
+}
+.ids2-info .ids2-bank-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 .ids2-item-wrap {
     display: flex;
@@ -78,9 +85,34 @@
 .ids2-card .ids2-card-header .ids2-account-type {
     color: #737684;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 16px;
 }
+.ids2-card .ids2-card-header .ids2-account-name {
+    color: #737684;
+    position: relative;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.ids2-card .ids2-card-header .ids2-account-type + .ids2-account-name  {
+    margin-left: 4px;
+    padding-left: 8px;
+}
+
+.ids2-card .ids2-card-header .ids2-account-type + .ids2-account-name:before {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 1px;
+    height: 10px;
+    background-color: #979BAA;
+    z-index: 1;
+}
+
 .ids2-card .ids2-card-header .ids2-menu-button {
     font-size: 18px;
     color: #101116;
@@ -90,15 +122,18 @@
     font-size: 14px;
     font-weight: 600;
     margin-top: 4px;
-    color: #000;
+    color: #101116;
 }
 .ids2-card .ids2-balance {
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
-    color: #000;
+    color: #101116;
     text-align: right;
     margin-top: 6px;
+}
+.ids2-card .ids2-balance .ids2-balance-currency {
+    font-weight: 400;
 }
 
 .ids2-menu {
