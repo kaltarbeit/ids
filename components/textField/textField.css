@@ -53,7 +53,7 @@
     border: 1px solid #C5C8D3;
 }
 
-.ids2-text-field .ids2-text-field-container:has(.ids2-text-field-input:read-only) {
+.ids2-text-field:not(.ids2-email-field) .ids2-text-field-container:has(.ids2-text-field-input:read-only) {
     background: #F3F4F7;
     border: 1px solid #C5C8D3;
 }
