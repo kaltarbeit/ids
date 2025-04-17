@@ -1,0 +1,48 @@
+.ids2-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 16px;
+    text-align: center;
+    font-family: sans-serif;
+    gap: 12px;
+}
+
+.ids2-empty-icon {
+    color: transparent;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.ids2-empty-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #101116;
+    line-height: 32px;
+}
+
+.ids2-empty-desc {
+    font-size: 14px;
+    color: #5A5E6C;
+    line-height: 20px;
+}
+
+.ids2-empty-action {
+    font-size: 14px;
+    color: #454855;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.ids2-empty-icon.ids2-empty-icon-info {
+    background-color: #E1E3EA;
+    background-image: url("data:image/svg+xml,%3Csvg width='5' height='20' viewBox='0 0 5 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.08398 0.416667C2.75133 0.416667 3.29232 0.957656 3.29232 1.625V10.7917C3.29232 11.459 2.75133 12 2.08398 12C1.41664 12 0.875651 11.459 0.875651 10.7917V1.625C0.875651 0.957656 1.41664 0.416667 2.08398 0.416667ZM3.75 17.8743C3.75 18.7948 3.00381 19.541 2.08333 19.541C1.16286 19.541 0.416667 18.7948 0.416667 17.8743C0.416667 16.9539 1.16286 16.2077 2.08333 16.2077C3.00381 16.2077 3.75 16.9539 3.75 17.8743Z' fill='%23979BAA' stroke='%23979BAA' stroke-width='0.833333'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+}
