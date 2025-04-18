@@ -388,7 +388,7 @@ input::-webkit-inner-spin-button {
     right: 46px;
 }
 
-.ids2-text-field .ids2-input-search .ids2-search-button {
+.ids2-text-field.ids2-input-search .ids2-search-button {
     position: absolute;
     top: 50%;
     right: 16px;
@@ -396,7 +396,7 @@ input::-webkit-inner-spin-button {
 }
 
 
-.ids2-text-field.ids2-text-field-filled .ids2-input-search .ids2-input-clear {
+.ids2-text-field.ids2-text-field-filled.ids2-input-search .ids2-input-clear {
     right: 64px;
 }
 

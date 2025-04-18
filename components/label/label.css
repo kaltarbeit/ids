@@ -95,3 +95,25 @@
     font-weight: 600;
     padding: 6px 12px;
 }
+
+.ids2-label-highlight {
+    color: #2873E3;
+}
+
+.ids2-label-optional {
+    color: #737684;
+}
+
+.ids2-label-highlight:before,
+.ids2-label-optional:before {
+    content: ' ';
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    line-height: 18px;
+    background: #454855;
+    font-size: 0;
+    color: transparent;
+    margin: 0 6px 2px;
+    vertical-align: middle;
+}

@@ -57,6 +57,7 @@ export const createTextField = () => {
 
     clearButton.addEventListener('click', () => {
         textFieldInput.value = '';
+        amountNote.textContent = '';
         textField.classList.remove('ids2-text-field-filled');
         textFieldInput.focus();
     });

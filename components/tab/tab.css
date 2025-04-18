@@ -65,7 +65,9 @@
     box-sizing: border-box;
 }
 
-.ids2-tab-overflow::-webkit-scrollbar {
+.ids2-tab-overflow::-webkit-scrollbar,
+.ids2-tab-overflow .ids2-tab::-webkit-scrollbar,
+.ids2-tab-overflow .ids2-tab-item::-webkit-scrollbar {
     display: none;
 }
 
@@ -133,7 +135,7 @@
 /* 세그먼트 탭 전체 래퍼 */
 .ids2-tab-segment {
     display: inline-flex;
-    background-color: #F4F5F7;
+    background-color: #FFFFFF;
     border-radius: 9999px;
     overflow: hidden;
     margin: 40px auto;

@@ -25,6 +25,7 @@ export const createTextField = () => {
     clearButton.addEventListener('click', () => {
         textFieldInput.value = '';
         textField.classList.remove('ids2-text-field-filled');
+        submitButton.disabled = true;
         textFieldInput.focus();
     });
 
