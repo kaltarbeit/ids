@@ -332,6 +332,12 @@ input::-webkit-inner-spin-button {
     width: 50%;
 }
 
+.ids2-text-field.ids2-input-separate .ids2-text-field-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .ids2-text-field.ids2-email-field .ids2-text-field-container {
     display: flex;
     align-items: center;
