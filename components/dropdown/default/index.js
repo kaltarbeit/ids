@@ -7,7 +7,7 @@ export const createDropdown = () => {
     const bottomSheet = wrapper.querySelector('.ids2-bottom-sheet');
     const bottomSheetContainer = wrapper.querySelector('.ids2-bottom-sheet-container');
     const backdrop = wrapper.querySelector('.ids2-backdrop');
-    const button = wrapper.querySelector('.ids2-dropdown-button');
+    const button = wrapper.querySelector('.ids2-dropdown-container');
     const closeButton = wrapper.querySelector('.ids2-bottom-sheet-close');
 
     const dropdownItem = wrapper.querySelectorAll('.ids2-dropdown-item');
