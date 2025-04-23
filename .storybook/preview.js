@@ -1,6 +1,6 @@
 /** @type { import('@storybook/html').Preview } */
 
-import '../components/global.css';
+import '../styles/global.css';
 import '../patterns/global.css';
 
 const preview = {

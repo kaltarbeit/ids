@@ -1,0 +1,17 @@
+.ids2-docs {
+    width: 680px;
+    margin: 40px auto;
+}
+
+code {
+    white-space: pre-line;
+}
+
+.ids2-docs-classname {
+    color: var(--ids2-color-primary);
+    font-weight: var(--ids2-font-bold);
+}
+
+.ids2-docs-styles {
+    color: var(--ids2-color-gray-600);
+}

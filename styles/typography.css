@@ -7,6 +7,12 @@
     margin: 0;
 }
 
+.ids2-title1 {
+    font-size: var(--ids2-size-title1);
+    font-weight: 700;
+    line-height: 32px;
+}
+
 .ids2-semibold {
     font-weight: 600;
 }

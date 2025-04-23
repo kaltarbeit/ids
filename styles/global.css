@@ -1,0 +1,50 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+
+@import "normalize.css";
+@import "variables.css";
+@import "icon.css";
+@import "skeleton.css";
+@import "backdrop.css";
+@import "typography.css";
+@import "spacing.css";
+
+@import "../components/accordion/accordion.css";
+@import "../components/badge/badge.css";
+@import "../components/banner/banner.css";
+@import "../components/bottomSheet/bottomSheet.css";
+@import "../components/button/button.css";
+@import "../components/card/card.css";
+@import "../components/checkbox/checkbox.css";
+@import "../components/divider/divider.css";
+@import "../components/label/label.css";
+@import "../components/breadcrumb/breadcrumb.css";
+@import "../components/chip/chip.css";
+@import "../components/drawer/drawer.css";
+@import "../components/dropdown/dropdown.css";
+@import "../components/textField/textField.css";
+@import "../components/table/table.css";
+@import "../components/footer/footer.css";
+@import "../components/infoBox/infoBox.css";
+@import "../components/inputStepper/inputStepper.css";
+@import "../components/textArea/textArea.css";
+@import "../components/bottomNavigation/bottomNavigation.css";
+@import "../components/list/list.css";
+@import "../components/tab/tab.css";
+@import "../components/topNavigation/topNavigation.css";
+@import "../components/overflowMenu/overflowMenu.css";
+@import "../components/pagination/pagination.css";
+@import "../components/popover/popover.css";
+@import "../components/popup/popup.css";
+@import "../components/profile/profile.css";
+@import "../components/progressStep/progressStep.css";
+@import "../components/radio/radio.css";
+@import "../components/snackbar/snackbar.css";
+@import "../components/toast/toast.css";
+@import "../components/toggleSwitch/toggleSwitch.css";
+@import "../components/tooltip/tooltip.css";
+@import "../components/slider/slider.css";
+
+
+body {
+    font-family: "Pretendard", sans-serif;
+}
