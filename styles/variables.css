@@ -1,6 +1,6 @@
 :root {
     /* Font Family */
-    --ids2-font-family: 'Pretendard', sans-serif;
+    --ids2-font-family: 'Pretendard', sans-serif, serif;
 
     /* Color Default  */
     --ids2-color-primary: #4393F0;
@@ -41,9 +41,9 @@
     --ids2-size-title3: 26px;
     --ids2-size-title4: 24px;
 
-    --ids2-size-head1: 22px;
-    --ids2-size-head2: 20px;
-    --ids2-size-head3: 18px;
+    --ids2-size-h1: 22px;
+    --ids2-size-h2: 20px;
+    --ids2-size-h3: 18px;
 
     --ids2-size-body1: 17px;
     --ids2-size-body2: 16px;
@@ -51,17 +51,37 @@
     --ids2-size-body4: 14px;
     --ids2-size-body5: 13px;
 
-    --ids2-size-caption: 10px;
+    --ids2-size-caption: 12px;
+    --ids2-size-caption-sm: 10px;
 
     /* Line Height  */
     --ids2-line-title1: 42px;
     --ids2-line-title1-tight: 40px;
     --ids2-line-title2: 40px;
     --ids2-line-title2-tight: 36px;
-    --ids2-line-title3: ;
-    --ids2-line-title4: calc(var(--ids2-size-title4) * 1.42);
-    --ids2-line-title4-tight: calc(var(--ids2-size-title4) * 1.33);
-    --ids2-line-head1: calc(var(--ids2-size-head1) * 1.3);
+    --ids2-line-title3: 30px;
+    --ids2-line-title4: 34px;
+    --ids2-line-title4-tight: 32px;
+
+    --ids2-line-h1: 32px;
+    --ids2-line-h1-tight: 30px;
+    --ids2-line-h2: 28px;
+    --ids2-line-h2-tight: 26px;
+    --ids2-line-h3: 26px;
+    --ids2-line-h3-tight: 24px;
+
+    --ids2-line-body1: 24px;
+    --ids2-line-body2: 24px;
+    --ids2-line-body2-tight: 22px;
+    --ids2-line-body3: 16px;
+    --ids2-line-body4: 20px;
+    --ids2-line-body4-tight: 18px;
+    --ids2-line-body5: 20px;
+    --ids2-line-body5-tight: 18px;
+
+    --ids2-line-caption: 16px;
+    --ids2-line-caption-tight: 14px;
+    --ids2-line-caption-sm: 12px;
 
 
 

@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/global.css"/>
+    <link rel="stylesheet" href="../styles/doc.css"/>
+    <link rel="stylesheet" href="../styles/prism.css"/>
+</head>
+<body>
+<div class="ids2-docs">
+
+    <div class="ids2-docs-header">
+        <h1 class="ids2-title1 ids2-bold">Typography</h1>
+
+        <p class="ids2-body1 ids2-my-24 ids2-text-gray-500">문자의 크기(Size), 행간(Line Height), 두께(Weight), 컬러(Color) 표현을 위한
+            스타일시트 입니다.</p>
+    </div>
+
+    <section class="ids2-docs-section">
+        <h2 class="ids2-docs-section-title">Title</h2>
+
+        <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+            스타일 가이드 <span class="ids2-bold">Typography > Title1 ~ Title4</span> 를 구현한 클래스 입니다.<br/>
+            기본 값의 line-height 는 스타일가이드 상의 Max 로 표현되며 <span class="ids2-bold">*-tight</span> 를 이용하여 Min 값으로 변경 가능 합니다.
+        </p>
+
+        <table class="ids2-table ids2-table-sm">
+            <colgroup>
+                <col style="width: 15%"/>
+                <col style="width: 25%"/>
+                <col style="width: 50%"/>
+            </colgroup>
+            <thead>
+            <tr>
+                <th class="ids2-cell-left">Name</th>
+                <th class="ids2-cell-left">Class</th>
+                <th class="ids2-cell-left">Style</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-name" rowspan="2">
+                    Title1
+                </td>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-title1</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-title1); <span class="ids2-docs-comment">/* 32px */</span>
+                        line-height: var(--ids2-line-title1); <span class="ids2-docs-comment">/* 42px */</span></code>
+                </td>
+            </tr>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-title1-tight</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-title1); <span class="ids2-docs-comment">/* 32px */</span>
+                        line-height: var(--ids2-line-title1-tight); <span
+                                class="ids2-docs-comment">/* 40px */</span></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ids2-cell-left ids2-docs-name" rowspan="2">
+                    Title2
+                </td>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-title2</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-title2); <span class="ids2-docs-comment">/* 28px */</span>
+                        line-height: var(--ids2-line-title2); <span class="ids2-docs-comment">/* 40px */</span></code>
+                </td>
+            </tr>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-title2-tight</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-title2); <span class="ids2-docs-comment">/* 28px */</span>
+                        line-height: var(--ids2-line-title2-tight); <span
+                                class="ids2-docs-comment">/* 36px */</span></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ids2-cell-left ids2-docs-name">
+                    Title3
+                </td>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-title3</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-title3); <span class="ids2-docs-comment">/* 26px */</span>
+                        line-height: var(--ids2-line-title3); <span class="ids2-docs-comment">/* 30px */</span></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ids2-cell-left ids2-docs-name" rowspan="2">
+                    Title4
+                </td>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-title4</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-title4); <span class="ids2-docs-comment">/* 24px */</span>
+                        line-height: var(--ids2-line-title4); <span class="ids2-docs-comment">/* 34px */</span></code>
+                </td>
+            </tr>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-title4-tight</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-title4); <span class="ids2-docs-comment">/* 24px */</span>
+                        line-height: var(--ids2-line-title4-tight); <span
+                                class="ids2-docs-comment">/* 32px */</span></code>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h4 class="ids2-docs-section-label">Examples</h4>
+
+        <div class="ids2-docs-examples">
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-title1</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <h1 class="ids2-title1">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-title1-tight</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <h1 class="ids2-title1-tight">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-title2</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <h2 class="ids2-title2">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-title2-tight</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <h2 class="ids2-title2-tight">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-title3</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <h3 class="ids2-title3">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-title4</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <h4 class="ids2-title4">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-title4-tight</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <h4 class="ids2-title4-tight">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="ids2-docs-section">
+        <h2 class="ids2-docs-section-title">Headline</h2>
+
+        <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+            스타일 가이드 <span class="ids2-bold">Typography > Headline1 ~ Headline3</span> 를 구현한 클래스 입니다.<br/>
+            기본 값의 line-height 는 스타일가이드 상의 Max 로 표현되며 <span class="ids2-bold">*-tight</span> 를 이용하여 Min 값으로 변경 가능 합니다.
+        </p>
+
+        <table class="ids2-table ids2-table-sm">
+            <colgroup>
+                <col style="width: 15%"/>
+                <col style="width: 25%"/>
+                <col style="width: 50%"/>
+            </colgroup>
+            <thead>
+            <tr>
+                <th class="ids2-cell-left">Name</th>
+                <th class="ids2-cell-left">Class</th>
+                <th class="ids2-cell-left">Style</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-name" rowspan="2">
+                    Headline1
+                </td>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-h1</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-h1); <span class="ids2-docs-comment">/* 22px */</span>
+                        line-height: var(--ids2-line-h1); <span class="ids2-docs-comment">/* 32px */</span></code>
+                </td>
+            </tr>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-h1-tight</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-h1); <span class="ids2-docs-comment">/* 22px */</span>
+                        line-height: var(--ids2-line-h1-tight); <span
+                                class="ids2-docs-comment">/* 30px */</span></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ids2-cell-left ids2-docs-name" rowspan="2">
+                    Headline2
+                </td>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-h2</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-h2); <span class="ids2-docs-comment">/* 20px */</span>
+                        line-height: var(--ids2-line-h2); <span class="ids2-docs-comment">/* 28px */</span></code>
+                </td>
+            </tr>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-h2-tight</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-h2); <span class="ids2-docs-comment">/* 20px */</span>
+                        line-height: var(--ids2-line-h2-tight); <span
+                                class="ids2-docs-comment">/* 26px */</span></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ids2-cell-left ids2-docs-name" rowspan="2">
+                    Headline3
+                </td>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-h3</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-h3); <span class="ids2-docs-comment">/* 18px */</span>
+                        line-height: var(--ids2-line-h3); <span class="ids2-docs-comment">/* 26px */</span></code>
+                </td>
+            </tr>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-h3-tight</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-h3); <span class="ids2-docs-comment">/* 18px */</span>
+                        line-height: var(--ids2-line-h3-tight); <span
+                                class="ids2-docs-comment">/* 24px */</span></code>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h4 class="ids2-docs-section-label">Examples</h4>
+
+        <div class="ids2-docs-examples">
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-h1</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <h1 class="ids2-h1">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-h1-tight</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <h1 class="ids2-h1-tight">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-h2</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <h2 class="ids2-h2">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-h2-tight</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <h2 class="ids2-h2-tight">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-h3</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <h3 class="ids2-h3">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-h3-tight</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <h3 class="ids2-h3-tight">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ids2-docs-section">
+        <h2 class="ids2-docs-section-title">Body</h2>
+
+        <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+            스타일 가이드 <span class="ids2-bold">Typography > Body1 ~ Body4</span> 를 구현한 클래스 입니다.<br/>
+            기본 값의 line-height 는 스타일가이드 상의 Max 로 표현되며 <span class="ids2-bold">*-tight</span> 를 이용하여 Min 값으로 변경 가능 합니다.
+        </p>
+
+        <table class="ids2-table ids2-table-sm">
+            <colgroup>
+                <col style="width: 15%"/>
+                <col style="width: 25%"/>
+                <col style="width: 50%"/>
+            </colgroup>
+            <thead>
+            <tr>
+                <th class="ids2-cell-left">Name</th>
+                <th class="ids2-cell-left">Class</th>
+                <th class="ids2-cell-left">Style</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-name">
+                    Body1
+                </td>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-body1</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-body1); <span
+                            class="ids2-docs-comment">/* 17px */</span>
+                        line-height: var(--ids2-line-body1); <span class="ids2-docs-comment">/* 24px */</span></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ids2-cell-left ids2-docs-name" rowspan="2">
+                    Body2
+                </td>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-body2</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-body2); <span
+                            class="ids2-docs-comment">/* 16px */</span>
+                        line-height: var(--ids2-line-body2); <span class="ids2-docs-comment">/* 24px */</span></code>
+                </td>
+            </tr>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-body2-tight</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-body2); <span
+                            class="ids2-docs-comment">/* 16px */</span>
+                        line-height: var(--ids2-line-body2-tight); <span
+                                class="ids2-docs-comment">/* 22px */</span></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ids2-cell-left ids2-docs-name">
+                    Body3
+                </td>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-body3</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-body3); <span
+                            class="ids2-docs-comment">/* 15px */</span>
+                        line-height: var(--ids2-line-body3); <span class="ids2-docs-comment">/* 16px */</span></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ids2-cell-left ids2-docs-name" rowspan="2">
+                    Body4
+                </td>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-body4</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-body4); <span
+                            class="ids2-docs-comment">/* 14px */</span>
+                        line-height: var(--ids2-line-body4); <span class="ids2-docs-comment">/* 20px */</span></code>
+                </td>
+            </tr>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-body4-tight</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-body4); <span
+                            class="ids2-docs-comment">/* 14px */</span>
+                        line-height: var(--ids2-line-body4-tight); <span
+                                class="ids2-docs-comment">/* 18px */</span></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ids2-cell-left ids2-docs-name" rowspan="2">
+                    Body5
+                </td>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-body5</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-body5); <span
+                            class="ids2-docs-comment">/* 13px */</span>
+                        line-height: var(--ids2-line-body5); <span class="ids2-docs-comment">/* 20px */</span></code>
+                </td>
+            </tr>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-body5-tight</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-body5); <span
+                            class="ids2-docs-comment">/* 13px */</span>
+                        line-height: var(--ids2-line-body5-tight); <span
+                                class="ids2-docs-comment">/* 18px */</span></code>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h4 class="ids2-docs-section-label">Examples</h4>
+        <div class="ids2-docs-examples">
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-body1</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <p class="ids2-body1">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-body2</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <p class="ids2-body2">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-body2-tight</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <p class="ids2-body2-tight">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-body3</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <p class="ids2-body3">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-body4</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <p class="ids2-body4">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-body4-tight</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <p class="ids2-body4-tight">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-body5</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <p class="ids2-body5">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-body5-tight</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <p class="ids2-body5-tight">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ids2-docs-section">
+        <h2 class="ids2-docs-section-title">Caption</h2>
+
+        <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+            스타일 가이드 <span class="ids2-bold">Typography > Caption</span> 를 구현한 클래스 입니다.<br/>
+            기본 값의 font-size 는 12px 로 표현되며  <span class="ids2-bold">*-sm</span> 를 이용하여 <span class="ids2-bold">10px</span> 로 변경 가능 합니다.<br/>
+            기본 값의 line-height 는 스타일가이드 상의 Max 로 표현되며 <span class="ids2-bold">*-tight</span> 를 이용하여 Min 값으로 변경 가능 합니다.
+        </p>
+
+        <table class="ids2-table ids2-table-sm">
+            <colgroup>
+                <col style="width: 15%"/>
+                <col style="width: 25%"/>
+                <col style="width: 50%"/>
+            </colgroup>
+            <thead>
+            <tr>
+                <th class="ids2-cell-left">Name</th>
+                <th class="ids2-cell-left">Class</th>
+                <th class="ids2-cell-left">Style</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr>
+                <td class="ids2-cell-left ids2-docs-name" rowspan="3">
+                    Caption
+                </td>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-caption</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-caption); <span
+                            class="ids2-docs-comment">/* 12px */</span>
+                        line-height: var(--ids2-line-caption); <span class="ids2-docs-comment">/* 16px */</span></code>
+                </td>
+            </tr>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-caption-tight</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-size-caption); <span
+                            class="ids2-docs-comment">/* 12px */</span>
+                        line-height: var(--ids2-line-caption-tight); <span
+                                class="ids2-docs-comment">/* 14px */</span></code>
+                </td>
+            </tr>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-caption-sm</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-size: var(--ids2-caption-sm); <span
+                            class="ids2-docs-comment">/* 10px */</span>
+                        line-height: var(--ids2-line-caption-sm); <span
+                                class="ids2-docs-comment">/* 12px */</span></code>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h4 class="ids2-docs-section-label">Examples</h4>
+        <div class="ids2-docs-examples">
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-caption</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <p class="ids2-caption">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-caption-tight</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <p class="ids2-caption-tight">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-caption-sm</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <p class="ids2-caption-sm">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="ids2-docs-section">
+        <h2 class="ids2-docs-section-title">Font Weight</h2>
+
+        <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+            스타일 가이드 <span class="ids2-bold">Typography > Font Weight(폰트 굵기)</span> 를 구현한 클래스 입니다.<br/>
+            <span class="ids2-bold">font-weight: 400 ~ 700</span> 사이의 4가지 두께를 지원합니다.<br/>
+            기본적으로 Typography 스타일과 함께 사용 또는 단독 사용이 가능합니다.
+        </p>
+
+        <table class="ids2-table ids2-table-sm">
+            <colgroup>
+                <col style="width: 15%"/>
+                <col style="width: 25%"/>
+                <col style="width: 50%"/>
+            </colgroup>
+            <thead>
+            <tr>
+                <th class="ids2-cell-left">Name</th>
+                <th class="ids2-cell-left">Class</th>
+                <th class="ids2-cell-left">Style</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr>
+                <td class="ids2-cell-left ids2-docs-name" rowspan="4">
+                    Font Weight
+                </td>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-bold</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-weight: var(--ids2-font-bold); <span
+                            class="ids2-docs-comment">/* 700 */</span></code>
+                </td>
+            </tr>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-semibold</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-weight: var(--ids2-font-semibold); <span
+                            class="ids2-docs-comment">/* 600 */</span></code>
+                </td>
+            </tr>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-medium</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-weight: var(--ids2-font-medium); <span
+                            class="ids2-docs-comment">/* 500 */</span></code>
+                </td>
+            </tr>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-regular</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">font-weight: var(--ids2-font-regular); <span
+                            class="ids2-docs-comment">/* 400 */</span></code>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <h4 class="ids2-docs-section-label">Examples</h4>
+        <div class="ids2-docs-examples">
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-bold</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <h1 class="ids2-title1 ids2-bold">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-semibold</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <h1 class="ids2-title1 ids2-semibold">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-medium</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <h1 class="ids2-title1 ids2-medium">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-regular</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <h1 class="ids2-title1 ids2-regular">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="ids2-docs-section-label">Basic Usage</h4>
+        <div class="ids2-docs-examples">
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line">기본 사용</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <p class="ids2-body3 ids2-regular">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ids2-docs-example-block">
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <p class="ids2-body2 ids2-medium">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ids2-docs-example-block">
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <p class="ids2-body1 ids2-bold">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ids2-docs-example-block">
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <p class="ids2-h1 ids2-semibold">
+                            IBK기업은행<br/>금융으로 만나는 새로운 세상
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line">단독 적용</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <p class="ids2-body1">
+                            <span class="ids2-bold">IBK기업은행</span><br/>
+                            금융으로 만나는
+                            <span class="ids2-semibold">새로운 세상</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line">중복 적용</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                        <p class="ids2-body2 ids2-semibold">
+                            <span class="ids2-bold">IBK기업은행</span><br/>
+                            <span class="ids2-regular">금융으로 만나는</span>
+                            새로운 세상
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="./scripts/example-box.js"></script>
+<script src="./scripts/prism.js"></script>
+<script>
+
+    Prism.highlightAll();
+</script>
+</body>
+</html>

@@ -54,6 +54,11 @@
     color: #158463;
 }
 
+.ids2-label.ids2-label-line-blue {
+    border-color: var(--ids2-color-point-blue);
+    color: var(--ids2-color-point-blue);
+}
+
 .ids2-label.ids2-label-risk-high {
     background-color: #F9E6E7;
     color: #AA3331;

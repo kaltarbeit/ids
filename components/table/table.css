@@ -22,6 +22,9 @@
 .ids2-table .ids2-cell-left {
     text-align: left;
 }
+.ids2-table .ids2-cell-middle {
+    vertical-align: middle;
+}
 
 .ids2-table{
 

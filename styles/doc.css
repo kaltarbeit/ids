@@ -1,17 +1,95 @@
 .ids2-docs {
-    width: 680px;
+    width: 960px;
     margin: 40px auto;
+    font-family: var(--ids2-font-family), serif;
+    font-size: var(--ids2-size-body1);
+    color: var(--ids2-color-gray-900);
+    line-height: var(--ids2-line-body1);
 }
 
-code {
-    white-space: pre-line;
+.ids2-docs-header {
+    margin: 40px 0;
 }
 
-.ids2-docs-classname {
-    color: var(--ids2-color-primary);
+.ids2-docs-section {
+    margin: 60px 0 120px;
+}
+
+.ids2-docs-section-title {
+    font-size: var(--ids2-size-title3);
+    font-weight: var(--ids2-font-bold);
+    margin-bottom: 24px;
+}
+
+.ids2-docs-section-label {
+    margin-top: 60px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
     font-weight: var(--ids2-font-bold);
 }
 
-.ids2-docs-styles {
-    color: var(--ids2-color-gray-600);
+code.ids2-docs-code {
+    white-space: pre-line;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+td.ids2-docs-name {
+    font-size: var(--ids2-size-body2);
+    color: var(--ids2-color-gray-900);
+    font-weight: var(--ids2-font-bold);
+    vertical-align: middle;
+}
+
+.ids2-docs-classname {
+    color: var(--ids2-color-point-blue);
+    font-weight: var(--ids2-font-bold);
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.ids2-docs-comment {
+    margin-left: 10px;
+    font-style: italic;
+    color: var(--ids2-color-gray-400);
+}
+
+.ids2-docs-examples {
+    border: var(--ids2-border-1);
+    border-radius: var(--ids2-radius-12);
+    padding: var(--ids2-spacing-24);
+    display: flex;
+    flex-direction: column;
+    gap: var(--ids2-spacing-48);
+    background: linear-gradient(90deg, transparent 50%, #2d2d2d 50%);
+    margin-bottom: var(--ids2-spacing-24);
+}
+
+
+.ids2-docs-example-code-block {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.ids2-docs-example-code {
+    margin-top: var(--ids2-spacing-12);
+    display: flex;
+}
+
+.ids2-docs-example {
+    font-family: inherit;
+    width: 50%;
+}
+
+.ids2-docs-example-code pre[class*=language-] {
+    box-sizing: border-box;
+    padding: 0 1em;
+    margin: 0;
+}
+
+.ids2-docs-example-code-highlight {
+    margin-right: -24px !important;
+    width: 50%;
+    font-size: 14px !important;
 }
