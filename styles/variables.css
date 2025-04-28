@@ -6,7 +6,9 @@
     --ids2-color-primary: #4393F0;
     --ids2-color-point-blue: #2873E3;
     --ids2-color-blue-100: #E4F2FF;
+    --ids2-color-blue-400: #C1E0FC;
     --ids2-color-blue-700: #235FD2;
+    --ids2-color-blue-900: #234EAA;
 
     /* Color Grayscale  */
     --ids2-color-white: #ffffff;
@@ -87,17 +89,17 @@
 
     /* Spacing */
     --ids2-spacing: 8px;
-    --ids2-spacing-4: var(--ids2-spacing/2);
-    --ids2-spacing-8: var(--ids2-spacing);
-    --ids2-spacing-12: calc(var(--ids2-spacing)*1.5);
-    --ids2-spacing-16: calc(var(--ids2-spacing)*2);
-    --ids2-spacing-20: calc(var(--ids2-spacing)*2.5);
-    --ids2-spacing-24: calc(var(--ids2-spacing)*3);
-    --ids2-spacing-32: calc(var(--ids2-spacing)*4);
-    --ids2-spacing-40: calc(var(--ids2-spacing)*5);
-    --ids2-spacing-48: calc(var(--ids2-spacing)*6);
-    --ids2-spacing-64: calc(var(--ids2-spacing)*8);
-    --ids2-spacing-80: calc(var(--ids2-spacing)*10);
+    --ids2-spacing-half: var(--ids2-spacing/2);
+    --ids2-spacing-1: var(--ids2-spacing);
+    --ids2-spacing-1-half: calc(var(--ids2-spacing)*1.5);
+    --ids2-spacing-2: calc(var(--ids2-spacing)*2);
+    --ids2-spacing-2-half: calc(var(--ids2-spacing)*2.5);
+    --ids2-spacing-3: calc(var(--ids2-spacing)*3);
+    --ids2-spacing-4: calc(var(--ids2-spacing)*4);
+    --ids2-spacing-5: calc(var(--ids2-spacing)*5);
+    --ids2-spacing-6: calc(var(--ids2-spacing)*6);
+    --ids2-spacing-8: calc(var(--ids2-spacing)*8);
+    --ids2-spacing-10: calc(var(--ids2-spacing)*10);
     --ids2-spacing-none: 0;
 
     /* Border */
@@ -105,8 +107,16 @@
     --ids2-border-2: 2px solid var(--ids2-color-gray-100);
     --ids2-border-3: 3px solid var(--ids2-color-gray-100);
 
+    --ids2-border-1-500: 1px solid var(--ids2-color-gray-500);
+    --ids2-border-2-500: 2px solid var(--ids2-color-gray-500);
+    --ids2-border-3-500: 3px solid var(--ids2-color-gray-500);
+
+    --ids2-border-1-hide: 1px solid transparent;
+    --ids2-border-2-hide: 2px solid transparent;
+    --ids2-border-3-hide: 3px solid transparent;
+
     /* Border Radius */
-    --ids2-radius-6: 7px;
+    --ids2-radius-6: 6px;
     --ids2-radius-12: 12px;
     --ids2-radius-16: 16px;
     --ids2-radius-20: 20px;

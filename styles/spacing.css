@@ -2,27 +2,27 @@
     Margin All
  */
 .ids2-ma-8 {
-    margin: var(--ids2-spacing-8);
+    margin: var(--ids2-spacing-1);
 }
 
 .ids2-ma-12 {
-    margin: var(--ids2-spacing-12);
+    margin: var(--ids2-spacing-1-half);
 }
 
 .ids2-ma-16 {
-    margin: var(--ids2-spacing-16);
+    margin: var(--ids2-spacing-2);
 }
 
 .ids2-ma-24 {
-    margin: var(--ids2-spacing-24);
+    margin: var(--ids2-spacing-3);
 }
 
 .ids2-ma-32 {
-    margin: var(--ids2-spacing-32);
+    margin: var(--ids2-spacing-4);
 }
 
 .ids2-ma-40 {
-    margin: var(--ids2-spacing-40);
+    margin: var(--ids2-spacing-5);
 }
 
 .ids2-ma-auto {
@@ -61,27 +61,27 @@
     Margin Bottom
  */
 .ids2-mb-8 {
-    margin-bottom: var(--ids2-spacing-8);
+    margin-bottom: var(--ids2-spacing-1);
 }
 
 .ids2-mb-12 {
-    margin-bottom: var(--ids2-spacing-12);
+    margin-bottom: var(--ids2-spacing-1-half);
 }
 
 .ids2-mb-16 {
-    margin-bottom: var(--ids2-spacing-16);
+    margin-bottom: var(--ids2-spacing-2);
 }
 
 .ids2-mb-24 {
-    margin-bottom: var(--ids2-spacing-24);
+    margin-bottom: var(--ids2-spacing-3);
 }
 
 .ids2-mb-32 {
-    margin-bottom: var(--ids2-spacing-32);
+    margin-bottom: var(--ids2-spacing-4);
 }
 
 .ids2-mb-40 {
-    margin-bottom: var(--ids2-spacing-40);
+    margin-bottom: var(--ids2-spacing-5);
 }
 
 .ids2-mb-0 {
@@ -93,33 +93,33 @@
     Margin Top & Bottom
  */
 .ids2-my-8 {
-    margin-top: var(--ids2-spacing-8);
-    margin-bottom: var(--ids2-spacing-8);
+    margin-top: var(--ids2-spacing-1);
+    margin-bottom: var(--ids2-spacing-1);
 }
 
 .ids2-my-12 {
-    margin-top: var(--ids2-spacing-12);
-    margin-bottom: var(--ids2-spacing-12);
+    margin-top: var(--ids2-spacing-1-half);
+    margin-bottom: var(--ids2-spacing-1-half);
 }
 
 .ids2-my-16 {
-    margin-top: var(--ids2-spacing-16);
-    margin-bottom: var(--ids2-spacing-16);
+    margin-top: var(--ids2-spacing-2);
+    margin-bottom: var(--ids2-spacing-2);
 }
 
 .ids2-my-24 {
-    margin-top: var(--ids2-spacing-24);
-    margin-bottom: var(--ids2-spacing-24);
+    margin-top: var(--ids2-spacing-3);
+    margin-bottom: var(--ids2-spacing-3);
 }
 
 .ids2-my-32 {
-    margin-top: var(--ids2-spacing-32);
-    margin-bottom: var(--ids2-spacing-32);
+    margin-top: var(--ids2-spacing-4);
+    margin-bottom: var(--ids2-spacing-4);
 }
 
 .ids2-my-40 {
-    margin-top: var(--ids2-spacing-40);
-    margin-bottom: var(--ids2-spacing-40);
+    margin-top: var(--ids2-spacing-5);
+    margin-bottom: var(--ids2-spacing-5);
 }
 
 .ids2-my-auto {
@@ -137,27 +137,27 @@
     Margin Left
  */
 .ids2-ml-8 {
-    margin-left: var(--ids2-spacing-8);
+    margin-left: var(--ids2-spacing-1);
 }
 
 .ids2-ml-12 {
-    margin-left: var(--ids2-spacing-12);
+    margin-left: var(--ids2-spacing-1-half);
 }
 
 .ids2-ml-16 {
-    margin-left: var(--ids2-spacing-16);
+    margin-left: var(--ids2-spacing-2);
 }
 
 .ids2-ml-24 {
-    margin-left: var(--ids2-spacing-24);
+    margin-left: var(--ids2-spacing-3);
 }
 
 .ids2-ml-32 {
-    margin-left: var(--ids2-spacing-32);
+    margin-left: var(--ids2-spacing-4);
 }
 
 .ids2-ml-40 {
-    margin-left: var(--ids2-spacing-40);
+    margin-left: var(--ids2-spacing-5);
 }
 
 .ids2-ml-0 {
@@ -169,27 +169,27 @@
     Margin Right
  */
 .ids2-mr-8 {
-    margin-right: var(--ids2-spacing-8);
+    margin-right: var(--ids2-spacing-1);
 }
 
 .ids2-mr-12 {
-    margin-right: var(--ids2-spacing-12);
+    margin-right: var(--ids2-spacing-1-half);
 }
 
 .ids2-mr-16 {
-    margin-right: var(--ids2-spacing-16);
+    margin-right: var(--ids2-spacing-2);
 }
 
 .ids2-mr-24 {
-    margin-right: var(--ids2-spacing-24);
+    margin-right: var(--ids2-spacing-3);
 }
 
 .ids2-mr-32 {
-    margin-right: var(--ids2-spacing-32);
+    margin-right: var(--ids2-spacing-4);
 }
 
 .ids2-mr-40 {
-    margin-right: var(--ids2-spacing-40);
+    margin-right: var(--ids2-spacing-5);
 }
 
 .ids2-mr-0 {
@@ -201,33 +201,33 @@
     Margin Left & Right
  */
 .ids2-mx-8 {
-    margin-left: var(--ids2-spacing-8);
-    margin-right: var(--ids2-spacing-8);
+    margin-left: var(--ids2-spacing-1);
+    margin-right: var(--ids2-spacing-1);
 }
 
 .ids2-mx-12 {
-    margin-left: var(--ids2-spacing-12);
-    margin-right: var(--ids2-spacing-12);
+    margin-left: var(--ids2-spacing-1-half);
+    margin-right: var(--ids2-spacing-1-half);
 }
 
 .ids2-mx-16 {
-    margin-left: var(--ids2-spacing-16);
-    margin-right: var(--ids2-spacing-16);
+    margin-left: var(--ids2-spacing-2);
+    margin-right: var(--ids2-spacing-2);
 }
 
 .ids2-mx-24 {
-    margin-left: var(--ids2-spacing-24);
-    margin-right: var(--ids2-spacing-24);
+    margin-left: var(--ids2-spacing-3);
+    margin-right: var(--ids2-spacing-3);
 }
 
 .ids2-mx-32 {
-    margin-left: var(--ids2-spacing-32);
-    margin-right: var(--ids2-spacing-32);
+    margin-left: var(--ids2-spacing-4);
+    margin-right: var(--ids2-spacing-4);
 }
 
 .ids2-mx-40 {
-    margin-left: var(--ids2-spacing-40);
-    margin-right: var(--ids2-spacing-40);
+    margin-left: var(--ids2-spacing-5);
+    margin-right: var(--ids2-spacing-5);
 }
 
 .ids2-mx-auto {
@@ -244,27 +244,27 @@
     Padding All
  */
 .ids2-pa-8 {
-    padding: var(--ids2-spacing-8);
+    padding: var(--ids2-spacing-1);
 }
 
 .ids2-pa-12 {
-    padding: var(--ids2-spacing-12);
+    padding: var(--ids2-spacing-1-half);
 }
 
 .ids2-pa-16 {
-    padding: var(--ids2-spacing-16);
+    padding: var(--ids2-spacing-2);
 }
 
 .ids2-pa-24 {
-    padding: var(--ids2-spacing-24);
+    padding: var(--ids2-spacing-3);
 }
 
 .ids2-pa-32 {
-    padding: var(--ids2-spacing-32);
+    padding: var(--ids2-spacing-4);
 }
 
 .ids2-pa-40 {
-    padding: var(--ids2-spacing-40);
+    padding: var(--ids2-spacing-5);
 }
 
 .ids2-pa-0 {
@@ -275,27 +275,27 @@
     Padding Top
  */
 .ids2-pt-8 {
-    padding-top: var(--ids2-spacing-8);
+    padding-top: var(--ids2-spacing-1);
 }
 
 .ids2-pt-12 {
-    padding-top: var(--ids2-spacing-12);
+    padding-top: var(--ids2-spacing-1-half);
 }
 
 .ids2-pt-16 {
-    padding-top: var(--ids2-spacing-16);
+    padding-top: var(--ids2-spacing-2);
 }
 
 .ids2-pt-24 {
-    padding-top: var(--ids2-spacing-24);
+    padding-top: var(--ids2-spacing-3);
 }
 
 .ids2-pt-32 {
-    padding-top: var(--ids2-spacing-32);
+    padding-top: var(--ids2-spacing-4);
 }
 
 .ids2-pt-40 {
-    padding-top: var(--ids2-spacing-40);
+    padding-top: var(--ids2-spacing-5);
 }
 
 .ids2-pt-0 {
@@ -307,27 +307,27 @@
  */
 
 .ids2-pb-8 {
-    padding-bottom: var(--ids2-spacing-8);
+    padding-bottom: var(--ids2-spacing-1);
 }
 
 .ids2-pb-12 {
-    padding-bottom: var(--ids2-spacing-12);
+    padding-bottom: var(--ids2-spacing-1-half);
 }
 
 .ids2-pb-16 {
-    padding-bottom: var(--ids2-spacing-16);
+    padding-bottom: var(--ids2-spacing-2);
 }
 
 .ids2-pb-24 {
-    padding-bottom: var(--ids2-spacing-24);
+    padding-bottom: var(--ids2-spacing-3);
 }
 
 .ids2-pb-32 {
-    padding-bottom: var(--ids2-spacing-32);
+    padding-bottom: var(--ids2-spacing-4);
 }
 
 .ids2-pb-40 {
-    padding-bottom: var(--ids2-spacing-40);
+    padding-bottom: var(--ids2-spacing-5);
 }
 
 .ids2-pb-0 {
@@ -339,33 +339,33 @@
  */
 
 .ids2-py-8 {
-    padding-top: var(--ids2-spacing-8);
-    padding-bottom: var(--ids2-spacing-8);
+    padding-top: var(--ids2-spacing-1);
+    padding-bottom: var(--ids2-spacing-1);
 }
 
 .ids2-py-12 {
-    padding-top: var(--ids2-spacing-12);
-    padding-bottom: var(--ids2-spacing-12);
+    padding-top: var(--ids2-spacing-1-half);
+    padding-bottom: var(--ids2-spacing-1-half);
 }
 
 .ids2-py-16 {
-    padding-top: var(--ids2-spacing-16);
-    padding-bottom: var(--ids2-spacing-16);
+    padding-top: var(--ids2-spacing-2);
+    padding-bottom: var(--ids2-spacing-2);
 }
 
 .ids2-py-24 {
-    padding-top: var(--ids2-spacing-24);
-    padding-bottom: var(--ids2-spacing-24);
+    padding-top: var(--ids2-spacing-3);
+    padding-bottom: var(--ids2-spacing-3);
 }
 
 .ids2-py-32 {
-    padding-top: var(--ids2-spacing-32);
-    padding-bottom: var(--ids2-spacing-32);
+    padding-top: var(--ids2-spacing-4);
+    padding-bottom: var(--ids2-spacing-4);
 }
 
 .ids2-py-40 {
-    padding-top: var(--ids2-spacing-40);
-    padding-bottom: var(--ids2-spacing-40);
+    padding-top: var(--ids2-spacing-5);
+    padding-bottom: var(--ids2-spacing-5);
 }
 
 .ids2-py-0 {
@@ -378,27 +378,27 @@
     Padding Left
  */
 .ids2-pl-8 {
-    padding-left: var(--ids2-spacing-8);
+    padding-left: var(--ids2-spacing-1);
 }
 
 .ids2-pl-12 {
-    padding-left: var(--ids2-spacing-12);
+    padding-left: var(--ids2-spacing-1-half);
 }
 
 .ids2-pl-16 {
-    padding-left: var(--ids2-spacing-16);
+    padding-left: var(--ids2-spacing-2);
 }
 
 .ids2-pl-24 {
-    padding-left: var(--ids2-spacing-24);
+    padding-left: var(--ids2-spacing-3);
 }
 
 .ids2-pl-32 {
-    padding-left: var(--ids2-spacing-32);
+    padding-left: var(--ids2-spacing-4);
 }
 
 .ids2-pl-40 {
-    padding-left: var(--ids2-spacing-40);
+    padding-left: var(--ids2-spacing-5);
 }
 
 .ids2-pl-0 {
@@ -409,27 +409,27 @@
     Padding Right
  */
 .ids2-pr-8 {
-    padding-right: var(--ids2-spacing-8);
+    padding-right: var(--ids2-spacing-1);
 }
 
 .ids2-pr-12 {
-    padding-right: var(--ids2-spacing-12);
+    padding-right: var(--ids2-spacing-1-half);
 }
 
 .ids2-pr-16 {
-    padding-right: var(--ids2-spacing-16);
+    padding-right: var(--ids2-spacing-2);
 }
 
 .ids2-pr-24 {
-    padding-right: var(--ids2-spacing-24);
+    padding-right: var(--ids2-spacing-3);
 }
 
 .ids2-pr-32 {
-    padding-right: var(--ids2-spacing-32);
+    padding-right: var(--ids2-spacing-4);
 }
 
 .ids2-pr-40 {
-    padding-right: var(--ids2-spacing-40);
+    padding-right: var(--ids2-spacing-5);
 }
 
 .ids2-pr-0 {
@@ -440,33 +440,33 @@
     Padding Left & Right
  */
 .ids2-px-8 {
-    padding-left: var(--ids2-spacing-8);
-    padding-right: var(--ids2-spacing-8);
+    padding-left: var(--ids2-spacing-1);
+    padding-right: var(--ids2-spacing-1);
 }
 
 .ids2-px-12 {
-    padding-left: var(--ids2-spacing-12);
-    padding-right: var(--ids2-spacing-12);
+    padding-left: var(--ids2-spacing-1-half);
+    padding-right: var(--ids2-spacing-1-half);
 }
 
 .ids2-px-16 {
-    padding-left: var(--ids2-spacing-16);
-    padding-right: var(--ids2-spacing-16);
+    padding-left: var(--ids2-spacing-2);
+    padding-right: var(--ids2-spacing-2);
 }
 
 .ids2-px-24 {
-    padding-left: var(--ids2-spacing-24);
-    padding-right: var(--ids2-spacing-24);
+    padding-left: var(--ids2-spacing-3);
+    padding-right: var(--ids2-spacing-3);
 }
 
 .ids2-px-32 {
-    padding-left: var(--ids2-spacing-32);
-    padding-right: var(--ids2-spacing-32);
+    padding-left: var(--ids2-spacing-4);
+    padding-right: var(--ids2-spacing-4);
 }
 
 .ids2-px-40 {
-    padding-left: var(--ids2-spacing-40);
-    padding-right: var(--ids2-spacing-40);
+    padding-left: var(--ids2-spacing-5);
+    padding-right: var(--ids2-spacing-5);
 }
 
 .ids2-px-0 {

@@ -38,7 +38,7 @@ td.ids2-docs-name {
     font-size: var(--ids2-size-body2);
     color: var(--ids2-color-gray-900);
     font-weight: var(--ids2-font-bold);
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .ids2-docs-classname {
@@ -46,6 +46,7 @@ td.ids2-docs-name {
     font-weight: var(--ids2-font-bold);
     font-family: monospace;
     font-size: 12px;
+    vertical-align: top;
 }
 
 .ids2-docs-comment {
@@ -57,29 +58,31 @@ td.ids2-docs-name {
 .ids2-docs-examples {
     border: var(--ids2-border-1);
     border-radius: var(--ids2-radius-12);
-    padding: var(--ids2-spacing-24);
+    padding: var(--ids2-spacing-3);
     display: flex;
     flex-direction: column;
-    gap: var(--ids2-spacing-48);
+    gap: var(--ids2-spacing-6);
     background: linear-gradient(90deg, transparent 50%, #2d2d2d 50%);
-    margin-bottom: var(--ids2-spacing-24);
+    margin-bottom: var(--ids2-spacing-3);
 }
 
 
 .ids2-docs-example-code-block {
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    gap:  var(--ids2-spacing-3);
 }
 
 .ids2-docs-example-code {
-    margin-top: var(--ids2-spacing-12);
+    margin-top: var(--ids2-spacing-1-half);
     display: flex;
 }
 
 .ids2-docs-example {
     font-family: inherit;
     width: 50%;
+    padding-right: var(--ids2-spacing-3);
+    box-sizing: border-box;
 }
 
 .ids2-docs-example-code pre[class*=language-] {

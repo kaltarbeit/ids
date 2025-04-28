@@ -5,16 +5,16 @@
 @import "icon/styles.css";
 
 .ids2-button {
+    appearance: none;
+    -webkit-font-smoothing: inherit;
+    box-shadow: none;
+    overflow:visible;
+    cursor:pointer;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 16px;
-    gap: 8px;
-    box-shadow: none;
-    overflow:visible;
-    cursor:pointer;
-    box-sizing: border-box;
 }
 
 .ids2-button-group-example {
