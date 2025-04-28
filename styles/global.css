@@ -2,11 +2,6 @@
 
 @import "normalize.css";
 @import "variables.css";
-@import "icon.css";
-@import "skeleton.css";
-@import "backdrop.css";
-@import "typography.css";
-@import "spacing.css";
 
 @import "../components/accordion/accordion.css";
 @import "../components/badge/badge.css";
@@ -43,6 +38,14 @@
 @import "../components/toggleSwitch/toggleSwitch.css";
 @import "../components/tooltip/tooltip.css";
 @import "../components/slider/slider.css";
+
+
+@import "icon.css";
+@import "skeleton.css";
+@import "backdrop.css";
+@import "typography.css";
+@import "spacing.css";
+@import "shape.css";
 
 
 body {

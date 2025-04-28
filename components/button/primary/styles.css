@@ -4,15 +4,15 @@
 .ids2-button.ids2-button-primary {
     min-width: 100px;
     width: 100%;
-    height: 56px;
     box-sizing: border-box;
+    height: 56px;
 
     padding: var(--ids2-spacing-2);
     gap: var(--ids2-spacing-1);
     border-radius: var(--ids2-radius-12);
     font-size: var(--ids2-size-h3);
-    font-weight: var(--ids2-font-bold);
     line-height: var(--ids2-line-h3-tight);
+    font-weight: var(--ids2-font-bold);
 
     background-color: var(--ids2-color-primary);
     border: var(--ids2-color-primary);

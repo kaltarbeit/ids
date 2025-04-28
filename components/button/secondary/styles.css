@@ -3,19 +3,24 @@
  */
 .ids2-button.ids2-button-secondary {
     min-width: 100px;
+    width: 100%;
+    box-sizing: border-box;
     height: 48px;
-    background-color: #fff;
-    border: 1px solid #737684;
-    border-radius: 12px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 25px;
-    color: #101116;
+    gap: var(--ids2-spacing-1);
+
+    border-radius: var(--ids2-radius-12);
+    font-size: var(--ids2-size-body2);
+    line-height: var(--ids2-line-body2-tight);
+    font-weight: var(--ids2-font-bold);
+
+    background-color: var(--ids2-color-primary);
+    border: var(--ids2-color-primary);
+    color: var(--ids2-color-white);
 }
 
 .ids2-button.ids2-button-secondary:active {
-    background-color: #D3D6DE;
-    border-color: #C5C8D3;
+    background-color: var(--ids2-color-blue-900);
+    border-color: var(--ids2-color-blue-900);
 }
 
 .ids2-button.ids2-button-secondary:disabled {

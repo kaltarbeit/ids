@@ -90,6 +90,7 @@
     /* Spacing */
     --ids2-spacing: 8px;
     --ids2-spacing-half: var(--ids2-spacing/2);
+    --ids2-spacing-quarter: var(--ids2-spacing/4);
     --ids2-spacing-1: var(--ids2-spacing);
     --ids2-spacing-1-half: calc(var(--ids2-spacing)*1.5);
     --ids2-spacing-2: calc(var(--ids2-spacing)*2);

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>IDS 2.0 Style Sheet Document</title>
     <link rel="stylesheet" href="../styles/global.css"/>
     <link rel="stylesheet" href="../styles/doc.css"/>
     <link rel="stylesheet" href="../styles/prism.css"/>
@@ -14,21 +14,21 @@
     <div class="ids2-docs-header">
         <h1 class="ids2-title1 ids2-bold">Button</h1>
 
-        <p class="ids2-body1 ids2-my-24 ids2-text-gray-500">&lt;button&gt;, &lt;a&gt; 의 버튼 형식과 인터렉션을 표현을 위한 스타일시트 입니다.</p>
+        <p class="ids2-body1 ids2-my-24 ids2-text-gray-500">의 버튼 형식과 인터렉션을 표현을 위한 스타일시트 입니다.</p>
     </div>
 
     <section class="ids2-docs-section">
         <h2 class="ids2-docs-section-title">Base Button</h2>
 
         <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
-            &lt;button&gt; 의 스타일을 Reset 하고, Button 의 Base Style 을 부여합니다. <br/>
-            기본 스타일은 <span class="ids2-bold">Primary > Line Button</span>과 동일 합니다.
+            &lt;button&gt;, &lt;a&gt; tag 의 기본 스타일을 Reset 하고, Button 의 Base Style 을 부여합니다.<br/>
+            단독으로는 사용할 수 없고, 아래 제공되는 스타일들과 조합으로 사용하거나 별도의 스타일을 구현하여 사용합니다.
         </p>
 
         <table class="ids2-table ids2-table-sm">
             <colgroup>
-                <col style="width: 15%"/>
-                <col style="width: 25%"/>
+                <col style="width: 12%"/>
+                <col style="width: 28%"/>
                 <col style="width: 50%"/>
             </colgroup>
             <thead>
@@ -61,35 +61,21 @@
             </tbody>
         </table>
 
-
-
-        <h4 class="ids2-docs-section-label">Examples</h4>
-
-        <div class="ids2-docs-examples">
-            <div class="ids2-docs-example-block">
-                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-button</span>
-                <div class="ids2-docs-example-code">
-                    <div class="ids2-docs-example">
-                        <button class="ids2-button">레이블</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </section>
 
     <section class="ids2-docs-section">
-        <h2 class="ids2-docs-section-title">Button Size</h2>
+        <h2 class="ids2-docs-section-title">Primary Button</h2>
 
         <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
-            스타일 가이드 <span class="ids2-bold">Button > Primary Buttons</span> 를 구현한 클래스 입니다.<br/>
+            스타일 가이드 <span class="ids2-bold">Button > Primary Buttons > Default</span>의 스타일을 구현한 클래스 입니다.<br/>
+            Base Button > <span class="ids2-bold">.ids2-button</span> 클래스와 조합으로 사용됩니다.
         </p>
 
 
         <table class="ids2-table ids2-table-sm">
             <colgroup>
-                <col style="width: 15%"/>
-                <col style="width: 25%"/>
+                <col style="width: 12%"/>
+                <col style="width: 28%"/>
                 <col style="width: 50%"/>
             </colgroup>
             <thead>
@@ -104,7 +90,7 @@
                 <td class="ids2-cell-left ids2-docs-name" rowspan="3">
                     Primary
                 </td>
-                <td class="ids2-cell-left ids2-docs-classname">.ids-button-primary</td>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-button-primary</td>
                 <td class="ids2-cell-left">
                     <code class="ids2-docs-code">min-width: 100px;
                         width: 100%;
@@ -124,66 +110,17 @@
                 </td>
             </tr>
             <tr>
-                <td class="ids2-cell-left ids2-docs-classname">.ids-button-primary:active</td>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-button-primary:active</td>
                 <td class="ids2-cell-left">
-                    <code class="ids2-docs-code">background-color: var(--ids2-color-blue-900); /* #234EAA */</code>
+                    <code class="ids2-docs-code">background-color: var(--ids2-color-blue-900); <span class="ids2-docs-comment">/* #234EAA */</span></code>
                 </td>
             </tr>
             <tr>
-                <td class="ids2-cell-left ids2-docs-classname">.ids-button-primary:disabled</td>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-button-primary:disabled</td>
                 <td class="ids2-cell-left">
                     <code class="ids2-docs-code">font-size: var(--ids2-size-title1); <span class="ids2-docs-comment">/* 32px */</span>
                         line-height: var(--ids2-line-title1-tight); <span
                                 class="ids2-docs-comment">/* 40px */</span></code>
-                </td>
-            </tr>
-
-            <tr>
-                <td class="ids2-cell-left ids2-docs-name" rowspan="2">
-                    Tint
-                </td>
-                <td class="ids2-cell-left ids2-docs-classname">.ids-button-primary.ids2-tint</td>
-                <td class="ids2-cell-left">
-                    <code class="ids2-docs-code">font-size: var(--ids2-size-title2); <span class="ids2-docs-comment">/* 28px */</span>
-                        line-height: var(--ids2-line-title2); <span class="ids2-docs-comment">/* 40px */</span></code>
-                </td>
-            </tr>
-            <tr>
-                <td class="ids2-cell-left ids2-docs-classname">.ids2-title2-tight</td>
-                <td class="ids2-cell-left">
-                    <code class="ids2-docs-code">font-size: var(--ids2-size-title2); <span class="ids2-docs-comment">/* 28px */</span>
-                        line-height: var(--ids2-line-title2-tight); <span
-                                class="ids2-docs-comment">/* 36px */</span></code>
-                </td>
-            </tr>
-
-            <tr>
-                <td class="ids2-cell-left ids2-docs-name">
-                    Title3
-                </td>
-                <td class="ids2-cell-left ids2-docs-classname">.ids2-title3</td>
-                <td class="ids2-cell-left">
-                    <code class="ids2-docs-code">font-size: var(--ids2-size-title3); <span class="ids2-docs-comment">/* 26px */</span>
-                        line-height: var(--ids2-line-title3); <span class="ids2-docs-comment">/* 30px */</span></code>
-                </td>
-            </tr>
-
-            <tr>
-                <td class="ids2-cell-left ids2-docs-name" rowspan="2">
-                    Title4
-                </td>
-                <td class="ids2-cell-left ids2-docs-classname">.ids2-title4</td>
-                <td class="ids2-cell-left">
-                    <code class="ids2-docs-code">font-size: var(--ids2-size-title4); <span class="ids2-docs-comment">/* 24px */</span>
-                        line-height: var(--ids2-line-title4); <span class="ids2-docs-comment">/* 34px */</span></code>
-                </td>
-            </tr>
-            <tr>
-                <td class="ids2-cell-left ids2-docs-classname">.ids2-title4-tight</td>
-                <td class="ids2-cell-left">
-                    <code class="ids2-docs-code">font-size: var(--ids2-size-title4); <span class="ids2-docs-comment">/* 24px */</span>
-                        line-height: var(--ids2-line-title4-tight); <span
-                                class="ids2-docs-comment">/* 32px */</span></code>
                 </td>
             </tr>
             </tbody>
@@ -195,82 +132,324 @@
             <div class="ids2-docs-example-block">
                 <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-button-primary</span>
                 <div class="ids2-docs-example-code">
-                    <div class="ids2-docs-example">
-                        <button class="ids2-button ids2-button-primary">
-                            레이블
-                        </button>
+                    <div class="ids2-docs-example"></div>
+                    <div class="ids2-docs-example-code-highlight">
+                        <script type="text/plain" class="language-markup">
+                            <button class="ids2-button ids2-button-primary">
+                                레이블
+                            </button>
+                        </script>
                     </div>
                 </div>
             </div>
-
             <div class="ids2-docs-example-block">
-                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-title1-tight</span>
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-button-primary:disabled</span>
                 <div class="ids2-docs-example-code">
-                    <div class="ids2-docs-example">
-                        <h1 class="ids2-title1-tight">
-                            IBK기업은행<br/>금융으로 만나는 새로운 세상
-                        </h1>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ids2-docs-example-block">
-                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-title2</span>
-                <div class="ids2-docs-example-code">
-                    <div class="ids2-docs-example">
-                        <h2 class="ids2-title2">
-                            IBK기업은행<br/>금융으로 만나는 새로운 세상
-                        </h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ids2-docs-example-block">
-                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-title2-tight</span>
-                <div class="ids2-docs-example-code">
-                    <div class="ids2-docs-example">
-                        <h2 class="ids2-title2-tight">
-                            IBK기업은행<br/>금융으로 만나는 새로운 세상
-                        </h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ids2-docs-example-block">
-                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-title3</span>
-                <div class="ids2-docs-example-code">
-                    <div class="ids2-docs-example">
-                        <h3 class="ids2-title3">
-                            IBK기업은행<br/>금융으로 만나는 새로운 세상
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ids2-docs-example-block">
-                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-title4</span>
-                <div class="ids2-docs-example-code">
-                    <div class="ids2-docs-example">
-                        <h4 class="ids2-title4">
-                            IBK기업은행<br/>금융으로 만나는 새로운 세상
-                        </h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ids2-docs-example-block">
-                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-title4-tight</span>
-                <div class="ids2-docs-example-code">
-                    <div class="ids2-docs-example">
-                        <h4 class="ids2-title4-tight">
-                            IBK기업은행<br/>금융으로 만나는 새로운 세상
-                        </h4>
+                    <div class="ids2-docs-example"></div>
+                    <div class="ids2-docs-example-code-highlight">
+                        <script type="text/plain" class="language-markup">
+                            <button
+                                class="ids2-button ids2-button-primary"
+                                disabled
+                            >
+                                레이블
+                            </button>
+                        </script>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
+    <section class="ids2-docs-section">
+        <h2 class="ids2-docs-section-title">Secondary Button</h2>
+
+        <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+            스타일 가이드 <span class="ids2-bold">Button > Secondary Buttons > Default</span>의 스타일을 구현한 클래스 입니다.<br/>
+            Base Button > <span class="ids2-bold">.ids2-button</span> 클래스와 조합으로 사용됩니다.<br/>
+            기본 높이 <span class="ids2-bold">48px</span>이며, <span class="ids2-bold">.ids2-button-sm</span> 클래스 조합을 통해 40px로 표현 가능합니다.
+        </p>
+
+        <table class="ids2-table ids2-table-sm">
+            <colgroup>
+                <col style="width: 12%"/>
+                <col style="width: 28%"/>
+                <col style="width: 50%"/>
+            </colgroup>
+            <thead>
+            <tr>
+                <th class="ids2-cell-left">Name</th>
+                <th class="ids2-cell-left">Class</th>
+                <th class="ids2-cell-left">Style</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-name" rowspan="3">
+                    Secondary (Height 48)
+                </td>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-button-secondary</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">min-width: 100px;
+                        width: 100%;
+                        box-sizing: border-box;
+                        height: 48px;
+                        gap: var(--ids2-spacing-1); <span class="ids2-docs-comment">/* 8px */</span>
+
+                        border-radius: var(--ids2-radius-12); <span class="ids2-docs-comment">/* 12px */</span>
+                        font-size: var(--ids2-size-body2); <span class="ids2-docs-comment">/* 16px */</span>
+                        line-height: var(--ids2-line-body2-tight); <span class="ids2-docs-comment">/* 22px */</span>
+                        font-weight: var(--ids2-font-bold); <span class="ids2-docs-comment">/* 700 */</span>
+
+                        color: var(--ids2-color-primary); <span class="ids2-docs-comment">/* #4393F0 */</span>
+                        background-color: var(--ids2-color-white); <span class="ids2-docs-comment">/* #FFFFFF */</span>
+                        border: var(--ids2-border-1-primary); <span
+                                class="ids2-docs-comment">/* 1px solid #4393F0 */</span></code>
+                </td>
+            </tr>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-button-secondary:active</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">background-color: var(--ids2-color-gray-100); <span
+                            class="ids2-docs-comment">/* #F5F5F5 */</span></code>
+                </td>
+            </tr>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-button-secondary:disabled</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">color: var(--ids2-color-gray-500); <span class="ids2-docs-comment">/* #A1A1A1 */</span>
+                        background-color: var(--ids2-color-gray-200); <span
+                                class="ids2-docs-comment">/* #E5E5E5 */</span></code>
+                </td>
+            </tr>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-name">
+                    Secondary (Height 40)
+                </td>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-button-secondary.ids2-button-sm</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">height: 40px;</code>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h4 class="ids2-docs-section-label">Examples</h4>
+
+        <div class="ids2-docs-examples">
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-button-secondary</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example"></div>
+                    <div class="ids2-docs-example-code-highlight">
+                        <script type="text/plain" class="language-markup">
+                            <button class="ids2-button ids2-button-secondary">
+                                레이블
+                            </button>
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-button-secondary:disabled</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example"></div>
+                    <div class="ids2-docs-example-code-highlight">
+                        <script type="text/plain" class="language-markup">
+                            <button
+                                class="ids2-button ids2-button-secondary"
+                                disabled
+                            >
+                                레이블
+                            </button>
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-button-secondary</span>
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids-button-sm</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example"></div>
+                    <div class="ids2-docs-example-code-highlight">
+                        <script type="text/plain" class="language-markup">
+                            <button class="ids2-button ids2-button-secondary
+                                                ids2-button-sm">
+                                레이블
+                            </button>
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ids2-docs-section">
+        <h2 class="ids2-docs-section-title">Tertiary Button</h2>
+
+        <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+            스타일 가이드 <span class="ids2-bold">Button > Tertiary Buttons > Default</span>의 스타일을 구현한 클래스 입니다.<br/>
+            Base Button > <span class="ids2-bold">.ids2-button</span> 클래스와 조합으로 사용됩니다.<br/>
+            기본 높이 <span class="ids2-bold">40px</span>이며, <span class="ids2-bold">.ids2-button-sm</span> 클래스 조합을 통해 32px로 표현 가능합니다.
+        </p>
+
+        <table class="ids2-table ids2-table-sm">
+            <colgroup>
+                <col style="width: 12%"/>
+                <col style="width: 28%"/>
+                <col style="width: 50%"/>
+            </colgroup>
+            <thead>
+            <tr>
+                <th class="ids2-cell-left">Name</th>
+                <th class="ids2-cell-left">Class</th>
+                <th class="ids2-cell-left">Style</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-name" rowspan="3">
+                    Tertiary
+                </td>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-button-tertiary</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">min-width: 100px;
+                        width: auto;
+                        height: 56px;
+                        box-sizing: border-box;
+                        gap: var(--ids2-spacing-1); <span class="ids2-docs-comment">/* 8px */</span>
+
+                        font-size: var(--ids2-size-h3); <span class="ids2-docs-comment">/* 18px */</span>
+                        font-weight: var(--ids2-font-bold); <span class="ids2-docs-comment">/* 700 */</span>
+                        line-height: var(--ids2-line-h3-tight); <span class="ids2-docs-comment">/* 24px */</span>
+
+                        color: var(--ids2-color-primary); <span class="ids2-docs-comment">/* #4393F0 */</span>
+                        background-color: transparent;
+                        border: none;
+                        border-radius: var(--ids2-radius-12); <span class="ids2-docs-comment">/* 12px */</span>
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-button-tertiary:active</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">color: var(--ids2-color-blue-900); <span class="ids2-docs-comment">/* #234EAA */</span>
+                        background-color: var(--ids2-color-gray-100); <span
+                            class="ids2-docs-comment">/* #F5F5F5 */</span>
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td class="ids2-cell-left ids2-docs-classname">.ids2-button-tertiary:disabled</td>
+                <td class="ids2-cell-left">
+                    <code class="ids2-docs-code">color: var(--ids2-color-gray-500); <span class="ids2-docs-comment">/* #A1A1A1 */</span>
+                        background-color: transparent;
+                    </code>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h4 class="ids2-docs-section-label">Examples</h4>
+
+        <div class="ids2-docs-examples">
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-button-tertiary</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example"></div>
+                    <div class="ids2-docs-example-code-highlight">
+                        <script type="text/plain" class="language-markup">
+                            <button class="ids2-button ids2-button-tertiary">
+                                레이블
+                            </button>
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-button-tertiary</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example"></div>
+                    <div class="ids2-docs-example-code-highlight">
+                        <script type="text/plain" class="language-markup">
+                            <button
+                                class="ids2-button ids2-button-tertiary"
+                                disabled
+                            >
+                                레이블
+                            </button>
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-button-tertiary</span>
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-button-sm</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example"></div>
+                    <div class="ids2-docs-example-code-highlight">
+                        <script type="text/plain" class="language-markup">
+                            <button class="ids2-button ids2-button-tertiary
+                                            ids2-button-sm">
+                                레이블
+                            </button>
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-button-tertiary</span>
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-button-sm</span>
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-radius-6</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example"></div>
+                    <div class="ids2-docs-example-code-highlight">
+                        <script type="text/plain" class="language-markup">
+                            <button class="ids2-button ids2-button-tertiary
+                                            ids2-button-sm ids2-radius-6">
+                                레이블
+                            </button>
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-button-tertiary</span>
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-button-xs</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                    </div>
+                    <div class="ids2-docs-example-code-highlight">
+                        <script type="text/plain" class="language-markup">
+                            <button class="ids2-button ids2-button-tertiary
+                                            ids2-button-xs">
+                                레이블
+                            </button>
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="ids2-docs-example-block">
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-button-tertiary</span>
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-button-xs</span>
+                <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-radius-6</span>
+                <div class="ids2-docs-example-code">
+                    <div class="ids2-docs-example">
+                    </div>
+                    <div class="ids2-docs-example-code-highlight">
+                        <script type="text/plain" class="language-markup">
+                            <button class="ids2-button ids2-button-tertiary
+                                                ids2-button-xs ids2-radius-6">
+                                레이블
+                            </button>
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
 <script src="./scripts/example-box.js"></script>

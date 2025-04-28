@@ -15,6 +15,16 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: fit-content;
+    text-decoration: none;
+}
+
+a.ids2-button:hover,
+a.ids2-button:active,
+a.ids2-button:visited,
+a.ids2-button:focus {
+    text-decoration: none;
+    color: inherit;
 }
 
 .ids2-button-group-example {
@@ -207,3 +217,4 @@
 .ids2-col-2 {
     width: 66.66%;
 }
+
