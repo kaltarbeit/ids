@@ -146,22 +146,47 @@ a.ids2-button:focus {
  */
 
 .ids2-button.ids2-button-tint {
-    border-color: transparent;
-    background-color: #E4F2FF;
-    color: #235FD2;
+    border-color: var(--ids2-color-blue-100);
+    background-color: var(--ids2-color-blue-100);
+    color: var(--ids2-color-blue-700);
+    font-weight: var(--ids2-font-bold);
 }
 
 .ids2-button.ids2-button-tint:active {
-    border-color: transparent;
-    background-color: #C1E0FC;
-    color: #235FD2;
+    border-color: var(--ids2-color-blue-400);
+    background-color: var(--ids2-color-blue-400);
+    color: var(--ids2-color-blue-700);
 }
 
 .ids2-button.ids2-button-tint:disabled {
-    border-color: transparent;
-    background-color: #E1E3EA;
-    color: #737684;
+    border-color: var(--ids2-color-gray-100);
+    background-color: var(--ids2-color-gray-100);
+    color: var(--ids2-color-gray-500);
 }
+
+
+/**
+    Button line
+ */
+
+.ids2-button.ids2-button-line {
+    background-color: var(--ids2-color-white);
+    border: var(--ids2-border-1-500);
+    color: var(--ids2-color-gray-800);
+}
+
+.ids2-button.ids2-button-line:active {
+    background-color: var(--ids2-color-gray-150);
+    border-color: var(--ids2-color-gray-200);
+}
+
+.ids2-button.ids2-button-line:disabled {
+    background-color: var(--ids2-color-white);
+    border-color: var(--ids2-color-gray-200);
+    color: var(--ids2-color-gray-500);
+}
+
+
 
 .ids2-button.ids2-button-icon + .ids2-button-label {
     font-size: 14px;

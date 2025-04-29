@@ -4,42 +4,34 @@ export const createAccordion = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const items = wrapper.querySelectorAll('.ids2-accordion-item');
-
     /** Examples **/
     function toggleAccordion(e) {
         const item = e.currentTarget.parentElement;
-        const detail = item.querySelector('.ids2-accordion-details');
+        const details = item.getElementsByClassName('ids2-accordion-details')
 
-        if(!!detail) {
-            const opened = item.hasAttribute('open');
+        if(details.length > 0) {
+            const opened = item.classList.contains('ids2-accordion-item-open');
 
             if(opened) {
-                item.removeAttribute('open');
-                detail.style.height = 0;
+                item.classList.remove('ids2-accordion-item-open');
+                details[0].style.height = 0;
             } else {
-                item.setAttribute('open', '');
-                detail.style.height = detail.scrollHeight+'px';
+                item.classList.add('ids2-accordion-item-open');
+                details[0].style.height = details[0].scrollHeight+'px';
             }
-
-            items.forEach(anotherItem => {
-                if(anotherItem !== item) {
-                    const detail = anotherItem.querySelector('.ids2-accordion-details');
-                    anotherItem.removeAttribute('open');
-                    detail.style.height = 0;
-                }
-            })
         }
     }
 
-    function initAccordion() {
+    function initAccordion(wrapper) {
+        const items = wrapper.getElementsByClassName('ids2-accordion-item');
 
-        for(let i = 0; i < items.length; i++) {
+        for(var i = 0; i < items.length; i++) {
             items[i].firstElementChild.addEventListener('click', toggleAccordion);
         }
     }
 
-    initAccordion();
+    initAccordion(wrapper);
+    // initAccordion(document);
 
     /** Examples **/
 

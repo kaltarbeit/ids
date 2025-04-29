@@ -4,7 +4,7 @@
 .ids2-button-tertiary {
     height: 40px;
 
-    background-color: #fff;
+    background-color: var(--ids2-color-white);
     border: var(--ids2-border-1-500);
     border-radius: var(--ids2-radius-full);
     padding: 0 var(--ids2-spacing-2-half);
@@ -28,15 +28,15 @@
 }
 
 .ids2-button.ids2-button-tertiary.ids2-button-sm {
+    height: 32px;
     font-size: var(--ids2-size-body4);
-    height: var(--ids2-line-h1);
     padding: 0 var(--ids2-spacing-1-half);
-    gap: 4px;
+    gap: var(--ids2-spacing-half);
 }
 
 .ids2-button.ids2-button-tertiary.ids2-button-xs {
+    height: 24px;
     font-size: var(--ids2-size-caption);
-    height: var(--ids2-line-body1);
     padding: 0 var(--ids2-spacing-1);
     gap: var(--ids2-spacing-quarter);
 }

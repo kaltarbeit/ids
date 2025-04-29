@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IDS 2.0 Style Sheet Document</title>
+  <link rel="stylesheet" href="../styles/global.css"/>
+  <link rel="stylesheet" href="../styles/doc.css"/>
+  <link rel="stylesheet" href="../styles/prism.css"/>
+</head>
+<body>
+<div class="ids2-docs">
+
+  <div class="ids2-docs-header">
+    <h1 class="ids2-title1 ids2-bold">Accordion</h1>
+
+    <p class="ids2-body1 ids2-my-24 ids2-text-gray-500">Accordion 형식의 Collapse / Expand 표현을 위한 스타일시트 입니다.</p>
+  </div>
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">Base Style</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      &lt;button&gt;, &lt;a&gt; tag 의 기본 스타일을 Reset 하고, Button 의 Base Style 을 부여합니다.<br/>
+      단독으로는 사용할 수 없고, 아래 제공되는 스타일들과 조합으로 사용하거나 별도의 스타일을 구현하여 사용합니다.
+    </p>
+
+    <table class="ids2-table ids2-table-sm">
+      <colgroup>
+        <col style="width: 12%"/>
+        <col style="width: 28%"/>
+        <col style="width: 50%"/>
+      </colgroup>
+      <thead>
+      <tr>
+        <th class="ids2-cell-left">Name</th>
+        <th class="ids2-cell-left">Class</th>
+        <th class="ids2-cell-left">Style</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="ids2-cell-left ids2-docs-name">
+          Base Button
+        </td>
+        <td class="ids2-cell-left ids2-docs-classname">.ids2-button</td>
+        <td class="ids2-cell-left">
+          <code class="ids2-docs-code">appearance: none;
+            -webkit-font-smoothing: inherit;
+            box-shadow: none;
+            overflow:visible;
+            cursor:pointer;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+          </code>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-accordion-contents</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-accordion">
+                <div class="ids2-accordion-item">
+                  <div class="ids2-accordion-summary">
+                    <div class="ids2-title">
+                      <h3 class="ids2-h3-tight">
+                        타이틀 <span class="ids2-badge-count">99</span>
+                      </h3>
+                      <div class="ids2-total">
+                        <span class="ids2-total-label">합계</span> <span class="ids2-badge-count">1,000,000,000원</span>
+                      </div>
+                    </div>
+                    <div class="ids2-body5 ids2-text-gray-600">서브 텍스트</div>
+                    <div class="ids2-arrow">
+                        <i class="ids2-icon ids2-icon-expand">Expand</i>
+                    </div>
+                  </div>
+                  <div class="ids2-accordion-details">
+                    <div class="ids2-pt-2 ids2-body4">
+                      <ul class="ids2-sub-list">
+                        <li>텍스트를 노출합니다.</li>
+                        <li>텍스트를 노출합니다.</li>
+                        <li>텍스트
+                          <span class="ids2-font-regular ids2-text-gray-600">
+                              | 부가설명을 노출합니다.
+                            </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-accordion</span><br/>
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-accordion-item</span>
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-accordion-item-open</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-accordion">
+                <div class="ids2-accordion-item ids2-accordion-item-open">
+                  <div class="ids2-accordion-summary">
+                    <div class="ids2-title">
+                      <h3 class="ids2-h3-tight">
+                        타이틀 <span class="ids2-badge-count">99</span>
+                      </h3>
+                      <div class="ids2-total">
+                        <span class="ids2-total-label">합계</span> <span class="ids2-badge-count">1,000,000,000원</span>
+                      </div>
+                    </div>
+                    <div class="ids2-body5 ids2-text-gray-600">서브 텍스트</div>
+                    <div class="ids2-arrow">
+                        <i class="ids2-icon ids2-icon-expand">Expand</i>
+                    </div>
+                  </div>
+                  <div class="ids2-accordion-details">
+                    <div class="ids2-pt-2 ids2-body4">
+                      <ul class="ids2-sub-list">
+                        <li>텍스트를 노출합니다.</li>
+                        <li>텍스트를 노출합니다.</li>
+                        <li>텍스트
+                          <span class="ids2-font-regular ids2-text-gray-600">
+                              | 부가설명을 노출합니다.
+                            </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</div>
+
+<script src="./scripts/example-box.js"></script>
+<script src="./scripts/prism.js"></script>
+<script>
+    Prism.highlightAll();
+</script>
+</body>
+</html>

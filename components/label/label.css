@@ -5,6 +5,7 @@
 }
 
 .ids2-label {
+    display: inline-block;
     background-color: #fff;
     border-radius: 6px;
     font-size: 12px;

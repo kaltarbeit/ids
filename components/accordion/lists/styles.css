@@ -1,5 +1,4 @@
 .ids2-accordion-list {
-    font-family: 'Pretendard', sans-serif;
     width: 100%;
     min-width: 320px;
 }
@@ -45,36 +44,17 @@
     justify-content: space-between;
 }
 
-.ids2-title .ids2-h3 {
-    display: inline;
-    vertical-align: middle;
-}
-
-.ids2-text {
-    font-family: Pretendard, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    margin-top: 16px;
-}
-
-.ids2-date {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    color: #737684;
+.ids2-title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .ids2-sub-content {
-    margin-top: 16px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #101116;
+    margin-top: var(--ids2-spacing-2);
     padding: 20px 16px;
     background: #f3f4f7;
     border-radius: 12px;
-    box-sizing: border-box;
 }
 
 .ids2-sub-content-label-container {

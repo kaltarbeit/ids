@@ -1,20 +1,19 @@
-.ids2-accordion-contents {
-    font-family: 'Pretendard', sans-serif;
+.ids2-accordion {
     width: 100%;
     min-width: 320px;
     background-color: #ffffff;
 }
-.ids2-accordion-contents .ids2-accordion-item {
+.ids2-accordion .ids2-accordion-item {
     padding: 14px 24px;
     transition: max-height 1s  ease-in-out;
 }
-.ids2-accordion-contents .ids2-accordion-summary {
+.ids2-accordion .ids2-accordion-summary {
     position: relative;
     cursor: pointer;
     padding-right: 40px;
     transition: background 0.3s ease-in;
 }
-.ids2-accordion-contents .ids2-arrow {
+.ids2-accordion .ids2-arrow {
     width: 18px;
     height: 18px;
     position: absolute;
@@ -26,43 +25,30 @@
     transition: transform 0.3s cubic-bezier(.7,.2,.9,.6);
     justify-content: right;
 }
-.ids2-accordion-contents .ids2-accordion-item[open] .ids2-arrow {
-    transform: rotate(-180deg);
-}
-.ids2-accordion-contents .ids2-accordion-details {
-    height: 0;
+.ids2-accordion .ids2-accordion-details {
+    display: none;
     overflow: hidden;
     box-sizing: border-box;
     transition: height 0.3s cubic-bezier(.7,.5,.6,.9);
 }
-.ids2-accordion-contents .ids2-accordion-details-wrap {
-    padding-top: 16px;
+
+.ids2-accordion .ids2-accordion-item.ids2-accordion-item-open .ids2-arrow {
+    transform: rotate(-180deg);
 }
 
-.ids2-title {
+.ids2-accordion .ids2-accordion-item.ids2-accordion-item-open .ids2-accordion-details {
+    display: block;
+}
+
+.ids2-accordion .ids2-accordion-title {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.ids2-title .ids2-h3 {
+.ids2-accordion .ids2-accordion-title .ids2-h3 {
     display: inline;
     vertical-align: middle;
-}
-
-.ids2-count {
-    font-family: 'Pretendard', sans-serif;
-    color: #2873e3;
-    font-size: 16px;
-    font-weight: 700;
-    vertical-align: middle;
-}
-
-.ids2-subtext {
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 20px;
-    color: #5a5e6c;
 }
 
 .ids2-total {

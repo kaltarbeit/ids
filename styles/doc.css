@@ -85,6 +85,11 @@ td.ids2-docs-name {
     box-sizing: border-box;
 }
 
+.ids2-docs-example-labels {
+    width: 50%;
+    text-overflow: ellipsis;
+}
+
 .ids2-docs-example-code pre[class*=language-] {
     box-sizing: border-box;
     padding: 0 1em;
@@ -94,5 +99,5 @@ td.ids2-docs-name {
 .ids2-docs-example-code-highlight {
     margin-right: -24px !important;
     width: 50%;
-    font-size: 14px !important;
+    font-size: 12px !important;
 }

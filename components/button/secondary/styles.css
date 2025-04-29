@@ -24,9 +24,9 @@
 }
 
 .ids2-button.ids2-button-secondary:disabled {
-    background-color: #F3F4F7;
-    border-color: #E1E3EA;
-    color: #737684;
+    background-color: var(--ids2-color-gray-150);
+    border-color: var(--ids2-color-gray-150);
+    color: var(--ids2-color-gray-500);
 }
 
 .ids2-button.ids2-button-secondary.ids2-button-sm {
