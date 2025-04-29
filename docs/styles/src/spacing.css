@@ -14,6 +14,10 @@
 }
 
 .ids2-ma-2-half {
+    margin: var(--ids2-spacing-2-half);
+}
+
+.ids2-ma-3 {
     margin: var(--ids2-spacing-3);
 }
 
@@ -33,27 +37,31 @@
     Margin Top
  */
 .ids2-mt-1 {
-    margin-top: 8px;
+    margin-top: var(--ids2-spacing-1);
 }
 
 .ids2-mt-1-half  {
-    margin-top: 12px;
+    margin-top: var(--ids2-spacing-1-half);
 }
 
 .ids2-mt-2  {
-    margin-top: 16px;
+    margin-top: var(--ids2-spacing-2);
 }
 
 .ids2-mt-2-half {
-    margin-top: 24px;
+    margin-top: var(--ids2-spacing-2-half);
+}
+
+.ids2-mt-3 {
+    margin-top: var(--ids2-spacing-3);
 }
 
 .ids2-mt-5 {
-    margin-top: 40px;
+    margin-top: var(--ids2-spacing-5);
 }
 
 .ids2-mt-0 {
-    margin-top: 0;
+    margin-top: var(--ids2-spacing-none);
 }
 
 
@@ -73,6 +81,10 @@
 }
 
 .ids2-mb-2-half {
+    margin-bottom: var(--ids2-spacing-2-half);
+}
+
+.ids2-mb-3 {
     margin-bottom: var(--ids2-spacing-3);
 }
 
@@ -85,7 +97,7 @@
 }
 
 .ids2-mb-0 {
-    margin-bottom: 0;
+    margin-bottom: var(--ids2-spacing-none);
 }
 
 
@@ -108,6 +120,11 @@
 }
 
 .ids2-my-2-half {
+    margin-top: var(--ids2-spacing-2-half);
+    margin-bottom: var(--ids2-spacing-2-half);
+}
+
+.ids2-my-3 {
     margin-top: var(--ids2-spacing-3);
     margin-bottom: var(--ids2-spacing-3);
 }
@@ -128,8 +145,8 @@
 }
 
 .ids2-my-0 {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: var(--ids2-spacing-none);
+    margin-bottom: var(--ids2-spacing-none);
 }
 
 
@@ -149,6 +166,10 @@
 }
 
 .ids2-ml-2-half {
+    margin-left: var(--ids2-spacing-2-half);
+}
+
+.ids2-ml-3 {
     margin-left: var(--ids2-spacing-3);
 }
 
@@ -161,7 +182,7 @@
 }
 
 .ids2-ml-0 {
-    margin-left: 0;
+    margin-left: var(--ids2-spacing-none);
 }
 
 
@@ -181,6 +202,10 @@
 }
 
 .ids2-mr-2-half {
+    margin-right: var(--ids2-spacing-2-half);
+}
+
+.ids2-mr-3 {
     margin-right: var(--ids2-spacing-3);
 }
 
@@ -193,7 +218,7 @@
 }
 
 .ids2-mr-0 {
-    margin-right: 0;
+    margin-right: var(--ids2-spacing-none);
 }
 
 
@@ -216,6 +241,11 @@
 }
 
 .ids2-mx-2-half {
+    margin-left: var(--ids2-spacing-2-half);
+    margin-right: var(--ids2-spacing-2-half);
+}
+
+.ids2-mx-3 {
     margin-left: var(--ids2-spacing-3);
     margin-right: var(--ids2-spacing-3);
 }
@@ -236,8 +266,8 @@
 }
 
 .ids2-mx-0 {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: var(--ids2-spacing-none);
+    margin-right: var(--ids2-spacing-none);
 }
 
 /**
@@ -256,6 +286,10 @@
 }
 
 .ids2-pa-2-half {
+    padding: var(--ids2-spacing-2-half);
+}
+
+.ids2-pa-3 {
     padding: var(--ids2-spacing-3);
 }
 
@@ -268,7 +302,7 @@
 }
 
 .ids2-pa-0 {
-    padding: 0;
+    padding: var(--ids2-spacing-none);
 }
 
 /**
@@ -287,6 +321,10 @@
 }
 
 .ids2-pt-2-half {
+    padding-top: var(--ids2-spacing-2-half);
+}
+
+.ids2-pt-3 {
     padding-top: var(--ids2-spacing-3);
 }
 
@@ -299,7 +337,7 @@
 }
 
 .ids2-pt-0 {
-    padding-top: 0;
+    padding-top: var(--ids2-spacing-none);
 }
 
 /**
@@ -319,6 +357,10 @@
 }
 
 .ids2-pb-2-half {
+    padding-bottom: var(--ids2-spacing-2-half);
+}
+
+.ids2-pb-3 {
     padding-bottom: var(--ids2-spacing-3);
 }
 
@@ -331,7 +373,7 @@
 }
 
 .ids2-pb-0 {
-    padding-bottom: 0;
+    padding-bottom: var(--ids2-spacing-none);
 }
 
 /**
@@ -375,8 +417,8 @@
 }
 
 .ids2-py-0 {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: var(--ids2-spacing-none);
+    padding-bottom: var(--ids2-spacing-none);
 }
 
 
@@ -396,6 +438,10 @@
 }
 
 .ids2-pl-2-half {
+    padding-left: var(--ids2-spacing-2-half);
+}
+
+.ids2-pl-3 {
     padding-left: var(--ids2-spacing-3);
 }
 
@@ -408,7 +454,7 @@
 }
 
 .ids2-pl-0 {
-    padding-left: 0;
+    padding-left: var(--ids2-spacing-none);
 }
 
 /**
@@ -427,6 +473,10 @@
 }
 
 .ids2-pr-2-half {
+    padding-right: var(--ids2-spacing-2-half);
+}
+
+.ids2-pr-3 {
     padding-right: var(--ids2-spacing-3);
 }
 
@@ -439,7 +489,7 @@
 }
 
 .ids2-pr-0 {
-    padding-right: 0;
+    padding-right: var(--ids2-spacing-none);
 }
 
 /**
@@ -461,6 +511,11 @@
 }
 
 .ids2-px-2-half {
+    padding-left: var(--ids2-spacing-2-half);
+    padding-right: var(--ids2-spacing-2-half);
+}
+
+.ids2-px-3 {
     padding-left: var(--ids2-spacing-3);
     padding-right: var(--ids2-spacing-3);
 }
@@ -476,6 +531,6 @@
 }
 
 .ids2-px-0 {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: var(--ids2-spacing-none);
+    padding-right: var(--ids2-spacing-none);
 }

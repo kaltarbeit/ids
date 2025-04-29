@@ -1,10 +1,9 @@
 .ids2-accordion {
     width: 100%;
     min-width: 320px;
-    background-color: #ffffff;
+    background-color: var(--ids2-color-white);
 }
 .ids2-accordion .ids2-accordion-item {
-    padding: 14px 24px;
     transition: max-height 1s  ease-in-out;
 }
 .ids2-accordion .ids2-accordion-summary {

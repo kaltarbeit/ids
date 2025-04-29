@@ -3,11 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IDS 2.0 퍼블리싱 가이드</title>
+    <title>IDS 2.0 Style Sheet Reference</title>
+    <link rel="stylesheet" href="./styles/ids2.css"/>
+    <link rel="stylesheet" href="./styles/doc.css"/>
+    <link rel="stylesheet" href="./styles/prism.css"/>
 </head>
 <body>
     <div class="ids2-docs">
+        <div class="ids2-docs-header">
+            <h1 class="ids2-title1 ids2-bold">IBK Design System 2.0</h1>
+            <p class="ids2-body1">Style Sheet Reference</p>
+        </div>
 
+        <div class="ids2-docs-index">
+            <div class="ids2-menu">
+                    <div class="ids2-menu-title">Styles</div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Variables</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Grid</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Spacing</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Elevation</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="./typography.html">Typography</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Icon</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Border</a>
+                    </div>
+                    <div class="ids2-divider ids2-divider-middle"></div>
+                    <div class="ids2-menu-title">Components</div>
+                    <div class="ids2-menu-item">
+                        <a href="./accordion.html">Accordion</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Badge</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Banner</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Bottom Sheet</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Breadcrumb</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="./button.html">Button</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Card</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Checkbox</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Chip</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Data table</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Divider</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Drawer</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Dropdown</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Footer</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Info Box</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Input Stepper</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Label</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">List</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Bottom Navigation</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Top Navigation</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Overflow Menu</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Pagination</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Popover</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Popup</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Radio Button</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Slider</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Snackbar</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Tabs</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Text Area</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Text Field</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Toast</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Toggle Switch</a>
+                    </div>
+                    <div class="ids2-menu-item">
+                        <a href="#">Tooltip</a>
+                    </div>
+                <div class="ids2-divider ids2-divider"></div>
+            </div>
+            <div class="ids2-docs-index-description">
+
+                <section class="ids2-docs-section">
+                    <h2 class="ids2-docs-section-title">Overview</h2>
+
+                    <p class="ids2-body1">
+                        이 문서는 <span class="ids2-bold">IBK Design System 2.0</span> 을 바탕으로 작성된 Style Sheet 의 사용법 및 예제를 담고 있습니다.
+                    </p>
+                    <p class="ids2-body1 ids2-mt-2">
+                        좌측 메뉴를 통해 각 스타일 및 컴포넌트의 자세한 내용 및 예제를 보실 수 있습니다.
+                    </p>
+                </section>
+
+                <section class="ids2-docs-section">
+                    <h2 class="ids2-docs-section-title">Prefix : ids2-</h2>
+
+                    <p class="ids2-body1 ids2-mt-2">
+                        IDS 2.0의 모든 Class 명은 <span class="ids2-bold">ids2-</span> 로 시작합니다. <br/>
+                        이는 기존 CSS와 충돌을 막고 명확한 구분을 위한 방법입니다.
+                    </p>
+
+                    <div class="ids2-docs-code-highlight ids2-mt-2">
+                        <script type="text/plain" class="language-markup">
+                            <h1 class="ids2-title1 ids2-semibold">제목</h1>
+
+                            <button class="ids2-button ids2-button-primary">레이블</button>
+                        </script>
+                    </div>
+                </section>
+
+                <section class="ids2-docs-section">
+                    <h2 class="ids2-docs-section-title">How to use</h2>
+
+                    <p class="ids2-body1">
+                        제공되는 CSS 파일은 아래와 같습니다.
+                    </p>
+
+                    <div class="ids2-card ids2-card-outlined ids2-mt-2">
+                        <div class="ids2-docs-file-list">
+                            <ul class="treeview">
+                                <li class="treeview-folder">
+                                    <span class="ids2-bold">styles</span>
+                                    <ul class="treeview">
+                                        <li class="treeview-file">ids2.min.css</li>
+                                        <li class="treeview-file">icon.min.css</li>
+                                        <li class="treeview-file">normalize.css</li>
+                                        <li class="treeview-folder">
+                                            <span class="ids2-bold">src</span>
+                                            <ul class="treeview">
+                                                <li class="treeview-file">styles.css</li>
+                                                <li class="treeview-file">variables.css</li>
+                                                <li class="treeview-file">backdrop.css</li>
+                                                <li class="treeview-file">icon.css</li>
+                                                <li class="treeview-file">grid.css</li>
+                                                <li class="treeview-file">shape.css</li>
+                                                <li class="treeview-file">skeleton.css</li>
+                                                <li class="treeview-file">spacing.css</li>
+                                                <li class="treeview-file">typography.css</li>
+                                                <li class="treeview-folder">
+                                                    <span class="ids2-bold">components</span>
+                                                    <ul class="treeview">
+                                                        <li class="treeview-file">accordion.css</li>
+                                                        <li class="treeview-file">badge.css</li>
+                                                        <li class="treeview-file">banner.css</li>
+                                                        <li class="treeview-file">bottomNavigation.css</li>
+                                                        <li class="treeview-file">bottomSheet.css</li>
+                                                        <li class="treeview-file">breadcrumb.css</li>
+                                                        <li class="treeview-file">button.css</li>
+                                                        <li class="treeview-file">card.css</li>
+                                                        <li class="treeview-file">checkbox.css</li>
+                                                        <li class="treeview-file">chip.css</li>
+                                                        <li class="treeview-file">divider.css</li>
+                                                        <li class="treeview-file">drawer.css</li>
+                                                        <li class="treeview-file">dropdown.css</li>
+                                                        <li class="treeview-file">footer.css</li>
+                                                        <li class="treeview-file">infoBox.css</li>
+                                                        <li class="treeview-file">inputStepper.css</li>
+                                                        <li class="treeview-file">label.css</li>
+                                                        <li class="treeview-file">list.css</li>
+                                                        <li class="treeview-file">overflowMenu.css</li>
+                                                        <li class="treeview-file">pagination.css</li>
+                                                        <li class="treeview-file">popup.css</li>
+                                                        <li class="treeview-file">profile.css</li>
+                                                        <li class="treeview-file">progressStep.css</li>
+                                                        <li class="treeview-file">radio.css</li>
+                                                        <li class="treeview-file">slider.css</li>
+                                                        <li class="treeview-file">snackbar.css</li>
+                                                        <li class="treeview-file">tab.css</li>
+                                                        <li class="treeview-file">table.css</li>
+                                                        <li class="treeview-file">textArea.css</li>
+                                                        <li class="treeview-file">textField.css</li>
+                                                        <li class="treeview-file">toast.css</li>
+                                                        <li class="treeview-file">toggleSwitch.css</li>
+                                                        <li class="treeview-file">tooltip.css</li>
+                                                        <li class="treeview-file">topNavigation.css</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p class="ids2-body1 ids2-mt-2">
+                        실 서비스에서의 사용은 <span class="ids2-bold">ids2.min.css</span>를 이용합니다.
+                        해당 파일은 <span class="ids2-bold">src</span> 하위 css의 minified 버전입니다.
+                    </p>
+
+                    <p class="ids2-body1 ids2-mt-2">
+                        커스터마이징 또는 소스 분석 시에는 <span class="ids2-bold">src</span> 하위 소스를 이용하면 됩니다.
+                    </p>
+
+                    <p class="ids2-body1 ids2-mt-2">
+                        IDS 2.0에서 제공하는 <span class="ids2-bold">SVG Icon</span>
+                        사용을 원할 경우 <span class="ids2-bold">icon.min.css</span>를 함께 Import  해주면 됩니다.
+                    </p>
+
+                    <p class="ids2-body1 ids2-mt-2">
+                        만약 기본 Reset CSS가 없거나, 기존 CSS와 충돌이 날 경우
+                        <span class="ids2-bold">normalize.css</span>를 이용해 보시기 바랍니다.
+                    </p>
+
+                    <div class="ids2-docs-code-highlight ids2-mt-2">
+                        <script type="text/plain" class="language-markup">
+                            <!doctype html>
+                            <html lang="ko">
+                            <head>
+                                ...
+
+                                <link rel="stylesheet" href="../styles/normalize.css"/>
+                                <link rel="stylesheet" href="../styles/ids2.min.css"/>
+                                <link rel="stylesheet" href="../styles/icon.min.css"/>
+
+                                ...
+                            </head>
+
+                            ...
+                        </script>
+                    </div>
+
+                </section>
+            </div>
+        </div>
     </div>
+    <script src="./scripts/docs.js"></script>
+    <script src="./scripts/prism.js"></script>
+    <script>
+        Prism.highlightAll();
+    </script>
 </body>
 </html>

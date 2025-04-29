@@ -137,7 +137,6 @@
 }
 
 .ids2-menu {
-     margin: auto;
      background: white;
      padding: 20px;
  }
@@ -159,6 +158,14 @@
     color: #101116;
     padding: 13px 0;
     cursor: pointer;
+}
+.ids2-menu-item a {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #101116;
+    cursor: pointer;
+    text-decoration: none;
 }
 .ids2-item.read {
     background: #e8f2ff;

@@ -199,3 +199,7 @@ XS
 .ids2-icon.ids2-icon-xxs.ids2-icon-arrow-right {
     background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.04464 1.41964C4.22689 1.2374 4.52236 1.2374 4.70461 1.41964L9.95461 6.66964C10.1369 6.85189 10.1369 7.14737 9.95461 7.32961L4.70461 12.5796C4.52236 12.7619 4.22689 12.7619 4.04464 12.5796C3.8624 12.3974 3.8624 12.1019 4.04464 11.9196L8.96466 6.99963L4.04464 2.07961C3.8624 1.89736 3.8624 1.60189 4.04464 1.41964Z' fill='%23101116'/%3E%3C/svg%3E%0A");
 }
+
+.ids2-icon.ids2-icon-xxs.ids2-icon-arrow-left {
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.95485 1.42184C10.1371 1.60408 10.1371 1.89956 9.95485 2.08181L5.03484 7.00182L9.95485 11.9218C10.1371 12.1041 10.1371 12.3996 9.95485 12.5818C9.77261 12.7641 9.47713 12.7641 9.29489 12.5818L4.04489 7.33181C3.86264 7.14956 3.86264 6.85408 4.04489 6.67184L9.29489 1.42184C9.47713 1.2396 9.77261 1.2396 9.95485 1.42184Z' fill='%23101116'/%3E%3C/svg%3E");
+}

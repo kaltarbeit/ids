@@ -1,4 +1,132 @@
-@import "./contents/styles.css";
-@import "./lists/styles.css";
-@import "./mix/styles.css";
 @import "./help/styles.css";
+.ids2-accordion-examples {
+    display: flex;
+    gap: 20px;
+
+}
+
+.ids2-accordion-example {
+    width: 50%;
+    min-width: 320px;
+}
+
+.ids2-accordion {
+    width: 100%;
+    min-width: 320px;
+    background-color: var(--ids2-color-white);
+}
+
+.ids2-accordion-card {
+    border-radius: 16px;
+    box-sizing: border-box;
+    border: 1px solid #E1E3EA;
+    background: #fff;
+    padding: var(--ids2-spacing-2-half);
+}
+
+.ids2-accordion .ids2-accordion-item {
+    transition: max-height 1s  ease-in-out;
+}
+.ids2-accordion .ids2-accordion-summary {
+    position: relative;
+    cursor: pointer;
+    padding-right: 40px;
+    transition: background 0.3s ease-in;
+}
+.ids2-accordion .ids2-arrow {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s cubic-bezier(.7,.2,.9,.6);
+    justify-content: right;
+}
+.ids2-accordion .ids2-accordion-details {
+    display: none;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: height 0.3s cubic-bezier(.7,.5,.6,.9);
+}
+
+.ids2-accordion .ids2-accordion-item.ids2-accordion-item-open .ids2-arrow {
+    transform: rotate(-180deg);
+}
+
+.ids2-accordion .ids2-accordion-item.ids2-accordion-item-open .ids2-accordion-details {
+    display: block;
+}
+
+.ids2-accordion .ids2-accordion-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ids2-accordion .ids2-accordion-title .ids2-h3 {
+    display: inline;
+    vertical-align: middle;
+}
+
+.ids2-total {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.ids2-total .ids2-total-label {
+    font-size: 13px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.ids2-sub-list {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #30323b;
+    padding: 12px 16px;
+    background: #f3f4f7;
+    border-radius: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ids2-sub-list li {
+    position: relative;
+    padding-left: 12px;
+    list-style: none;
+}
+.ids2-sub-list li::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -3px;
+    content: ' ';
+    display: block;
+    width: 4px;
+    height: 4px;
+    overflow: hidden;
+    background-color: #454855;
+    border-radius: 50%;
+}
+
+.ids2-explain {
+    color: #5a5e6c;
+    font-weight: 400;
+}
+
+
+
+.ids2-sub-content {
+    margin-top: var(--ids2-spacing-2);
+    padding: 20px 16px;
+    background: #f3f4f7;
+    border-radius: 12px;
+}

@@ -7,27 +7,27 @@ export const createAccordion = () => {
     /** Examples **/
     function toggleAccordion(e) {
         const item = e.currentTarget.parentElement;
-        const details = item.getElementsByClassName('ids2-accordion-details');
+        const details = item.querySelector('.ids2-accordion-details');
 
-        if(details.length > 0) {
-            const opened = item.hasAttribute('open');
+        if(details) {
+            const opened = item.classList.contains('ids2-accordion-item-open');
 
             if(opened) {
-                item.removeAttribute('open');
-                details[0].style.height = 0;
+                item.classList.remove('ids2-accordion-item-open');
+                details.style.height = 0;
             } else {
-                item.setAttribute('open', '');
-                details[0].style.height = details[0].scrollHeight+'px';
+                item.classList.add('ids2-accordion-item-open');
+                details.style.height = details.scrollHeight+'px';
             }
         }
     }
 
     function initAccordion(wrapper) {
-        const items = wrapper.getElementsByClassName('ids2-accordion-item');
+        const items = wrapper.querySelectorAll('.ids2-accordion-item');
 
-        for(var i = 0; i < items.length; i++) {
-            items[i].firstElementChild.addEventListener('click', toggleAccordion);
-        }
+        items.forEach(item => {
+            item.firstElementChild.addEventListener('click', toggleAccordion);
+        });
     }
 
     const checkboxAlls = wrapper.querySelectorAll('.ids2-checkbox-all');
