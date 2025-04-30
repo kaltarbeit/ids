@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IDS 2.0 Style Sheet Document</title>
+  <link rel="stylesheet" href="../../styles/ids2.css"/>
+  <link rel="stylesheet" href="../css/doc.css"/>
+  <link rel="stylesheet" href="../css/prism.css"/>
+</head>
+<body>
+<div class="ids2-docs">
+
+  <div class="ids2-docs-back">
+    <a href="../index.html" class="ids2-button ids2-button-text">
+      <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-left">Back</i>
+      Index
+    </a>
+  </div>
+
+  <div class="ids2-docs-header">
+    <h1 class="ids2-title1 ids2-bold">Divider</h1>
+
+    <p class="ids2-body1 ids2-my-24 ids2-text-gray-500">Divider 디자인 표현을 위한 스타일시트 입니다.</p>
+  </div>
+
+
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">Base Style</h2>
+
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      Divider 기본 스타일을 구성합니다.<br/>
+      <span class="ids2-bold">.ids2-divider-middle</span>, <span class="ids2-bold">.ids2-divider-thick</span> 와의 조합으로 두께 표현이 가능합니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-name">
+            Base (Thin)
+          </td>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-divider</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">display: block;
+              width: 100%;
+              background-color: #F3F4F7;
+              border: 0 none;
+              color: #F3F4F7;
+              height: 1px;
+              margin: 20px 0;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-name">
+            Middle
+          </td>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-divider-middle</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">height: 8px;</code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-name">
+            Thick
+          </td>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-card-filled</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">height: 12px;</code>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-divider</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <hr class="ids2-divider" />
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-divider</span>
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-divider-middle</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <hr class="ids2-divider ids2-divider-middle" />
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-divider</span>
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-divider-thick</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <hr class="ids2-divider ids2-divider-thick" />
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script src="../scripts/docs.js"></script>
+<script src="../scripts/prism.js"></script>
+<script>
+    Prism.highlightAll();
+</script>
+</body>
+</html>

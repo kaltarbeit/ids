@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IDS 2.0 Style Sheet Document</title>
+  <link rel="stylesheet" href="../../styles/ids2.css"/>
+  <link rel="stylesheet" href="../css/doc.css"/>
+  <link rel="stylesheet" href="../css/prism.css"/>
+</head>
+<body>
+<div class="ids2-docs">
+
+  <div class="ids2-docs-back">
+    <a href="../index.html" class="ids2-button ids2-button-text">
+      <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-left">Back</i>
+      Index
+    </a>
+  </div>
+
+  <div class="ids2-docs-header">
+    <h1 class="ids2-title1 ids2-bold">Breadcrumb</h1>
+    <p class="ids2-body1 ids2-my-24 ids2-text-gray-500">Breadcrumb 형식의 디자인을 표현을 위한 스타일시트 입니다.</p>
+  </div>
+
+  <section class="ids2-docs-section">
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-name" rowspan="3">
+            Default
+          </td>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-breadcrumb</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              font-size: var(--ids2-size-body4);
+              font-weight: var(--ids2-font-medium);
+              line-height: var(--ids2-line-body4);
+              vertical-align: middle;
+              color: var(--ids2-color-gray-500);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-breadcrumb-item</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">vertical-align: middle;
+              cursor: pointer;</code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-breadcrumb-item:not(:last-child):after</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">content: ' ';
+              font-size: 0;
+              display: inline-block;
+              background-image: url("data:image/svg+xml,...");
+              background-repeat: no-repeat;
+              background-position: center;
+              width: 12px;
+              height: 12px;
+              margin: 4px 6px 5px;
+              vertical-align: middle;
+              line-height: 20px;</code>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-breadcrumb</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example ids2-docs-example-absolute"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-breadcrumb">
+                <span class="ids2-breadcrumb-item">
+                  <i class="ids2-icon ids2-icon-sm ids2-icon-home">Home</i>
+                </span>
+                <span class="ids2-breadcrumb-item">Breadcrumb 1</span>
+                <span class="ids2-breadcrumb-item">Breadcrumb 2</span>
+                <span class="ids2-breadcrumb-item">현재 위치</span>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script src="../scripts/docs.js"></script>
+<script src="../scripts/prism.js"></script>
+<script>
+    Prism.highlightAll();
+</script>
+</body>
+</html>

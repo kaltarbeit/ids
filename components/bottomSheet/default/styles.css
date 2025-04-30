@@ -16,13 +16,3 @@
 .ids2-bottom-sheet-hide .ids2-bottom-sheet-container {
     bottom: -100%;
 }
-
-
-.ids2-bottom-sheet-content {
-    flex: 1 1 auto;
-    overflow-y: auto;
-}
-
-.ids2-bottom-sheet-header {
-    padding: 24px 24px 36px;
-}

@@ -5,7 +5,8 @@
     /* Color Default  */
     --ids2-color-primary: #4393F0;
     --ids2-color-point-blue: #2873E3;
-    --ids2-color-blue-100: #E4F2FF;
+    --ids2-color-blue-50: #F3F9FF;
+    --ids2-color-blue-100: #ECF5FF;
     --ids2-color-blue-400: #C1E0FC;
     --ids2-color-blue-700: #235FD2;
     --ids2-color-blue-900: #234EAA;
@@ -126,7 +127,7 @@
     --ids2-radius-none: 0;
 
     /* Box Shadow */
-    --ids2-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.06);
+    --ids2-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.06);
     --ids2-shadow-blur: 0 6px 20px 0 rgba(0, 0, 0, 0.14);
 
 }

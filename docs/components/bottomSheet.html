@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>IDS 2.0 Style Sheet Document</title>
   <link rel="stylesheet" href="../../styles/ids2.css"/>
-  <link rel="stylesheet" href="../styles/doc.css"/>
-  <link rel="stylesheet" href="../styles/prism.css"/>
+  <link rel="stylesheet" href="../css/doc.css"/>
+  <link rel="stylesheet" href="../css/prism.css"/>
 </head>
 <body>
 <div class="ids2-docs">
@@ -52,32 +52,54 @@
         </thead>
         <tbody>
         <tr>
-          <td class="ids2-cell-left ids2-docs-name" rowspan="3">
+          <td class="ids2-cell-left ids2-docs-name" rowspan="4">
             Default
           </td>
           <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet</td>
           <td class="ids2-cell-left">
-            <code class="ids2-docs-code">align-items: center;
-              padding: 22px 12px;
+            <code class="ids2-docs-code">display: flex;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              flex-direction: column;
+              max-height: 80%;
+              background-color: var(--ids2-color-white);
+              border-top-left-radius: var(--ids2-radius-20);
+              border-top-right-radius: var(--ids2-radius-20);
+              transition: bottom 0.3s ease-in-out;
+              z-index: 1001;
             </code>
           </td>
         </tr>
         <tr>
           <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet-header</td>
           <td class="ids2-cell-left">
-            <code class="ids2-docs-code">align-items: center;
-              padding: 21px 24px;
-              background-image: url("data:image/svg+xml,...");
-              background-position: right;</code>
+            <code class="ids2-docs-code">position: relative;
+              padding: var(--ids2-spacing-3);</code>
           </td>
         </tr>
         <tr>
           <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet-content</td>
           <td class="ids2-cell-left">
-            <code class="ids2-docs-code">align-items: center;
-              padding: 21px 24px;
-              background-image: url("data:image/svg+xml,...");
-              background-position: right;</code>
+            <code class="ids2-docs-code">flex: 1 1 auto;
+              overflow-y: auto;
+              padding: var(--ids2-spacing-1) var(--ids2-spacing-2-half) 0;</code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet-close</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">position: absolute;
+              top: 0;
+              right: 0;
+              padding: var(--ids2-spacing-3);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: transparent;
+              border: transparent;
+              cursor: pointer;</code>
           </td>
         </tr>
         </tbody>
@@ -117,7 +139,8 @@
     <h2 class="ids2-docs-section-title">With Button</h2>
 
     <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
-      컴포넌트 스타일 가이드 <span class="ids2-bold">Bottom Sheet > With Button</span>을 구현한 클래스입니다. <span class="ids2-bold">Base Style</span>과 조합으로 사용합니다.
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Bottom Sheet > With Button</span>을 구현한 클래스입니다. <span class="ids2-bold">Base Style</span>과 조합으로 사용합니다.<br/>
+      Bottom Sheet 상단에 기능을 추가할 수 있는 <span class="ids2-bold">.ids2-bottom-sheet-function</span>와 하단에 <span class="ids2-bold">.ids2-button-group</span>을 추가하여 기능 확장이 가능합니다.
     </p>
 
     <div class="ids2-docs-reference ids2-mt-3">
@@ -140,32 +163,15 @@
         </thead>
         <tbody>
         <tr>
-          <td class="ids2-cell-left ids2-docs-name" rowspan="3">
-            Default
+          <td class="ids2-cell-left ids2-docs-name">
+            Function
           </td>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet</td>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet-function</td>
           <td class="ids2-cell-left">
-            <code class="ids2-docs-code">align-items: center;
-              padding: 22px 12px;
+            <code class="ids2-docs-code">position: absolute;
+              top: -34px;
+              padding: 0 var(--ids2-spacing-3);
             </code>
-          </td>
-        </tr>
-        <tr>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet-header</td>
-          <td class="ids2-cell-left">
-            <code class="ids2-docs-code">align-items: center;
-              padding: 21px 24px;
-              background-image: url("data:image/svg+xml,...");
-              background-position: right;</code>
-          </td>
-        </tr>
-        <tr>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet-content</td>
-          <td class="ids2-cell-left">
-            <code class="ids2-docs-code">align-items: center;
-              padding: 21px 24px;
-              background-image: url("data:image/svg+xml,...");
-              background-position: right;</code>
           </td>
         </tr>
         </tbody>
@@ -218,7 +224,8 @@
     <h2 class="ids2-docs-section-title">With Handle</h2>
 
     <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
-      컴포넌트 스타일 가이드 <span class="ids2-bold">Bottom Sheet > With Handle</span>을 구현한 클래스입니다. <span class="ids2-bold">Base Style</span>과 조합으로 사용합니다.
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Bottom Sheet > With Handle</span>을 구현한 클래스입니다. <span class="ids2-bold">Base Style</span>과 조합으로 사용합니다.<br/>
+      Bottom Sheet Header에 <span class="ids2-bold">.ids2-bottom-sheet-handle</span>를 추가하여 Touch Handler 영역을 표현할 수 있습니다.
     </p>
 
     <div class="ids2-docs-reference ids2-mt-3">
@@ -241,32 +248,25 @@
         </thead>
         <tbody>
         <tr>
-          <td class="ids2-cell-left ids2-docs-name" rowspan="3">
+          <td class="ids2-cell-left ids2-docs-name">
             Default
           </td>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet</td>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet-handle</td>
           <td class="ids2-cell-left">
-            <code class="ids2-docs-code">align-items: center;
-              padding: 22px 12px;
+            <code class="ids2-docs-code">position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              z-index: 1000;
+              width: 48px;
+              height: 3px;
+              background-color: var(--ids2-color-gray-100);
+              border-radius: var(--ids2-radius-full);
+              font-size: 0;
+              margin: var(--ids2-spacing-1-half) 0;
+              color: transparent;
+              cursor: pointer;
             </code>
-          </td>
-        </tr>
-        <tr>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet-header</td>
-          <td class="ids2-cell-left">
-            <code class="ids2-docs-code">align-items: center;
-              padding: 21px 24px;
-              background-image: url("data:image/svg+xml,...");
-              background-position: right;</code>
-          </td>
-        </tr>
-        <tr>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet-content</td>
-          <td class="ids2-cell-left">
-            <code class="ids2-docs-code">align-items: center;
-              padding: 21px 24px;
-              background-image: url("data:image/svg+xml,...");
-              background-position: right;</code>
           </td>
         </tr>
         </tbody>

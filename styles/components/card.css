@@ -1,24 +1,24 @@
 .ids2-card {
-    background: #fff;
-    border-radius: 16px;
-    padding: 20px;
-    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.06);
+    background: var(--ids2-color-white);
+    border-radius: var(--ids2-radius-16);
+    padding: var(--ids2-spacing-2-half);
+    box-shadow: var(--ids2-shadow);
     box-sizing: border-box;
     width: 100%;
 }
 
 .ids2-card-blur {
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: var(--ids2-shadow-blur);
 }
 
 .ids2-card-filled {
-    border: 1px solid #E1E3EA;
-    background: #F3F9FF;
+    border: var(--ids2-border-1);
+    background: var(--ids2-color-blue-100);
     box-shadow: none;
 }
 
 .ids2-card-outlined {
-    border: 1px solid #E1E3EA;
+    border: var(--ids2-border-1);
     background: transparent;
     box-shadow: none;
 }
