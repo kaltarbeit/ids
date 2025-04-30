@@ -54,7 +54,7 @@ docs.appendChild(toc);
 
 
 /**
- * Show Css Reference Table
+ * Style Reference Table
  */
 
 document.querySelectorAll('.ids2-docs-reference').forEach(function (reference) {

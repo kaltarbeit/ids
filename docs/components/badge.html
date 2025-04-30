@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IDS 2.0 Style Sheet Document</title>
+  <link rel="stylesheet" href="../../styles/ids2.css"/>
+  <link rel="stylesheet" href="../styles/doc.css"/>
+  <link rel="stylesheet" href="../styles/prism.css"/>
+</head>
+<body>
+<div class="ids2-docs">
+
+  <div class="ids2-docs-back">
+    <a href="../index.html" class="ids2-button ids2-button-text">
+      <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-left">Back</i>
+      Index
+    </a>
+  </div>
+
+  <div class="ids2-docs-header">
+    <h1 class="ids2-title1 ids2-bold">Badge</h1>
+
+    <p class="ids2-body1 ids2-my-24 ids2-text-gray-500">버튼, 아이콘, 타이틀 등의 요소에 추가 정보 표현을 위한 스타일시트 입니다.</p>
+  </div>
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">Dot</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      Icon button, Tabs 내에 요소를 추가 하여 사용 가능합니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-name" rowspan="4">
+            Badge Dot
+          </td>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-badge-dot</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">display: block;
+              width: 8px;
+              height: 8px;
+              background: #FD5E4F;
+              border-radius: 50%;
+              font-size: 0;
+              color: transparent;
+              animation: popIn 500ms 1 cubic-bezier(1,.6,.72,2);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-badge-dot-small</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">width: 4px;
+              height: 4px;</code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-badge-wrap-icon</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">position: relative;
+              width: 24px;
+              height: 24px;
+              display: flex;
+              align-items: center;
+              justify-content: center;</code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-badge-wrap-inline</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">display:inline-block;
+              vertical-align: top;</code>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-badge-wrap-icon</span>
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-badge-dot</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-badge-wrap-icon">
+                <i class="ids2-icon ids2-icon-notification">
+                  Notification
+                </i>
+                <div class="ids2-badge-dot">•</div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-badge-wrap-inline</span>
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-badge-dot</span>
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-badge-dot-small</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-tab">
+                <div class="ids2-tab-item ids2-tab-item-active">
+                  레이블
+                </div>
+                <div class="ids2-tab-item">
+                  레이블
+                  <span class="ids2-badge-wrap-inline">
+                    <span class="ids2-badge-dot ids2-badge-dot-small">
+                      •
+                    </span>
+                  </span>
+                </div>
+                <div class="ids2-tab-item">
+                  레이블
+                  <span class="ids2-badge-wrap-inline">
+                    <span class="ids2-badge-dot ids2-badge-dot-small">
+                      •
+                    </span>
+                  </span>
+                </div>
+                <div class="ids2-tab-item">
+                  레이블
+                  <span class="ids2-badge-wrap-inline">
+                    <span class="ids2-badge-dot ids2-badge-dot-small">
+                      •
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">New</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      Title, Tabs 내에 요소를 추가 하여 사용 가능합니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-name" rowspan="4">
+            Badge New
+          </td>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-badge-new</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">display:inline-block;
+              background-color: #FD5E4F;
+              border-radius: var(--ids2-radius-6); /* 6px */
+              padding: 2px 8px;
+              text-align: center;
+              color: var(--ids2-color-white); /* #FFFFFF */
+              font-size: var(--ids2-size-caption); /* 12px */
+              font-weight: var(--ids2-font-bold); /* 700 */
+              line-height: var(--ids2-line-caption); /* 16px */
+              vertical-align: middle;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-badge-new-small</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">width: 20px;
+              height: 20px;
+              font-size: 0;
+              padding: 0;
+              color: transparent;
+              background-image: url("data:image/svg+xml,...");
+              background-repeat: no-repeat;
+              background-position: center;</code>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-badge-new</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <span class="ids2-badge-new">NEW</span>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-badge-new</span>
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-badge-new-small</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <h3 class="ids2-h3">
+                레이블
+                <span class="ids2-badge-new ids2-badge-new-small">N</span>
+              </h3>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">Count</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      Title, Tabs 내에 요소를 추가 하여 사용 가능합니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 15%"/>
+          <col style="width: 30%"/>
+          <col style="width: 55%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-name" rowspan="4">
+            Badge Count
+          </td>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-badge-count</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">color: var(--ids2-color-point-blue); /* #2873E3 */
+              font-size: var(--ids2-size-body2); /* 16px */
+              font-weight: var(--ids2-font-bold); /* 700 */
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-badge-count-label</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">position: absolute;
+              top: 3px;
+              right: -36px;
+              transform: translateY(-50%);
+              display: inline-block;
+              background-color: #E8652D;
+              color: var(--ids2-color-white); /* #FFFFFF */
+              padding: 0 var(--ids2-spacing-half); /* 4px */
+              border-radius: var(--ids2-radius-full); /* calc(infinity * 1px) */
+              font-size: var(--ids2-size-caption); /* 12px */
+              font-weight: var(--ids2-font-bold); /* 700 */
+              line-height: var(--ids2-line-caption); /* 16px */
+              text-align: center;</code>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-badge-new</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <h3 class="ids2-h3">
+                  레이블
+                  <span class="ids2-badge-count">99</span>
+              </h3>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-badge-count-label</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-icon-menu">
+                  <div class="ids2-icon-menu-icon">
+                      <i class="ids2-icon ids2-icon-service-roan">Roan</i>
+                  </div>
+                  <span class="ids2-icon-menu-label">
+                      레이블
+                  </span>
+                  <span class="ids2-badge-count-label">99+</span>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</div>
+
+<script src="../scripts/docs.js"></script>
+<script src="../scripts/prism.js"></script>
+<script>
+    Prism.highlightAll();
+</script>
+</body>
+</html>

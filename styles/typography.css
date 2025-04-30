@@ -222,3 +222,7 @@
 .ids2-text-gray-900 {
     color: var(--ids2-color-gray-900);
 }
+
+.ids2-text-middle {
+    vertical-align: middle;
+}

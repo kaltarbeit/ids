@@ -4,6 +4,7 @@
     justify-content: center;
     gap: 4px;
     position: relative;
+    width: fit-content;
     height: 32px;
 }
 

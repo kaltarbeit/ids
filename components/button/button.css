@@ -24,7 +24,6 @@ a.ids2-button:active,
 a.ids2-button:visited,
 a.ids2-button:focus {
     text-decoration: none;
-    color: inherit;
 }
 
 .ids2-button-group-example {

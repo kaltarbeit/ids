@@ -117,8 +117,9 @@ td.ids2-docs-name {
 }
 
 .ids2-docs-reference {
-    height: 30px;
-    overflow: hidden;
+    /* TODO 복원 */
+    /*height: 30px;*/
+    /*overflow: hidden;*/
     transition: height 0.3s ease-in-out;
 }
 

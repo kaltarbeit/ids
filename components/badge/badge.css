@@ -28,7 +28,23 @@
     text-align: center;
 }
 
-.ids2-icon-wrap {
+.ids2-badge-dot {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #FD5E4F;
+    border-radius: 50%;
+    font-size: 0;
+    color: transparent;
+    animation: popIn 500ms 1 cubic-bezier(1,.6,.72,2);
+}
+
+.ids2-badge-dot.ids2-badge-dot-small {
+    width: 4px;
+    height: 4px;
+}
+
+.ids2-badge-wrap-icon {
     position: relative;
     width: 24px;
     height: 24px;
@@ -37,28 +53,15 @@
     justify-content: center;
 }
 
-.ids2-badge-dot {
-    width: 8px;
-    height: 8px;
-    background: #FD5E4F;
-    border-radius: 50%;
+.ids2-badge-wrap-icon .ids2-badge-dot {
     position: absolute;
     top: 1px;
     right: 2px;
-    animation: popIn 500ms 1 cubic-bezier(1,.6,.72,2);
 }
 
-.ids2-badge-dot-small {
+.ids2-badge-wrap-inline {
     display:inline-block;
-    width: 4px;
-    height: 24px;
-    background-image: url("data:image/svg+xml,%3Csvg width='4' height='4' viewBox='0 0 4 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='2' fill='%23FD5E4F'/%3E%3C/svg%3E%0A");
-    background-repeat: no-repeat;
-    background-position: top center;
-    animation: popIn 500ms 1 cubic-bezier(1,.6,.72,2);
-    font-size: 0;
-    vertical-align: middle;
-    color: transparent;
+    vertical-align: top;
 }
 
 .ids2-badge-container {
@@ -68,53 +71,49 @@
 
 .ids2-badge-new {
     display:inline-block;
-    font-family: 'Pretendard', sans-serif;
-    background: #FD5E4F;
-    border-radius: 6px;
+    background-color: #FD5E4F;
+    border-radius: var(--ids2-radius-6);
     padding: 2px 8px;
     text-align: center;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 700;
+    color: var(--ids2-color-white);
+    font-size: var(--ids2-size-caption);
+    font-weight: var(--ids2-font-bold);
+    line-height: var(--ids2-line-caption);
     vertical-align: middle;
-    line-height: 16px;
 }
 
 .ids2-badge-new-small {
-    display:inline-block;
-    background-color: #FD5E4F;
-    border-radius: 6px;
     width: 20px;
     height: 20px;
-    text-align: center;
-    line-height: 20px;
+    font-size: 0;
+    padding: 0;
     color: transparent;
     background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.1091 0V10H7.50689L2.76932 3.16298H2.68645V10H0.890869V0H2.5207L7.23065 6.83702H7.32733V0H9.1091Z' fill='white'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     background-position: center;
+    vertical-align: middle;
 }
 
 .ids2-badge-count {
-    color: #2873e3;
-    font-size: 16px;
-    font-weight: 700;
+    color: var(--ids2-color-point-blue);
+    font-size: var(--ids2-size-body2);
+    font-weight: var(--ids2-font-bold);
 }
 
-.ids2-badge-label-count {
+.ids2-badge-count-label {
     position: absolute;
     top: 3px;
     right: -36px;
     transform: translateY(-50%);
     display: inline-block;
     background-color: #E8652D;
-    color: #FFFFFF;
-    padding: 0 4px;
-    border-radius: 9999px;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 16px;
+    color: var(--ids2-color-white);
+    padding: 0 var(--ids2-spacing-half);
+    border-radius: var(--ids2-radius-full);
+    font-size: var(--ids2-size-caption);
+    font-weight: var(--ids2-font-bold);
+    line-height: var(--ids2-line-caption);
     text-align: center;
-    vertical-align: middle;
 }
 
 @keyframes popIn {

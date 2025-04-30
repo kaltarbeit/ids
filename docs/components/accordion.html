@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>IDS 2.0 Style Sheet Document</title>
-  <link rel="stylesheet" href="./styles/ids2.css"/>
-  <link rel="stylesheet" href="./styles/doc.css"/>
-  <link rel="stylesheet" href="./styles/prism.css"/>
+  <link rel="stylesheet" href="../../styles/ids2.css"/>
+  <link rel="stylesheet" href="../styles/doc.css"/>
+  <link rel="stylesheet" href="../styles/prism.css"/>
 </head>
 <body>
 <div class="ids2-docs">
 
   <div class="ids2-docs-back">
-    <a href="./index.html" class="ids2-button ids2-button-text">
+    <a href="../index.html" class="ids2-button ids2-button-text">
       <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-left">Back</i>
       Index
     </a>
@@ -27,16 +27,29 @@
   <section class="ids2-docs-section">
     <h2 class="ids2-docs-section-title">Base Style</h2>
 
-    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
-      &lt;button&gt;, &lt;a&gt; tag 의 기본 스타일을 Reset 하고, Button 의 Base Style 을 부여합니다.<br/>
-      단독으로는 사용할 수 없고, 아래 제공되는 스타일들과 조합으로 사용하거나 별도의 스타일을 구현하여 사용합니다.
+    <p class="ids2-body4 ids2-mt-1 ids2-text-gray-500">
+     <span class="ids2-bold">.ids2-accordion</span> 은 <span class="ids2-bold">.ids2-accordion-item</span> 요소에
+      에 <span class="ids2-bold">.ids2-accordion-item-open</span> 클래스를 Toggle 하여 Collapse / Expand 되도록 정의되어 있습니다.<br/>
+    </p>
+    <p class="ids2-body4 ids2-mt-1 ids2-text-gray-500">
+     <span class="ids2-bold">.ids2-accordion-item</span> 은 제목과 클릭 요소를 담당하는 <span class="ids2-bold">.ids2-accordion-summary</span> 와
+     Expand 시 표시 될 내용을 담는 <span class="ids2-bold">.ids2-accordion-details</span>로 구성됩니다.
+    </p>
+    <p class="ids2-body4 ids2-mt-1 ids2-text-gray-500">
+     <span class="ids2-bold">.ids2-accordion-details</span> 는 <span class="ids2-bold">display: none</span> 을 기본 값으로 하고,
+      <span class="ids2-bold">.ids2-accordion-item-open</span> 가 적용 될 경우  <span class="ids2-bold">display: block</span>으로 전환됩니다.
+    </p>
+    <p class="ids2-body4 ids2-mt-1 ids2-text-gray-500">
+      펼처짐 모션을 적용할 경우 <span class="ids2-bold">.ids2-accordion-details</span> 에 <span class="ids2-bold">height: 0</span> 을 기본 값으로 한 후,
+      <span class="ids2-bold">height</span>를 내용 높이 만큼 조절 하는 방식으로 구현하는 것이 가능합니다.
     </p>
 
 
     <div class="ids2-docs-reference ids2-mt-3">
       <div class="ids2-docs-reference-button">
-        Show CSS Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
       </div>
+
       <table class="ids2-table ids2-table-sm">
         <colgroup>
           <col style="width: 12%"/>
@@ -52,13 +65,12 @@
         </thead>
         <tbody>
         <tr>
-          <td class="ids2-cell-left ids2-docs-name" rowspan="4">
+          <td class="ids2-cell-left ids2-docs-name" rowspan="5">
             Accordion
           </td>
           <td class="ids2-cell-left ids2-docs-classname">.ids2-accordion</td>
           <td class="ids2-cell-left">
             <code class="ids2-docs-code">width: 100%;
-              min-width: 320px;
               background-color: var(--ids2-color-white); <span class="ids2-docs-comment">/* #FFFFFF */</span>
             </code>
           </td>
@@ -66,21 +78,34 @@
         <tr>
           <td class="ids2-cell-left ids2-docs-classname">.ids2-accordion-item</td>
           <td class="ids2-cell-left">
-            <code class="ids2-docs-code">
-            </code>
+            <code class="ids2-docs-code">transition: max-height 1s  ease-in-out;</code>
           </td>
         </tr>
         <tr>
           <td class="ids2-cell-left ids2-docs-classname">.ids2-accordion-summary</td>
           <td class="ids2-cell-left">
-            <code class="ids2-docs-code">
+            <code class="ids2-docs-code">position: relative;
+              cursor: pointer;
+              padding-right: var(--ids2-spacing-5); <span class="ids2-docs-comment">/* 40px */</span>
             </code>
           </td>
         </tr>
         <tr>
           <td class="ids2-cell-left ids2-docs-classname">.ids2-accordion-details</td>
           <td class="ids2-cell-left">
-            <code class="ids2-docs-code">
+            <code class="ids2-docs-code">display: none;
+              overflow: hidden;
+              box-sizing: border-box;
+              transition: height 0.3s cubic-bezier(.7,.5,.6,.9);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-accordion-title</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">display: flex;
+              align-items: center;
+              justify-content: space-between;
             </code>
           </td>
         </tr>
@@ -207,20 +232,6 @@
                     </div>
                   </div>
                   <div class="ids2-divider ids2-my-0"></div>
-                  <div class="ids2-accordion-details">
-                    <div class="ids2-pt-2 ids2-body2">
-                      상세 내용을 노출합니다.
-                      <div class="ids2-sub-content">
-                        <div class="ids2-mb-1">
-                          <span class="ids2-label ids2-label-line">
-                            Label
-                          </span>
-                        </div>
-                        텍스트를 노출합니다.<br/>
-                        텍스트를 노출합니다.
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 <div class="ids2-accordion-item">
                   <div class="ids2-accordion-summary ids2-py-3">
@@ -454,10 +465,92 @@
     </div>
 
   </section>
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">조합형</h2>
+    <h4 class="ids2-docs-section-label">Examples</h4>
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-accordion</span>
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-accordion-card</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-accordion">
+                <div class="ids2-accordion-item ids2-py-2-half ids2-px-3">
+                  <div class="ids2-accordion-summary">
+                    <i class="ids2-icon ids2-icon-info">Info</i>
+                      <span
+                        class="ids2-body2-tight ids2-semibold
+                                 ids2-text-middle"
+                      >
+                      유의사항을 확인해 주세요
+                    </span>
+                    <div class="ids2-arrow">
+                      <i class="ids2-icon ids2-icon-expand">Expand</i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-accordion</span>
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-accordion-card</span><br/>
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-accordion-item</span>
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-accordion-item-open</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-accordion">
+                <div
+                    class="ids2-accordion-item ids2-py-2-half ids2-px-3
+                              ids2-accordion-item-open"
+                >
+                  <div class="ids2-accordion-summary">
+                    <i class="ids2-icon ids2-icon-info">Info</i>
+                    <span
+                      class="ids2-body2-tight ids2-semibold
+                               ids2-text-middle"
+                    >
+                      유의사항을 확인해 주세요
+                    </span>
+                    <div class="ids2-arrow">
+                      <i class="ids2-icon ids2-icon-expand">Expand</i>
+                    </div>
+                  </div>
+                  <div class="ids2-accordion-details">
+                    <ul class="ids2-info-list">
+                      <li>텍스트를 노출합니다.</li>
+                      <li>텍스트를 노출합니다.</li>
+                      <li>텍스트를 노출합니다.</li>
+                      <li>텍스트를 노출합니다.</li>
+                      <li>텍스트를 노출합니다.</li>
+                      <li>텍스트를 노출합니다.</li>
+                      <li>텍스트를 노출합니다.</li>
+                      <li>텍스트를 노출합니다.</li>
+                      <li>텍스트를 노출합니다.</li>
+                      <li>텍스트를 노출합니다.</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
 </div>
 
-<script src="./scripts/docs.js"></script>
-<script src="./scripts/prism.js"></script>
+<script src="../scripts/docs.js"></script>
+<script src="../scripts/prism.js"></script>
 <script>
     Prism.highlightAll();
 </script>
