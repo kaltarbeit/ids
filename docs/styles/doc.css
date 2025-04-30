@@ -157,10 +157,17 @@ td.ids2-docs-name {
 }
 
 .ids2-docs-example {
+    position: relative;
     font-family: inherit;
     width: 50%;
     padding-right: var(--ids2-spacing-3);
     box-sizing: border-box;
+}
+
+.ids2-docs-example-absolute {
+    height: 600px;
+    width: calc(50% - 24px);
+    margin-right: 24px;
 }
 
 .ids2-docs-example-labels {

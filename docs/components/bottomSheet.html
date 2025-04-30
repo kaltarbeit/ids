@@ -25,89 +25,7 @@
   </div>
 
   <section class="ids2-docs-section">
-    <h2 class="ids2-docs-section-title">Base Style</h2>
-
-    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
-      Banner 의 기본 Box를 구성합니다.
-    </p>
-
-    <div class="ids2-docs-reference ids2-mt-3">
-      <div class="ids2-docs-reference-button">
-        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
-      </div>
-
-      <table class="ids2-table ids2-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
-        <thead>
-        <tr>
-          <th class="ids2-cell-left">Name</th>
-          <th class="ids2-cell-left">Class</th>
-          <th class="ids2-cell-left">Style</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td class="ids2-cell-left ids2-docs-name" rowspan="4">
-            Banner
-          </td>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-banner</td>
-          <td class="ids2-cell-left">
-            <code class="ids2-docs-code">position: relative;
-              display: flex;
-              justify-content: flex-start;
-              overflow: hidden;
-              transition: opacity 0.3s ease-in-out;
-              background-repeat: no-repeat;
-              box-sizing: border-box;
-              background-color: var(--ids2-color-gray-200);
-              color: var(--ids2-color-gray-700);
-              border-radius: var(--ids2-radius-16);
-              font-size: var(--ids2-size-body4);
-              font-weight: var(--ids2-font-medium);
-              line-height: var(--ids2-line-body4);
-            </code>
-          </td>
-        </tr>
-        <tr>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-banner-content</td>
-          <td class="ids2-cell-left">
-            <code class="ids2-docs-code">display: flex;
-              flex-direction: column;
-              gap: 4px;</code>
-          </td>
-        </tr>
-        <tr>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-banner-footer-label</td>
-          <td class="ids2-cell-left">
-            <code class="ids2-docs-code">position: absolute;
-              bottom: 0;
-              right: 0;
-              padding: 0 11px 12px 0;</code>
-          </td>
-        </tr>
-        <tr>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-banner-footer-button</td>
-          <td class="ids2-cell-left">
-            <code class="ids2-docs-code">position: absolute;
-              bottom: 0;
-              left: 0;
-              padding: 0 0 20px 24px;</code>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-
-
-
-  <section class="ids2-docs-section">
-    <h2 class="ids2-docs-section-title">Small</h2>
+    <h2 class="ids2-docs-section-title">Default</h2>
 
     <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
       컴포넌트 스타일 가이드 <span class="ids2-bold">Banner > Small</span> 를 구현한 클래스입니다. <span class="ids2-bold">Base Style</span> 과 조합으로 사용합니다.<br/>
@@ -134,10 +52,10 @@
         </thead>
         <tbody>
         <tr>
-          <td class="ids2-cell-left ids2-docs-name" rowspan="4">
-            Small Banner
+          <td class="ids2-cell-left ids2-docs-name" rowspan="3">
+            Default
           </td>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-banner-small-xs</td>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet</td>
           <td class="ids2-cell-left">
             <code class="ids2-docs-code">align-items: center;
               padding: 22px 12px;
@@ -145,7 +63,16 @@
           </td>
         </tr>
         <tr>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-banner-small</td>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet-header</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">align-items: center;
+              padding: 21px 24px;
+              background-image: url("data:image/svg+xml,...");
+              background-position: right;</code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet-content</td>
           <td class="ids2-cell-left">
             <code class="ids2-docs-code">align-items: center;
               padding: 21px 24px;
@@ -161,41 +88,22 @@
 
     <div class="ids2-docs-examples">
       <div class="ids2-docs-example-block">
-        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-banner</span>
-        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-banner-small-xs</span>
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-bottom-sheet</span>
         <div class="ids2-docs-example-code">
-          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example ids2-docs-example-absolute"></div>
           <div class="ids2-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
-              <div class="ids2-banner ids2-banner-small-xs">
-                <div class="ids2-mr-1">
-                  <i class="ids2-icon ids2-icon-image ids2-gray">Image</i>
+              <div class="ids2-backdrop"></div>
+              <div class="ids2-bottom-sheet">
+                <div class="ids2-bottom-sheet-header">
+                  <h3 class="ids2-h3 ids2-semibold">타이틀</h3>
+                  <button class="ids2-bottom-sheet-close">
+                    <i class="ids2-icon ids2-icon-close"></i>
+                  </button>
                 </div>
-                <div class="ids2-banner-content">
-                  <div class="ids2-banner-text">
-                    서브 텍스트를 노출합니다.
-                  </div>
-                </div>
-              </div>
-            </script>
-          </div>
-        </div>
-      </div>
-      <div class="ids2-docs-example-block">
-        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-banner</span>
-        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-banner-small</span>
-        <div class="ids2-docs-example-code">
-          <div class="ids2-docs-example"></div>
-          <div class="ids2-docs-example-code-highlight">
-            <script type="text/plain" class="language-markup">
-              <div class="ids2-banner ids2-banner-small">
-                <div class="ids2-banner-content">
-                  <h3 class="ids2-body2-tight ids2-bold">
-                    타이틀
-                  </h3>
-                  <span class="ids2-body4 ids2-color-gray">
-                    서브 텍스트를 노출합니다.
-                  </span>
+
+                <div class="ids2-bottom-sheet-content">
+                  <div style="height: 1000px"></div>
                 </div>
               </div>
             </script>
@@ -205,13 +113,11 @@
     </div>
   </section>
 
-
   <section class="ids2-docs-section">
-    <h2 class="ids2-docs-section-title">Medium</h2>
+    <h2 class="ids2-docs-section-title">With Button</h2>
 
     <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
-      컴포넌트 스타일 가이드 <span class="ids2-bold">Banner > Medium</span> 를 구현한 클래스입니다. <span class="ids2-bold">Base Style</span> 과 조합으로 사용합니다.<br/>
-      해당 스타일은 예제 코드이므로 실제 사용시 각 디자인에 맞추어 구현해야 합니다.
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Bottom Sheet > With Button</span>을 구현한 클래스입니다. <span class="ids2-bold">Base Style</span>과 조합으로 사용합니다.
     </p>
 
     <div class="ids2-docs-reference ids2-mt-3">
@@ -234,25 +140,30 @@
         </thead>
         <tbody>
         <tr>
-          <td class="ids2-cell-left ids2-docs-name" rowspan="4">
-            Medium Banner
+          <td class="ids2-cell-left ids2-docs-name" rowspan="3">
+            Default
           </td>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-banner-medium</td>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet</td>
           <td class="ids2-cell-left">
-            <code class="ids2-docs-code">padding: 42px 24px;
-              align-items: flex-start;
-              flex-direction: column;
-              background-image: url("data:image/svg+xml,...");
-              background-position: right;
+            <code class="ids2-docs-code">align-items: center;
+              padding: 22px 12px;
             </code>
           </td>
         </tr>
         <tr>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-banner-medium-with-button</td>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet-header</td>
           <td class="ids2-cell-left">
-            <code class="ids2-docs-code">height: 184px;
-              padding: var(--ids2-spacing-3);
-              justify-content: flex-start;
+            <code class="ids2-docs-code">align-items: center;
+              padding: 21px 24px;
+              background-image: url("data:image/svg+xml,...");
+              background-position: right;</code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet-content</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">align-items: center;
+              padding: 21px 24px;
               background-image: url("data:image/svg+xml,...");
               background-position: right;</code>
           </td>
@@ -265,49 +176,37 @@
 
     <div class="ids2-docs-examples">
       <div class="ids2-docs-example-block">
-        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-banner</span>
-        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-banner-medium</span>
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-bottom-sheet</span>
         <div class="ids2-docs-example-code">
-          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example ids2-docs-example-absolute"></div>
           <div class="ids2-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
-              <div class="ids2-banner ids2-banner-medium">
-                <div class="ids2-banner-content">
-                  <h2 class="ids2-h2 ids2-bold">
-                      타이틀
-                  </h2>
-                  <span class="ids2-body2">
-                      서브 텍스트를 노출합니다.
-                  </span>
+
+              <div class="ids2-bottom-sheet">
+                <div class="ids2-bottom-sheet-function">
+                  <div class="ids2-checkbox ids2-checkbox-sm">
+                    <label>
+                      <input type="checkbox" name="today-hide" class="ids2-checkbox-input">
+                      <span class="ids2-input-label-text ids2-text-white">오늘 하루 보이지 않기</span>
+                    </label>
+                  </div>
                 </div>
-                <div class="ids2-banner-footer-label">
-                  <span class="ids2-label">AD</span>
+                <div class="ids2-bottom-sheet-header">
+                  <h3 class="ids2-h3 ids2-semibold">타이틀</h3>
+                  <button class="ids2-bottom-sheet-close">
+                    <i class="ids2-icon ids2-icon-close"></i>
+                  </button>
                 </div>
-              </div>
-            </script>
-          </div>
-        </div>
-      </div>
-      <div class="ids2-docs-example-block">
-        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-banner</span>
-        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-banner-medium-with-button</span>
-        <div class="ids2-docs-example-code">
-          <div class="ids2-docs-example"></div>
-          <div class="ids2-docs-example-code-highlight">
-            <script type="text/plain" class="language-markup">
-              <div class="ids2-banner ids2-banner-medium-with-button">
-                <div class="ids2-banner-content">
-                  <h2 class="ids2-h1 ids2-bold">
-                    타이틀
-                  </h2>
-                  <span class="ids2-h3">
-                    서브 텍스트를 노출합니다.
-                  </span>
+
+                <div class="ids2-bottom-sheet-content">
+                  <div style="height: 200px"></div>
                 </div>
-                <div class="ids2-banner-footer-button">
-                  <button class="ids2-button ids2-button-tertiary ids2-button-sm">버튼 텍스트</button>
+
+                <div class="ids2-button-group">
+                  <button class="ids2-button ids2-button-primary ids2-button-fill ids2-button-full-width">레이블</button>
                 </div>
               </div>
+              <div class="ids2-backdrop"></div>
             </script>
           </div>
         </div>
@@ -315,13 +214,11 @@
     </div>
   </section>
 
-
   <section class="ids2-docs-section">
-    <h2 class="ids2-docs-section-title">Large</h2>
+    <h2 class="ids2-docs-section-title">With Handle</h2>
 
     <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
-      컴포넌트 스타일 가이드 <span class="ids2-bold">Banner > Large</span> 를 구현한 클래스입니다. <span class="ids2-bold">Base Style</span> 과 조합으로 사용합니다.<br/>
-      해당 스타일은 예제 코드이므로 실제 사용시 각 디자인에 맞추어 구현해야 합니다.
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Bottom Sheet > With Handle</span>을 구현한 클래스입니다. <span class="ids2-bold">Base Style</span>과 조합으로 사용합니다.
     </p>
 
     <div class="ids2-docs-reference ids2-mt-3">
@@ -344,27 +241,32 @@
         </thead>
         <tbody>
         <tr>
-          <td class="ids2-cell-left ids2-docs-name" rowspan="4">
-            Large Banner
+          <td class="ids2-cell-left ids2-docs-name" rowspan="3">
+            Default
           </td>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-banner-large</td>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet</td>
           <td class="ids2-cell-left">
-            <code class="ids2-docs-code">height: 234px;
-              padding: var(--ids2-spacing-3);
-              justify-content: flex-start;
-              background-image: url("data:image/svg+xml,...");
-              background-position: right bottom;
+            <code class="ids2-docs-code">align-items: center;
+              padding: 22px 12px;
             </code>
           </td>
         </tr>
         <tr>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-banner-large-lg</td>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet-header</td>
           <td class="ids2-cell-left">
-            <code class="ids2-docs-code">height: 358px;
-              padding: var(--ids2-spacing-4);
-              justify-content: flex-start;
+            <code class="ids2-docs-code">align-items: center;
+              padding: 21px 24px;
               background-image: url("data:image/svg+xml,...");
-              background-position: right bottom;</code>
+              background-position: right;</code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet-content</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">align-items: center;
+              padding: 21px 24px;
+              background-image: url("data:image/svg+xml,...");
+              background-position: right;</code>
           </td>
         </tr>
         </tbody>
@@ -375,60 +277,27 @@
 
     <div class="ids2-docs-examples">
       <div class="ids2-docs-example-block">
-        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-banner</span>
-        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-banner-large</span>
+        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-bottom-sheet</span>
         <div class="ids2-docs-example-code">
-          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example ids2-docs-example-absolute"></div>
           <div class="ids2-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
-              <div class="ids2-banner ids2-banner-large">
-                <div class="ids2-banner-content">
-                  <h3 class="ids2-h2 ids2-bold">
-                    타이틀<br/>
-                    최대 2줄
-                  </h3>
-                  <span class="ids2-body4">
-                    서브 텍스트를 노출합니다. <br/>
-                    최대 2줄 작성 가능합니다.
-                  </span>
+              <div class="ids2-bottom-sheet">
+                <div class="ids2-bottom-sheet-header">
+                  <div class="ids2-bottom-sheet-handle">Handle</div>
+                  <h3 class="ids2-h3 ids2-semibold">타이틀</h3>
                 </div>
-                <div class="ids2-banner-footer-button">
-                  <button class="ids2-button ids2-button-tertiary ids2-button-sm">버튼 텍스트</button>
-                </div>
-            </div>
-            </script>
-          </div>
-        </div>
-      </div>
-      <div class="ids2-docs-example-block">
-        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-banner</span>
-        <span class="ids2-label ids2-label-line ids2-label-line-blue">.ids2-banner-large-lg</span>
-        <div class="ids2-docs-example-code">
-          <div class="ids2-docs-example"></div>
-          <div class="ids2-docs-example-code-highlight">
-            <script type="text/plain" class="language-markup">
-              <div class="ids2-banner ids2-banner-large-lg">
-                <div class="ids2-banner-content">
-                  <h3 class="ids2-title2 ids2-bold">
-                    타이틀 <br/>
-                    최대 2줄
-                  </h3>
-                  <span class="ids2-h3">
-                    서브 텍스트를 노출합니다. <br/>
-                    최대 2줄 작성 가능합니다.
-                  </span>
-                </div>
-                <div class="ids2-banner-footer-button">
-                  <button class="ids2-button ids2-button-tertiary ids2-button-sm">버튼 텍스트</button>
+                <div class="ids2-bottom-sheet-content">
+                    <div style="height: 10000px"></div>
                 </div>
               </div>
+              <div class="ids2-backdrop"></div>
             </script>
           </div>
         </div>
       </div>
     </div>
   </section>
-
 </div>
 
 <script src="../scripts/docs.js"></script>
