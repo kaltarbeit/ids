@@ -117,9 +117,8 @@ td.ids2-docs-name {
 }
 
 .ids2-docs-reference {
-    /* TODO 복원 */
-    /*height: 30px;*/
-    /*overflow: hidden;*/
+    height: 30px;
+    overflow: hidden;
     transition: height 0.3s ease-in-out;
 }
 
@@ -165,7 +164,7 @@ td.ids2-docs-name {
 }
 
 .ids2-docs-example-absolute {
-    height: 600px;
+    height: 700px;
     width: calc(50% - 24px);
     margin-right: 24px;
 }

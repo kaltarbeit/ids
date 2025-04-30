@@ -1,7 +1,7 @@
 @import "./full/styles.css";
 
 .ids2-drawer {
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 1001;
     background-color: #fff;
