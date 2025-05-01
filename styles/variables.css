@@ -8,6 +8,7 @@
     --ids2-color-blue-50: #F3F9FF;
     --ids2-color-blue-100: #ECF5FF;
     --ids2-color-blue-400: #C1E0FC;
+    --ids2-color-blue-600: #4987FF;
     --ids2-color-blue-700: #235FD2;
     --ids2-color-blue-900: #234EAA;
 
@@ -100,7 +101,9 @@
     --ids2-spacing-4: calc(var(--ids2-spacing)*4);
     --ids2-spacing-5: calc(var(--ids2-spacing)*5);
     --ids2-spacing-6: calc(var(--ids2-spacing)*6);
+    --ids2-spacing-7: calc(var(--ids2-spacing)*7);
     --ids2-spacing-8: calc(var(--ids2-spacing)*8);
+    --ids2-spacing-9: calc(var(--ids2-spacing)*9);
     --ids2-spacing-10: calc(var(--ids2-spacing)*10);
     --ids2-spacing-none: 0;
 
@@ -108,6 +111,10 @@
     --ids2-border-1: 1px solid var(--ids2-color-gray-100);
     --ids2-border-2: 2px solid var(--ids2-color-gray-100);
     --ids2-border-3: 3px solid var(--ids2-color-gray-100);
+
+    --ids2-border-1-400: 1px solid var(--ids2-color-gray-400);
+    --ids2-border-2-400: 2px solid var(--ids2-color-gray-400);
+    --ids2-border-3-400: 3px solid var(--ids2-color-gray-400);
 
     --ids2-border-1-500: 1px solid var(--ids2-color-gray-500);
     --ids2-border-2-500: 2px solid var(--ids2-color-gray-500);

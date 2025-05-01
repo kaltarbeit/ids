@@ -29,7 +29,7 @@
     vertical-align: middle;
 }
 
-.ids2-checkmark-content .ids2-label-highlight:before {
+.ids2-checkmark-content .ids2-label-required:before {
     content: " ";
     width: 1px;
     height: 16px;

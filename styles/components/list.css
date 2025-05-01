@@ -50,13 +50,10 @@
     margin-right: 10px;
 }
 .ids2-details {
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
     margin-left: 12px;
-}
-.ids2-name {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 22px;
-    color: #30323B;
 }
 .ids2-bank {
     font-size: 12px;
@@ -65,9 +62,7 @@
     color: #737684;
     margin-top: 6px;
 }
-.ids2-star {
-    color: #007bff;
-    font-size: 20px;
+.ids2-favorite {
     cursor: pointer;
 }
 
@@ -138,7 +133,6 @@
 
 .ids2-menu {
      background: white;
-     padding: 20px;
  }
 .ids2-menu-section {
     margin: 40px 24px;

@@ -22,10 +22,10 @@
 @import "../components/infoBox/infoBox.css";
 @import "../components/inputStepper/inputStepper.css";
 @import "../components/textArea/textArea.css";
-@import "../components/bottomNavigation/bottomNavigation.css";
+@import "components/bottomNavigation.css";
 @import "components/list.css";
 @import "../components/tab/tab.css";
-@import "../components/topNavigation/topNavigation.css";
+@import "components/topNavigation.css";
 @import "../components/overflowMenu/overflowMenu.css";
 @import "../components/pagination/pagination.css";
 @import "../components/popover/popover.css";

@@ -5,6 +5,10 @@
     margin: var(--ids2-spacing-1);
 }
 
+.ids2-ma-half {
+    margin: var(--ids2-spacing-half);
+}
+
 .ids2-ma-1-half  {
     margin: var(--ids2-spacing-1-half);
 }
@@ -40,6 +44,10 @@
     margin-top: var(--ids2-spacing-1);
 }
 
+.ids2-mt-half {
+    margin-top: var(--ids2-spacing-half);
+}
+
 .ids2-mt-1-half  {
     margin-top: var(--ids2-spacing-1-half);
 }
@@ -70,6 +78,10 @@
  */
 .ids2-mb-1 {
     margin-bottom: var(--ids2-spacing-1);
+}
+
+.ids2-mb-half {
+    margin-bottom: var(--ids2-spacing-half);
 }
 
 .ids2-mb-1-half  {
@@ -107,6 +119,11 @@
 .ids2-my-1 {
     margin-top: var(--ids2-spacing-1);
     margin-bottom: var(--ids2-spacing-1);
+}
+
+.ids2-my-half  {
+    margin-top: var(--ids2-spacing-half);
+    margin-bottom: var(--ids2-spacing-half);
 }
 
 .ids2-my-1-half  {
@@ -157,6 +174,10 @@
     margin-left: var(--ids2-spacing-1);
 }
 
+.ids2-ml-half  {
+    margin-left: var(--ids2-spacing-half);
+}
+
 .ids2-ml-1-half  {
     margin-left: var(--ids2-spacing-1-half);
 }
@@ -191,6 +212,10 @@
  */
 .ids2-mr-1 {
     margin-right: var(--ids2-spacing-1);
+}
+
+.ids2-mr-half  {
+    margin-right: var(--ids2-spacing-half);
 }
 
 .ids2-mr-1-half  {
@@ -228,6 +253,11 @@
 .ids2-mx-1 {
     margin-left: var(--ids2-spacing-1);
     margin-right: var(--ids2-spacing-1);
+}
+
+.ids2-mx-half  {
+    margin-left: var(--ids2-spacing-half);
+    margin-right: var(--ids2-spacing-half);
 }
 
 .ids2-mx-1-half  {
@@ -277,6 +307,10 @@
     padding: var(--ids2-spacing-1);
 }
 
+.ids2-pa-half  {
+    padding: var(--ids2-spacing-half);
+}
+
 .ids2-pa-1-half  {
     padding: var(--ids2-spacing-1-half);
 }
@@ -310,6 +344,10 @@
  */
 .ids2-pt-1 {
     padding-top: var(--ids2-spacing-1);
+}
+
+.ids2-pt-half  {
+    padding-top: var(--ids2-spacing-half);
 }
 
 .ids2-pt-1-half  {
@@ -348,6 +386,10 @@
     padding-bottom: var(--ids2-spacing-1);
 }
 
+.ids2-pb-half  {
+    padding-bottom: var(--ids2-spacing-half);
+}
+
 .ids2-pb-1-half  {
     padding-bottom: var(--ids2-spacing-1-half);
 }
@@ -383,6 +425,11 @@
 .ids2-py-1 {
     padding-top: var(--ids2-spacing-1);
     padding-bottom: var(--ids2-spacing-1);
+}
+
+.ids2-py-half  {
+    padding-top: var(--ids2-spacing-half);
+    padding-bottom: var(--ids2-spacing-half);
 }
 
 .ids2-py-1-half  {
@@ -429,6 +476,10 @@
     padding-left: var(--ids2-spacing-1);
 }
 
+.ids2-pl-half  {
+    padding-left: var(--ids2-spacing-half);
+}
+
 .ids2-pl-1-half  {
     padding-left: var(--ids2-spacing-1-half);
 }
@@ -462,6 +513,10 @@
  */
 .ids2-pr-1 {
     padding-right: var(--ids2-spacing-1);
+}
+
+.ids2-pr-half  {
+    padding-right: var(--ids2-spacing-half);
 }
 
 .ids2-pr-1-half  {
@@ -499,6 +554,12 @@
     padding-left: var(--ids2-spacing-1);
     padding-right: var(--ids2-spacing-1);
 }
+
+.ids2-px-half  {
+    padding-left: var(--ids2-spacing-half);
+    padding-right: var(--ids2-spacing-half);
+}
+
 
 .ids2-px-1-half  {
     padding-left: var(--ids2-spacing-1-half);

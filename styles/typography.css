@@ -169,28 +169,40 @@
     text-decoration: underline;
 }
 
-.ids2-text-blue {
-    color: #235FD2;
+.ids2-text-primary {
+    color: var(--ids2-color-point-blue);
+}
+
+.ids2-text-point-blue {
+    color: var(--ids2-color-point-blue);
+}
+
+.ids2-text-blue-50 {
+    color: var(--ids2-color-blue-50);
+}
+
+.ids2-text-blue-100 {
+    color: var(--ids2-color-blue-100);
+}
+
+.ids2-text-blue-400 {
+    color: var(--ids2-color-blue-400);
+}
+
+.ids2-text-blue-700 {
+    color: var(--ids2-color-blue-700);
 }
 
 .ids2-text-blue-900 {
-    color: #234EAA;
-}
-
-.ids2-text-grey {
-    color: #B1B5C3;
-}
-
-.ids2-text-dark-gray {
-    color: #454855;
+    color: var(--ids2-color-blue-900);
 }
 
 .ids2-text-white {
-    color: #FFFFFF;
+    color: var(--ids2-color-white);
 }
 
 .ids2-text-black {
-    color: #101116;
+    color: var(--ids2-color-black);
 }
 
 

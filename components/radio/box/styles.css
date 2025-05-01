@@ -73,7 +73,7 @@
     vertical-align: middle;
 }
 
-.ids2-radio-box .ids2-radio-box-label .ids2-label-highlight:before {
+.ids2-radio-box .ids2-radio-box-label .ids2-label-required:before {
     content: " ";
     width: 1px;
     height: 16px;
