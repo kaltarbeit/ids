@@ -164,7 +164,6 @@ td.ids2-docs-name {
 }
 
 .ids2-docs-example-absolute {
-    height: 700px;
     width: calc(50% - 24px);
     margin-right: 24px;
 }

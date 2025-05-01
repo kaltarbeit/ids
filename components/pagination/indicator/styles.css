@@ -17,9 +17,11 @@
     border: 1px solid #737684;
     cursor: pointer;
     transition: width 0.3s ease;
+    font-size: 0;
+    color: transparent;
 }
 
-.ids2-indicator-dot-item.active {
+.ids2-indicator-dot-item.ids2-indicator-dot-item-active {
     width: 28px;
     height: 6px;
     background-color: #000;

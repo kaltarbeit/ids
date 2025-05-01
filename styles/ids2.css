@@ -26,8 +26,8 @@
 @import "components/list.css";
 @import "../components/tab/tab.css";
 @import "components/topNavigation.css";
-@import "../components/overflowMenu/overflowMenu.css";
-@import "../components/pagination/pagination.css";
+@import "components/overflowMenu.css";
+@import "components/pagination.css";
 @import "../components/popover/popover.css";
 @import "../components/popup/popup.css";
 @import "../components/profile/profile.css";
@@ -47,6 +47,7 @@
 @import "shape.css";
 @import "typography.css";
 @import "grid.css";
+@import "color.css";
 
 
 body {

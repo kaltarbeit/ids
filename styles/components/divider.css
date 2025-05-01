@@ -15,3 +15,7 @@
 .ids2-divider.ids2-divider-thick {
     height: 12px;
 }
+
+.ids2-divider.ids2-divider-gray-100 {
+    background-color: var(--ids2-color-gray-100);
+}
