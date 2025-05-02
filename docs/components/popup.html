@@ -24,6 +24,209 @@
     <p class="ids2-body1 ids2-my-24 ids2-text-gray-500">Popup 디자인 구현을 위한 스타일시트 입니다.</p>
   </div>
 
+
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">Default</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Popup > Layer Popup, Promotion</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-name">
+            Default
+          </td>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-popup</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">position: fixed;
+              width: calc(100% - 75px);
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              box-sizing: border-box;
+              z-index: 1001;
+            </code>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-popup</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example ids2-docs-example-absolute" style="height: 700px"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-popup">
+                <div class="ids2-popup-checkbox">
+                    <div class="ids2-checkbox ids2-checkbox-sm">
+                        <label>
+                            <input type="checkbox" name="checkbox">
+                            <span class="ids2-input-label-text">7일 동안 보이지 않기</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="ids2-popup-body">
+                    <div class="ids2-popup-title">타이틀</div>
+                    <div class="ids2-popup-content" style="height: 154px;">
+
+                    </div>
+                    <div class="ids2-popup-button-group">
+                        <button class="ids2-button ids2-button-line ids2-button-secondary ids2-button-full-width">취소</button>
+                        <button class="ids2-button ids2-button-secondary ids2-button-full-width">
+                            <span class="ids2-bold">확인</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="ids2-backdrop"></div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-popup</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example ids2-docs-example-absolute" style="height: 700px"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-popup">
+                <div class="ids2-popup-body">
+                    <div class="ids2-popup-content">
+                        <div class="ids2-popup-img">Example Image</div>
+                    </div>
+
+                    <div class="ids2-popup-footer">
+                        <div class="ids2-checkbox ids2-checkbox-sm">
+                            <label>
+                                <input type="checkbox" name="checkbox">
+                                <span class="ids2-input-label-text ids2-bold">7일 동안 보이지 않기</span>
+                            </label>
+                        </div>
+
+                        <button class="ids2-button ids2-popup-close">닫기</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ids2-backdrop"></div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">Full Popup</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Popup > Full Popup</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-name">
+            Default
+          </td>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-popup-full</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">position: fixed;
+              left: 0;
+              right: 0;
+              top: 0;
+              height: 100%;
+              background: #ffffff;
+              z-index: 1001;
+              opacity: 1;
+              transition: opacity 0.3s ease-in-out;
+            </code>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-popup-full</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example ids2-docs-example-absolute" style="height: 700px"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-popup-full">
+                <div class="ids2-popup-navigation">
+                  <div class="ids2-popup-navigation-left">
+                    타이틀
+                  </div>
+                  <div class="ids2-popup-navigation-right">
+                    <div class="ids2-popup-navigation-close">
+                      <i class="ids2-icon ids2-icon-close">Close</i>
+                    </div>
+                  </div>
+                </div>
+
+                  <div class="ids2-button-group ids2-popup-full-footer">
+                    <button class="ids2-button ids2-button-primary ids2-button-line ids2-col-1">레이블</button>
+                    <button class="ids2-button ids2-button-primary ids2-col-2">
+                      <span class="ids2-bold">레이블</span>
+                    </button>
+                  </div>
+              </div>
+              <div class="ids2-backdrop"></div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </div>
 
 <script src="../scripts/docs.js"></script>

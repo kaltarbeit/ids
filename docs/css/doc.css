@@ -168,6 +168,10 @@ td.ids2-docs-name {
     margin-right: 24px;
 }
 
+.ids2-docs-example-absolute > * {
+    position: absolute;
+}
+
 .ids2-docs-example-labels {
     width: 50%;
     text-overflow: ellipsis;
