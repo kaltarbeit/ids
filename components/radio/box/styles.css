@@ -7,6 +7,15 @@
     width: 100%;
 }
 
+.ids2-radio-group-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
 .ids2-radio-box {
     width: 100%;
     display: flex;

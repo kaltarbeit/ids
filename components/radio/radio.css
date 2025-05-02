@@ -30,8 +30,6 @@
 
 .ids2-radio-group {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 36px;
     width: 100%;
 }
