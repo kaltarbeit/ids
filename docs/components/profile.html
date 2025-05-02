@@ -53,18 +53,34 @@
         </thead>
         <tbody>
         <tr>
-          <td class="ids2-cell-left ids2-docs-name">
+          <td class="ids2-cell-left ids2-docs-name" rowspan="3">
             Default
           </td>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-popup</td>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-profile</td>
           <td class="ids2-cell-left">
-            <code class="ids2-docs-code">position: fixed;
-              width: calc(100% - 75px);
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              box-sizing: border-box;
-              z-index: 1001;
+            <code class="ids2-docs-code">position: relative;
+              width: 110px;
+              height: 110px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-profile-image</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              overflow: hidden;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-profile-image:empty</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">background-image: url("data:image/svg+xml,...");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
             </code>
           </td>
         </tr>
