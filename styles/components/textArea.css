@@ -1,4 +1,4 @@
-.ids2-text-area-container {
+.ids2-text-area {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -15,7 +15,7 @@
     margin: 0 0 4px 8px;
 }
 
-.ids2-text-area {
+.ids2-text-area-field {
     position: relative;
     width: 100%;
     height: 120px;

@@ -21,10 +21,10 @@
 @import "../components/footer/footer.css";
 @import "../components/infoBox/infoBox.css";
 @import "../components/inputStepper/inputStepper.css";
-@import "../components/textArea/textArea.css";
+@import "components/textArea.css";
 @import "components/bottomNavigation.css";
 @import "components/list.css";
-@import "../components/tab/tab.css";
+@import "components/tab.css";
 @import "components/topNavigation.css";
 @import "components/overflowMenu.css";
 @import "components/pagination.css";
@@ -33,11 +33,11 @@
 @import "../components/profile/profile.css";
 @import "../components/progressStep/progressStep.css";
 @import "../components/radio/radio.css";
-@import "../components/snackbar/snackbar.css";
-@import "../components/toast/toast.css";
+@import "components/snackbar.css";
+@import "components/toast.css";
 @import "../components/toggleSwitch/toggleSwitch.css";
 @import "../components/tooltip/tooltip.css";
-@import "../components/slider/slider.css";
+@import "components/slider.css";
 
 
 @import "icon.css";

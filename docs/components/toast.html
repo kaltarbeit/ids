@@ -24,6 +24,93 @@
     <p class="ids2-body1 ids2-my-24 ids2-text-gray-500">Toast 디자인 구현을 위한 스타일시트 입니다.</p>
   </div>
 
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">Default</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Snackbar</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-name" rowspan="3">
+            Default
+          </td>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-profile</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">position: relative;
+              width: 110px;
+              height: 110px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-profile-image</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              overflow: hidden;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-profile-image:empty</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">background-image: url("data:image/svg+xml,...");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            </code>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-toast</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-toast">
+                <span class="ids2-toast-icon">
+                    <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5869 1.05029C13.835 1.27002 13.8579 1.64922 13.6382 1.89727L5.66579 10.8973C5.55322 11.0244 5.39207 11.0978 5.2223 11.0994C5.05253 11.101 4.89003 11.0306 4.77509 10.9056L0.369295 6.11635C0.144948 5.87248 0.160778 5.49291 0.404652 5.26856C0.648528 5.04421 1.0281 5.06004 1.25244 5.30392L5.20825 9.60405L12.7399 1.10157C12.9597 0.853526 13.3389 0.830566 13.5869 1.05029Z" fill="#7ED57B"/>
+                    </svg>
+                </span>
+                <span class="ids2-toast-message">텍스트를 노출합니다</span>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 </div>
 
 <script src="../scripts/docs.js"></script>

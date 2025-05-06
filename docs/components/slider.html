@@ -24,6 +24,381 @@
     <p class="ids2-body1 ids2-my-24 ids2-text-gray-500">Slider 디자인 구현을 위한 스타일시트 입니다.</p>
   </div>
 
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">Default</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Slider > Default</span> 를 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider-vertical</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-slider ids2-slider-vertical" data-value="25">
+                <div class="ids2-slider-track">
+                  <div class="ids2-slider-track-range" style="top: 50%"></div>
+                </div>
+                <div class="ids2-slider-handle" style="top: 50%">
+                  <div class="ids2-slider-tooltip">텍스트</div>
+                </div>
+                <div class="ids2-slider-range-end">50</div>
+                <div class="ids2-slider-range-start">0</div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider-horizontal</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-slider ids2-slide-horizontal" data-value="25">
+                <div class="ids2-slider-track">
+                    <div class="ids2-slider-track-range" style="width: 50%"></div>
+                </div>
+                <div class="ids2-slider-handle" style="left: 50%">
+                    <div class="ids2-slider-tooltip">텍스트</div>
+                </div>
+                <div class="ids2-slider-range-start">0</div>
+                <div class="ids2-slider-range-end">50</div>
+            </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider-vertical</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-slider ids2-slider-vertical" data-value="25">
+                <div class="ids2-slider-track">
+                  <div class="ids2-slider-track-range" style="top: 50%"></div>
+
+                  <div class="ids2-slider-track-snap" style="top: 16.66%;"></div>
+                  <div class="ids2-slider-track-snap" style="top: 33.33%;"></div>
+                  <div class="ids2-slider-track-snap" style="top: 50%;"></div>
+                  <div class="ids2-slider-track-snap" style="top: 66.66%;"></div>
+                  <div class="ids2-slider-track-snap" style="top: 83.33%;"></div>
+                </div>
+                <div class="ids2-slider-handle" style="top: 50%">
+                  <div class="ids2-slider-tooltip">텍스트</div>
+                </div>
+                <div class="ids2-slider-range-end">50</div>
+                <div class="ids2-slider-range-start">0</div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider-horizontal</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-slider ids2-slide-horizontal" data-value="25">
+                <div class="ids2-slider-track">
+                    <div class="ids2-slider-track-range" style="width: 50%"></div>
+
+                    <div class="ids2-slider-track-snap" style="left: 16.66%;"></div>
+                    <div class="ids2-slider-track-snap" style="left: 33.33%;"></div>
+                    <div class="ids2-slider-track-snap" style="left: 50%;"></div>
+                    <div class="ids2-slider-track-snap" style="left: 66.66%;"></div>
+                    <div class="ids2-slider-track-snap" style="left: 83.33%;"></div>
+                </div>
+                <div class="ids2-slider-handle" style="left: 50%;">
+                    <div class="ids2-slider-tooltip">텍스트</div>
+                </div>
+                <div class="ids2-slider-range-start">0</div>
+                <div class="ids2-slider-range-end">50</div>
+            </div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">Large</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Slider > Large</span> 를 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider-vertical</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider-large</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-slider ids2-slider-vertical ids2-slider-large" data-value="25">
+                <div class="ids2-slider-track">
+                  <div class="ids2-slider-track-range" style="top: 50%;"></div>
+                </div>
+                <div class="ids2-slider-handle" style="top: 50%;">
+                  <div class="ids2-slider-tooltip">텍스트</div>
+                </div>
+                <div class="ids2-slider-range-end">50</div>
+                <div class="ids2-slider-range-start">0</div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider-horizontal</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider-large</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-slider ids2-slide-horizontal ids2-slider-large" data-value="25">
+                <div class="ids2-slider-track">
+                    <div class="ids2-slider-track-range" style="width: 50%;"></div>
+                </div>
+                <div class="ids2-slider-handle" style="left: 50%;">
+                    <div class="ids2-slider-tooltip">텍스트</div>
+                </div>
+                <div class="ids2-slider-range-start">0</div>
+                <div class="ids2-slider-range-end">50</div>
+            </div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">Range</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Slider > Range</span> 를 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider-vertical</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-slider ids2-slider-vertical" data-value="25">
+                <div class="ids2-slider-track">
+                  <div class="ids2-slider-track-range" style="top: 25%; bottom: 25%;"></div>
+                </div>
+
+                <div class="ids2-slider-handle" style="top: 25%;">
+                  <div class="ids2-slider-tooltip">텍스트</div>
+                </div>
+
+                <div class="ids2-slider-handle-min" style="top: 75%;">
+                    <div class="ids2-slider-tooltip">텍스트</div>
+                </div>
+
+                <div class="ids2-slider-range-end">50</div>
+                <div class="ids2-slider-range-start">0</div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider-horizontal</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-slider ids2-slide-horizontal" data-value="25">
+                <div class="ids2-slider-track">
+                    <div class="ids2-slider-track-range" style="left: 25%; right: 25%;"></div>
+                </div>
+
+                <div class="ids2-slider-handle-min" style="left: 25%;">
+                    <div class="ids2-slider-tooltip">텍스트</div>
+                </div>
+
+                <div class="ids2-slider-handle" style="left: 75%;">
+                    <div class="ids2-slider-tooltip">텍스트</div>
+                </div>
+
+                <div class="ids2-slider-range-start">0</div>
+                <div class="ids2-slider-range-end">50</div>
+            </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider-vertical</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-slider ids2-slider-vertical" data-value="25">
+                <div class="ids2-slider-track">
+                  <div class="ids2-slider-track-range" style="top: 33.33%; bottom: 16.66%;"></div>
+
+                  <div class="ids2-slider-track-snap" style="top: 16.66%;"></div>
+                  <div class="ids2-slider-track-snap" style="top: 33.33%;"></div>
+                  <div class="ids2-slider-track-snap" style="top: 50%;"></div>
+                  <div class="ids2-slider-track-snap" style="top: 66.66%;"></div>
+                  <div class="ids2-slider-track-snap" style="top: 83.33%;"></div>
+                </div>
+
+                <div class="ids2-slider-handle" style="top: 33.33%;">
+                  <div class="ids2-slider-tooltip">텍스트</div>
+                </div>
+
+                <div class="ids2-slider-handle-min" style="top: 83.33%;">
+                    <div class="ids2-slider-tooltip">텍스트</div>
+                </div>
+
+                <div class="ids2-slider-range-end">50</div>
+                <div class="ids2-slider-range-start">0</div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-slider-horizontal</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-slider ids2-slide-horizontal" data-value="25">
+                <div class="ids2-slider-track">
+                    <div class="ids2-slider-track-range" style="left: 33.33%; right: 16.66%"></div>
+
+                    <div class="ids2-slider-track-snap" style="left: 16.66%;"></div>
+                    <div class="ids2-slider-track-snap" style="left: 33.33%;"></div>
+                    <div class="ids2-slider-track-snap" style="left: 50%;"></div>
+                    <div class="ids2-slider-track-snap" style="left: 66.66%;"></div>
+                    <div class="ids2-slider-track-snap" style="left: 83.33%;"></div>
+                </div>
+
+                <div class="ids2-slider-handle-min" style="left: 33.33%">
+                    <div class="ids2-slider-tooltip">텍스트</div>
+                </div>
+
+                <div class="ids2-slider-handle" style="left: 83.33%">
+                    <div class="ids2-slider-tooltip">텍스트</div>
+                </div>
+                <div class="ids2-slider-range-start">0</div>
+                <div class="ids2-slider-range-end">50</div>
+            </div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </div>
 
 <script src="../scripts/docs.js"></script>
