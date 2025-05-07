@@ -1,4 +1,4 @@
-.ids2-radio-box-group {
+.ids-radio-box-group {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,7 +7,7 @@
     width: 100%;
 }
 
-.ids2-radio-group-vertical {
+.ids-radio-group-vertical {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +16,7 @@
     width: 100%;
 }
 
-.ids2-radio-box {
+.ids-radio-box {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -33,7 +33,7 @@
     color: #101116;
 }
 
-.ids2-radio-box-lg {
+.ids-radio-box-lg {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -50,7 +50,7 @@
     color: #101116;
 }
 
-.ids2-radio-box:has(.ids2-radio-box-input:checked):after {
+.ids-radio-box:has(.ids-radio-box-input:checked):after {
     content: " ";
     width: 24px;
     height: 24px;
@@ -59,30 +59,30 @@
     background-position: center;
 }
 
-.ids2-radio-box:has(.ids2-radio-box-input:checked) {
+.ids-radio-box:has(.ids-radio-box-input:checked) {
     background-color: #F3F9FF;
     border: 2px solid #2873E3;
     padding: 17px 19px;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.08);
 }
 
-.ids2-radio-box .ids2-radio-box-label {
+.ids-radio-box .ids-radio-box-label {
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
     color: #454855;
 }
 
-.ids2-radio-box:has(.ids2-radio-box-input:checked) .ids2-radio-box-label {
+.ids-radio-box:has(.ids-radio-box-input:checked) .ids-radio-box-label {
     font-weight: 700;
     color: #2873E3;
 }
 
-.ids2-radio-box .ids2-radio-box-label > * {
+.ids-radio-box .ids-radio-box-label > * {
     vertical-align: middle;
 }
 
-.ids2-radio-box .ids2-radio-box-label .ids2-label-required:before {
+.ids-radio-box .ids-radio-box-label .ids-label-required:before {
     content: " ";
     width: 1px;
     height: 16px;
@@ -92,7 +92,7 @@
     margin: 0 8px 2px;
 }
 
-.ids2-radio-box-lg:after {
+.ids-radio-box-lg:after {
     content: " ";
     width: 24px;
     height: 24px;
@@ -101,11 +101,11 @@
     background-position: center;
 }
 
-.ids2-radio-box .ids2-radio-box-content {
+.ids-radio-box .ids-radio-box-content {
     text-align: left;
 }
 
-.ids2-radio-box .ids2-radio-box-header {
+.ids-radio-box .ids-radio-box-header {
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -113,7 +113,7 @@
     margin-bottom: 4px;
 }
 
-.ids2-radio-box .ids2-radio-box-title {
+.ids-radio-box .ids-radio-box-title {
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
@@ -123,7 +123,7 @@
     justify-content: space-between;
 }
 
-.ids2-radio-box .ids2-radio-box-text {
+.ids-radio-box .ids-radio-box-text {
     display: block;
     font-size: 14px;
     color: #5A5E6C;
@@ -131,6 +131,6 @@
     font-weight: 400;
 }
 
-.ids2-radio-box .ids2-radio-box-input {
+.ids-radio-box .ids-radio-box-input {
     display: none;
 }

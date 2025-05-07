@@ -1,33 +1,33 @@
-.ids2-card {
-    background: var(--ids2-color-white);
-    border-radius: var(--ids2-radius-16);
-    padding: var(--ids2-spacing-2-half);
-    box-shadow: var(--ids2-shadow);
+.ids-card {
+    background: var(--ids-color-white);
+    border-radius: var(--ids-radius-16);
+    padding: var(--ids-spacing-2-half);
+    box-shadow: var(--ids-shadow);
     box-sizing: border-box;
     width: 100%;
 }
 
-.ids2-card-blur {
-    box-shadow: var(--ids2-shadow-blur);
+.ids-card-blur {
+    box-shadow: var(--ids-shadow-blur);
 }
 
-.ids2-card-filled {
-    border: var(--ids2-border-1);
-    background: var(--ids2-color-blue-100);
+.ids-card-filled {
+    border: var(--ids-border-1);
+    background: var(--ids-color-blue-100);
     box-shadow: none;
 }
 
-.ids2-card-outlined {
-    border: var(--ids2-border-1);
+.ids-card-outlined {
+    border: var(--ids-border-1);
     background: transparent;
     box-shadow: none;
 }
 
-.ids2-card-example {
+.ids-card-example {
     padding: 24px;
 }
 
-.ids2-card-example-backboard {
+.ids-card-example-backboard {
     background: #F3F3F3;
     padding: 24px;
 }

@@ -5,9 +5,9 @@ export const createAccountCard = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const transactionList = wrapper.querySelector('.ids2-account-card-transactions');
-    const openButton = wrapper.querySelector('.ids2-account-card-footer');
-    const openButtonLabel = wrapper.querySelector('.ids2-account-card-footer-label');
+    const transactionList = wrapper.querySelector('.ids-account-card-transactions');
+    const openButton = wrapper.querySelector('.ids-account-card-footer');
+    const openButtonLabel = wrapper.querySelector('.ids-account-card-footer-label');
 
 
     openButton.addEventListener('click', () => {

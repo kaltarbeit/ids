@@ -7,23 +7,23 @@ export const createAccordion = () => {
     /** Examples **/
     function toggleAccordion(e) {
         const item = e.currentTarget.parentElement;
-        const details = item.getElementsByClassName('ids2-accordion-details')
+        const details = item.getElementsByClassName('ids-accordion-details')
 
         if(details.length > 0) {
-            const opened = item.classList.contains('ids2-accordion-item-open');
+            const opened = item.classList.contains('ids-accordion-item-open');
 
             if(opened) {
-                item.classList.remove('ids2-accordion-item-open');
+                item.classList.remove('ids-accordion-item-open');
                 details[0].style.height = 0;
             } else {
-                item.classList.add('ids2-accordion-item-open');
+                item.classList.add('ids-accordion-item-open');
                 details[0].style.height = details[0].scrollHeight+'px';
             }
         }
     }
 
     function initAccordion(wrapper) {
-        const items = wrapper.getElementsByClassName('ids2-accordion-item');
+        const items = wrapper.getElementsByClassName('ids-accordion-item');
 
         for(var i = 0; i < items.length; i++) {
             items[i].firstElementChild.addEventListener('click', toggleAccordion);

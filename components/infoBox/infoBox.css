@@ -1,12 +1,12 @@
 
-.ids2-info-box {
+.ids-info-box {
     background-color: #F3F4F7;
     padding: 16px;
     border-radius: 12px;
     font-family: Arial, sans-serif;
 }
 
-.ids2-info-box-title {
+.ids-info-box-title {
     font-size: 14px;
     font-weight: 600;
     color: #101116;
@@ -16,7 +16,7 @@
     gap: 6px;
 }
 
-.ids2-info-box-text {
+.ids-info-box-text {
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
@@ -25,30 +25,30 @@
 }
 
 
-.ids2-info-box-button-container {
+.ids-info-box-button-container {
     margin-top: 12px;
 }
 
 
-.ids2-info-list {
+.ids-info-list {
     margin: 0;
-    font-size: var(--ids2-size-body5);
-    font-weight: var(--ids2-font-regular);
-    line-height: var(--ids2-line-body5);
-    color: var(--ids2-color-gray-600);
+    font-size: var(--ids-size-body5);
+    font-weight: var(--ids-font-regular);
+    line-height: var(--ids-line-body5);
+    color: var(--ids-color-gray-600);
     padding: 0;
-    gap: var(--ids2-spacing-1);
+    gap: var(--ids-spacing-1);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }
 
-.ids2-info-list li {
+.ids-info-list li {
     position: relative;
-    padding-left: var(--ids2-spacing-1-half);
+    padding-left: var(--ids-spacing-1-half);
     list-style: none;
 }
-.ids2-info-list li::before {
+.ids-info-list li::before {
     position: absolute;
     top: 50%;
     left: 0;
@@ -58,7 +58,7 @@
     width: 2px;
     height: 2px;
     overflow: hidden;
-    background-color: var(--ids2-color-gray-700);
+    background-color: var(--ids-color-gray-700);
     border-radius: 50%;
     vertical-align: middle;
 }

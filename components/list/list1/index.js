@@ -5,12 +5,12 @@ export const createList = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const stars = wrapper.querySelectorAll('.ids2-star');
+    const stars = wrapper.querySelectorAll('.ids-star');
 
     /** Examples **/
     function toggleAccordion(e) {
         const item = e.currentTarget.parentElement;
-        const detail = item.querySelector('.ids2-accordion-details');
+        const detail = item.querySelector('.ids-accordion-details');
 
         if(!!detail) {
             const opened = item.hasAttribute('open');
@@ -26,7 +26,7 @@ export const createList = () => {
     }
 
     function openAccordion(item) {
-        const detail = item.querySelector('.ids2-accordion-details');
+        const detail = item.querySelector('.ids-accordion-details');
         item.setAttribute('open', '');
 
         setTimeout(() => {
@@ -35,7 +35,7 @@ export const createList = () => {
     }
 
     function initAccordion(wrapper) {
-        const items = wrapper.querySelectorAll('.ids2-accordion-item');
+        const items = wrapper.querySelectorAll('.ids-accordion-item');
 
         items.forEach(item => {
             item.firstElementChild.addEventListener('click', toggleAccordion);
@@ -45,9 +45,9 @@ export const createList = () => {
 
     stars.forEach(star => {
         star.addEventListener('click', () => {
-            const starIcon = star.querySelector('.ids2-icon');
-            starIcon.classList.toggle('ids2-icon-star-fill');
-            starIcon.classList.toggle('ids2-icon-star');
+            const starIcon = star.querySelector('.ids-icon');
+            starIcon.classList.toggle('ids-icon-star-fill');
+            starIcon.classList.toggle('ids-icon-star');
         })
     })
 

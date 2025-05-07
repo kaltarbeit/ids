@@ -5,7 +5,7 @@ export const createTab = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const tabItems = wrapper.querySelectorAll('.ids2-tab-secondary-item');
+    const tabItems = wrapper.querySelectorAll('.ids-tab-secondary-item');
 
     tabItems.forEach(item => {
         item.addEventListener('click', function () {

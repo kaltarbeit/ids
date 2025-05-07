@@ -5,9 +5,9 @@ export const createOverflowMenu = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const fabToggle = wrapper.querySelector(".ids2-fab-menu-toggle");
-    const fabMenu = wrapper.querySelector(".ids2-fab-menu");
-    const backdrop = wrapper.querySelector('.ids2-backdrop');
+    const fabToggle = wrapper.querySelector(".ids-fab-menu-toggle");
+    const fabMenu = wrapper.querySelector(".ids-fab-menu");
+    const backdrop = wrapper.querySelector('.ids-backdrop');
 
     fabToggle.addEventListener("click", () => {
         fabMenu.classList.toggle("show");
@@ -15,17 +15,17 @@ export const createOverflowMenu = () => {
         if(fabMenu.classList.contains('show')) {
             backdrop.style.display = 'block';
             setTimeout(() => {
-                backdrop.classList.remove('ids2-backdrop-hide');
+                backdrop.classList.remove('ids-backdrop-hide');
             });
         } else {
             setTimeout(() => {
-                backdrop.classList.add('ids2-backdrop-hide');
+                backdrop.classList.add('ids-backdrop-hide');
             });
         }
     });
 
     backdrop.addEventListener('transitionend', () => {
-        if(backdrop.classList.contains('ids2-backdrop-hide'))
+        if(backdrop.classList.contains('ids-backdrop-hide'))
             backdrop.style.display = 'none';
     });
 

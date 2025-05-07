@@ -1,5 +1,5 @@
 
-.ids2-indicator-more {
+.ids-indicator-more {
     display: flex;
     align-items: center;
     font-size: 14px;
@@ -9,11 +9,11 @@
     font-weight: 500;
 }
 
-.ids2-indicator-more-count {
+.ids-indicator-more-count {
     margin-left: 4px;
 }
 
-.ids2-indicator-more-icon {
+.ids-indicator-more-icon {
     margin-left: 5px;
     transition: transform 0.3s ease;
 }

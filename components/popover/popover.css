@@ -1,5 +1,5 @@
 
-.ids2-popover-examples {
+.ids-popover-examples {
     display: flex;
     gap: 64px;
     flex-direction: column;
@@ -8,7 +8,7 @@
     min-width: 380px;
 }
 
-.ids2-popover-example {
+.ids-popover-example {
     width: 100%;
     display: flex;
     gap: 100px;
@@ -21,19 +21,19 @@
     flex-wrap: wrap;
 }
 
-.ids2-popover {
+.ids-popover {
     position: relative;
     display: inline-block;
 }
 
-.ids2-popover:after {
+.ids-popover:after {
     content: ' ';
     position: absolute;
     width: 0;
     height: 0;
 }
 
-.ids2-popover .ids2-popover-content {
+.ids-popover .ids-popover-content {
     display: flex;
     align-items: flex-start;
     gap: 4px;
@@ -45,28 +45,28 @@
     line-height: 16px;
 }
 
-.ids2-popover.ids2-arrow-side-bottom:after {
+.ids-popover.ids-arrow-side-bottom:after {
     bottom: -6px;
     border-top: 6px solid rgba(0, 0, 0, 0.7);
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
 }
 
-.ids2-popover.ids2-arrow-side-top:after {
+.ids-popover.ids-arrow-side-top:after {
     top: -6px;
     border-bottom: 6px solid rgba(0, 0, 0, 0.7);
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
 }
 
-.ids2-popover.ids2-arrow-side-left:after {
+.ids-popover.ids-arrow-side-left:after {
     left: -6px;
     border-right: 6px solid rgba(0, 0, 0, 0.7);
     border-top: 6px solid transparent;
     border-bottom: 6px solid transparent;
 }
 
-.ids2-popover.ids2-arrow-side-right:after {
+.ids-popover.ids-arrow-side-right:after {
     right: -6px;
     border-left: 6px solid rgba(0, 0, 0, 0.7);
     border-top: 6px solid transparent;
@@ -74,39 +74,39 @@
 }
 
 
-.ids2-popover.ids2-arrow-align-center:after {
+.ids-popover.ids-arrow-align-center:after {
     left: 50%;
     transform: translateX(-50%);
 }
 
-.ids2-popover.ids2-arrow-align-left:after {
+.ids-popover.ids-arrow-align-left:after {
     left: 10px;
 }
 
-.ids2-popover.ids2-arrow-align-right:after {
+.ids-popover.ids-arrow-align-right:after {
     right: 10px;
 }
 
-.ids2-popover.ids2-arrow-align-top:after {
+.ids-popover.ids-arrow-align-top:after {
     top: 10px;
 }
 
-.ids2-popover.ids2-arrow-align-middle:after {
+.ids-popover.ids-arrow-align-middle:after {
     top: 50%;
     transform: translateY(-50%);
 }
 
-.ids2-popover.ids2-arrow-align-bottom:after {
+.ids-popover.ids-arrow-align-bottom:after {
     bottom: 10px;
 }
 
 
-.ids2-popover-icon img {
+.ids-popover-icon img {
     width: 16px;
     height: 16px;
 }
 
-.ids2-popover-text {
+.ids-popover-text {
     display: flex;
     flex-direction: column;
 }

@@ -4,13 +4,13 @@
     gap: 48px;
 }
 
-.ids2-indicator-dot {
+.ids-indicator-dot {
     display: flex;
     align-items: center;
     gap: 6px;
 }
 
-.ids2-indicator-dot-item {
+.ids-indicator-dot-item {
     width: 6px;
     height: 6px;
     border-radius: 6px;
@@ -21,20 +21,20 @@
     color: transparent;
 }
 
-.ids2-indicator-dot-item.ids2-indicator-dot-item-active {
+.ids-indicator-dot-item.ids-indicator-dot-item-active {
     width: 28px;
     height: 6px;
     background-color: #000;
     border-radius: 6px;
 }
 
-.ids2-indicator-page {
+.ids-indicator-page {
     display: flex;
     align-items: center;
     gap: 6px;
 }
 
-.ids2-indicator-page-button {
+.ids-indicator-page-button {
     width: 16px;
     height: 16px;
     display: flex;
@@ -47,11 +47,11 @@
     cursor: pointer;
 }
 
-.ids2-indicator-page-button:hover {
+.ids-indicator-page-button:hover {
     background-color: #666;
 }
 
-.ids2-indicator-page-text {
+.ids-indicator-page-text {
     font-size: 10px;
     line-height: 12px;
     color: white;

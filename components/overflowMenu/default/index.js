@@ -3,37 +3,37 @@ import html from '!!raw-loader!./index.html';
 export const createOverflowMenu = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
-    const bottomSheet = wrapper.querySelector('.ids2-bottom-sheet');
-    const bottomSheetContainer = wrapper.querySelector('.ids2-bottom-sheet-container');
-    const backdrop = wrapper.querySelector('.ids2-backdrop');
-    const button = wrapper.querySelector('.ids2-button');
-    const closeButton = wrapper.querySelector('.ids2-bottom-sheet-close');
+    const bottomSheet = wrapper.querySelector('.ids-bottom-sheet');
+    const bottomSheetContainer = wrapper.querySelector('.ids-bottom-sheet-container');
+    const backdrop = wrapper.querySelector('.ids-backdrop');
+    const button = wrapper.querySelector('.ids-button');
+    const closeButton = wrapper.querySelector('.ids-bottom-sheet-close');
 
-    const dropdownItem = wrapper.querySelectorAll('.ids2-overflow-menu-item');
+    const dropdownItem = wrapper.querySelectorAll('.ids-overflow-menu-item');
 
 
-    bottomSheet.classList.add('ids2-bottom-sheet-hide');
+    bottomSheet.classList.add('ids-bottom-sheet-hide');
 
     const showBottomSheet = () => {
         bottomSheet.style.display = 'block';
         bottomSheetContainer.style.display = 'flex';
         backdrop.style.display = 'block';
         setTimeout(() => {
-            bottomSheet.classList.remove('ids2-bottom-sheet-hide');
-            backdrop.classList.remove('ids2-backdrop-hide');
+            bottomSheet.classList.remove('ids-bottom-sheet-hide');
+            backdrop.classList.remove('ids-backdrop-hide');
         }, 10);
     }
 
     const hideBottomSheet = () => {
-        bottomSheet.classList.add('ids2-bottom-sheet-hide');
-        backdrop.classList.add('ids2-backdrop-hide');
+        bottomSheet.classList.add('ids-bottom-sheet-hide');
+        backdrop.classList.add('ids-backdrop-hide');
     }
 
     button.addEventListener('click', showBottomSheet);
     closeButton.addEventListener('click', hideBottomSheet);
 
     bottomSheetContainer.addEventListener("transitionend", () => {
-        if(bottomSheet.classList.contains('ids2-bottom-sheet-hide')) {
+        if(bottomSheet.classList.contains('ids-bottom-sheet-hide')) {
             bottomSheet.style.display = 'none';
             bottomSheetContainer.style.display = 'none';
             backdrop.style.display = 'none';
@@ -41,10 +41,10 @@ export const createOverflowMenu = () => {
     });
 
     const selectItem = (selectedItem) => {
-        selectedItem.classList.add('ids2-overflow-menu-item-selected');
+        selectedItem.classList.add('ids-overflow-menu-item-selected');
 
         dropdownItem.forEach(item => {
-            if(item !== selectedItem) item.classList.remove('ids2-overflow-menu-item-selected');
+            if(item !== selectedItem) item.classList.remove('ids-overflow-menu-item-selected');
         })
     }
 

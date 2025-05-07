@@ -5,7 +5,7 @@ export const createTextField = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const inputs = wrapper.querySelectorAll('.ids2-circle-input');
+    const inputs = wrapper.querySelectorAll('.ids-circle-input');
 
     inputs.forEach((input, index) => {
         input.addEventListener('input', function (e) {

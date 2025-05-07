@@ -1,6 +1,6 @@
 @import "./full/styles.css";
 
-.ids2-drawer {
+.ids-drawer {
     position: absolute;
     top: 0;
     z-index: 1001;
@@ -8,29 +8,29 @@
     width: 100%;
 }
 
-.ids2-drawer.ids2-drawer-full {
+.ids-drawer.ids-drawer-full {
     bottom: 0;
     left: 0;
     transition: left 0.3s ease-in-out;
 }
 
-.ids2-drawer.ids2-drawer-full.ids2-drawer-hide {
+.ids-drawer.ids-drawer-full.ids-drawer-hide {
     left: 100%;
 }
 
-.ids2-drawer.ids2-drawer-modal {
+.ids-drawer.ids-drawer-modal {
     width: 280px;
     right: 0;
     bottom: 0;
     transition: transform 0.3s ease-in-out;
 }
 
-.ids2-drawer.ids2-drawer-modal.ids2-drawer-hide {
+.ids-drawer.ids-drawer-modal.ids-drawer-hide {
     transform: translateX(100%);
 }
 
 
-.ids2-drawer-navigation {
+.ids-drawer-navigation {
     height: 56px;
     display: flex;
     justify-content: space-between;
@@ -38,13 +38,13 @@
     padding: 16px;
 }
 
-.ids2-drawer-navigation-right {
+.ids-drawer-navigation-right {
     display: flex;
     align-items: center;
     gap: 20px;
     justify-content: right;
 }
 
-.ids2-drawer-close {
+.ids-drawer-close {
     cursor: pointer;
 }

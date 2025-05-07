@@ -1,11 +1,11 @@
-.ids2-tab-examples {
+.ids-tab-examples {
     display: flex;
     flex-direction: column;
     min-width: 375px;
     width: 100%;
 }
 
-.ids2-tab-example {
+.ids-tab-example {
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -15,13 +15,13 @@
     box-sizing: border-box;
 }
 
-.ids2-tab {
+.ids-tab {
     display: flex;
     justify-content: space-around;
     background: white;
 }
 
-.ids2-tab-item {
+.ids-tab-item {
     width: 25%;
     box-sizing: border-box;
     font-size: 18px;
@@ -36,27 +36,27 @@
     margin: 0;
     white-space: nowrap;
 }
-.ids2-tab-item.ids2-tab-item-active {
+.ids-tab-item.ids-tab-item-active {
     color: #101116;
     font-weight: 700;
     padding: 16px 12px 13px;
     border-bottom: 3px solid #101116;
 }
 
-.ids2-tab-overflow {
+.ids-tab-overflow {
     display: block;
     overflow: scroll;
     height: 58px;
 }
 
-.ids2-tab-overflow .ids2-tab {
+.ids-tab-overflow .ids-tab {
     display: block;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
 }
 
-.ids2-tab-overflow .ids2-tab-item {
+.ids-tab-overflow .ids-tab-item {
     display: block;
     width: auto;
     overflow-x: scroll;
@@ -65,16 +65,16 @@
     box-sizing: border-box;
 }
 
-.ids2-tab-overflow::-webkit-scrollbar,
-.ids2-tab-overflow .ids2-tab::-webkit-scrollbar,
-.ids2-tab-overflow .ids2-tab-item::-webkit-scrollbar {
+.ids-tab-overflow::-webkit-scrollbar,
+.ids-tab-overflow .ids-tab::-webkit-scrollbar,
+.ids-tab-overflow .ids-tab-item::-webkit-scrollbar {
     display: none;
 }
 
 /**
     Secondary tab
  */
-.ids2-tab-secondary {
+.ids-tab-secondary {
     /* 전체 탭 영역 배경과 여백, 둥근 모서리 등 */
     background-color: #F4F5F7;
     padding: 4px;
@@ -82,7 +82,7 @@
     font-family: sans-serif;
 }
 
-.ids2-tab-secondary-list {
+.ids-tab-secondary-list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -90,7 +90,7 @@
     gap: 24px;
 }
 
-.ids2-tab-secondary-item {
+.ids-tab-secondary-item {
     width: 33.33%;
     display: flex;
     justify-content: center;
@@ -104,26 +104,26 @@
     font-weight: 500;
 }
 
-.ids2-tab-secondary-item .ids2-badge-count {
+.ids-tab-secondary-item .ids-badge-count {
     color: #737684;
 }
 
-.ids2-tab-secondary-item.active {
+.ids-tab-secondary-item.active {
     background-color: #FFFFFF;
     color: #101116;
     font-weight: 700;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.08);
 }
 
-.ids2-tab-secondary-item.active .ids2-badge-count {
+.ids-tab-secondary-item.active .ids-badge-count {
     color: #2873E3;
 }
 
-.ids2-tab-secondary-count {
+.ids-tab-secondary-count {
     color: #2873E3;
 }
 
-.ids2-tab-secondary-content {
+.ids-tab-secondary-content {
     margin-top: 16px;
 }
 
@@ -133,7 +133,7 @@
  */
 
 /* 세그먼트 탭 전체 래퍼 */
-.ids2-tab-segment {
+.ids-tab-segment {
     display: inline-flex;
     background-color: #FFFFFF;
     border-radius: 9999px;
@@ -146,7 +146,7 @@
 }
 
 /* 각 탭 버튼 */
-.ids2-tab-segment-item {
+.ids-tab-segment-item {
     flex: 1;
     padding: 7px 16px;
     border: none;
@@ -161,7 +161,7 @@
 }
 
 /* 활성 탭 */
-.ids2-tab-segment-item.active {
+.ids-tab-segment-item.active {
     background-color: #1654D1;
     color: #ffffff;
     font-weight: 700;

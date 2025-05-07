@@ -1,23 +1,23 @@
-.ids2-radius-6 {
-    border-radius: var(--ids2-radius-6);
+.ids-radius-6 {
+    border-radius: var(--ids-radius-6);
 }
 
-.ids2-radius-12 {
-    border-radius: var(--ids2-radius-12);
+.ids-radius-12 {
+    border-radius: var(--ids-radius-12);
 }
 
-.ids2-radius-16 {
-    border-radius: var(--ids2-radius-16);
+.ids-radius-16 {
+    border-radius: var(--ids-radius-16);
 }
 
-.ids2-radius-20 {
-    border-radius: var(--ids2-radius-20);
+.ids-radius-20 {
+    border-radius: var(--ids-radius-20);
 }
 
-.ids2-radius-28 {
-    border-radius: var(--ids2-radius-28);
+.ids-radius-28 {
+    border-radius: var(--ids-radius-28);
 }
 
-*.ids2-radius-full {
-    border-radius: var(--ids2-radius-full);
+*.ids-radius-full {
+    border-radius: var(--ids-radius-full);
 }

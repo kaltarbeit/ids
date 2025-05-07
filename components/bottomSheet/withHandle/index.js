@@ -3,15 +3,15 @@ import html from '!!raw-loader!./index.html';
 export const createBottomSheet = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
-    const bottomSheet = wrapper.querySelector('.ids2-bottom-sheet');
-    const bottomSheetContainer = wrapper.querySelector('.ids2-bottom-sheet-container');
-    const backdrop = wrapper.querySelector('.ids2-backdrop');
-    const button = wrapper.querySelector('.ids2-button');
-    const closeButton = wrapper.querySelector('.ids2-bottom-sheet-close');
-    const handler = wrapper.querySelector('.ids2-bottom-sheet-handle');
+    const bottomSheet = wrapper.querySelector('.ids-bottom-sheet');
+    const bottomSheetContainer = wrapper.querySelector('.ids-bottom-sheet-container');
+    const backdrop = wrapper.querySelector('.ids-backdrop');
+    const button = wrapper.querySelector('.ids-button');
+    const closeButton = wrapper.querySelector('.ids-bottom-sheet-close');
+    const handler = wrapper.querySelector('.ids-bottom-sheet-handle');
 
 
-    bottomSheet.classList.add('ids2-bottom-sheet-hide');
+    bottomSheet.classList.add('ids-bottom-sheet-hide');
 
     const showBottomSheet = () => {
         bottomSheet.style.display = 'block';
@@ -20,26 +20,26 @@ export const createBottomSheet = () => {
         backdrop.style.display = 'block';
         closeButton.style.display = 'none';
         setTimeout(() => {
-            bottomSheet.classList.remove('ids2-bottom-sheet-hide');
-            backdrop.classList.remove('ids2-backdrop-hide');
+            bottomSheet.classList.remove('ids-bottom-sheet-hide');
+            backdrop.classList.remove('ids-backdrop-hide');
         }, 10);
     }
 
     const fullBottomSheet = () => {
-        bottomSheet.classList.add('ids2-bottom-sheet-full');
+        bottomSheet.classList.add('ids-bottom-sheet-full');
     }
 
     const hideBottomSheet = () => {
-        bottomSheet.classList.add('ids2-bottom-sheet-hide');
-        backdrop.classList.add('ids2-backdrop-hide');
-        bottomSheet.classList.remove('ids2-bottom-sheet-full');
+        bottomSheet.classList.add('ids-bottom-sheet-hide');
+        backdrop.classList.add('ids-backdrop-hide');
+        bottomSheet.classList.remove('ids-bottom-sheet-full');
     }
 
     button.addEventListener('click', showBottomSheet);
     closeButton.addEventListener('click', hideBottomSheet);
 
     bottomSheet.addEventListener("transitionend", () => {
-        if(bottomSheet.classList.contains('ids2-bottom-sheet-hide')) {
+        if(bottomSheet.classList.contains('ids-bottom-sheet-hide')) {
             bottomSheet.style.display = 'none';
             bottomSheetContainer.style.display = 'none';
             backdrop.style.display = 'none';

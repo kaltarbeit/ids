@@ -4,39 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>IDS 2.0 Style Sheet Document</title>
-  <link rel="stylesheet" href="../../styles/ids2.css"/>
+  <link rel="stylesheet" href="../../styles/ids.css"/>
   <link rel="stylesheet" href="../css/doc.css"/>
   <link rel="stylesheet" href="../css/prism.css"/>
 </head>
 <body>
-<div class="ids2-docs">
+<div class="ids-docs">
 
-  <div class="ids2-docs-back">
-    <a href="../index.html" class="ids2-button ids2-button-text">
-      <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-left">Back</i>
+  <div class="ids-docs-back">
+    <a href="../index.html" class="ids-button ids-button-text">
+      <i class="ids-icon ids-icon-xxs ids-icon-arrow-left">Back</i>
       Index
     </a>
   </div>
 
-  <div class="ids2-docs-header">
-    <h1 class="ids2-title1 ids2-bold">Bottom Sheet</h1>
+  <div class="ids-docs-header">
+    <h1 class="ids-title1 ids-bold">Bottom Sheet</h1>
 
-    <p class="ids2-body1 ids2-my-24 ids2-text-gray-500">Bottom Sheet 형식의 디자인을 구현을 위한 스타일시트 입니다.</p>
+    <p class="ids-body1 ids-my-24 ids-text-gray-500">Bottom Sheet 형식의 디자인을 구현을 위한 스타일시트 입니다.</p>
   </div>
 
-  <section class="ids2-docs-section">
-    <h2 class="ids2-docs-section-title">Default</h2>
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Default</h2>
 
-    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
-      컴포넌트 스타일 가이드 <span class="ids2-bold">Bottom Sheet > Default</span> 를 구현한 클래스입니다.
+    <p class="ids-body4 ids-mt-8 ids-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids-bold">Bottom Sheet > Default</span> 를 구현한 클래스입니다.
     </p>
 
-    <div class="ids2-docs-reference ids2-mt-3">
-      <div class="ids2-docs-reference-button">
-        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+    <div class="ids-docs-reference ids-mt-3">
+      <div class="ids-docs-reference-button">
+        Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
       </div>
 
-      <table class="ids2-table ids2-table-sm">
+      <table class="ids-table ids-table-sm">
         <colgroup>
           <col style="width: 20%"/>
           <col style="width: 30%"/>
@@ -44,55 +44,55 @@
         </colgroup>
         <thead>
         <tr>
-          <th class="ids2-cell-left">Name</th>
-          <th class="ids2-cell-left">Class</th>
-          <th class="ids2-cell-left">Style</th>
+          <th class="ids-cell-left">Name</th>
+          <th class="ids-cell-left">Class</th>
+          <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td class="ids2-cell-left ids2-docs-name" rowspan="4">
+          <td class="ids-cell-left ids-docs-name" rowspan="4">
             Default
           </td>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet</td>
-          <td class="ids2-cell-left">
-            <code class="ids2-docs-code">display: flex;
+          <td class="ids-cell-left ids-docs-classname">.ids-bottom-sheet</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
               position: absolute;
               bottom: 0;
               left: 0;
               right: 0;
               flex-direction: column;
               max-height: 80%;
-              background-color: var(--ids2-color-white);
-              border-top-left-radius: var(--ids2-radius-20);
-              border-top-right-radius: var(--ids2-radius-20);
+              background-color: var(--ids-color-white);
+              border-top-left-radius: var(--ids-radius-20);
+              border-top-right-radius: var(--ids-radius-20);
               transition: bottom 0.3s ease-in-out;
               z-index: 1001;
             </code>
           </td>
         </tr>
         <tr>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet-header</td>
-          <td class="ids2-cell-left">
-            <code class="ids2-docs-code">position: relative;
-              padding: var(--ids2-spacing-3);</code>
+          <td class="ids-cell-left ids-docs-classname">.ids-bottom-sheet-header</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: relative;
+              padding: var(--ids-spacing-3);</code>
           </td>
         </tr>
         <tr>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet-content</td>
-          <td class="ids2-cell-left">
-            <code class="ids2-docs-code">flex: 1 1 auto;
+          <td class="ids-cell-left ids-docs-classname">.ids-bottom-sheet-content</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">flex: 1 1 auto;
               overflow-y: auto;
-              padding: var(--ids2-spacing-1) var(--ids2-spacing-2-half) 0;</code>
+              padding: var(--ids-spacing-1) var(--ids-spacing-2-half) 0;</code>
           </td>
         </tr>
         <tr>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet-close</td>
-          <td class="ids2-cell-left">
-            <code class="ids2-docs-code">position: absolute;
+          <td class="ids-cell-left ids-docs-classname">.ids-bottom-sheet-close</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: absolute;
               top: 0;
               right: 0;
-              padding: var(--ids2-spacing-3);
+              padding: var(--ids-spacing-3);
               display: flex;
               align-items: center;
               justify-content: center;
@@ -105,25 +105,25 @@
       </table>
     </div>
 
-    <h4 class="ids2-docs-section-label">Examples</h4>
+    <h4 class="ids-docs-section-label">Examples</h4>
 
-    <div class="ids2-docs-examples">
-      <div class="ids2-docs-example-block">
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-bottom-sheet</span>
-        <div class="ids2-docs-example-code">
-          <div class="ids2-docs-example ids2-docs-example-absolute" style="height: 700px"></div>
-          <div class="ids2-docs-example-code-highlight">
+    <div class="ids-docs-examples">
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-bottom-sheet</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example ids-docs-example-absolute" style="height: 700px"></div>
+          <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
-              <div class="ids2-backdrop"></div>
-              <div class="ids2-bottom-sheet">
-                <div class="ids2-bottom-sheet-header">
-                  <h3 class="ids2-h3 ids2-semibold">타이틀</h3>
-                  <button class="ids2-bottom-sheet-close">
-                    <i class="ids2-icon ids2-icon-close"></i>
+              <div class="ids-backdrop"></div>
+              <div class="ids-bottom-sheet">
+                <div class="ids-bottom-sheet-header">
+                  <h3 class="ids-h3 ids-semibold">타이틀</h3>
+                  <button class="ids-bottom-sheet-close">
+                    <i class="ids-icon ids-icon-close"></i>
                   </button>
                 </div>
 
-                <div class="ids2-bottom-sheet-content">
+                <div class="ids-bottom-sheet-content">
                   <div style="height: 1000px"></div>
                 </div>
               </div>
@@ -134,20 +134,20 @@
     </div>
   </section>
 
-  <section class="ids2-docs-section">
-    <h2 class="ids2-docs-section-title">With Button</h2>
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">With Button</h2>
 
-    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
-      컴포넌트 스타일 가이드 <span class="ids2-bold">Bottom Sheet > With Button</span>을 구현한 클래스입니다. <span class="ids2-bold">Base Style</span>과 조합으로 사용합니다.<br/>
-      Bottom Sheet 상단에 기능을 추가할 수 있는 <span class="ids2-bold">.ids2-bottom-sheet-function</span>와 하단에 <span class="ids2-bold">.ids2-button-group</span>을 추가하여 기능 확장이 가능합니다.
+    <p class="ids-body4 ids-mt-8 ids-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids-bold">Bottom Sheet > With Button</span>을 구현한 클래스입니다. <span class="ids-bold">Base Style</span>과 조합으로 사용합니다.<br/>
+      Bottom Sheet 상단에 기능을 추가할 수 있는 <span class="ids-bold">.ids-bottom-sheet-function</span>와 하단에 <span class="ids-bold">.ids-button-group</span>을 추가하여 기능 확장이 가능합니다.
     </p>
 
-    <div class="ids2-docs-reference ids2-mt-3">
-      <div class="ids2-docs-reference-button">
-        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+    <div class="ids-docs-reference ids-mt-3">
+      <div class="ids-docs-reference-button">
+        Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
       </div>
 
-      <table class="ids2-table ids2-table-sm">
+      <table class="ids-table ids-table-sm">
         <colgroup>
           <col style="width: 20%"/>
           <col style="width: 30%"/>
@@ -155,21 +155,21 @@
         </colgroup>
         <thead>
         <tr>
-          <th class="ids2-cell-left">Name</th>
-          <th class="ids2-cell-left">Class</th>
-          <th class="ids2-cell-left">Style</th>
+          <th class="ids-cell-left">Name</th>
+          <th class="ids-cell-left">Class</th>
+          <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td class="ids2-cell-left ids2-docs-name">
+          <td class="ids-cell-left ids-docs-name">
             Function
           </td>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet-function</td>
-          <td class="ids2-cell-left">
-            <code class="ids2-docs-code">position: absolute;
+          <td class="ids-cell-left ids-docs-classname">.ids-bottom-sheet-function</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: absolute;
               top: -34px;
-              padding: 0 var(--ids2-spacing-3);
+              padding: 0 var(--ids-spacing-3);
             </code>
           </td>
         </tr>
@@ -177,41 +177,41 @@
       </table>
     </div>
 
-    <h4 class="ids2-docs-section-label">Examples</h4>
+    <h4 class="ids-docs-section-label">Examples</h4>
 
-    <div class="ids2-docs-examples">
-      <div class="ids2-docs-example-block">
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-bottom-sheet</span>
-        <div class="ids2-docs-example-code">
-          <div class="ids2-docs-example ids2-docs-example-absolute" style="height: 700px"></div>
-          <div class="ids2-docs-example-code-highlight">
+    <div class="ids-docs-examples">
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-bottom-sheet</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example ids-docs-example-absolute" style="height: 700px"></div>
+          <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
 
-              <div class="ids2-bottom-sheet">
-                <div class="ids2-bottom-sheet-function">
-                  <div class="ids2-checkbox ids2-checkbox-sm">
+              <div class="ids-bottom-sheet">
+                <div class="ids-bottom-sheet-function">
+                  <div class="ids-checkbox ids-checkbox-sm">
                     <label>
-                      <input type="checkbox" name="today-hide" class="ids2-checkbox-input">
-                      <span class="ids2-input-label-text ids2-text-white">오늘 하루 보이지 않기</span>
+                      <input type="checkbox" name="today-hide" class="ids-checkbox-input">
+                      <span class="ids-input-label-text ids-text-white">오늘 하루 보이지 않기</span>
                     </label>
                   </div>
                 </div>
-                <div class="ids2-bottom-sheet-header">
-                  <h3 class="ids2-h3 ids2-semibold">타이틀</h3>
-                  <button class="ids2-bottom-sheet-close">
-                    <i class="ids2-icon ids2-icon-close"></i>
+                <div class="ids-bottom-sheet-header">
+                  <h3 class="ids-h3 ids-semibold">타이틀</h3>
+                  <button class="ids-bottom-sheet-close">
+                    <i class="ids-icon ids-icon-close"></i>
                   </button>
                 </div>
 
-                <div class="ids2-bottom-sheet-content">
+                <div class="ids-bottom-sheet-content">
                   <div style="height: 200px"></div>
                 </div>
 
-                <div class="ids2-button-group">
-                  <button class="ids2-button ids2-button-primary ids2-button-fill ids2-button-full-width">레이블</button>
+                <div class="ids-button-group">
+                  <button class="ids-button ids-button-primary ids-button-fill ids-button-full-width">레이블</button>
                 </div>
               </div>
-              <div class="ids2-backdrop"></div>
+              <div class="ids-backdrop"></div>
             </script>
           </div>
         </div>
@@ -219,20 +219,20 @@
     </div>
   </section>
 
-  <section class="ids2-docs-section">
-    <h2 class="ids2-docs-section-title">With Handle</h2>
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">With Handle</h2>
 
-    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
-      컴포넌트 스타일 가이드 <span class="ids2-bold">Bottom Sheet > With Handle</span>을 구현한 클래스입니다. <span class="ids2-bold">Base Style</span>과 조합으로 사용합니다.<br/>
-      Bottom Sheet Header에 <span class="ids2-bold">.ids2-bottom-sheet-handle</span>를 추가하여 Touch Handler 영역을 표현할 수 있습니다.
+    <p class="ids-body4 ids-mt-8 ids-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids-bold">Bottom Sheet > With Handle</span>을 구현한 클래스입니다. <span class="ids-bold">Base Style</span>과 조합으로 사용합니다.<br/>
+      Bottom Sheet Header에 <span class="ids-bold">.ids-bottom-sheet-handle</span>를 추가하여 Touch Handler 영역을 표현할 수 있습니다.
     </p>
 
-    <div class="ids2-docs-reference ids2-mt-3">
-      <div class="ids2-docs-reference-button">
-        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+    <div class="ids-docs-reference ids-mt-3">
+      <div class="ids-docs-reference-button">
+        Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
       </div>
 
-      <table class="ids2-table ids2-table-sm">
+      <table class="ids-table ids-table-sm">
         <colgroup>
           <col style="width: 20%"/>
           <col style="width: 30%"/>
@@ -240,29 +240,29 @@
         </colgroup>
         <thead>
         <tr>
-          <th class="ids2-cell-left">Name</th>
-          <th class="ids2-cell-left">Class</th>
-          <th class="ids2-cell-left">Style</th>
+          <th class="ids-cell-left">Name</th>
+          <th class="ids-cell-left">Class</th>
+          <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td class="ids2-cell-left ids2-docs-name">
+          <td class="ids-cell-left ids-docs-name">
             Default
           </td>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-bottom-sheet-handle</td>
-          <td class="ids2-cell-left">
-            <code class="ids2-docs-code">position: absolute;
+          <td class="ids-cell-left ids-docs-classname">.ids-bottom-sheet-handle</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: absolute;
               top: 0;
               left: 50%;
               transform: translateX(-50%);
               z-index: 1000;
               width: 48px;
               height: 3px;
-              background-color: var(--ids2-color-gray-100);
-              border-radius: var(--ids2-radius-full);
+              background-color: var(--ids-color-gray-100);
+              border-radius: var(--ids-radius-full);
               font-size: 0;
-              margin: var(--ids2-spacing-1-half) 0;
+              margin: var(--ids-spacing-1-half) 0;
               color: transparent;
               cursor: pointer;
             </code>
@@ -272,25 +272,25 @@
       </table>
     </div>
 
-    <h4 class="ids2-docs-section-label">Examples</h4>
+    <h4 class="ids-docs-section-label">Examples</h4>
 
-    <div class="ids2-docs-examples">
-      <div class="ids2-docs-example-block">
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-bottom-sheet</span>
-        <div class="ids2-docs-example-code">
-          <div class="ids2-docs-example ids2-docs-example-absolute" style="height: 700px"></div>
-          <div class="ids2-docs-example-code-highlight">
+    <div class="ids-docs-examples">
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-bottom-sheet</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example ids-docs-example-absolute" style="height: 700px"></div>
+          <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
-              <div class="ids2-bottom-sheet">
-                <div class="ids2-bottom-sheet-header">
-                  <div class="ids2-bottom-sheet-handle">Handle</div>
-                  <h3 class="ids2-h3 ids2-semibold">타이틀</h3>
+              <div class="ids-bottom-sheet">
+                <div class="ids-bottom-sheet-header">
+                  <div class="ids-bottom-sheet-handle">Handle</div>
+                  <h3 class="ids-h3 ids-semibold">타이틀</h3>
                 </div>
-                <div class="ids2-bottom-sheet-content">
+                <div class="ids-bottom-sheet-content">
                     <div style="height: 10000px"></div>
                 </div>
               </div>
-              <div class="ids2-backdrop"></div>
+              <div class="ids-backdrop"></div>
             </script>
           </div>
         </div>

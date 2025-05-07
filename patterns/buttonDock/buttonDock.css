@@ -1,21 +1,21 @@
-.ids2-button-dock {
+.ids-button-dock {
     background-color: #fff;
 }
 
-.ids2-button-dock .ids2-button-dock-header {
+.ids-button-dock .ids-button-dock-header {
     display: flex;
     justify-content: space-between;
     padding: 24px;
 }
 
-.ids2-button-dock .ids2-button-dock-count {
+.ids-button-dock .ids-button-dock-count {
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
     color: #5A5E6C;
 }
 
-.ids2-button-dock .ids2-button-dock-total {
+.ids-button-dock .ids-button-dock-total {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;

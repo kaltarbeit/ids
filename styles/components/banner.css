@@ -1,11 +1,11 @@
-.ids2-banner-examples {
+.ids-banner-examples {
     display: flex;
     flex-direction: column;
     gap: 24px;
     min-width: 320px;
 }
 
-.ids2-banner-examples-open-button {
+.ids-banner-examples-open-button {
     font-size: 18px;
     text-decoration: underline;
     font-weight: 700;
@@ -17,7 +17,7 @@
     Banner
  */
 
-.ids2-banner {
+.ids-banner {
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -25,28 +25,28 @@
     transition: opacity 0.3s ease-in-out;
     background-repeat: no-repeat;
     box-sizing: border-box;
-    background-color: var(--ids2-color-gray-200);
-    color: var(--ids2-color-gray-700);
-    border-radius: var(--ids2-radius-16);
-    font-size: var(--ids2-size-body4);
-    font-weight: var(--ids2-font-medium);
-    line-height: var(--ids2-line-body4);
+    background-color: var(--ids-color-gray-200);
+    color: var(--ids-color-gray-700);
+    border-radius: var(--ids-radius-16);
+    font-size: var(--ids-size-body4);
+    font-weight: var(--ids-font-medium);
+    line-height: var(--ids-line-body4);
 }
 
-.ids2-banner .ids2-banner-content {
+.ids-banner .ids-banner-content {
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
 
-.ids2-banner .ids2-banner-footer-label {
+.ids-banner .ids-banner-footer-label {
     position: absolute;
     bottom: 0;
     right: 0;
     padding: 0 11px 12px 0;
 }
 
-.ids2-banner .ids2-banner-footer-button {
+.ids-banner .ids-banner-footer-button {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -54,19 +54,19 @@
 }
 
 
-.ids2-banner.ids2-banner-small-xs {
+.ids-banner.ids-banner-small-xs {
     align-items: center;
     padding: 22px 12px;
 }
 
-.ids2-banner.ids2-banner-small {
+.ids-banner.ids-banner-small {
     align-items: center;
     padding: 21px 24px;
     background-image: url("data:image/svg+xml,%3Csvg width='342' height='88' viewBox='0 0 342 88' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='342' height='88' fill='%23C5C8D3'/%3E%3Cpath d='M286.094 42.3418C286.715 42.3418 287.219 41.8381 287.219 41.2168C287.219 40.5955 286.715 40.0918 286.094 40.0918C285.472 40.0918 284.969 40.5955 284.969 41.2168C284.969 41.8381 285.472 42.3418 286.094 42.3418Z' fill='%23E1E3EA'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M285 34C282.239 34 280 36.2386 280 39V49C280 51.7614 282.239 54 285 54H295C297.761 54 300 51.7614 300 49V39C300 36.2386 297.761 34 295 34H285ZM295 35.3H285C282.957 35.3 281.3 36.9565 281.3 39V48.2074L284.099 45.6028C284.335 45.3833 284.696 45.3697 284.947 45.5709L287.141 47.3243L291.807 41.9074C291.926 41.7688 292.099 41.6869 292.282 41.6819C292.465 41.6769 292.641 41.7493 292.768 41.8812L298.7 48.0527V39C298.7 36.9565 297.043 35.3 295 35.3ZM285 52.7C283.261 52.7 281.803 51.5007 281.406 49.8843L284.574 46.9365L286.819 48.731C287.092 48.9493 287.489 48.9123 287.718 48.6474L292.326 43.297L298.606 49.8311C298.229 51.4744 296.758 52.7 295 52.7H285Z' fill='%23E1E3EA'/%3E%3C/svg%3E%0A");
     background-position: right;
 }
 
-.ids2-banner.ids2-banner-medium {
+.ids-banner.ids-banner-medium {
     padding: 42px 24px;
     align-items: flex-start;
     flex-direction: column;
@@ -74,44 +74,44 @@
     background-position: right;
 }
 
-.ids2-banner.ids2-banner-medium-with-button {
+.ids-banner.ids-banner-medium-with-button {
     height: 184px;
-    padding: var(--ids2-spacing-3);
+    padding: var(--ids-spacing-3);
     justify-content: flex-start;
     background-image: url("data:image/svg+xml,%3Csvg width='342' height='140' viewBox='0 0 342 140' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='342' height='140' fill='%23C5C8D3'/%3E%3Cpath d='M272.862 66.5454C274.156 66.5454 275.206 65.496 275.206 64.2016C275.206 62.9072 274.156 61.8579 272.862 61.8579C271.567 61.8579 270.518 62.9072 270.518 64.2016C270.518 65.496 271.567 66.5454 272.862 66.5454Z' fill='%23E1E3EA'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M270.583 49.1666C264.83 49.1666 260.167 53.8303 260.167 59.5833V80.4166C260.167 86.1696 264.83 90.8333 270.583 90.8333H291.417C297.169 90.8333 301.833 86.1696 301.833 80.4166V59.5833C301.833 53.8303 297.169 49.1666 291.417 49.1666H270.583ZM291.417 51.875H270.583C266.326 51.875 262.875 55.3261 262.875 59.5833V78.7654L268.705 73.3392C269.197 72.8819 269.949 72.8536 270.473 73.2726L275.044 76.9256L284.764 65.6405C285.013 65.3516 285.372 65.181 285.753 65.1706C286.135 65.1601 286.502 65.3109 286.767 65.5858L299.125 78.443V59.5833C299.125 55.3261 295.674 51.875 291.417 51.875ZM270.583 88.125C266.961 88.125 263.922 85.6265 263.096 82.2589L269.695 76.1177L274.373 79.8562C274.942 80.3109 275.769 80.234 276.245 79.682L285.845 68.5355L298.93 82.1482C298.144 85.5716 295.078 88.125 291.417 88.125H270.583Z' fill='%23E1E3EA'/%3E%3C/svg%3E%0A");
     background-position: right;
 }
 
 
-.ids2-banner.ids2-banner-large {
+.ids-banner.ids-banner-large {
     height: 234px;
-    padding: var(--ids2-spacing-3);
+    padding: var(--ids-spacing-3);
     justify-content: flex-start;
     background-image: url("data:image/svg+xml,%3Csvg width='342' height='234' viewBox='0 0 342 234' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='373.907' height='234' transform='translate(-15.9531)' fill='%23C5C8D3'/%3E%3Cpath d='M239.771 157.091C242.36 157.091 244.458 154.992 244.458 152.403C244.458 149.814 242.36 147.716 239.771 147.716C237.182 147.716 235.083 149.814 235.083 152.403C235.083 154.992 237.182 157.091 239.771 157.091Z' fill='%23E1E3EA'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M235.214 122.333C223.708 122.333 214.38 131.661 214.38 143.167V184.833C214.38 196.339 223.708 205.667 235.214 205.667H276.88C288.386 205.667 297.714 196.339 297.714 184.833V143.167C297.714 131.661 288.386 122.333 276.88 122.333H235.214ZM276.88 127.75H235.214C226.699 127.75 219.797 134.652 219.797 143.167V181.531L231.458 170.678C232.441 169.764 233.945 169.707 234.994 170.545L244.136 177.851L263.576 155.281C264.074 154.703 264.792 154.362 265.554 154.341C266.317 154.32 267.052 154.622 267.581 155.172L292.297 180.886V143.167C292.297 134.652 285.395 127.75 276.88 127.75ZM235.214 200.25C227.969 200.25 221.892 195.253 220.24 188.518L233.438 176.236L242.794 183.712C243.932 184.622 245.586 184.468 246.537 183.364L265.738 161.071L291.907 188.296C290.335 195.143 284.204 200.25 276.88 200.25H235.214Z' fill='%23E1E3EA'/%3E%3C/svg%3E%0A");
     background-position: right bottom;
 }
 
 
-.ids2-banner.ids2-banner-large-lg {
+.ids-banner.ids-banner-large-lg {
     height: 358px;
-    padding: var(--ids2-spacing-4);
+    padding: var(--ids-spacing-4);
     justify-content: flex-start;
     background-image: url("data:image/svg+xml,%3Csvg width='342' height='234' viewBox='0 0 342 234' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='373.907' height='234' transform='translate(-15.9531)' fill='%23C5C8D3'/%3E%3Cpath d='M239.771 157.091C242.36 157.091 244.458 154.992 244.458 152.403C244.458 149.814 242.36 147.716 239.771 147.716C237.182 147.716 235.083 149.814 235.083 152.403C235.083 154.992 237.182 157.091 239.771 157.091Z' fill='%23E1E3EA'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M235.214 122.333C223.708 122.333 214.38 131.661 214.38 143.167V184.833C214.38 196.339 223.708 205.667 235.214 205.667H276.88C288.386 205.667 297.714 196.339 297.714 184.833V143.167C297.714 131.661 288.386 122.333 276.88 122.333H235.214ZM276.88 127.75H235.214C226.699 127.75 219.797 134.652 219.797 143.167V181.531L231.458 170.678C232.441 169.764 233.945 169.707 234.994 170.545L244.136 177.851L263.576 155.281C264.074 154.703 264.792 154.362 265.554 154.341C266.317 154.32 267.052 154.622 267.581 155.172L292.297 180.886V143.167C292.297 134.652 285.395 127.75 276.88 127.75ZM235.214 200.25C227.969 200.25 221.892 195.253 220.24 188.518L233.438 176.236L242.794 183.712C243.932 184.622 245.586 184.468 246.537 183.364L265.738 161.071L291.907 188.296C290.335 195.143 284.204 200.25 276.88 200.25H235.214Z' fill='%23E1E3EA'/%3E%3C/svg%3E%0A");
     background-position: right bottom;
 }
 
 
-.ids2-banner.ids2-banner-large-lg .ids2-banner-footer-button {
+.ids-banner.ids-banner-large-lg .ids-banner-footer-button {
     padding-bottom: 32px;
 }
 
-.ids2-banner.ids2-banner-notice {
+.ids-banner.ids-banner-notice {
     background-color: #E4F2FF;
     justify-content: flex-start;
 }
 
 
-.ids2-banner .ids2-banner-close {
+.ids-banner .ids-banner-close {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

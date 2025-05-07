@@ -1,4 +1,4 @@
-.ids2-slider-examples {
+.ids-slider-examples {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -6,7 +6,7 @@
 }
 
 
-.ids2-slider-example {
+.ids-slider-example {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@
 }
 
 /* 슬라이더 컨테이너 */
-.ids2-slider.ids2-slider-vertical {
+.ids-slider.ids-slider-vertical {
     position: relative;
     width: 40px;         /* 컨테이너 너비 */
     height: 282px;       /* 컨테이너 높이 */
@@ -29,7 +29,7 @@
 }
 
 /* 슬라이더 트랙 */
-.ids2-slider.ids2-slider-vertical .ids2-slider-track {
+.ids-slider.ids-slider-vertical .ids-slider-track {
     position: absolute;
     left: 50%;
     top: 0;
@@ -41,7 +41,7 @@
 }
 
 /* 슬라이더 트랙 */
-.ids2-slider.ids2-slider-vertical .ids2-slider-track .ids2-slider-track-snap {
+.ids-slider.ids-slider-vertical .ids-slider-track .ids-slider-track-snap {
     position: absolute;
     width: 100%;
     height: 1px;
@@ -50,8 +50,8 @@
 }
 
 /* 슬라이더 핸들(드래그할 부분) */
-.ids2-slider .ids2-slider-handle,
-.ids2-slider .ids2-slider-handle-min {
+.ids-slider .ids-slider-handle,
+.ids-slider .ids-slider-handle-min {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -63,13 +63,13 @@
 }
 
 /* 슬라이더 핸들(드래그할 부분) */
-.ids2-slider.ids2-slider-vertical .ids2-slider-handle,
-.ids2-slider.ids2-slider-vertical .ids2-slider-handle-min {
+.ids-slider.ids-slider-vertical .ids-slider-handle,
+.ids-slider.ids-slider-vertical .ids-slider-handle-min {
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.ids2-slider.ids2-slider-vertical .ids2-slider-track-range {
+.ids-slider.ids-slider-vertical .ids-slider-track-range {
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -81,8 +81,8 @@
 }
 
 /* 툴팁 */
-.ids2-slider .ids2-slider-handle .ids2-slider-tooltip,
-.ids2-slider .ids2-slider-handle-min .ids2-slider-tooltip {
+.ids-slider .ids-slider-handle .ids-slider-tooltip,
+.ids-slider .ids-slider-handle-min .ids-slider-tooltip {
     position: absolute;
     display: none;
     left: 0;
@@ -99,12 +99,12 @@
 }
 
 /* 툴팁 */
-.ids2-slider .ids2-slider-handle:hover .ids2-slider-tooltip,
-.ids2-slider .ids2-slider-handle-min:hover .ids2-slider-tooltip {
+.ids-slider .ids-slider-handle:hover .ids-slider-tooltip,
+.ids-slider .ids-slider-handle-min:hover .ids-slider-tooltip {
     display: block;
 }
 
-.ids2-slider.ids2-slider-vertical .ids2-slider-tooltip:after {
+.ids-slider.ids-slider-vertical .ids-slider-tooltip:after {
     content: '';
     position: absolute;
     width: 0;
@@ -117,7 +117,7 @@
     transform: translateY(-50%);
 }
 
-.ids2-slider.ids2-slider-vertical .ids2-slider-range-end {
+.ids-slider.ids-slider-vertical .ids-slider-range-end {
     position: absolute;
     top: 0;
     right: -16px;
@@ -127,7 +127,7 @@
     color: #737684;
 }
 
-.ids2-slider.ids2-slider-vertical .ids2-slider-range-start {
+.ids-slider.ids-slider-vertical .ids-slider-range-start {
     position: absolute;
     top: 100%;
     transform: translateY(-100%);
@@ -139,14 +139,14 @@
 }
 
 /* 슬라이더 트랙 */
-.ids2-slider.ids2-slider-vertical.ids2-slider-large .ids2-slider-track {
+.ids-slider.ids-slider-vertical.ids-slider-large .ids-slider-track {
     width: 16px;
     border-radius: 8px;
     overflow: hidden;
 }
 
 /* 슬라이더 트랙 */
-.ids2-slider.ids2-slider-vertical.ids2-slider-large .ids2-slider-track-range {
+.ids-slider.ids-slider-vertical.ids-slider-large .ids-slider-track-range {
     width: 16px;
     border-radius: 8px;
 }
@@ -158,7 +158,7 @@
 
 
 /* 슬라이더 컨테이너 */
-.ids2-slider.ids2-slide-horizontal {
+.ids-slider.ids-slide-horizontal {
     position: relative;
     width: 282px;         /* 컨테이너 너비 */
     height: 40px;       /* 컨테이너 높이 */
@@ -169,7 +169,7 @@
 
 
 /* 슬라이더 트랙 */
-.ids2-slider.ids2-slide-horizontal .ids2-slider-track {
+.ids-slider.ids-slide-horizontal .ids-slider-track {
     position: absolute;
     top: 50%;
     left: 0;
@@ -180,7 +180,7 @@
     background-color: #E1E3EA;
 }
 /* 슬라이더 트랙 */
-.ids2-slider.ids2-slide-horizontal .ids2-slider-track .ids2-slider-track-snap {
+.ids-slider.ids-slide-horizontal .ids-slider-track .ids-slider-track-snap {
     position: absolute;
     height: 100%;
     width: 1px;
@@ -189,13 +189,13 @@
 }
 
 /* 슬라이더 핸들(드래그할 부분) */
-.ids2-slider.ids2-slide-horizontal .ids2-slider-handle,
-.ids2-slider.ids2-slide-horizontal .ids2-slider-handle-min {
+.ids-slider.ids-slide-horizontal .ids-slider-handle,
+.ids-slider.ids-slide-horizontal .ids-slider-handle-min {
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-.ids2-slider.ids2-slide-horizontal .ids2-slider-track-range {
+.ids-slider.ids-slide-horizontal .ids-slider-track-range {
     position: absolute;
     top: 50%;
     left: 0;
@@ -207,13 +207,13 @@
 }
 
 /* 툴팁 */
-.ids2-slider.ids2-slide-horizontal .ids2-slider-handle .ids2-slider-tooltip,
-.ids2-slider.ids2-slide-horizontal .ids2-slider-handle-min .ids2-slider-tooltip {
+.ids-slider.ids-slide-horizontal .ids-slider-handle .ids-slider-tooltip,
+.ids-slider.ids-slide-horizontal .ids-slider-handle-min .ids-slider-tooltip {
     transform: translate(calc(-50% + 8px), calc(-100% - 10px)); /* 핸들의 왼쪽에 툴팁이 오도록 조정 */
 }
 
 
-.ids2-slider.ids2-slide-horizontal .ids2-slider-tooltip:after {
+.ids-slider.ids-slide-horizontal .ids-slider-tooltip:after {
     content: '';
     position: absolute;
     width: 0;
@@ -226,7 +226,7 @@
     transform: translateX(-50%);
 }
 
-.ids2-slider.ids2-slide-horizontal .ids2-slider-range-start {
+.ids-slider.ids-slide-horizontal .ids-slider-range-start {
     position: absolute;
     bottom: -16px;
     left: 0;
@@ -235,7 +235,7 @@
     font-weight: 500;
     color: #737684;
 }
-.ids2-slider.ids2-slide-horizontal .ids2-slider-range-end {
+.ids-slider.ids-slide-horizontal .ids-slider-range-end {
     position: absolute;
     bottom: -16px;
     right: 0;
@@ -246,7 +246,7 @@
 }
 
 /* 슬라이더 컨테이너 */
-.ids2-slider.ids2-slide-horizontal.ids2-slider-large {
+.ids-slider.ids-slide-horizontal.ids-slider-large {
     position: relative;
     width: 282px;         /* 컨테이너 너비 */
     height: 40px;       /* 컨테이너 높이 */
@@ -256,14 +256,14 @@
 }
 
 /* 슬라이더 트랙 */
-.ids2-slider.ids2-slide-horizontal.ids2-slider-large .ids2-slider-track {
+.ids-slider.ids-slide-horizontal.ids-slider-large .ids-slider-track {
     height: 16px;
     border-radius: 8px;
     overflow: hidden;
 }
 
 /* 슬라이더 트랙 */
-.ids2-slider.ids2-slide-horizontal.ids2-slider-large .ids2-slider-track-range {
+.ids-slider.ids-slide-horizontal.ids-slider-large .ids-slider-track-range {
     height: 16px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;

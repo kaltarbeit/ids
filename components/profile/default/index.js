@@ -5,8 +5,8 @@ export const createProfile = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const imageContainer = wrapper.querySelector('.ids2-profile-image');
-    const input = wrapper.querySelector('.ids2-profile-update input');
+    const imageContainer = wrapper.querySelector('.ids-profile-image');
+    const input = wrapper.querySelector('.ids-profile-update input');
 
     input.addEventListener('change', (e) =>{
         const files = e.currentTarget.files;

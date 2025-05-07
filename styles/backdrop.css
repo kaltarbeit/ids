@@ -1,4 +1,4 @@
-.ids2-backdrop {
+.ids-backdrop {
     position: absolute;
     top: 0;
     left: 0;
@@ -9,6 +9,6 @@
     transition: opacity 0.3s ease-in-out;
 }
 
-.ids2-backdrop.ids2-backdrop-hide {
+.ids-backdrop.ids-backdrop-hide {
     opacity: 0;
 }

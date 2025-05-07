@@ -1,10 +1,10 @@
-.ids2-banner.ids2-banner-xs {
+.ids-banner.ids-banner-xs {
     padding: 22px 12px;
     background-color: #C5C8D3;
     color: #454855;
 }
 
-.ids2-banner.ids2-banner-small {
+.ids-banner.ids-banner-small {
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -20,18 +20,18 @@
     color: #454855;
 }
 
-.ids2-banner.ids2-banner-small .ids2-banner-title {
+.ids-banner.ids-banner-small .ids-banner-title {
     margin: 0;
     font-size: 16px;
     line-height: 22px;
     font-weight: 700;
 }
 
-.ids2-banner.ids2-banner-small .ids2-banner-text {
+.ids-banner.ids-banner-small .ids-banner-text {
     line-height: 20px;
 }
 
-.ids2-banner.ids2-banner-small .ids2-banner-close {
+.ids-banner.ids-banner-small .ids-banner-close {
     position: absolute;
     top: 12px;
     right: 12px;

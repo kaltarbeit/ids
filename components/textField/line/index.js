@@ -5,11 +5,11 @@ export const createTextField = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const textField = wrapper.querySelector('.ids2-text-field');
-    const textFieldInput = wrapper.querySelector('.ids2-text-field input');
-    const clearButton = wrapper.querySelector('.ids2-text-field .ids2-input-clear');
-    const counter = wrapper.querySelector('.ids2-text-field-counter');
-    const amountNote = wrapper.querySelector('.ids2-text-field-amount-note');
+    const textField = wrapper.querySelector('.ids-text-field');
+    const textFieldInput = wrapper.querySelector('.ids-text-field input');
+    const clearButton = wrapper.querySelector('.ids-text-field .ids-input-clear');
+    const counter = wrapper.querySelector('.ids-text-field-counter');
+    const amountNote = wrapper.querySelector('.ids-text-field-amount-note');
     const numberTexts = ["", "일", "이", "삼", "사","오","육","칠","팔","구","십"];
     const digitTexts = ["", "십", "백", "천", "", "십", "백", "천", "", "십", "백", "천", "", "십", "백", "천"];
 
@@ -49,7 +49,7 @@ export const createTextField = () => {
 
     textFieldInput.addEventListener('input', (e) => {
         const count = e.target.value.length;
-        count > 0 ? textField.classList.add('ids2-text-field-filled') : textField.classList.remove('ids2-text-field-filled');
+        count > 0 ? textField.classList.add('ids-text-field-filled') : textField.classList.remove('ids-text-field-filled');
         const formattedValue = e.target.value.replace(/\D/g, "");
         textFieldInput.value = formattedValue.replace(/\B(?=(\d{3})+(?!\d))/g, ",")+ '원';
         amountNote.textContent = count > 0 ? numberToKor(formattedValue)+'원' : '';
@@ -58,12 +58,12 @@ export const createTextField = () => {
     clearButton.addEventListener('click', () => {
         textFieldInput.value = '';
         amountNote.textContent = '';
-        textField.classList.remove('ids2-text-field-filled');
+        textField.classList.remove('ids-text-field-filled');
         textFieldInput.focus();
     });
 
     if(counter) {
-        const maxLength = counter.querySelector('.ids2-text-field-maxlength');
+        const maxLength = counter.querySelector('.ids-text-field-maxlength');
         maxLength.textContent = textFieldInput.maxLength;
     }
 

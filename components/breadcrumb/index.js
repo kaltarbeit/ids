@@ -5,7 +5,7 @@ export const createBreadcrumb = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    let breadcrumbItems = wrapper.querySelectorAll('.ids2-breadcrumb-item');
+    let breadcrumbItems = wrapper.querySelectorAll('.ids-breadcrumb-item');
 
     const moveItem = (selectedIndex) => {
         breadcrumbItems.forEach((item, index) => {

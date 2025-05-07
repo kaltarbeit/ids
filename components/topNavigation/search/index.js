@@ -5,18 +5,18 @@ export const createTopNavigation = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const textFieldInput = wrapper.querySelector('.ids2-text-field input');
-    const clearButton = wrapper.querySelector('.ids2-text-field .ids2-input-clear');
+    const textFieldInput = wrapper.querySelector('.ids-text-field input');
+    const clearButton = wrapper.querySelector('.ids-text-field .ids-input-clear');
 
     textFieldInput.addEventListener('input', (e) => {
         const count = e.target.value.length;
 
-        count > 0 ? textFieldInput.parentElement.classList.add('ids2-text-field-filled') : textFieldInput.parentElement.classList.remove('ids2-text-field-filled');
+        count > 0 ? textFieldInput.parentElement.classList.add('ids-text-field-filled') : textFieldInput.parentElement.classList.remove('ids-text-field-filled');
     });
 
     clearButton.addEventListener('click', () => {
         textFieldInput.value = '';
-        textFieldInput.parentElement.classList.remove('ids2-text-field-filled');
+        textFieldInput.parentElement.classList.remove('ids-text-field-filled');
         textFieldInput.focus();
     });
 

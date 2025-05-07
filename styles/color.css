@@ -1,7 +1,7 @@
-.ids2-bg-blue {
-    background-color: var(--ids2-color-blue-100);
+.ids-bg-blue {
+    background-color: var(--ids-color-blue-100);
 }
 
-.ids2-bg-gray {
-    background-color: var(--ids2-color-gray-100);
+.ids-bg-gray {
+    background-color: var(--ids-color-gray-100);
 }

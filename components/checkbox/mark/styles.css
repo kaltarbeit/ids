@@ -1,4 +1,4 @@
-.ids2-checkmark {
+.ids-checkmark {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,31 +15,31 @@
     user-select: none;
 }
 
-.ids2-checkmark input {
+.ids-checkmark input {
     display: none;
 }
 
-.ids2-checkmark-content {
+.ids-checkmark-content {
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
 }
 
-.ids2-checkmark-content > * {
+.ids-checkmark-content > * {
     vertical-align: middle;
 }
 
-.ids2-checkmark-content .ids2-label-required:before {
+.ids-checkmark-content .ids-label-required:before {
     content: " ";
     width: 1px;
     height: 16px;
     font-size: 0;
-    background: var(--ids2-color-gray-700);
+    background: var(--ids-color-gray-700);
     display: inline-block;
     margin: 0 8px 2px;
 }
 
-.ids2-checkmark .ids2-checkmark-icon {
+.ids-checkmark .ids-checkmark-icon {
     width: 24px;
     height: 24px;
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.6066 0.310825C16.0977 0.755869 16.135 1.51475 15.69 2.00583L6.98997 11.6058C6.76659 11.8523 6.45092 11.995 6.11832 11.9999C5.78571 12.0047 5.46601 11.8713 5.23552 11.6315L0.334742 6.53147C-0.124461 6.0536 -0.109328 5.29395 0.368541 4.83475C0.846411 4.37555 1.60606 4.39068 2.06526 4.86855L6.07508 9.04137L13.9116 0.394186C14.3566 -0.0968973 15.1155 -0.134219 15.6066 0.310825Z' fill='%23979BAA'/%3E%3C/svg%3E%0A");
@@ -49,13 +49,13 @@
     color: transparent;
 }
 
-.ids2-checkmark:has(input:checked) {
-    background-color: var(--ids2-color-blue-50);
-    border: 2px solid var(--ids2-color-point-blue);
+.ids-checkmark:has(input:checked) {
+    background-color: var(--ids-color-blue-50);
+    border: 2px solid var(--ids-color-point-blue);
     padding: 17px 19px;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.08);
 }
 
-.ids2-checkmark:has(input:checked) .ids2-checkmark-icon {
+.ids-checkmark:has(input:checked) .ids-checkmark-icon {
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.6066 0.310825C16.0977 0.755869 16.135 1.51475 15.69 2.00583L6.98997 11.6058C6.76659 11.8523 6.45092 11.995 6.11832 11.9999C5.78571 12.0047 5.46601 11.8713 5.23552 11.6315L0.334742 6.53147C-0.124461 6.0536 -0.109328 5.29395 0.368541 4.83475C0.846411 4.37555 1.60606 4.39068 2.06526 4.86855L6.07508 9.04137L13.9116 0.394186C14.3566 -0.0968973 15.1155 -0.134219 15.6066 0.310825Z' fill='%232873E3'/%3E%3C/svg%3E");
 }

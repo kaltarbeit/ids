@@ -6,8 +6,8 @@ export const createTextField = () => {
     wrapper.insertAdjacentHTML('afterbegin', html);
 
 
-    const dateField = wrapper.querySelector('.ids2-text-field-date');
-    const dateFieldInput = dateField.querySelector('.ids2-text-field-date input');
+    const dateField = wrapper.querySelector('.ids-text-field-date');
+    const dateFieldInput = dateField.querySelector('.ids-text-field-date input');
 
     dateFieldInput.addEventListener('input', (e) => {
         const dates = ["", "", ""];

@@ -1,4 +1,4 @@
-.ids2-toast-example {
+.ids-toast-example {
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -7,7 +7,7 @@
 }
 
 
-.ids2-toast-examples-open-button {
+.ids-toast-examples-open-button {
     font-size: 18px;
     text-decoration: underline;
     font-weight: 700;
@@ -15,7 +15,7 @@
     cursor: pointer;
 }
 
-.ids2-toast {
+.ids-toast {
     /* 레이아웃 */
     display: flex;
     align-items: center;
@@ -38,18 +38,18 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.ids2-toast-icon {
+.ids-toast-icon {
     margin-right: 8px;
     color: #4caf50; /* 초록색 체크 아이콘 */
     font-size: 16px;
 }
 
-.ids2-toast-hide {
+.ids-toast-hide {
     opacity: 0;
     transform: translateX(-50%) translateY(20px);
 }
 
-.ids2-toast-message {
+.ids-toast-message {
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;

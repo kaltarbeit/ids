@@ -5,10 +5,10 @@ export const createCheckbox = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const checkboxCard = wrapper.querySelector('.ids2-checkbox-card');
+    const checkboxCard = wrapper.querySelector('.ids-checkbox-card');
 
     checkboxCard.addEventListener('click', () => {
-        checkboxCard.classList.toggle('ids2-checkbox-card-checked');
+        checkboxCard.classList.toggle('ids-checkbox-card-checked');
     })
 
     return wrapper.firstElementChild;

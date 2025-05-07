@@ -1,5 +1,5 @@
 
-.ids2-banner.ids2-banner-medium {
+.ids-banner.ids-banner-medium {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -15,52 +15,52 @@
     color: #454855;
 }
 
-.ids2-banner.ids2-banner-medium .ids2-banner-close {
+.ids-banner.ids-banner-medium .ids-banner-close {
     position: absolute;
     top: 16px;
     right: 16px;
 }
 
-.ids2-banner.ids2-banner-medium .ids2-banner-title {
+.ids-banner.ids-banner-medium .ids-banner-title {
     margin: 0 0 4px 0;
     font-size: 20px;
     line-height: 28px;
     font-weight: 700;
 }
 
-.ids2-banner.ids2-banner-medium .ids2-banner-text {
+.ids-banner.ids-banner-medium .ids-banner-text {
     font-size: 16px;
 }
 
-.ids2-banner.ids2-banner-medium .ids2-banner-footer-label {
+.ids-banner.ids-banner-medium .ids-banner-footer-label {
     position: absolute;
     bottom: 0;
     right: 0;
     padding: 0 11px 12px 0;
 }
 
-.ids2-banner.ids2-banner-medium .ids2-banner-footer-button {
+.ids-banner.ids-banner-medium .ids-banner-footer-button {
     position: absolute;
     bottom: 0;
     left: 0;
     padding: 0 0 20px 24px;
 }
 
-.ids2-banner.ids2-banner-medium.ids2-banner-h-sm {
+.ids-banner.ids-banner-medium.ids-banner-h-sm {
     height: 140px;
 }
 
-.ids2-banner.ids2-banner-medium.ids2-banner-h-md {
+.ids-banner.ids-banner-medium.ids-banner-h-md {
     height: 184px;
     justify-content: flex-start;
 }
 
-.ids2-banner.ids2-banner-medium.ids2-banner-h-md .ids2-banner-title {
+.ids-banner.ids-banner-medium.ids-banner-h-md .ids-banner-title {
     font-size: 22px;
     line-height: 32px;
 }
 
-.ids2-banner.ids2-banner-medium.ids2-banner-h-md .ids2-banner-text {
+.ids-banner.ids-banner-medium.ids-banner-h-md .ids-banner-text {
     font-size: 18px;
     line-height: 26px;
 }

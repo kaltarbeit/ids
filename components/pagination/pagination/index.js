@@ -5,9 +5,9 @@ export const createPagination = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const pageNumbersContainer = wrapper.querySelector('.ids2-pagination-numbers');
-    const pagePrev = wrapper.querySelector('.ids2-pagination-prev');
-    const pageNext = wrapper.querySelector('.ids2-pagination-next');
+    const pageNumbersContainer = wrapper.querySelector('.ids-pagination-numbers');
+    const pagePrev = wrapper.querySelector('.ids-pagination-prev');
+    const pageNext = wrapper.querySelector('.ids-pagination-next');
 
     const totalPages = 15;
     let currentPage = 1;
@@ -25,10 +25,10 @@ export const createPagination = () => {
         const pageNumber = document.createElement('button');
         pageNumber.type = 'button';
         pageNumber.innerText = page;
-        pageNumber.classList.add('ids2-pagination-number');
-        pageNumber.classList.add('ids2-pagination-button');
+        pageNumber.classList.add('ids-pagination-number');
+        pageNumber.classList.add('ids-pagination-button');
         if(page === currentPage) {
-            pageNumber.classList.add('ids2-pagination-number-active');
+            pageNumber.classList.add('ids-pagination-number-active');
         }
 
         pageNumber.addEventListener('click', () => {
@@ -42,8 +42,8 @@ export const createPagination = () => {
         const moreButton = document.createElement('button');
         moreButton.type = 'button';
         moreButton.innerText = '...';
-        moreButton.classList.add('ids2-pagination-ellipsis');
-        moreButton.classList.add('ids2-pagination-button');
+        moreButton.classList.add('ids-pagination-ellipsis');
+        moreButton.classList.add('ids-pagination-button');
 
         moreButton.addEventListener('click', () => {
             changePage(page);

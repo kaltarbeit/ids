@@ -5,8 +5,8 @@ export const createIndicator = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const indicators = wrapper.querySelectorAll('.ids2-indicator-dot-item');
-    const indicatorPageAuto = wrapper.querySelector('.ids2-indicator-page-auto');
+    const indicators = wrapper.querySelectorAll('.ids-indicator-dot-item');
+    const indicatorPageAuto = wrapper.querySelector('.ids-indicator-page-auto');
 
     indicators.forEach((indicator) => {
 
@@ -17,22 +17,22 @@ export const createIndicator = () => {
     })
 
 
-    const indicatorPages = wrapper.querySelectorAll('.ids2-indicator-page');
+    const indicatorPages = wrapper.querySelectorAll('.ids-indicator-page');
     indicatorPages.forEach((indicator) => {
-        const indicatorPageButtons = indicator.querySelectorAll('.ids2-indicator-page-button');
-        const page = indicator.querySelector('.ids2-indicator-page-number');
+        const indicatorPageButtons = indicator.querySelectorAll('.ids-indicator-page-button');
+        const page = indicator.querySelector('.ids-indicator-page-number');
         indicatorPageButtons.forEach((indicatorPageButton) => {
 
             indicatorPageButton.addEventListener('click', () => {
-                if(indicatorPageButton.classList.contains('ids2-indicator-page-button-prev')) {
+                if(indicatorPageButton.classList.contains('ids-indicator-page-button-prev')) {
                     const prevPage = Number(page.innerText) - 1;
                     page.innerText = prevPage < 1 ? 5 : prevPage;
-                } if(indicatorPageButton.classList.contains('ids2-indicator-page-button-next')) {
+                } if(indicatorPageButton.classList.contains('ids-indicator-page-button-next')) {
                     const nextPage = Number(page.innerText) + 1;
                     page.innerText = nextPage > 5 ? 1 : nextPage;
-                } if(indicatorPageButton.classList.contains('ids2-indicator-page-button-play')) {
+                } if(indicatorPageButton.classList.contains('ids-indicator-page-button-play')) {
                     indicator.dataset.auto = 'true';
-                } if(indicatorPageButton.classList.contains('ids2-indicator-page-button-pause')) {
+                } if(indicatorPageButton.classList.contains('ids-indicator-page-button-pause')) {
                     indicator.dataset.auto = 'false';
                 }
             })
@@ -41,7 +41,7 @@ export const createIndicator = () => {
 
     setInterval(() => {
         if(indicatorPageAuto.dataset.auto === 'true') {
-            const page = indicatorPageAuto.querySelector('.ids2-indicator-page-number');
+            const page = indicatorPageAuto.querySelector('.ids-indicator-page-number');
             const nextPage = Number(page.innerText) + 1;
             page.innerText = nextPage > 5 ? 1 : nextPage;
         }

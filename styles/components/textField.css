@@ -1,7 +1,7 @@
 @import "../../components/textField/authCode/styles.css";
 @import "../../components/textField/secretCard/styles.css";
 
-.ids2-text-field-examples {
+.ids-text-field-examples {
     display: flex;
     gap: 48px 2%;
     margin-top: 16px;
@@ -9,7 +9,7 @@
     flex-wrap: wrap;
 }
 
-.ids2-text-field-state-example {
+.ids-text-field-state-example {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -18,23 +18,23 @@
     text-align: center;
 }
 
-.ids2-text-field-state-example > label {
+.ids-text-field-state-example > label {
     display: inline-block;
     padding-top: 24px;
     font-weight: 700;
 }
 
-.ids2-text-field {
+.ids-text-field {
     text-align: left;
     position: relative;
 }
 
-.ids2-text-field-full-width {
+.ids-text-field-full-width {
     width: 100%;
     position: relative;
 }
 
-.ids2-text-field .ids2-text-field-container {
+.ids-text-field .ids-text-field-container {
     position: relative;
     border: 1px solid #C5C8D3;
     border-radius: 12px;
@@ -42,31 +42,31 @@
     box-sizing: border-box;
 }
 
-.ids2-text-field .ids2-text-field-container:has(.ids2-text-field-input:focus),
-.ids2-text-field.ids2-text-field-focused .ids2-text-field-container {
+.ids-text-field .ids-text-field-container:has(.ids-text-field-input:focus),
+.ids-text-field.ids-text-field-focused .ids-text-field-container {
     outline: none;
     border: 1px solid #30323B;
 }
 
-.ids2-text-field .ids2-text-field-container:has(.ids2-text-field-input:disabled) {
+.ids-text-field .ids-text-field-container:has(.ids-text-field-input:disabled) {
     background: #F3F4F7;
     border: 1px solid #C5C8D3;
 }
 
-.ids2-text-field:not(.ids2-email-field) .ids2-text-field-container:has(.ids2-text-field-input:read-only) {
+.ids-text-field:not(.ids-email-field) .ids-text-field-container:has(.ids-text-field-input:read-only) {
     background: #F3F4F7;
     border: 1px solid #C5C8D3;
 }
 
-.ids2-text-field .ids2-text-field-input:disabled {
+.ids-text-field .ids-text-field-input:disabled {
     color: #737684;
 }
 
-.ids2-text-field.ids2-text-field-error .ids2-text-field-container {
+.ids-text-field.ids-text-field-error .ids-text-field-container {
     border: 1px solid #E32502;
 }
 
-.ids2-text-field-label {
+.ids-text-field-label {
     display: block;
     font-size: 14px;
     font-weight: 500;
@@ -77,16 +77,16 @@
 }
 
 
-.ids2-text-field-label {
+.ids-text-field-label {
     margin-bottom: 8px;
     display: flex;
 }
 
-.ids2-text-field-label > span {
+.ids-text-field-label > span {
     display: block;
 }
 
-.ids2-text-field .ids2-text-field-input {
+.ids-text-field .ids-text-field-input {
     width: 100%;
     border: none;
     background: transparent;
@@ -99,12 +99,12 @@
     box-sizing: border-box;
 }
 
-.ids2-text-field.ids2-text-field-amount .ids2-text-field-input,
-.ids2-text-field.ids2-text-field-currency .ids2-text-field-input {
+.ids-text-field.ids-text-field-amount .ids-text-field-input,
+.ids-text-field.ids-text-field-currency .ids-text-field-input {
     text-align: right;
 }
 
-.ids2-text-field.ids2-text-field-amount.ids2-text-field-filled .ids2-text-field-container:after {
+.ids-text-field.ids-text-field-amount.ids-text-field-filled .ids-text-field-container:after {
     content: '원';
     font-size: 16px;
     font-weight: 500;
@@ -115,16 +115,16 @@
     transform: translateY(-50%);
 }
 
-.ids2-text-field.ids2-text-field-amount.ids2-text-field-filled .ids2-text-field-input {
+.ids-text-field.ids-text-field-amount.ids-text-field-filled .ids-text-field-input {
     padding-right: 68px;
 }
 
-.ids2-text-field-currency.ids2-text-field-filled .ids2-text-field-input {
+.ids-text-field-currency.ids-text-field-filled .ids-text-field-input {
     padding-right: 48px;
 }
 
 
-.ids2-text-field.ids2-text-field-date .ids2-text-field-container:after {
+.ids-text-field.ids-text-field-date .ids-text-field-container:after {
     content: ' ';
     width: 24px;
     height: 24px;
@@ -137,13 +137,13 @@
     cursor: pointer;
 }
 
-.ids2-text-field .ids2-text-field-input::placeholder {
+.ids-text-field .ids-text-field-input::placeholder {
     font-size: 16px;
     font-weight: 500;
     color: #737684;
 }
 
-.ids2-text-field .ids2-input-clear {
+.ids-text-field .ids-input-clear {
     position: absolute;
     right: 13px;
     top: 50%;
@@ -160,11 +160,11 @@
 }
 
 
-.ids2-text-field .ids2-input-clear .ids2-icon {
+.ids-text-field .ids-input-clear .ids-icon {
     display: block;
 }
 
-.ids2-text-field .ids2-input-success {
+.ids-text-field .ids-input-success {
     position: absolute;
     right: 13px;
     top: 50%;
@@ -179,26 +179,26 @@
     display: none;
 }
 
-.ids2-text-field.ids2-text-field-success .ids2-input-success {
+.ids-text-field.ids-text-field-success .ids-input-success {
     display: block;
 }
 
-.ids2-text-field.ids2-text-field-filled .ids2-input-clear {
+.ids-text-field.ids-text-field-filled .ids-input-clear {
     display: block;
 }
 
-.ids2-text-field.ids2-text-field-filled.ids2-text-field-success .ids2-input-clear {
+.ids-text-field.ids-text-field-filled.ids-text-field-success .ids-input-clear {
     display: none;
 }
 
 
-.ids2-exchange-container {
+.ids-exchange-container {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.ids2-text-field.ids2-input-top-search {
+.ids-text-field.ids-input-top-search {
     position: relative;
     margin-left: 10px;
     width: 100%;
@@ -213,7 +213,7 @@ input::-webkit-inner-spin-button {
 
 
 
-.ids2-text-field.ids2-input-top-search .ids2-text-field-input {
+.ids-text-field.ids-input-top-search .ids-text-field-input {
     width: 100%;
     background: #F3F4F7;
     border: none;
@@ -224,24 +224,24 @@ input::-webkit-inner-spin-button {
     box-sizing: border-box;
 }
 
-.ids2-text-field.ids2-input-top-search .ids2-search-button {
+.ids-text-field.ids-input-top-search .ids-search-button {
     position: absolute;
     top: 50%;
     right: 16px;
     transform: translateY(-50%);
 }
 
-.ids2-text-field.ids2-input-top-search .ids2-input-clear {
+.ids-text-field.ids-input-top-search .ids-input-clear {
     right: 62px;
 }
 
-.ids2-text-field .ids2-text-field-functions {
+.ids-text-field .ids-text-field-functions {
     display: flex;
     justify-content: space-between;
     min-height: 24px;
 }
 
-.ids2-text-field .ids2-text-field-note {
+.ids-text-field .ids-text-field-note {
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
@@ -249,7 +249,7 @@ input::-webkit-inner-spin-button {
     margin: 4px;
 }
 
-.ids2-text-field .ids2-text-field-error-note {
+.ids-text-field .ids-text-field-error-note {
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
@@ -257,7 +257,7 @@ input::-webkit-inner-spin-button {
     margin: 4px;
 }
 
-.ids2-text-field .ids2-text-field-success-note {
+.ids-text-field .ids-text-field-success-note {
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
@@ -265,7 +265,7 @@ input::-webkit-inner-spin-button {
     margin: 4px;
 }
 
-.ids2-text-field .ids2-text-field-counter {
+.ids-text-field .ids-text-field-counter {
     display: none;
     font-size: 12px;
     line-height: 16px;
@@ -274,43 +274,43 @@ input::-webkit-inner-spin-button {
     margin: 4px;
 }
 
-.ids2-text-field .ids2-text-field-counter.visible,
-.ids2-text-field.ids2-text-field-filled .ids2-text-field-counter {
+.ids-text-field .ids-text-field-counter.visible,
+.ids-text-field.ids-text-field-filled .ids-text-field-counter {
     display: block;
 }
 
-.ids2-text-field .ids2-text-field-counter .ids2-text-field-count {
+.ids-text-field .ids-text-field-counter .ids-text-field-count {
     color: #101116;
 }
 
-.ids2-text-field.ids2-text-field-error .ids2-text-field-counter .ids2-text-field-count {
+.ids-text-field.ids-text-field-error .ids-text-field-counter .ids-text-field-count {
     color: #E32502;
 }
 
-.ids2-input-form {
+.ids-input-form {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.ids2-input-group {
+.ids-input-group {
     display: flex;
     gap: 8px;
 }
 
-.ids2-input-group.ids2-input-exchange {
+.ids-input-group.ids-input-exchange {
     gap: 16px;
 }
 
-.ids2-input-group.ids2-input-exchange > .ids2-text-field:first-child {
+.ids-input-group.ids-input-exchange > .ids-text-field:first-child {
     width: 68%;
 }
 
-.ids2-input-group.ids2-input-exchange > .ids2-text-field:last-child {
+.ids-input-group.ids-input-exchange > .ids-text-field:last-child {
     width: 32%;
 }
 
-.ids2-input-group.ids2-input-exchange > .ids2-text-field:first-child:after {
+.ids-input-group.ids-input-exchange > .ids-text-field:first-child:after {
     position: absolute;
     bottom: 0;
     right: -10px;
@@ -323,11 +323,11 @@ input::-webkit-inner-spin-button {
 
 
 
-.ids2-input-group.ids2-input-range {
+.ids-input-group.ids-input-range {
     gap: 16px;
 }
 
-.ids2-input-group.ids2-input-range > .ids2-text-field:first-child:after {
+.ids-input-group.ids-input-range > .ids-text-field:first-child:after {
     position: absolute;
     top: 50%;
     right: -13px;
@@ -338,39 +338,39 @@ input::-webkit-inner-spin-button {
     color: #101116;
 }
 
-.ids2-input-group.ids2-input-range > .ids2-text-field:first-child {
+.ids-input-group.ids-input-range > .ids-text-field:first-child {
     width: 50%;
 }
 
-.ids2-input-group.ids2-input-range > .ids2-text-field:last-child {
+.ids-input-group.ids-input-range > .ids-text-field:last-child {
     width: 50%;
 }
 
-.ids2-text-field.ids2-input-separate .ids2-text-field-container {
+.ids-text-field.ids-input-separate .ids-text-field-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.ids2-text-field.ids2-email-field .ids2-text-field-container {
+.ids-text-field.ids-email-field .ids-text-field-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.ids2-text-field.ids2-email-field .ids2-email-field-name {
+.ids-text-field.ids-email-field .ids-email-field-name {
     width: calc(50% - 16px);
 }
 
-.ids2-text-field.ids2-email-field .ids2-email-field-domain {
+.ids-text-field.ids-email-field .ids-email-field-domain {
     width: calc(50% + 16px);
 }
 
-.ids2-text-field.ids2-email-field .ids2-email-field-domain .ids2-text-field-input {
+.ids-text-field.ids-email-field .ids-email-field-domain .ids-text-field-input {
     padding-left: 12px;
     cursor: pointer;
 }
-.ids2-text-field.ids2-email-field .ids2-email-field-domain::after {
+.ids-text-field.ids-email-field .ids-email-field-domain::after {
     content: " ";
     position: absolute;
     right: 15px;
@@ -384,31 +384,31 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-.ids2-text-field.ids2-email-field .ids2-email-field-separator {
+.ids-text-field.ids-email-field .ids-email-field-separator {
     text-align: center;
     font-size: 16px;
     line-height: 22px;
 }
 
-.ids2-input-group.ids2-input-open-banking .ids2-dropdown {
+.ids-input-group.ids-input-open-banking .ids-dropdown {
     width: 130px;
 }
 
-.ids2-input-group.ids2-input-open-banking .ids2-text-field {
+.ids-input-group.ids-input-open-banking .ids-text-field {
     width: calc(100% - 138px);
 }
 
-.ids2-input-group.ids2-input-verify-number .ids2-input-timer {
+.ids-input-group.ids-input-verify-number .ids-input-timer {
     font-size: 14px;
     line-height: 18px;
     color: #454855;
 }
 
-.ids2-input-group.ids2-input-verify-number .ids2-text-field.ids2-text-field-filled .ids2-input-timer {
+.ids-input-group.ids-input-verify-number .ids-text-field.ids-text-field-filled .ids-input-timer {
     right: 46px;
 }
 
-.ids2-text-field.ids2-input-search .ids2-search-button {
+.ids-text-field.ids-input-search .ids-search-button {
     position: absolute;
     top: 50%;
     right: 16px;
@@ -416,27 +416,27 @@ input::-webkit-inner-spin-button {
 }
 
 
-.ids2-text-field.ids2-text-field-filled.ids2-input-search .ids2-input-clear {
+.ids-text-field.ids-text-field-filled.ids-input-search .ids-input-clear {
     right: 64px;
 }
 
-.ids2-input-group.ids2-input-english-name > .ids2-text-field:first-child {
+.ids-input-group.ids-input-english-name > .ids-text-field:first-child {
     width: 33%;
 }
 
-.ids2-input-group.ids2-input-english-name > .ids2-text-field:last-child {
+.ids-input-group.ids-input-english-name > .ids-text-field:last-child {
     width: 66%;
 }
 
-.ids2-input-group.ids2-input-card-number {
+.ids-input-group.ids-input-card-number {
     gap: 14px;
 }
 
-.ids2-input-group.ids2-input-card-number > .ids2-text-field {
+.ids-input-group.ids-input-card-number > .ids-text-field {
     width: 25%;
 }
 
-.ids2-input-group.ids2-input-card-number > .ids2-text-field:not(:last-child):after {
+.ids-input-group.ids-input-card-number > .ids-text-field:not(:last-child):after {
     content: " ";
     width: 6px;
     height: 1px;
@@ -447,7 +447,7 @@ input::-webkit-inner-spin-button {
     transform: translateY(-50%);
 }
 
-.ids2-text-field .ids2-input-function {
+.ids-text-field .ids-input-function {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -456,40 +456,40 @@ input::-webkit-inner-spin-button {
     right: 16px;
     transform: translateY(-50%);
 }
-.ids2-text-field .ids2-input-function .ids2-input-clear {
+.ids-text-field .ids-input-function .ids-input-clear {
     position: static;
     right: unset;
     top: unset;
     transform: none;
 }
 
-.ids2-text-field.ids2-text-field-line .ids2-text-field-container {
+.ids-text-field.ids-text-field-line .ids-text-field-container {
     border: none;
     border-radius: 0;
     border-bottom: 3px solid #C5C8D3;
 }
 
-.ids2-text-field.ids2-text-field-line .ids2-text-field-container:has(.ids2-text-field-input:focus) {
+.ids-text-field.ids-text-field-line .ids-text-field-container:has(.ids-text-field-input:focus) {
     outline: none;
     border: none;
     border-radius: 0;
     border-bottom: 3px solid #2873E3;
 }
 
-.ids2-text-field.ids2-text-field-line .ids2-text-field-input {
+.ids-text-field.ids-text-field-line .ids-text-field-input {
     font-size: 20px;
     line-height: 26px;
     color: #101116;
     padding: 15px 0;
 }
 
-.ids2-text-field.ids2-text-field-line .ids2-text-field-input::placeholder {
+.ids-text-field.ids-text-field-line .ids-text-field-input::placeholder {
     font-size: 20px;
     line-height: 26px;
     color: #737684;
 }
 
-.ids2-text-field.ids2-text-field-line-large .ids2-text-field-input {
+.ids-text-field.ids-text-field-line-large .ids-text-field-input {
     font-size: 28px;
     text-align: right;
     line-height: 26px;
@@ -497,18 +497,18 @@ input::-webkit-inner-spin-button {
     padding: 15px 0;
 }
 
-.ids2-text-field.ids2-text-field-line-large.ids2-text-field-filled .ids2-text-field-input {
+.ids-text-field.ids-text-field-line-large.ids-text-field-filled .ids-text-field-input {
     padding-right: 60px;
 }
 
-.ids2-text-field.ids2-text-field-line-large .ids2-text-field-input::placeholder {
+.ids-text-field.ids-text-field-line-large .ids-text-field-input::placeholder {
     font-size: 28px;
     text-align: right;
     line-height: 26px;
     color: #737684;
 }
 
-.ids2-text-field-amount-note {
+.ids-text-field-amount-note {
     margin-top: 4px;
     font-size: 12px;
     font-weight: 700;

@@ -1,36 +1,36 @@
-.ids2-list-example {
+.ids-list-example {
     min-width: 380px;
 }
 
-.ids2-list {
+.ids-list {
     background: white;
     margin: auto;
 }
 
-.ids2-list.ids2-list-underlined > .ids2-item:not(:last-child) {
+.ids-list.ids-list-underlined > .ids-item:not(:last-child) {
     border-bottom: 1px solid #E1E3EAB2;
 }
 
-.ids2-card-list {
+.ids-card-list {
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin-top: 16px;
 }
-.ids2-item {
+.ids-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
     background: white;
 }
-.ids2-info .ids2-bank-icon {
+.ids-info .ids-bank-icon {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     overflow: hidden;
 }
-.ids2-item-wrap {
+.ids-item-wrap {
     display: flex;
     width: 100%;
     align-items: center;
@@ -39,51 +39,51 @@
     padding-left: 30px;
     margin: 24px;
 }
-.ids2-info {
+.ids-info {
     display: flex;
     align-items: center;
 }
-.ids2-logo {
+.ids-logo {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-right: 10px;
 }
-.ids2-details {
+.ids-details {
     display: flex;
     gap: 6px;
     flex-direction: column;
     margin-left: 12px;
 }
-.ids2-bank {
+.ids-bank {
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
     color: #737684;
     margin-top: 6px;
 }
-.ids2-favorite {
+.ids-favorite {
     cursor: pointer;
 }
 
-.ids2-card .ids2-card-header {
+.ids-card .ids-card-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.ids2-card .ids2-card-header .ids2-card-header-wrap {
+.ids-card .ids-card-header .ids-card-header-wrap {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 4px;
 }
-.ids2-card .ids2-card-header .ids2-account-type {
+.ids-card .ids-card-header .ids-account-type {
     color: #737684;
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
 }
-.ids2-card .ids2-card-header .ids2-account-name {
+.ids-card .ids-card-header .ids-account-name {
     color: #737684;
     position: relative;
     font-size: 12px;
@@ -91,12 +91,12 @@
     line-height: 16px;
 }
 
-.ids2-card .ids2-card-header .ids2-account-type + .ids2-account-name  {
+.ids-card .ids-card-header .ids-account-type + .ids-account-name  {
     margin-left: 4px;
     padding-left: 8px;
 }
 
-.ids2-card .ids2-card-header .ids2-account-type + .ids2-account-name:before {
+.ids-card .ids-card-header .ids-account-type + .ids-account-name:before {
     content: ' ';
     position: absolute;
     top: 50%;
@@ -108,18 +108,18 @@
     z-index: 1;
 }
 
-.ids2-card .ids2-card-header .ids2-menu-button {
+.ids-card .ids-card-header .ids-menu-button {
     font-size: 18px;
     color: #101116;
     cursor: pointer;
 }
-.ids2-card .ids2-account {
+.ids-card .ids-account {
     font-size: 14px;
     font-weight: 600;
     margin-top: 4px;
     color: #101116;
 }
-.ids2-card .ids2-balance {
+.ids-card .ids-balance {
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -127,17 +127,17 @@
     text-align: right;
     margin-top: 6px;
 }
-.ids2-card .ids2-balance .ids2-balance-currency {
+.ids-card .ids-balance .ids-balance-currency {
     font-weight: 400;
 }
 
-.ids2-menu {
+.ids-menu {
      background: white;
  }
-.ids2-menu-section {
+.ids-menu-section {
     margin: 40px 24px;
 }
-.ids2-menu-title {
+.ids-menu-title {
     font-size: 14px;
     color: #737684;
     font-weight: 700;
@@ -145,7 +145,7 @@
     margin-top: 40px;
     margin-bottom: 16px;
 }
-.ids2-menu-item {
+.ids-menu-item {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -153,7 +153,7 @@
     padding: 13px 0;
     cursor: pointer;
 }
-.ids2-menu-item a {
+.ids-menu-item a {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -161,41 +161,41 @@
     cursor: pointer;
     text-decoration: none;
 }
-.ids2-item.read {
+.ids-item.read {
     background: #e8f2ff;
 }
-.ids2-point-icon {
+.ids-point-icon {
     position: absolute;
     top:0;
     left: 0;
     width: 32px;
 }
-.ids2-point-icon > svg {
+.ids-point-icon > svg {
     top: 0;
 }
-.ids2-list-content {
+.ids-list-content {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-.ids2-list-title {
+.ids-list-title {
     font-size: 16px;
     line-height: 22px;
     font-weight: 700;
 }
-.ids2-list-text {
+.ids-list-text {
     font-size: 14px;
     line-height: 20px;
     color: #555;
 }
-.ids2-list-time {
+.ids-list-time {
     font-size: 12px;
     line-height: 16px;
     color: #737684;
     margin-top: 5px;
 }
-.ids2-list-arrow {
+.ids-list-arrow {
     font-size: 18px;
     color: #777;
 }

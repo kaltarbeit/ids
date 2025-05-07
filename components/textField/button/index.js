@@ -5,32 +5,32 @@ export const createTextField = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const textField = wrapper.querySelector('.ids2-text-field');
-    const textFieldInput = wrapper.querySelector('.ids2-text-field input');
-    const clearButton = wrapper.querySelector('.ids2-text-field .ids2-input-clear');
+    const textField = wrapper.querySelector('.ids-text-field');
+    const textFieldInput = wrapper.querySelector('.ids-text-field input');
+    const clearButton = wrapper.querySelector('.ids-text-field .ids-input-clear');
     const submitButton = wrapper.querySelector('button[name="submit"]');
-    const counter = wrapper.querySelector('.ids2-text-field-counter');
+    const counter = wrapper.querySelector('.ids-text-field-counter');
 
     textFieldInput.addEventListener('input', (e) => {
         const count = e.target.value.length;
-        count > 0 ? textField.classList.add('ids2-text-field-filled') : textField.classList.remove('ids2-text-field-filled');
+        count > 0 ? textField.classList.add('ids-text-field-filled') : textField.classList.remove('ids-text-field-filled');
         submitButton.disabled = count !== 6
 
         if(counter) {
-            const countWrapper = counter.querySelector('.ids2-text-field-count');
+            const countWrapper = counter.querySelector('.ids-text-field-count');
             countWrapper.textContent = count;
         }
     });
 
     clearButton.addEventListener('click', () => {
         textFieldInput.value = '';
-        textField.classList.remove('ids2-text-field-filled');
+        textField.classList.remove('ids-text-field-filled');
         submitButton.disabled = true;
         textFieldInput.focus();
     });
 
     if(counter) {
-        const maxLength = counter.querySelector('.ids2-text-field-maxlength');
+        const maxLength = counter.querySelector('.ids-text-field-maxlength');
         maxLength.textContent = textFieldInput.maxLength;
     }
 

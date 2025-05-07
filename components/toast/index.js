@@ -5,16 +5,16 @@ export const createToast = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const toast = wrapper.querySelector('.ids2-toast');
-    const reopenButton = wrapper.querySelector('.ids2-toast-examples-open-button');
+    const toast = wrapper.querySelector('.ids-toast');
+    const reopenButton = wrapper.querySelector('.ids-toast-examples-open-button');
 
 
     const showToast = () => {
         reopenButton.style.display = 'none';
-        toast.classList.remove('ids2-toast-hide');
+        toast.classList.remove('ids-toast-hide');
 
         setTimeout(() => {
-            toast.classList.add('ids2-toast-hide');
+            toast.classList.add('ids-toast-hide');
 
             setTimeout(() => {
                 reopenButton.style.display = 'block';

@@ -4,48 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>IDS 2.0 Style Sheet Document</title>
-  <link rel="stylesheet" href="../../styles/ids2.css"/>
+  <link rel="stylesheet" href="../../styles/ids.css"/>
   <link rel="stylesheet" href="../css/doc.css"/>
   <link rel="stylesheet" href="../css/prism.css"/>
 </head>
 <body>
-<div class="ids2-docs">
+<div class="ids-docs">
 
-  <div class="ids2-docs-back">
-    <a href="../index.html" class="ids2-button ids2-button-text">
-      <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-left">Back</i>
+  <div class="ids-docs-back">
+    <a href="../index.html" class="ids-button ids-button-text">
+      <i class="ids-icon ids-icon-xxs ids-icon-arrow-left">Back</i>
       Index
     </a>
   </div>
 
-  <div class="ids2-docs-header">
-    <h1 class="ids2-title1 ids2-bold">Accordion</h1>
+  <div class="ids-docs-header">
+    <h1 class="ids-title1 ids-bold">Accordion</h1>
 
-    <p class="ids2-body1 ids2-my-24 ids2-text-gray-500">Accordion 형식의 Collapse / Expand 구현을 위한 스타일시트 입니다.</p>
+    <p class="ids-body1 ids-my-24 ids-text-gray-500">Accordion 형식의 Collapse / Expand 구현을 위한 스타일시트 입니다.</p>
   </div>
 
-  <section class="ids2-docs-section">
-    <h2 class="ids2-docs-section-title">Base Style</h2>
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Base Style</h2>
 
-    <p class="ids2-body4 ids2-mt-1 ids2-text-gray-500">
-     <span class="ids2-bold">.ids2-accordion</span> 은 <span class="ids2-bold">.ids2-accordion-item</span> 요소에
-      에 <span class="ids2-bold">.ids2-accordion-item-open</span> 클래스를 Toggle 하여 Collapse / Expand 되도록 정의되어 있습니다.<br/>
+    <p class="ids-body4 ids-mt-1 ids-text-gray-500">
+     <span class="ids-bold">.ids-accordion</span> 은 <span class="ids-bold">.ids-accordion-item</span> 요소에
+      에 <span class="ids-bold">.ids-accordion-item-open</span> 클래스를 Toggle 하여 Collapse / Expand 되도록 정의되어 있습니다.<br/>
     </p>
-    <p class="ids2-body4 ids2-mt-1 ids2-text-gray-500">
-     <span class="ids2-bold">.ids2-accordion-item</span> 은 제목과 클릭 요소를 담당하는 <span class="ids2-bold">.ids2-accordion-summary</span> 와
-     Expand 시 표시 될 내용을 담는 <span class="ids2-bold">.ids2-accordion-details</span>로 구성됩니다. <br/>
+    <p class="ids-body4 ids-mt-1 ids-text-gray-500">
+     <span class="ids-bold">.ids-accordion-item</span> 은 제목과 클릭 요소를 담당하는 <span class="ids-bold">.ids-accordion-summary</span> 와
+     Expand 시 표시 될 내용을 담는 <span class="ids-bold">.ids-accordion-details</span>로 구성됩니다. <br/>
 
-     <span class="ids2-bold">.ids2-accordion-details</span> 는 <span class="ids2-bold">display: none</span> 을 기본 값으로 하고,
-      <span class="ids2-bold">.ids2-accordion-item-open</span> 가 적용 될 경우  <span class="ids2-bold">display: block</span>으로 전환됩니다. <br/>
+     <span class="ids-bold">.ids-accordion-details</span> 는 <span class="ids-bold">display: none</span> 을 기본 값으로 하고,
+      <span class="ids-bold">.ids-accordion-item-open</span> 가 적용 될 경우  <span class="ids-bold">display: block</span>으로 전환됩니다. <br/>
     </p>
 
 
-    <div class="ids2-docs-reference ids2-mt-3">
-      <div class="ids2-docs-reference-button">
-        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+    <div class="ids-docs-reference ids-mt-3">
+      <div class="ids-docs-reference-button">
+        Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
       </div>
 
-      <table class="ids2-table ids2-table-sm">
+      <table class="ids-table ids-table-sm">
         <colgroup>
           <col style="width: 12%"/>
           <col style="width: 28%"/>
@@ -53,42 +53,42 @@
         </colgroup>
         <thead>
         <tr>
-          <th class="ids2-cell-left">Name</th>
-          <th class="ids2-cell-left">Class</th>
-          <th class="ids2-cell-left">Style</th>
+          <th class="ids-cell-left">Name</th>
+          <th class="ids-cell-left">Class</th>
+          <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td class="ids2-cell-left ids2-docs-name" rowspan="5">
+          <td class="ids-cell-left ids-docs-name" rowspan="5">
             Accordion
           </td>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-accordion</td>
-          <td class="ids2-cell-left">
-            <code class="ids2-docs-code">width: 100%;
-              background-color: var(--ids2-color-white); <span class="ids2-docs-comment">/* #FFFFFF */</span>
+          <td class="ids-cell-left ids-docs-classname">.ids-accordion</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: 100%;
+              background-color: var(--ids-color-white); <span class="ids-docs-comment">/* #FFFFFF */</span>
             </code>
           </td>
         </tr>
         <tr>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-accordion-item</td>
-          <td class="ids2-cell-left">
-            <code class="ids2-docs-code">transition: max-height 1s  ease-in-out;</code>
+          <td class="ids-cell-left ids-docs-classname">.ids-accordion-item</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">transition: max-height 1s  ease-in-out;</code>
           </td>
         </tr>
         <tr>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-accordion-summary</td>
-          <td class="ids2-cell-left">
-            <code class="ids2-docs-code">position: relative;
+          <td class="ids-cell-left ids-docs-classname">.ids-accordion-summary</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: relative;
               cursor: pointer;
-              padding-right: var(--ids2-spacing-5); <span class="ids2-docs-comment">/* 40px */</span>
+              padding-right: var(--ids-spacing-5); <span class="ids-docs-comment">/* 40px */</span>
             </code>
           </td>
         </tr>
         <tr>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-accordion-details</td>
-          <td class="ids2-cell-left">
-            <code class="ids2-docs-code">display: none;
+          <td class="ids-cell-left ids-docs-classname">.ids-accordion-details</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: none;
               overflow: hidden;
               box-sizing: border-box;
               transition: height 0.3s cubic-bezier(.7,.5,.6,.9);
@@ -96,9 +96,9 @@
           </td>
         </tr>
         <tr>
-          <td class="ids2-cell-left ids2-docs-classname">.ids2-accordion-title</td>
-          <td class="ids2-cell-left">
-            <code class="ids2-docs-code">display: flex;
+          <td class="ids-cell-left ids-docs-classname">.ids-accordion-title</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
               align-items: center;
               justify-content: space-between;
             </code>
@@ -110,37 +110,37 @@
 
   </section>
 
-  <section class="ids2-docs-section">
-    <h2 class="ids2-docs-section-title">컨텐츠형</h2>
-    <h4 class="ids2-docs-section-label">Examples</h4>
-    <div class="ids2-docs-examples">
-      <div class="ids2-docs-example-block">
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-accordion</span>
-        <div class="ids2-docs-example-code">
-          <div class="ids2-docs-example"></div>
-          <div class="ids2-docs-example-code-highlight">
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">컨텐츠형</h2>
+    <h4 class="ids-docs-section-label">Examples</h4>
+    <div class="ids-docs-examples">
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-accordion</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
-              <div class="ids2-accordion">
-                <div class="ids2-accordion-item">
-                  <div class="ids2-accordion-head">
-                    <div class="ids2-accordion-summary">
-                      <div class="ids2-accordion-title">
-                        <h3 class="ids2-h3-tight">
-                          타이틀 <span class="ids2-badge-count">99</span>
+              <div class="ids-accordion">
+                <div class="ids-accordion-item">
+                  <div class="ids-accordion-head">
+                    <div class="ids-accordion-summary">
+                      <div class="ids-accordion-title">
+                        <h3 class="ids-h3-tight">
+                          타이틀 <span class="ids-badge-count">99</span>
                         </h3>
-                        <div class="ids2-total">
-                          <span class="ids2-body5 ids2-semibold">합계</span>
-                          <span class="ids2-badge-count">
+                        <div class="ids-total">
+                          <span class="ids-body5 ids-semibold">합계</span>
+                          <span class="ids-badge-count">
                             1,000,000,000원
                           </span>
                         </div>
                       </div>
-                      <div class="ids2-body5 ids2-text-gray-600">
+                      <div class="ids-body5 ids-text-gray-600">
                         서브 텍스트
                       </div>
                     </div>
-                    <div class="ids2-accordion-arrow">
-                        <i class="ids2-icon ids2-icon-expand">Expand</i>
+                    <div class="ids-accordion-arrow">
+                        <i class="ids-icon ids-icon-expand">Expand</i>
                     </div>
                   </div>
                 </div>
@@ -150,45 +150,45 @@
         </div>
       </div>
 
-      <div class="ids2-docs-example-block">
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-accordion</span><br/>
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-accordion-item</span>
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-accordion-item-open</span>
-        <div class="ids2-docs-example-code">
-          <div class="ids2-docs-example"></div>
-          <div class="ids2-docs-example-code-highlight">
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-accordion</span><br/>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-accordion-item</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-accordion-item-open</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
-              <div class="ids2-accordion">
-                <div class="ids2-accordion-item ids2-accordion-item-open">
-                  <div class="ids2-accordion-head">
-                    <div class="ids2-accordion-summary">
-                      <div class="ids2-accordion-title">
-                        <h3 class="ids2-h3-tight">
-                          타이틀 <span class="ids2-badge-count">99</span>
+              <div class="ids-accordion">
+                <div class="ids-accordion-item ids-accordion-item-open">
+                  <div class="ids-accordion-head">
+                    <div class="ids-accordion-summary">
+                      <div class="ids-accordion-title">
+                        <h3 class="ids-h3-tight">
+                          타이틀 <span class="ids-badge-count">99</span>
                         </h3>
-                        <div class="ids2-total">
-                          <span class="ids2-total-label">합계</span>
-                          <span class="ids2-badge-count">
+                        <div class="ids-total">
+                          <span class="ids-total-label">합계</span>
+                          <span class="ids-badge-count">
                             1,000,000,000원
                           </span>
                         </div>
                       </div>
-                      <div class="ids2-body5 ids2-text-gray-600">
+                      <div class="ids-body5 ids-text-gray-600">
                         서브 텍스트
                       </div>
                     </div>
-                    <div class="ids2-accordion-arrow">
-                        <i class="ids2-icon ids2-icon-expand">Expand</i>
+                    <div class="ids-accordion-arrow">
+                        <i class="ids-icon ids-icon-expand">Expand</i>
                     </div>
                   </div>
-                  <div class="ids2-accordion-details">
-                    <div class="ids2-pt-2 ids2-body4">
-                      <ul class="ids2-sub-list">
+                  <div class="ids-accordion-details">
+                    <div class="ids-pt-2 ids-body4">
+                      <ul class="ids-sub-list">
                         <li>텍스트를 노출합니다.</li>
                         <li>텍스트를 노출합니다.</li>
                         <li>텍스트
                           <span
-                            class="ids2-font-regular ids2-text-gray-600"
+                            class="ids-font-regular ids-text-gray-600"
                           >
                               | 부가설명을 노출합니다.
                             </span>
@@ -205,64 +205,64 @@
     </div>
   </section>
 
-  <section class="ids2-docs-section">
-    <h2 class="ids2-docs-section-title">리스트형 </h2>
-    <h4 class="ids2-docs-section-label">Examples</h4>
-    <div class="ids2-docs-examples">
-      <div class="ids2-docs-example-block">
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-accordion</span>
-        <div class="ids2-docs-example-code">
-          <div class="ids2-docs-example"></div>
-          <div class="ids2-docs-example-code-highlight">
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">리스트형 </h2>
+    <h4 class="ids-docs-section-label">Examples</h4>
+    <div class="ids-docs-examples">
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-accordion</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
-              <div class="ids2-accordion">
-                <div class="ids2-accordion-item">
-                  <div class="ids2-accordion-head ids2-px-0">
-                    <div class="ids2-accordion-summary">
-                      <div class="ids2-title">
-                        <h3 class="ids2-h3">타이틀</h3>
+              <div class="ids-accordion">
+                <div class="ids-accordion-item">
+                  <div class="ids-accordion-head ids-px-0">
+                    <div class="ids-accordion-summary">
+                      <div class="ids-title">
+                        <h3 class="ids-h3">타이틀</h3>
                       </div>
-                      <div class="ids2-body4 ids2-text-gray-500">
+                      <div class="ids-body4 ids-text-gray-500">
                         서브 텍스트
                       </div>
                     </div>
-                    <div class="ids2-accordion-arrow">
-                      <i class="ids2-icon ids2-icon-expand">Expand</i>
+                    <div class="ids-accordion-arrow">
+                      <i class="ids-icon ids-icon-expand">Expand</i>
                     </div>
                   </div>
-                  <div class="ids2-divider ids2-my-0"></div>
+                  <div class="ids-divider ids-my-0"></div>
                 </div>
-                <div class="ids2-accordion-item">
-                  <div class="ids2-accordion-head ids2-px-0">
-                    <div class="ids2-accordion-summary">
-                      <div class="ids2-title">
-                        <h3 class="ids2-h3">타이틀</h3>
+                <div class="ids-accordion-item">
+                  <div class="ids-accordion-head ids-px-0">
+                    <div class="ids-accordion-summary">
+                      <div class="ids-title">
+                        <h3 class="ids-h3">타이틀</h3>
                       </div>
-                      <div class="ids2-body4 ids2-text-gray-500">
+                      <div class="ids-body4 ids-text-gray-500">
                         서브 텍스트
                       </div>
                     </div>
-                    <div class="ids2-accordion-arrow">
-                      <i class="ids2-icon ids2-icon-expand">Expand</i>
+                    <div class="ids-accordion-arrow">
+                      <i class="ids-icon ids-icon-expand">Expand</i>
                     </div>
                   </div>
-                  <div class="ids2-divider ids2-my-0"></div>
+                  <div class="ids-divider ids-my-0"></div>
                 </div>
-                <div class="ids2-accordion-item">
-                  <div class="ids2-accordion-head ids2-px-0">
-                    <div class="ids2-accordion-summary">
-                      <div class="ids2-title">
-                        <h3 class="ids2-h3">타이틀</h3>
+                <div class="ids-accordion-item">
+                  <div class="ids-accordion-head ids-px-0">
+                    <div class="ids-accordion-summary">
+                      <div class="ids-title">
+                        <h3 class="ids-h3">타이틀</h3>
                       </div>
-                      <div class="ids2-body4 ids2-text-gray-500">
+                      <div class="ids-body4 ids-text-gray-500">
                         서브 텍스트
                       </div>
                     </div>
-                    <div class="ids2-accordion-arrow">
-                      <i class="ids2-icon ids2-icon-expand">Expand</i>
+                    <div class="ids-accordion-arrow">
+                      <i class="ids-icon ids-icon-expand">Expand</i>
                     </div>
                   </div>
-                  <div class="ids2-divider ids2-my-0"></div>
+                  <div class="ids-divider ids-my-0"></div>
                 </div>
               </div>
             </script>
@@ -270,36 +270,36 @@
         </div>
       </div>
 
-      <div class="ids2-docs-example-block">
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-accordion</span><br/>
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-accordion-item</span>
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-accordion-item-open</span>
-        <div class="ids2-docs-example-code">
-          <div class="ids2-docs-example"></div>
-          <div class="ids2-docs-example-code-highlight">
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-accordion</span><br/>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-accordion-item</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-accordion-item-open</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
-              <div class="ids2-accordion">
-                <div class="ids2-accordion-item ids2-accordion-item-open">
-                  <div class="ids2-accordion-head ids2-px-0">
-                    <div class="ids2-accordion-summary">
-                      <div class="ids2-title">
-                        <h3 class="ids2-h3">타이틀</h3>
+              <div class="ids-accordion">
+                <div class="ids-accordion-item ids-accordion-item-open">
+                  <div class="ids-accordion-head ids-px-0">
+                    <div class="ids-accordion-summary">
+                      <div class="ids-title">
+                        <h3 class="ids-h3">타이틀</h3>
                       </div>
-                      <div class="ids2-body4 ids2-text-gray-500">
+                      <div class="ids-body4 ids-text-gray-500">
                         서브 텍스트
                       </div>
                     </div>
-                    <div class="ids2-accordion-arrow">
-                      <i class="ids2-icon ids2-icon-expand">Expand</i>
+                    <div class="ids-accordion-arrow">
+                      <i class="ids-icon ids-icon-expand">Expand</i>
                     </div>
                   </div>
-                  <div class="ids2-divider ids2-my-0"></div>
-                  <div class="ids2-accordion-details">
-                    <div class="ids2-pt-2 ids2-body2">
+                  <div class="ids-divider ids-my-0"></div>
+                  <div class="ids-accordion-details">
+                    <div class="ids-pt-2 ids-body2">
                       상세 내용을 노출합니다.
-                      <div class="ids2-sub-content">
-                        <div class="ids2-mb-1">
-                          <span class="ids2-label ids2-label-line">
+                      <div class="ids-sub-content">
+                        <div class="ids-mb-1">
+                          <span class="ids-label ids-label-line">
                             Label
                           </span>
                         </div>
@@ -309,37 +309,37 @@
                     </div>
                   </div>
                 </div>
-                <div class="ids2-accordion-item">
-                  <div class="ids2-accordion-head ids2-px-0">
-                    <div class="ids2-accordion-summary">
-                      <div class="ids2-title">
-                        <h3 class="ids2-h3">타이틀</h3>
+                <div class="ids-accordion-item">
+                  <div class="ids-accordion-head ids-px-0">
+                    <div class="ids-accordion-summary">
+                      <div class="ids-title">
+                        <h3 class="ids-h3">타이틀</h3>
                       </div>
-                      <div class="ids2-body4 ids2-text-gray-500">
+                      <div class="ids-body4 ids-text-gray-500">
                         서브 텍스트
                       </div>
                     </div>
-                    <div class="ids2-accordion-arrow">
-                      <i class="ids2-icon ids2-icon-expand">Expand</i>
+                    <div class="ids-accordion-arrow">
+                      <i class="ids-icon ids-icon-expand">Expand</i>
                     </div>
                   </div>
-                  <div class="ids2-divider ids2-my-0"></div>
+                  <div class="ids-divider ids-my-0"></div>
                 </div>
-                <div class="ids2-accordion-item">
-                  <div class="ids2-accordion-head ids2-px-0">
-                    <div class="ids2-accordion-summary">
-                      <div class="ids2-title">
-                        <h3 class="ids2-h3">타이틀</h3>
+                <div class="ids-accordion-item">
+                  <div class="ids-accordion-head ids-px-0">
+                    <div class="ids-accordion-summary">
+                      <div class="ids-title">
+                        <h3 class="ids-h3">타이틀</h3>
                       </div>
-                      <div class="ids2-body4 ids2-text-gray-500">
+                      <div class="ids-body4 ids-text-gray-500">
                         서브 텍스트
                       </div>
                     </div>
-                    <div class="ids2-accordion-arrow">
-                      <i class="ids2-icon ids2-icon-expand">Expand</i>
+                    <div class="ids-accordion-arrow">
+                      <i class="ids-icon ids-icon-expand">Expand</i>
                     </div>
                   </div>
-                  <div class="ids2-divider ids2-my-0"></div>
+                  <div class="ids-divider ids-my-0"></div>
                 </div>
               </div>
             </script>
@@ -350,33 +350,33 @@
 
   </section>
 
-  <section class="ids2-docs-section">
-    <h2 class="ids2-docs-section-title">조합형</h2>
-    <h4 class="ids2-docs-section-label">Examples</h4>
-    <div class="ids2-docs-examples">
-      <div class="ids2-docs-example-block">
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-accordion</span>
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-accordion-card</span>
-        <div class="ids2-docs-example-code">
-          <div class="ids2-docs-example"></div>
-          <div class="ids2-docs-example-code-highlight">
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">조합형</h2>
+    <h4 class="ids-docs-section-label">Examples</h4>
+    <div class="ids-docs-examples">
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-accordion</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-accordion-card</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
-              <div class="ids2-accordion ids2-accordion-card">
-                <div class="ids2-accordion-item">
-                  <div class="ids2-accordion-head">
-                    <div class="ids2-accordion-summary">
-                      <div class="ids2-title">
-                        <div class="ids2-checkbox">
+              <div class="ids-accordion ids-accordion-card">
+                <div class="ids-accordion-item">
+                  <div class="ids-accordion-head">
+                    <div class="ids-accordion-summary">
+                      <div class="ids-title">
+                        <div class="ids-checkbox">
                           <label class="">
-                            <input type="checkbox" name="checkbox" class="ids2-checkbox-all">
-                            <span class="ids2-input-label-text">타이틀</span>
-                            <span class="ids2-label-required">필수</span>
+                            <input type="checkbox" name="checkbox" class="ids-checkbox-all">
+                            <span class="ids-input-label-text">타이틀</span>
+                            <span class="ids-label-required">필수</span>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="ids2-accordion-arrow">
-                      <i class="ids2-icon ids2-icon-expand">Expand</i>
+                    <div class="ids-accordion-arrow">
+                      <i class="ids-icon ids-icon-expand">Expand</i>
                     </div>
                   </div>
                 </div>
@@ -386,86 +386,86 @@
         </div>
       </div>
 
-      <div class="ids2-docs-example-block">
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-accordion</span>
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-accordion-card</span><br/>
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-accordion-item</span>
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-accordion-item-open</span>
-        <div class="ids2-docs-example-code">
-          <div class="ids2-docs-example"></div>
-          <div class="ids2-docs-example-code-highlight">
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-accordion</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-accordion-card</span><br/>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-accordion-item</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-accordion-item-open</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
-              <div class="ids2-accordion ids2-accordion-card">
-                <div class="ids2-accordion-item ids2-accordion-item-open">
-                  <div class="ids2-accordion-head">
-                    <div class="ids2-accordion-summary">
-                      <div class="ids2-title">
-                        <div class="ids2-checkbox">
+              <div class="ids-accordion ids-accordion-card">
+                <div class="ids-accordion-item ids-accordion-item-open">
+                  <div class="ids-accordion-head">
+                    <div class="ids-accordion-summary">
+                      <div class="ids-title">
+                        <div class="ids-checkbox">
                           <label class="">
-                            <input type="checkbox" name="checkbox" class="ids2-checkbox-all">
-                            <span class="ids2-input-label-text">타이틀</span>
-                            <span class="ids2-label-required">필수</span>
+                            <input type="checkbox" name="checkbox" class="ids-checkbox-all">
+                            <span class="ids-input-label-text">타이틀</span>
+                            <span class="ids-label-required">필수</span>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="ids2-accordion-arrow">
-                        <i class="ids2-icon ids2-icon-expand">Expand</i>
+                    <div class="ids-accordion-arrow">
+                        <i class="ids-icon ids-icon-expand">Expand</i>
                     </div>
                   </div>
 
-                  <div class="ids2-accordion-details">
-                    <hr class="ids2-divider" />
-                    <div class="ids2-checkbox-list">
-                      <div class="ids2-checkbox-list-item">
-                        <div class="ids2-checkbox ids2-checkbox-sm">
+                  <div class="ids-accordion-details">
+                    <hr class="ids-divider" />
+                    <div class="ids-checkbox-list">
+                      <div class="ids-checkbox-list-item">
+                        <div class="ids-checkbox ids-checkbox-sm">
                           <label>
                             <input type="checkbox" name="checkbox">
-                            <span class="ids2-input-label-text">상세내용을 노출합니다</span>
-                            <span class="ids2-label-required">필수</span>
+                            <span class="ids-input-label-text">상세내용을 노출합니다</span>
+                            <span class="ids-label-required">필수</span>
                           </label>
                         </div>
-                        <a href="#" class="ids2-anchor ids2-anchor-sm ids2-underline">보기</a>
+                        <a href="#" class="ids-anchor ids-anchor-sm ids-underline">보기</a>
                       </div>
-                      <div class="ids2-checkbox-list-item">
-                        <div class="ids2-checkbox ids2-checkbox-sm">
+                      <div class="ids-checkbox-list-item">
+                        <div class="ids-checkbox ids-checkbox-sm">
                           <label>
                             <input type="checkbox" name="checkbox">
-                            <span class="ids2-input-label-text">상세내용을 노출합니다</span>
-                            <span class="ids2-label-required">필수</span>
+                            <span class="ids-input-label-text">상세내용을 노출합니다</span>
+                            <span class="ids-label-required">필수</span>
                           </label>
                         </div>
-                        <a href="#" class="ids2-anchor ids2-anchor-sm ids2-underline">보기</a>
+                        <a href="#" class="ids-anchor ids-anchor-sm ids-underline">보기</a>
                       </div>
-                      <div class="ids2-checkbox-list-item">
-                        <div class="ids2-checkbox ids2-checkbox-sm">
+                      <div class="ids-checkbox-list-item">
+                        <div class="ids-checkbox ids-checkbox-sm">
                           <label>
                             <input type="checkbox" name="checkbox">
-                            <span class="ids2-input-label-text">상세내용을 노출합니다</span>
-                            <span class="ids2-label-required">필수</span>
+                            <span class="ids-input-label-text">상세내용을 노출합니다</span>
+                            <span class="ids-label-required">필수</span>
                           </label>
                         </div>
-                        <a href="#" class="ids2-anchor ids2-anchor-sm ids2-underline">보기</a>
+                        <a href="#" class="ids-anchor ids-anchor-sm ids-underline">보기</a>
                       </div>
-                      <div class="ids2-checkbox-list-item">
-                        <div class="ids2-checkbox ids2-checkbox-sm">
+                      <div class="ids-checkbox-list-item">
+                        <div class="ids-checkbox ids-checkbox-sm">
                           <label>
                             <input type="checkbox" name="checkbox">
-                            <span class="ids2-input-label-text">상세내용을 노출합니다</span>
-                            <span class="ids2-label-required">필수</span>
+                            <span class="ids-input-label-text">상세내용을 노출합니다</span>
+                            <span class="ids-label-required">필수</span>
                           </label>
                         </div>
-                        <a href="#" class="ids2-anchor ids2-anchor-sm ids2-underline">보기</a>
+                        <a href="#" class="ids-anchor ids-anchor-sm ids-underline">보기</a>
                       </div>
-                      <div class="ids2-checkbox-list-item">
-                        <div class="ids2-checkbox ids2-checkbox-sm">
+                      <div class="ids-checkbox-list-item">
+                        <div class="ids-checkbox ids-checkbox-sm">
                           <label>
                             <input type="checkbox" name="checkbox">
-                            <span class="ids2-input-label-text">상세내용을 노출합니다</span>
-                            <span class="ids2-label-required">필수</span>
+                            <span class="ids-input-label-text">상세내용을 노출합니다</span>
+                            <span class="ids-label-required">필수</span>
                           </label>
                         </div>
-                        <a href="#" class="ids2-anchor ids2-anchor-sm ids2-underline">보기</a>
+                        <a href="#" class="ids-anchor ids-anchor-sm ids-underline">보기</a>
                       </div>
                     </div>
                   </div>
@@ -479,31 +479,31 @@
 
   </section>
 
-  <section class="ids2-docs-section">
-    <h2 class="ids2-docs-section-title">도움말형</h2>
-    <h4 class="ids2-docs-section-label">Examples</h4>
-    <div class="ids2-docs-examples">
-      <div class="ids2-docs-example-block">
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-accordion</span>
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-accordion-info</span>
-        <div class="ids2-docs-example-code">
-          <div class="ids2-docs-example"></div>
-          <div class="ids2-docs-example-code-highlight">
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">도움말형</h2>
+    <h4 class="ids-docs-section-label">Examples</h4>
+    <div class="ids-docs-examples">
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-accordion</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-accordion-info</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
-              <div class="ids2-accordion ids2-accordion-info">
-                <div class="ids2-accordion-item">
-                  <div class="ids2-accordion-head">
-                    <div class="ids2-accordion-summary">
-                      <i class="ids2-icon ids2-icon-info">Info</i>
+              <div class="ids-accordion ids-accordion-info">
+                <div class="ids-accordion-item">
+                  <div class="ids-accordion-head">
+                    <div class="ids-accordion-summary">
+                      <i class="ids-icon ids-icon-info">Info</i>
                         <span
-                          class="ids2-body2-tight ids2-semibold
-                                   ids2-text-middle"
+                          class="ids-body2-tight ids-semibold
+                                   ids-text-middle"
                         >
                         유의사항을 확인해 주세요
                       </span>
                     </div>
-                    <div class="ids2-accordion-arrow">
-                      <i class="ids2-icon ids2-icon-expand">Expand</i>
+                    <div class="ids-accordion-arrow">
+                      <i class="ids-icon ids-icon-expand">Expand</i>
                     </div>
                   </div>
                 </div>
@@ -513,35 +513,35 @@
         </div>
       </div>
 
-      <div class="ids2-docs-example-block">
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-accordion</span>
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-accordion-info</span><br/>
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-accordion-item</span>
-        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-accordion-item-open</span>
-        <div class="ids2-docs-example-code">
-          <div class="ids2-docs-example"></div>
-          <div class="ids2-docs-example-code-highlight">
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-accordion</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-accordion-info</span><br/>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-accordion-item</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-accordion-item-open</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
-              <div class="ids2-accordion ids2-accordion-info">
+              <div class="ids-accordion ids-accordion-info">
                 <div
-                    class="ids2-accordion-item ids2-accordion-item-open"
+                    class="ids-accordion-item ids-accordion-item-open"
                 >
-                  <div class="ids2-accordion-head ids2-py-2-half">
-                    <div class="ids2-accordion-summary">
-                      <i class="ids2-icon ids2-icon-info">Info</i>
+                  <div class="ids-accordion-head ids-py-2-half">
+                    <div class="ids-accordion-summary">
+                      <i class="ids-icon ids-icon-info">Info</i>
                       <span
-                        class="ids2-body2-tight ids2-semibold
-                                 ids2-text-middle"
+                        class="ids-body2-tight ids-semibold
+                                 ids-text-middle"
                       >
                         유의사항을 확인해 주세요
                       </span>
                     </div>
-                    <div class="ids2-accordion-arrow">
-                      <i class="ids2-icon ids2-icon-expand">Expand</i>
+                    <div class="ids-accordion-arrow">
+                      <i class="ids-icon ids-icon-expand">Expand</i>
                     </div>
                   </div>
-                  <div class="ids2-accordion-details ids2-pt-half">
-                    <ul class="ids2-info-list">
+                  <div class="ids-accordion-details ids-pt-half">
+                    <ul class="ids-info-list">
                       <li>텍스트를 노출합니다.</li>
                       <li>텍스트를 노출합니다.</li>
                       <li>텍스트를 노출합니다.</li>

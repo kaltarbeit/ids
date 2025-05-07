@@ -7,30 +7,30 @@ export const createAccordion = () => {
     /** Examples **/
     function toggleAccordion(e) {
         const item = e.currentTarget.parentElement;
-        const details = item.querySelector('.ids2-accordion-details');
+        const details = item.querySelector('.ids-accordion-details');
 
         if(details) {
-            const opened = item.classList.contains('ids2-accordion-item-open');
+            const opened = item.classList.contains('ids-accordion-item-open');
 
             if(opened) {
-                item.classList.remove('ids2-accordion-item-open');
+                item.classList.remove('ids-accordion-item-open');
                 details.style.height = 0;
             } else {
-                item.classList.add('ids2-accordion-item-open');
+                item.classList.add('ids-accordion-item-open');
                 details.style.height = details.scrollHeight+'px';
             }
         }
     }
 
     function initAccordion(wrapper) {
-        const items = wrapper.querySelectorAll('.ids2-accordion-item');
+        const items = wrapper.querySelectorAll('.ids-accordion-item');
 
         items.forEach(item => {
             item.firstElementChild.addEventListener('click', toggleAccordion);
         });
     }
 
-    const checkboxAlls = wrapper.querySelectorAll('.ids2-checkbox-all');
+    const checkboxAlls = wrapper.querySelectorAll('.ids-checkbox-all');
 
     checkboxAlls.forEach((checkboxAll) => {
         const checkboxes = wrapper.querySelectorAll(`input[name="${checkboxAll.getAttribute('name')}"]`);

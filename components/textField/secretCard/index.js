@@ -5,7 +5,7 @@ export const createTextField = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const inputs = wrapper.querySelectorAll('.ids2-secret-card-input');
+    const inputs = wrapper.querySelectorAll('.ids-secret-card-input');
 
     inputs.forEach((input, index) => {
         input.addEventListener('input', function (e) {

@@ -1,4 +1,4 @@
-.ids2-divider {
+.ids-divider {
     display: block;
     width: 100%;
     background-color: #F3F4F7;
@@ -8,14 +8,14 @@
     margin: 20px 0;
 }
 
-.ids2-divider.ids2-divider-middle {
+.ids-divider.ids-divider-middle {
     height: 8px;
 }
 
-.ids2-divider.ids2-divider-thick {
+.ids-divider.ids-divider-thick {
     height: 12px;
 }
 
-.ids2-divider.ids2-divider-gray-100 {
-    background-color: var(--ids2-color-gray-100);
+.ids-divider.ids-divider-gray-100 {
+    background-color: var(--ids-color-gray-100);
 }

@@ -1,11 +1,11 @@
-.ids2-snackbar-example {
+.ids-snackbar-example {
     display: flex;
     flex-direction: column;
     gap: 48px;
     height: 200px;
     position: relative;
 }
-.ids2-snackbar-examples-open-button {
+.ids-snackbar-examples-open-button {
     font-size: 18px;
     text-decoration: underline;
     font-weight: 700;
@@ -13,7 +13,7 @@
     cursor: pointer;
 }
 
-.ids2-snackbar {
+.ids-snackbar {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -30,28 +30,28 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.ids2-snackbar-hide {
+.ids-snackbar-hide {
     display: none;
 }
 
-.ids2-snackbar-content {
+.ids-snackbar-content {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
-.ids2-snackbar-title {
+.ids-snackbar-title {
     font-size: 14px;
     font-weight: 600;
     line-height: 18px;
     display: flex;
 }
 
-.ids2-snackbar-title .icon {
+.ids-snackbar-title .icon {
     margin-right: 8px;
 }
 
-.ids2-snackbar-description {
+.ids-snackbar-description {
     font-size: 12px;
     line-height: 16px;
     color: #C5C8D3;
@@ -59,7 +59,7 @@
     vertical-align: middle;
 }
 
-.ids2-snackbar-action {
+.ids-snackbar-action {
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
@@ -67,18 +67,18 @@
     margin-top: 16px;
     cursor: pointer;
 }
-.ids2-snackbar-close {
+.ids-snackbar-close {
     font-size: 18px;
     cursor: pointer;
     margin-left: 16px;
 }
 
-.ids2-snackbar-function {
+.ids-snackbar-function {
     display: flex;
     align-items: flex-end;
     height: 100%;
 }
 
-.ids2-snackbar.ids2-snackbar-without-close {
+.ids-snackbar.ids-snackbar-without-close {
     align-items: flex-end;
 }

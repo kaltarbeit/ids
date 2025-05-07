@@ -5,9 +5,9 @@ export const createChip = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const chips = wrapper.querySelectorAll('.ids2-chip-remove');
-    const chipGroup = wrapper.querySelector('.ids2-chip-group');
-    const reopenButton = wrapper.querySelector('.ids2-chip-examples-open-button');
+    const chips = wrapper.querySelectorAll('.ids-chip-remove');
+    const chipGroup = wrapper.querySelector('.ids-chip-group');
+    const reopenButton = wrapper.querySelector('.ids-chip-examples-open-button');
 
 
     function addChipsEvent(targetChips) {
@@ -28,21 +28,21 @@ export const createChip = () => {
         reopenButton.style.display = 'none';
         chipGroup.insertAdjacentHTML(
             'afterbegin',
-            '<div class="ids2-chip ids2-chip-tag">\n' +
-            '            <div class="ids2-chip-text">#레이블1</div>\n' +
-            '            <div class="ids2-chip-remove">Remove</div>\n' +
+            '<div class="ids-chip ids-chip-tag">\n' +
+            '            <div class="ids-chip-text">#레이블1</div>\n' +
+            '            <div class="ids-chip-remove">Remove</div>\n' +
             '        </div>\n' +
-            '        <div class="ids2-chip ids2-chip-tag">\n' +
-            '            <div class="ids2-chip-text">#레이블2</div>\n' +
-            '            <div class="ids2-chip-remove">Remove</div>\n' +
+            '        <div class="ids-chip ids-chip-tag">\n' +
+            '            <div class="ids-chip-text">#레이블2</div>\n' +
+            '            <div class="ids-chip-remove">Remove</div>\n' +
             '        </div>\n' +
-            '        <div class="ids2-chip ids2-chip-tag">\n' +
-            '            <div class="ids2-chip-text">#레이블3</div>\n' +
-            '            <div class="ids2-chip-remove">Remove</div>\n' +
+            '        <div class="ids-chip ids-chip-tag">\n' +
+            '            <div class="ids-chip-text">#레이블3</div>\n' +
+            '            <div class="ids-chip-remove">Remove</div>\n' +
             '        </div>');
 
         setTimeout(() => {
-            addChipsEvent(chipGroup.querySelectorAll('.ids2-chip-remove'));
+            addChipsEvent(chipGroup.querySelectorAll('.ids-chip-remove'));
         });
     })
 

@@ -4,15 +4,15 @@ export const createButton = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const closeButtons = wrapper.querySelectorAll('.ids2-banner-close');
-    const reopenButtons = wrapper.querySelectorAll('.ids2-banner-examples-open-button');
-    const banners = wrapper.querySelectorAll('.ids2-banner');
+    const closeButtons = wrapper.querySelectorAll('.ids-banner-close');
+    const reopenButtons = wrapper.querySelectorAll('.ids-banner-examples-open-button');
+    const banners = wrapper.querySelectorAll('.ids-banner');
 
     for (let i = 0; i < closeButtons.length; i++) {
         const closeButton = closeButtons[i];
         const banner = banners[i];
         closeButton.addEventListener('click', () => {
-            banner.classList.add('ids2-banner-hide');
+            banner.classList.add('ids-banner-hide');
         });
     }
 
@@ -23,12 +23,12 @@ export const createButton = () => {
             reopenButton.style.display = 'none';
             banner.style.display = 'flex';
             setTimeout(() => {
-                banner.classList.remove('ids2-banner-hide');
+                banner.classList.remove('ids-banner-hide');
             });
         });
 
         banner.addEventListener('transitionend', () => {
-            if (banner.classList.contains('ids2-banner-hide')) {
+            if (banner.classList.contains('ids-banner-hide')) {
                 banner.style.display = 'none';
                 reopenButton.style.display = 'block';
             }

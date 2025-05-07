@@ -1,46 +1,46 @@
 /**
     Button Primary Default
  */
-.ids2-button-tertiary {
+.ids-button-tertiary {
     height: 40px;
 
-    background-color: var(--ids2-color-white);
-    border: var(--ids2-border-1-500);
-    border-radius: var(--ids2-radius-full);
-    padding: 0 var(--ids2-spacing-2-half);
+    background-color: var(--ids-color-white);
+    border: var(--ids-border-1-500);
+    border-radius: var(--ids-radius-full);
+    padding: 0 var(--ids-spacing-2-half);
 
-    font-size: var(--ids2-size-body2);
-    font-weight: var(--ids2-font-medium);
-    line-height: var(--ids2-line-body2);
-    color: var(--ids2-color-gray-800);
-    gap: var(--ids2-spacing-half);
+    font-size: var(--ids-size-body2);
+    font-weight: var(--ids-font-medium);
+    line-height: var(--ids-line-body2);
+    color: var(--ids-color-gray-800);
+    gap: var(--ids-spacing-half);
 }
 
-.ids2-button-tertiary:active {
-    background-color: var(--ids2-color-gray-150);
-    border-color: var(--ids2-color-gray-200);
+.ids-button-tertiary:active {
+    background-color: var(--ids-color-gray-150);
+    border-color: var(--ids-color-gray-200);
 }
 
-.ids2-button-tertiary:disabled {
-    background-color: var(--ids2-color-white);
-    border-color: var(--ids2-color-gray-200);
-    color: var(--ids2-color-gray-500);
+.ids-button-tertiary:disabled {
+    background-color: var(--ids-color-white);
+    border-color: var(--ids-color-gray-200);
+    color: var(--ids-color-gray-500);
 }
 
-.ids2-button.ids2-button-tertiary.ids2-button-sm {
+.ids-button.ids-button-tertiary.ids-button-sm {
     height: 32px;
-    font-size: var(--ids2-size-body4);
-    padding: 0 var(--ids2-spacing-1-half);
-    gap: var(--ids2-spacing-half);
+    font-size: var(--ids-size-body4);
+    padding: 0 var(--ids-spacing-1-half);
+    gap: var(--ids-spacing-half);
 }
 
-.ids2-button.ids2-button-tertiary.ids2-button-xs {
+.ids-button.ids-button-tertiary.ids-button-xs {
     height: 24px;
-    font-size: var(--ids2-size-caption);
-    padding: 0 var(--ids2-spacing-1);
-    gap: var(--ids2-spacing-quarter);
+    font-size: var(--ids-size-caption);
+    padding: 0 var(--ids-spacing-1);
+    gap: var(--ids-spacing-quarter);
 }
 
-.ids2-button.ids2-button-tertiary.ids2-button-square {
-    border-radius: var(--ids2-radius-6);
+.ids-button.ids-button-tertiary.ids-button-square {
+    border-radius: var(--ids-radius-6);
 }

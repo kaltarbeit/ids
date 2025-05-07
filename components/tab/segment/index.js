@@ -5,7 +5,7 @@ export const createTab = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const segmentItems = wrapper.querySelectorAll('.ids2-tab-segment-item');
+    const segmentItems = wrapper.querySelectorAll('.ids-tab-segment-item');
 
     segmentItems.forEach(item => {
         item.addEventListener('click', function () {

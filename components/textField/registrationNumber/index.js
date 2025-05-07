@@ -4,7 +4,7 @@ import html from '!!raw-loader!./index.html';
 export const createTextField = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
-    const textFieldInputs = wrapper.querySelectorAll('.ids2-text-field input');
+    const textFieldInputs = wrapper.querySelectorAll('.ids-text-field input');
 
     textFieldInputs[0].addEventListener('input', (e) => {
         const formattedValue = e.target.value.replace(/\D/g, "");

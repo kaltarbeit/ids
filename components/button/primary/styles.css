@@ -1,36 +1,36 @@
 /**
     Button Primary Default
  */
-.ids2-button.ids2-button-primary {
+.ids-button.ids-button-primary {
     min-width: 100px;
     width: 100%;
     box-sizing: border-box;
     height: 56px;
 
-    padding: var(--ids2-spacing-2);
-    gap: var(--ids2-spacing-1);
-    border-radius: var(--ids2-radius-12);
-    font-size: var(--ids2-size-h3);
-    line-height: var(--ids2-line-h3-tight);
-    font-weight: var(--ids2-font-bold);
+    padding: var(--ids-spacing-2);
+    gap: var(--ids-spacing-1);
+    border-radius: var(--ids-radius-12);
+    font-size: var(--ids-size-h3);
+    line-height: var(--ids-line-h3-tight);
+    font-weight: var(--ids-font-bold);
 
-    background-color: var(--ids2-color-primary);
-    border: var(--ids2-color-primary);
-    color: var(--ids2-color-white);
+    background-color: var(--ids-color-primary);
+    border: var(--ids-color-primary);
+    color: var(--ids-color-white);
 }
 
-.ids2-button.ids2-button-primary:active,
-.ids2-button.ids2-button-primary-active {
-    background-color: var(--ids2-color-blue-900);
-    border-color: var(--ids2-color-blue-900);
+.ids-button.ids-button-primary:active,
+.ids-button.ids-button-primary-active {
+    background-color: var(--ids-color-blue-900);
+    border-color: var(--ids-color-blue-900);
 }
 
-.ids2-button.ids2-button-primary:disabled {
-    background-color: var(--ids2-color-gray-150);
-    border-color: var(--ids2-color-gray-150);
-    color: var(--ids2-color-gray-500);
+.ids-button.ids-button-primary:disabled {
+    background-color: var(--ids-color-gray-150);
+    border-color: var(--ids-color-gray-150);
+    color: var(--ids-color-gray-500);
 }
 
-.ids2-button.ids2-button-primary.ids2-button-fit-width {
+.ids-button.ids-button-primary.ids-button-fit-width {
     width: fit-content;
 }

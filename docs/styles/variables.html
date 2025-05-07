@@ -4,26 +4,345 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>IDS 2.0 Style Sheet Document</title>
-  <link rel="stylesheet" href="../../styles/ids2.css"/>
+  <link rel="stylesheet" href="../../styles/ids.css"/>
   <link rel="stylesheet" href="../css/doc.css"/>
   <link rel="stylesheet" href="../css/prism.css"/>
 </head>
 <body>
-<div class="ids2-docs">
+<div class="ids-docs">
 
-  <div class="ids2-docs-back">
-    <a href="../index.html" class="ids2-button ids2-button-text">
-      <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-left">Back</i>
+  <div class="ids-docs-back">
+    <a href="../index.html" class="ids-button ids-button-text">
+      <i class="ids-icon ids-icon-xxs ids-icon-arrow-left">Back</i>
       Index
     </a>
   </div>
 
-  <div class="ids2-docs-header">
-    <h1 class="ids2-title1 ids2-bold">Variables</h1>
+  <div class="ids-docs-header">
+    <h1 class="ids-title1 ids-bold">Variables</h1>
 
-    <p class="ids2-body1 ids2-my-24 ids2-text-gray-500">Style Sheet 에서 사용하는 공통 변수를 정의합니다.</p>
+    <p class="ids-body1 ids-my-24 ids-text-gray-500">Style Sheet 에서 사용하는 공통 변수를 정의합니다.</p>
   </div>
 
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Font Family</h2>
+
+    <p class="ids-body4 ids-mt-8 ids-text-gray-500">
+      IDS 에서 사용하는 기본 폰트를 제공합니다.
+    </p>
+
+    <div class="ids-docs-code-highlight ids-mt-2">
+      <script type="text/plain" class="language-css">
+        --ids-font-family: 'Pretendard', sans-serif, serif;
+      </script>
+    </div>
+  </section>
+
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Color</h2>
+
+    <p class="ids-body4 ids-mt-8 ids-text-gray-500">
+      IDS 에서 사용하는 컬러를 제공합니다. <br/>
+      <span class="ids-bold">Style Library > Typography > Font Color</span> 를 기반으로 작성되었습니다.
+    </p>
+
+    <h3 class="ids-docs-section-label">Default</h3>
+    <div class="ids-docs-code-highlight ids-mt-2">
+      <script type="text/plain" class="language-css">
+        --ids-color-primary: #4393F0;
+        --ids-color-point-blue: #2873E3;
+        --ids-color-blue-50: #F3F9FF;
+        --ids-color-blue-100: #ECF5FF;
+        --ids-color-blue-400: #C1E0FC;
+        --ids-color-blue-600: #4987FF;
+        --ids-color-blue-700: #235FD2;
+        --ids-color-blue-900: #234EAA;
+      </script>
+    </div>
+
+    <h3 class="ids-docs-section-label">Grayscale</h3>
+    <div class="ids-docs-code-highlight ids-mt-2">
+      <script type="text/plain" class="language-css">
+        --ids-color-white: #ffffff;
+        --ids-color-black: #000000;
+        --ids-color-gray-100: #E1E3EA;
+        --ids-color-gray-150: #D3D6DE;
+        --ids-color-gray-200: #C5C8D3;
+        --ids-color-gray-300: #B1B5C3;
+        --ids-color-gray-400: #979BAA;
+        --ids-color-gray-500: #737684;
+        --ids-color-gray-600: #5A5E6C;
+        --ids-color-gray-700: #454855;
+        --ids-color-gray-800: #30323B;
+        --ids-color-gray-900: #101116;
+      </script>
+    </div>
+
+    <h3 class="ids-docs-section-label">Semantic</h3>
+    <div class="ids-docs-code-highlight ids-mt-2">
+      <script type="text/plain" class="language-css">
+        --ids-color-positive: #1654D1;
+        --ids-color-negative: #E32502;
+        --ids-color-notice: #C85000;
+        --ids-color-info: #158463;
+      </script>
+    </div>
+  </section>
+
+
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Text Size</h2>
+
+    <p class="ids-body4 ids-mt-8 ids-text-gray-500">
+      IDS 에서 사용하는 Text Size 제공합니다. <br/>
+      <span class="ids-bold">Style Library > Typography > Font Size</span> 를 기반으로 작성되었습니다.
+    </p>
+
+    <h3 class="ids-docs-section-label">Title</h3>
+    <div class="ids-docs-code-highlight ids-mt-2">
+      <script type="text/plain" class="language-css">
+        --ids-size-title1: 32px;
+        --ids-size-title2: 28px;
+        --ids-size-title3: 26px;
+        --ids-size-title4: 24px;
+      </script>
+    </div>
+
+    <h3 class="ids-docs-section-label">Headline</h3>
+    <div class="ids-docs-code-highlight ids-mt-2">
+      <script type="text/plain" class="language-css">
+        --ids-size-h1: 22px;
+        --ids-size-h2: 20px;
+        --ids-size-h3: 18px;
+      </script>
+    </div>
+
+    <h3 class="ids-docs-section-label">Body</h3>
+    <div class="ids-docs-code-highlight ids-mt-2">
+      <script type="text/plain" class="language-css">
+        --ids-size-body1: 17px;
+        --ids-size-body2: 16px;
+        --ids-size-body3: 15px;
+        --ids-size-body4: 14px;
+        --ids-size-body5: 13px;
+      </script>
+    </div>
+
+    <h3 class="ids-docs-section-label">Caption</h3>
+    <div class="ids-docs-code-highlight ids-mt-2">
+      <script type="text/plain" class="language-css">
+        --ids-size-caption: 12px;
+        --ids-size-caption-sm: 10px;
+      </script>
+    </div>
+  </section>
+
+
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Line Height</h2>
+
+    <p class="ids-body4 ids-mt-2 ids-text-gray-500">
+      IDS 에서 사용하는 Text Line Height 제공합니다. <br/>
+      Text Size에 대응하는 높이를 사용합니다. <br/>
+      <span class="ids-bold">Style Library > Typography > Type Scale</span> 를 기반으로 작성되었습니다.<br/>
+    </p>
+
+    <p class="ids-body4 ids-mt-2 ids-text-gray-500">
+      기본값은 <span class="ids-bold">Style Library > Typography > Type Scale</span>의 각 스타일에 정의된  <span class="ids-bold">Line Height >Max</span>에 대응하며,
+      <span class="ids-bold">*-tight</span> 는 <span class="ids-bold">Line Height > Min</span> 에 대응합니다.
+    </p>
+
+    <h3 class="ids-docs-section-label">Title</h3>
+    <div class="ids-docs-code-highlight ids-mt-2">
+      <script type="text/plain" class="language-css">
+        --ids-line-title1: 42px;
+        --ids-line-title1-tight: 40px;
+
+        --ids-line-title2: 40px;
+        --ids-line-title2-tight: 36px;
+
+        --ids-line-title3: 30px;
+
+        --ids-line-title4: 34px;
+        --ids-line-title4-tight: 32px;
+      </script>
+    </div>
+
+    <h3 class="ids-docs-section-label">Headline</h3>
+    <div class="ids-docs-code-highlight ids-mt-2">
+      <script type="text/plain" class="language-css">
+        --ids-line-h1: 32px;
+        --ids-line-h1-tight: 30px;
+
+        --ids-line-h2: 28px;
+        --ids-line-h2-tight: 26px;
+
+        --ids-line-h3: 26px;
+        --ids-line-h3-tight: 24px;
+
+      </script>
+    </div>
+
+    <h3 class="ids-docs-section-label">Body</h3>
+    <div class="ids-docs-code-highlight ids-mt-2">
+      <script type="text/plain" class="language-css">
+        --ids-line-body1: 24px;
+
+        --ids-line-body2: 24px;
+        --ids-line-body2-tight: 22px;
+
+        --ids-line-body3: 16px;
+
+        --ids-line-body4: 20px;
+        --ids-line-body4-tight: 18px;
+
+        --ids-line-body5: 20px;
+        --ids-line-body5-tight: 18px;
+      </script>
+    </div>
+
+    <h3 class="ids-docs-section-label">Caption</h3>
+    <div class="ids-docs-code-highlight ids-mt-2">
+      <script type="text/plain" class="language-css">
+        --ids-line-caption: 16px;
+        --ids-line-caption-tight: 14px;
+
+        --ids-line-caption-sm: 12px;
+      </script>
+    </div>
+  </section>
+
+
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Font Weight</h2>
+
+    <p class="ids-body4 ids-mt-2 ids-text-gray-500">
+      IDS 에서 사용하는 Font Weight를 제공합니다. <br/>
+      <span class="ids-bold">Style Library > Typography > Font Weight</span> 를 기반으로 작성되었습니다.<br/>
+    </p>
+
+    <div class="ids-docs-code-highlight ids-mt-2">
+      <script type="text/plain" class="language-css">
+        --ids-font-bold: 700;
+        --ids-font-semibold: 600;
+        --ids-font-medium: 500;
+        --ids-font-regular: 400;
+      </script>
+    </div>
+  </section>
+
+
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Spacing</h2>
+
+    <p class="ids-body4 ids-mt-2 ids-text-gray-500">
+      IDS 에서 사용하는 Margin / Padding / Gap Size를 제공합니다. <br/>
+      <span class="ids-bold">Style Library > Layout > Spacing</span> 을 기반으로 작성되었습니다.<br/>
+    </p>
+
+    <p class="ids-body4 ids-mt-2 ids-text-gray-500">
+      <span class="ids-bold">8px</span> 배수를 기반으로 하며, <span class="ids-bold">*-half</span>를 이용해 <span class="ids-bold">+0.5(4px)</span> 표현이 가능합니다.<br/>
+      예) spacing-1 = 8px, spacing-2 = 16px, spacing-2-half = 20px, spacing-3 = 24px, ...
+    </p>
+
+    <div class="ids-docs-code-highlight ids-mt-2">
+      <script type="text/plain" class="language-css">
+        --ids-spacing: 8px;
+        --ids-spacing-half: calc(var(--ids-spacing)/2);  /* 4px */
+        --ids-spacing-quarter: calc(var(--ids-spacing)/4);  /* 2px */
+        --ids-spacing-1: var(--ids-spacing);  /* 8px */
+        --ids-spacing-1-half: calc(var(--ids-spacing)*1.5);  /* 12px */
+        --ids-spacing-2: calc(var(--ids-spacing)*2);  /* 16px */
+        --ids-spacing-2-half: calc(var(--ids-spacing)*2.5);  /* 20px */
+        --ids-spacing-3: calc(var(--ids-spacing)*3);  /* 24px */
+        --ids-spacing-4: calc(var(--ids-spacing)*4);  /* 32px */
+        --ids-spacing-5: calc(var(--ids-spacing)*5);  /* 40px */
+        --ids-spacing-6: calc(var(--ids-spacing)*6);  /* 48px */
+        --ids-spacing-7: calc(var(--ids-spacing)*7);  /* 56px */
+        --ids-spacing-8: calc(var(--ids-spacing)*8);  /* 64px */
+        --ids-spacing-9: calc(var(--ids-spacing)*9);  /* 72px */
+        --ids-spacing-10: calc(var(--ids-spacing)*10);  /* 80px */
+        --ids-spacing-none: 0;
+      </script>
+    </div>
+  </section>
+
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Border</h2>
+
+    <p class="ids-body4 ids-mt-2 ids-text-gray-500">
+      IDS 에서 사용하는 Border를 제공합니다. <br/>
+      <span class="ids-bold">Style Library > Object > Border</span> 를 기반으로 작성되었습니다.<br/>
+    </p>
+
+    <p class="ids-body4 ids-mt-2 ids-text-gray-500">
+      <span class="ids-bold">*-[px]</span>을 이용해 정의된 사이즈로 이용 가능합니다.<br/>
+      <span class="ids-bold">*-400, *-500</span>를 이용해 미리 정의된 border-color 사용이 가능합니다.<br/>
+      <span class="ids-bold">*-hide</span>를 이용해 border space 를 유지한 채로 border를 감출 수 있습니다.<br/>
+    </p>
+
+    <div class="ids-docs-code-highlight ids-mt-2">
+      <script type="text/plain" class="language-css">
+        --ids-border-1: 1px solid var(--ids-color-gray-100);
+        --ids-border-2: 2px solid var(--ids-color-gray-100);
+        --ids-border-3: 3px solid var(--ids-color-gray-100);
+
+        --ids-border-1-400: 1px solid var(--ids-color-gray-400);
+        --ids-border-2-400: 2px solid var(--ids-color-gray-400);
+        --ids-border-3-400: 3px solid var(--ids-color-gray-400);
+
+        --ids-border-1-500: 1px solid var(--ids-color-gray-500);
+        --ids-border-2-500: 2px solid var(--ids-color-gray-500);
+        --ids-border-3-500: 3px solid var(--ids-color-gray-500);
+
+        --ids-border-1-hide: 1px solid transparent;
+        --ids-border-2-hide: 2px solid transparent;
+        --ids-border-3-hide: 3px solid transparent;
+      </script>
+    </div>
+  </section>
+
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Border Radius</h2>
+
+    <p class="ids-body4 ids-mt-2 ids-text-gray-500">
+      IDS 에서 사용하는 Border Radius Size를 제공합니다. <br/>
+      <span class="ids-bold">Style Library > Object > Radius</span> 를 기반으로 작성되었습니다.<br/>
+    </p>
+
+    <p class="ids-body4 ids-mt-2 ids-text-gray-500">
+      <span class="ids-bold">*-[px]</span>을 이용해 정의된 사이즈로 이용 가능합니다.<br/>
+      <span class="ids-bold">*-full</span>을 이용해 반원 표현이 가능합니다.
+    </p>
+
+    <div class="ids-docs-code-highlight ids-mt-2">
+      <script type="text/plain" class="language-css">
+        --ids-radius-6: 6px;
+        --ids-radius-12: 12px;
+        --ids-radius-16: 16px;
+        --ids-radius-20: 20px;
+        --ids-radius-28: 28px;
+        --ids-radius-full: calc(infinity * 1px);
+        --ids-radius-none: 0;
+      </script>
+    </div>
+  </section>
+
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Border Radius</h2>
+
+    <p class="ids-body4 ids-mt-2 ids-text-gray-500">
+      IDS 에서 사용하는 Border Radius Size를 제공합니다. <br/>
+      <span class="ids-bold">Style Library > Elevation > Radius</span> 를 기반으로 작성되었습니다.<br/>
+    </p>
+
+    <div class="ids-docs-code-highlight ids-mt-2">
+      <script type="text/plain" class="language-css">
+        --ids-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.06);
+        --ids-shadow-blur: 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+      </script>
+    </div>
+  </section>
 </div>
 
 <script src="../scripts/docs.js"></script>

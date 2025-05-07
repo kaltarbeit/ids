@@ -2,41 +2,41 @@
 @import "./transaction/styles.css";
 @import "./list/styles.css";
 
-.ids2-account-card-examples {
+.ids-account-card-examples {
     min-width: 327px;
     display: flex;
     flex-direction: column;
     gap: 48px;
 }
-.ids2-account-card {
+.ids-account-card {
 
 }
 
-.ids2-account-card .ids2-account-card-total {
+.ids-account-card .ids-account-card-total {
     padding: 24px;
 }
 
-.ids2-account-card .ids2-account-card-buttons {
+.ids-account-card .ids-account-card-buttons {
     display: flex;
     gap: 8px;
     margin-top: 40px;
 }
 
-.ids2-account-card .ids2-account-card-title {
+.ids-account-card .ids-account-card-title {
     color: #5A5E6C;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.ids2-account-card .ids2-account-type {
+.ids-account-card .ids-account-type {
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
     color: #5A5E6C;
 }
 
-.ids2-account-card .ids2-account-name {
+.ids-account-card .ids-account-name {
     display: inline-block;
     position: relative;
     font-size: 14px;
@@ -44,24 +44,24 @@
     line-height: 20px;
 }
 
-.ids2-account-card .ids2-account-card-header .ids2-account-type + .ids2-account-name {
+.ids-account-card .ids-account-card-header .ids-account-type + .ids-account-name {
     margin-left: 8px;
     padding-left: 9px;
 }
 
-.ids2-account-card .ids2-account-card-detail-header .ids2-account-type + .ids2-account-name  {
+.ids-account-card .ids-account-card-detail-header .ids-account-type + .ids-account-name  {
     margin-left: 4px;
     padding-left: 5px;
 }
 
-.ids2-account-name-edit {
+.ids-account-name-edit {
     cursor: pointer;
     width: 18px;
     height: 18px;
     margin-left: 4px;
 }
 
-.ids2-account-card .ids2-account-type + .ids2-account-name:before {
+.ids-account-card .ids-account-type + .ids-account-name:before {
     content: ' ';
     position: absolute;
     top: 50%;
@@ -73,14 +73,14 @@
     z-index: 1;
 }
 
-.ids2-account-card .ids2-account-card-number {
+.ids-account-card .ids-account-card-number {
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
     color: #101116;
 }
 
-.ids2-account-card .ids2-account-card-detail {
+.ids-account-card .ids-account-card-detail {
     margin-top: 24px;
     display: flex;
     flex-direction: column;
@@ -89,7 +89,7 @@
     gap: 4px;
 }
 
-.ids2-account-card .ids2-account-card-detail-label {
+.ids-account-card .ids-account-card-detail-label {
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
@@ -97,7 +97,7 @@
     color: #5A5E6C;
 }
 
-.ids2-account-card .ids2-account-card-balance {
+.ids-account-card .ids-account-card-balance {
     display: flex;
     position: relative;
     flex-direction: row;
@@ -106,19 +106,19 @@
     justify-content: center;
 }
 
-.ids2-account-card .ids2-account-card-balance-number {
+.ids-account-card .ids-account-card-balance-number {
     font-size: 28px;
     font-weight: 700;
     line-height: 40px;
 }
 
-.ids2-account-card .ids2-account-card-balance-number-sm {
+.ids-account-card .ids-account-card-balance-number-sm {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
 }
 
-.ids2-account-card .ids2-account-card-note {
+.ids-account-card .ids-account-card-note {
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
@@ -126,7 +126,7 @@
     color: #5A5E6C;
 }
 
-.ids2-account-card .ids2-account-card-note .ids2-account-card-rate {
+.ids-account-card .ids-account-card-note .ids-account-card-rate {
     position: relative;
     font-weight: 600;
     color: #C85000;
@@ -134,7 +134,7 @@
     padding-left: 5px;
 }
 
-.ids2-account-card .ids2-account-card-note .ids2-account-card-rate:before {
+.ids-account-card .ids-account-card-note .ids-account-card-rate:before {
     content: ' ';
     position: absolute;
     top: 50%;
@@ -146,26 +146,26 @@
     z-index: 1;
 }
 
-.ids2-account-card .ids2-account-card-balance-won {
+.ids-account-card .ids-account-card-balance-won {
     font-size: 24px;
     font-weight: 600;
     line-height: 34px;
 }
 
-.ids2-account-loan-date {
+.ids-account-loan-date {
     display: flex;
     font-size: 14px;
     font-weight: 500;
     margin-top: 5px;
 }
 
-.ids2-loan-date-end {
+.ids-loan-date-end {
     margin-left: 4px;
     padding-left: 5px;
     position: relative;
 }
 
-.ids2-loan-date-end:before {
+.ids-loan-date-end:before {
     content: ' ';
     position: absolute;
     top: 50%;
@@ -177,12 +177,12 @@
     z-index: 1;
 }
 
-.ids2-account-card .ids2-account-card-footer {
+.ids-account-card .ids-account-card-footer {
     margin-top: 16px;
     text-align: center;
 }
 
-.ids2-account-card .ids2-account-card-limit-lift {
+.ids-account-card .ids-account-card-limit-lift {
     font-size: 14px;
     line-height: 18px;
     color: #454855;
