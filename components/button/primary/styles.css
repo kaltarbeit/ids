@@ -30,3 +30,7 @@
     border-color: var(--ids2-color-gray-150);
     color: var(--ids2-color-gray-500);
 }
+
+.ids2-button.ids2-button-primary.ids2-button-fit-width {
+    width: fit-content;
+}

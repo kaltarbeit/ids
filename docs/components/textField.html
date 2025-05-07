@@ -50,6 +50,17 @@
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids2-cell-left ids2-docs-name" rowspan="5">
+            Default
+          </td>
+          <td class="ids2-cell-left ids2-docs-classname">.ids2-text-field</td>
+          <td class="ids2-cell-left">
+            <code class="ids2-docs-code">text-align: left;
+              position: relative;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -65,7 +76,9 @@
             <script type="text/plain" class="language-markup">
               <div class="ids2-text-field">
                 <label for="textField-input" class="ids2-text-field-label">
-                  <span>타이틀</span><span class="ids2-label-required">필수</span><span class="ids2-label-optional">선택</span>
+                  <span>타이틀</span>
+                  <span class="ids2-label-required">필수</span>
+                  <span class="ids2-label-optional">선택</span>
                 </label>
                 <div class="ids2-text-field-container">
                   <input type="text"
@@ -81,7 +94,9 @@
                 <div class="ids2-text-field-functions">
                   <div class="ids2-text-field-note">도움말메세지</div>
                   <div class="ids2-text-field-counter">
-                    <span class="ids2-text-field-count">0</span> / <span class="ids2-text-field-maxlength">500</span>자
+                    <span class="ids2-text-field-count">0</span>
+                    /
+                    <span class="ids2-text-field-maxlength">500</span>자
                   </div>
                 </div>
               </div>
@@ -98,13 +113,15 @@
           <div class="ids2-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
               <div class="ids2-text-field ids2-text-field-filled">
-                <label for="textField-input" class="ids2-text-field-label">
-                  <span>타이틀</span><span class="ids2-label-required">필수</span><span class="ids2-label-optional">선택</span>
+                <label class="ids2-text-field-label" for="textField-input2">
+                  <span>타이틀</span>
+                  <span class="ids2-label-required">필수</span>
+                  <span class="ids2-label-optional">선택</span>
                 </label>
                 <div class="ids2-text-field-container">
                   <input type="text"
                          class="ids2-text-field-input"
-                         id="textField-input"
+                         id="textField-input2"
                          maxlength="500"
                          placeholder="플레이스 홀더"
                          value="내용 입력"
@@ -116,8 +133,1693 @@
                 <div class="ids2-text-field-functions">
                   <div class="ids2-text-field-note">도움말메세지</div>
                   <div class="ids2-text-field-counter">
-                    <span class="ids2-text-field-count">0</span> / <span class="ids2-text-field-maxlength">500</span>자
+                    <span class="ids2-text-field-count">0</span>
+                    /
+                    <span class="ids2-text-field-maxlength">500</span>자
                   </div>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field</span><br/>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids-text-field-input:disabled</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-text-field">
+                <label class="ids2-text-field-label" for="textField-input3">
+                  <span>타이틀</span>
+                  <span class="ids2-label-required">필수</span>
+                  <span class="ids2-label-optional">선택</span>
+                </label>
+                <div class="ids2-text-field-container">
+                  <input type="text"
+                         class="ids2-text-field-input"
+                         id="textField-input3"
+                         maxlength="500"
+                         placeholder="플레이스 홀더"
+                         disabled
+                  />
+                  <button class="ids2-input-clear">
+                    <i class="ids2-icon ids2-icon-clear">Clear</i>
+                  </button>
+                </div>
+                <div class="ids2-text-field-functions">
+                  <div class="ids2-text-field-note">도움말메세지</div>
+                  <div class="ids2-text-field-counter">
+                    <span class="ids2-text-field-count">0</span>
+                    /
+                    <span class="ids2-text-field-maxlength">500</span>자
+                  </div>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field</span><br/>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids-text-field-input:readonly</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-text-field">
+                <label class="ids2-text-field-label" for="textField-input4">
+                  <span>타이틀</span>
+                  <span class="ids2-label-required">필수</span>
+                  <span class="ids2-label-optional">선택</span>
+                </label>
+                <div class="ids2-text-field-container">
+                  <input type="text"
+                         class="ids2-text-field-input"
+                         id="textField-input4"
+                         maxlength="500"
+                         placeholder="플레이스 홀더"
+                         value="텍스트"
+                         readonly
+                  />
+                  <button class="ids2-input-clear">
+                    <i class="ids2-icon ids2-icon-clear">Clear</i>
+                  </button>
+                </div>
+                <div class="ids2-text-field-functions">
+                  <div class="ids2-text-field-note">도움말메세지</div>
+                  <div class="ids2-text-field-counter">
+                    <span class="ids2-text-field-count">0</span>
+                    /
+                    <span class="ids2-text-field-maxlength">500</span>자
+                  </div>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field-filled</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field-error</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-text-field ids2-text-field-filled
+                            ids2-text-field-error">
+                <label class="ids2-text-field-label" for="textField-input4">
+                  <span>타이틀</span>
+                  <span class="ids2-label-required">필수</span>
+                  <span class="ids2-label-optional">선택</span>
+                </label>
+                <div class="ids2-text-field-container">
+                  <input type="text"
+                         class="ids2-text-field-input"
+                         id="textField-input4"
+                         maxlength="500"
+                         placeholder="플레이스 홀더"
+                         value="텍스트"
+                  />
+                  <button class="ids2-input-clear">
+                    <i class="ids2-icon ids2-icon-clear">Clear</i>
+                  </button>
+                </div>
+                <div class="ids2-text-field-functions">
+                  <div class="ids2-text-field-error-note">오류메세지</div>
+                  <div class="ids2-text-field-counter">
+                    <span class="ids2-text-field-count">0</span>
+                    /
+                    <span class="ids2-text-field-maxlength">500</span>자
+                  </div>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field-filled</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field-success</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-text-field ids2-text-field-filled
+                            ids2-text-field-success">
+                <label class="ids2-text-field-label" for="textField-input4">
+                  <span>타이틀</span>
+                  <span class="ids2-label-required">필수</span>
+                  <span class="ids2-label-optional">선택</span>
+                </label>
+                <div class="ids2-text-field-container">
+                  <input type="text"
+                         class="ids2-text-field-input"
+                         id="textField-input4"
+                         maxlength="500"
+                         placeholder="플레이스 홀더"
+                         value="텍스트"
+                  />
+                  <button class="ids2-input-clear">
+                    <i class="ids2-icon ids2-icon-clear">Clear</i>
+                  </button>
+                  <div class="ids2-input-success">
+                      <i class="ids2-icon ids2-icon-success">Success</i>
+                  </div>
+                </div>
+                <div class="ids2-text-field-functions">
+                  <div class="ids2-text-field-success-note">성공메세지</div>
+                  <div class="ids2-text-field-counter">
+                    <span class="ids2-text-field-count">0</span>
+                    /
+                    <span class="ids2-text-field-maxlength">500</span>자
+                  </div>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">Password</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Text Field > Password</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-text-field">
+                <label for="textField-input" class="ids2-text-field-label">
+                  <span>타이틀</span>
+                  <span class="ids2-label-required">필수</span>
+                </label>
+                <div class="ids2-text-field-container">
+                  <input type="password"
+                         class="ids2-text-field-input"
+                         id="textField-input"
+                         maxlength="20"
+                         placeholder="플레이스 홀더"
+                  />
+                  <button class="ids2-input-clear">
+                    <i class="ids2-icon ids2-icon-clear">Clear</i>
+                  </button>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">금액표기</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Text Field > 금액표기</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field-filled</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field-amount</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-text-field ids2-text-field-filled ids2-text-field-amount">
+                    <label for="textField-input-amount" class="ids2-text-field-label">
+                        <span>타이틀</span><span class="ids2-label-optional">선택</span>
+                    </label>
+                    <div class="ids2-text-field-container">
+                        <input type="text"
+                               class="ids2-text-field-input"
+                               id="textField-input-amount"
+                               maxlength="21"
+                               placeholder="금액을 입력하세요."
+                               value="1,000,000"
+                        />
+                        <button class="ids2-input-clear">
+                            <i class="ids2-icon ids2-icon-clear">Clear</i>
+                        </button>
+                    </div>
+                    <div class="ids2-text-field-functions">
+                        <div class="ids2-text-field-note"></div>
+                        <div class="ids2-text-field-amount-note">일백만원</div>
+                    </div>
+                </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">날짜표기</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Text Field > 날짜표기</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field-date</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-text-field ids2-text-field-date">
+                  <label
+                    class="ids2-text-field-label"
+                    for="textField-input-date"
+                  >
+                      <span>타이틀</span>
+                      <span class="ids2-label-optional">선택</span>
+                  </label>
+                  <div class="ids2-text-field-container">
+                      <input type="text"
+                             class="ids2-text-field-input"
+                             id="textField-input-date"
+                             placeholder="YYYY.MM.DD"
+                             maxlength="10"
+                      />
+                  </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">외환입력</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Text Field > 외환입력</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-form</span><br/>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-group</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-exchange</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-input-form">
+                    <div class="ids2-dropdown">
+                        <label class="ids2-dropdown-label">타이틀</label>
+                        <div class="ids2-dropdown-container">
+                            <button class="ids2-dropdown-button" id="dropdownButton">통화선택</button>
+                        </div>
+                    </div>
+
+                    <div class="ids2-input-group ids2-input-exchange">
+                        <div class="ids2-text-field">
+                            <div class="ids2-text-field-container">
+                                <input type="text"
+                                       class="ids2-text-field-input"
+                                       placeholder="123"
+                                />
+                            </div>
+                        </div>
+                        <div class="ids2-text-field">
+                            <div class="ids2-text-field-container">
+                                <input type="text"
+                                       class="ids2-text-field-input"
+                                       maxlength="2"
+                                       placeholder="00"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">일반범위</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Text Field > 일반범위</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-form</span><br/>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-group</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-range</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-input-form">
+                  <label for="textField-input" class="ids2-text-field-label">
+                      <span>타이틀</span><span class="ids2-label-required">필수</span><span class="ids2-label-optional">선택</span>
+                  </label>
+                  <div class="ids2-input-group ids2-input-range">
+                      <div class="ids2-text-field">
+                          <div class="ids2-text-field-container">
+                              <input type="text"
+                                     id="textField-input"
+                                     class="ids2-text-field-input"
+                                     placeholder="플레이스 홀더"
+                              />
+                              <button class="ids2-input-clear">
+                                  <i class="ids2-icon ids2-icon-clear">Clear</i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class="ids2-text-field">
+                          <div class="ids2-text-field-container">
+                              <input type="text"
+                                     class="ids2-text-field-input"
+                                     placeholder="플레이스 홀더"
+                              />
+                              <button class="ids2-input-clear">
+                                  <i class="ids2-icon ids2-icon-clear">Clear</i>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">Dropdown 혼합 (이메일)</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Text Field > 혼합</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-email-field</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-text-field ids2-email-field">
+                  <label for="textField-input" class="ids2-text-field-label">
+                      <span>이메일</span><span class="ids2-label-optional">선택</span>
+                  </label>
+                  <div class="ids2-text-field-container">
+                      <div class="ids2-email-field-name">
+                          <input type="text"
+                                 class="ids2-text-field-input"
+                                 id="textField-input"
+                                 maxlength="100"
+                                 placeholder="이메일"
+                          />
+                      </div>
+                      <div class="ids2-email-field-separator">@</div>
+
+                      <div class="ids2-email-field-domain">
+                          <input type="text"
+                                 class="ids2-text-field-input"
+                                 id="textField-input2"
+                                 maxlength="100"
+                                 placeholder="선택"
+                                 readonly
+                          />
+                      </div>
+                  </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">Dropdown 분리 (계좌등록)</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Text Field > 분리</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-form</span><br/>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-group</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-open-banking</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-input-form">
+                  <label for="textField-input" class="ids2-text-field-label">
+                      <span>오픈뱅킹 계좌등록</span><span class="ids2-label-required">필수</span>
+                  </label>
+                  <div class="ids2-input-group ids2-input-open-banking">
+                      <div class="ids2-dropdown">
+                          <div class="ids2-dropdown-container">
+                              <button class="ids2-dropdown-button" id="dropdownButton">은행선택</button>
+                          </div>
+                      </div>
+                      <div class="ids2-text-field">
+                          <div class="ids2-text-field-container">
+                              <input type="text"
+                                     id="textField-input"
+                                     class="ids2-text-field-input"
+                                     placeholder="계좌번호 입력"
+                              />
+                              <button class="ids2-input-clear">
+                                  <i class="ids2-icon ids2-icon-clear">Clear</i>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">Button 혼합</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Text Field > 버튼</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-form</span><br/>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-group</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-open-banking</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-input-form">
+                <label for="textField-input" class="ids2-text-field-label">
+                  <span>인증번호</span>
+                </label>
+                <div class="ids2-input-group ids2-input-verify-number">
+                  <div class="ids2-text-field ids2-text-field-full-width">
+                    <div class="ids2-text-field-container">
+                      <input
+                        type="text"
+                        id="textField-input"
+                        class="ids2-text-field-input"
+                        maxlength="6"
+                        placeholder="인증번호 6자리"
+                      />
+
+                      <div class="ids2-input-function">
+                        <span class="ids2-input-timer">02:59</span>
+                        <button class="ids2-input-clear">
+                          <i class="ids2-icon ids2-icon-clear">Clear</i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="ids2-button ids2-button-primary
+                              ids2-button-tint ids2-button-fit-width"
+                    name="submit"
+                    disabled
+                  >
+                    레이블
+                  </button>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">검색</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Text Field > 검색</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-search</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-text-field ids2-input-search">
+                <label for="textField-input" class="ids2-text-field-label">
+                  <span>타이틀</span>
+                  <span class="ids2-label-required">필수</span>
+                  <span class="ids2-label-optional">선택</span>
+                </label>
+
+                <div class="ids2-text-field-container">
+                    <input
+                      type="text"
+                      id="textField-input"
+                      placeholder="검색어를 입력하세요."
+                      class="ids2-text-field-input"
+                    >
+                    <button class="ids2-input-clear">
+                        <i class="ids2-icon ids2-icon-clear">Clear</i>
+                    </button>
+                    <button
+                      class="ids2-button ids2-button-icon
+                                ids2-button-text ids2-search-button"
+                    >
+                        <i class="ids2-icon ids2-icon-search">Search</i>
+                    </button>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">주민등록번호</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Text Field > 주민등록번호</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-separate</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-text-field ids2-input-separate">
+                <label for="textField-input" class="ids2-text-field-label">
+                  <span>주민등록번호</span>
+                  <span class="ids2-label-required">필수</span>
+                </label>
+                <div class="ids2-text-field-container">
+                  <input
+                    type="text"
+                    class="ids2-text-field-input"
+                    id="textField-input"
+                    maxlength="6"
+                    placeholder="생년월일 6자리"
+                  />
+                  <div class="ids2-input-separator">-</div>
+                  <input
+                    type="password"
+                    class="ids2-text-field-input"
+                    id="textField-input2"
+                    maxlength="7"
+                    placeholder="주민등록번호 뒷자리"
+                  />
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">전화/팩스번호</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Text Field > 팩스번호</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-separate</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-text-field ids2-input-separate">
+                <label for="textField-input" class="ids2-text-field-label">
+                  <span>팩스번호</span>
+                  <span class="ids2-label-optional">선택</span>
+                </label>
+                <div class="ids2-text-field-container">
+                    <input
+                      type="text"
+                      class="ids2-text-field-input"
+                      id="textField-input"
+                      maxlength="3"
+                      placeholder="지역번호"
+                    />
+                    <div class="ids2-email-field-separator">-</div>
+                    <input
+                      type="text"
+                      class="ids2-text-field-input"
+                      id="textField-input2"
+                      maxlength="4"
+                      placeholder="국번"
+                    />
+                    <div class="ids2-email-field-separator">-</div>
+                    <input
+                      type="text"
+                      class="ids2-text-field-input"
+                      id="textField-input3"
+                      maxlength="4"
+                      placeholder="번호"
+                    />
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">영문 이름</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Text Field > 영문 이름</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-form</span><br/>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-group</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-english-name</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-input-form">
+                <label for="textField-input" class="ids2-text-field-label">
+                  <span>영문명</span>
+                  <span class="ids2-label-required">필수</span>
+                </label>
+                <div class="ids2-input-group ids2-input-english-name">
+                  <div class="ids2-text-field">
+                    <div class="ids2-text-field-container">
+                      <input type="text"
+                             id="textField-input"
+                             class="ids2-text-field-input"
+                             placeholder="HONG"
+                      />
+                      <button class="ids2-input-clear">
+                          <i class="ids2-icon ids2-icon-clear">Clear</i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="ids2-text-field">
+                    <div class="ids2-text-field-container">
+                      <input type="text"
+                             id="textField-input2"
+                             class="ids2-text-field-input"
+                             placeholder="GILDONG"
+                      />
+                      <button class="ids2-input-clear">
+                          <i class="ids2-icon ids2-icon-clear">Clear</i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">카드번호</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Text Field > 카드번호</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-form</span><br/>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-group</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-card-number</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-input-form">
+                <label for="textField-input" class="ids2-text-field-label">
+                  <span>카드번호</span>
+                  <span class="ids2-label-required">필수</span>
+                </label>
+                <div class="ids2-input-group ids2-input-card-number">
+                  <div class="ids2-text-field">
+                    <div class="ids2-text-field-container">
+                      <input type="text"
+                             id="textField-input"
+                             class="ids2-text-field-input"
+                             maxlength="4"
+                             placeholder="0000"
+                      />
+                      <button class="ids2-input-clear">
+                        <i class="ids2-icon ids2-icon-clear">Clear</i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="ids2-text-field">
+                    <div class="ids2-text-field-container">
+                      <input type="text"
+                             class="ids2-text-field-input"
+                             maxlength="4"
+                             placeholder="0000"
+                      />
+                      <button class="ids2-input-clear">
+                        <i class="ids2-icon ids2-icon-clear">Clear</i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="ids2-text-field">
+                    <div class="ids2-text-field-container">
+                      <input type="text"
+                             class="ids2-text-field-input"
+                             maxlength="4"
+                             placeholder="0000"
+                      />
+                      <button class="ids2-input-clear">
+                        <i class="ids2-icon ids2-icon-clear">Clear</i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="ids2-text-field">
+                    <div class="ids2-text-field-container">
+                      <input type="text"
+                             class="ids2-text-field-input"
+                             maxlength="4"
+                             placeholder="0000"
+                      />
+                      <button class="ids2-input-clear">
+                        <i class="ids2-icon ids2-icon-clear">Clear</i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">Auth Code</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Text Field > Auth Code</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-verification</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-verification">
+                <h2 class="ids2-verification-title">타이틀</h2>
+
+                <div class="ids2-code-inputs">
+                    <input
+                            type="text"
+                            class="ids2-circle-input"
+                            maxlength="1"
+                            placeholder="●"
+                    />
+                    <input
+                            type="text"
+                            class="ids2-circle-input"
+                            maxlength="1"
+                            placeholder="●"
+                    />
+                    <input
+                            type="text"
+                            class="ids2-circle-input"
+                            maxlength="1"
+                            placeholder="●"
+                    />
+                    <input
+                            type="text"
+                            class="ids2-circle-input"
+                            maxlength="1"
+                            placeholder="●"
+                    />
+                    <input
+                            type="text"
+                            class="ids2-circle-input"
+                            maxlength="1"
+                            placeholder="●"
+                    />
+                    <input
+                            type="text"
+                            class="ids2-circle-input"
+                            maxlength="1"
+                            placeholder="●"
+                    />
+                </div>
+
+                <div class="ids2-verification-help">도움말메시지</div>
+            </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">Auth Password</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Text Field > Auth Password</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-verification</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-verification">
+                <div class="ids2-code-inputs">
+                  <input
+                          type="text"
+                          class="ids2-circle-input"
+                          maxlength="1"
+                          placeholder="●"
+                  />
+                  <input
+                          type="text"
+                          class="ids2-circle-input"
+                          maxlength="1"
+                          placeholder="●"
+                  />
+                  <input
+                          type="text"
+                          class="ids2-circle-input"
+                          maxlength="1"
+                          placeholder="●"
+                  />
+                  <input
+                          type="text"
+                          class="ids2-circle-input"
+                          maxlength="1"
+                          placeholder="●"
+                  />
+                </div>
+
+                <div class="ids2-verification-help">도움말메시지</div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">Auth Time</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Text Field > Auth Time</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-verification</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-input-form">
+                <label for="textField-input" class="ids2-text-field-label">
+                  <span>인증번호</span>
+                </label>
+                <div class="ids2-input-group ids2-input-verify-number">
+                  <div class="ids2-text-field ids2-text-field-full-width ids2-input-auth-time">
+                    <div class="ids2-text-field-container">
+                      <input type="text"
+                             id="textField-input"
+                             class="ids2-text-field-input"
+                             maxlength="6"
+                             placeholder="인증번호 6자리"
+                      />
+                      <div class="ids2-input-function">
+                        <span class="ids2-input-timer">02:59</span>
+                        <button class="ids2-input-clear">
+                          <i class="ids2-icon ids2-icon-clear">Clear</i>
+                        </button>
+                        <button class="ids2-button ids2-button-sm ids2-button-tertiary ids2-button-tint">
+                          <i class="ids2-icon ids2-icon-image ids2-icon-xs ids2-tint">Image</i>
+                          레이블
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">Secret Card</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Text Field > Secret Card</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-secret-card</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-input-secret-card">
+                <h4 class="ids2-input-secret-card-label">
+                  시크리트 카드 일련번호 입력
+                </h4>
+
+                <!-- 입력 박스 -->
+                <div class="ids2-secret-card-box">
+                  <!-- 안내 문구 -->
+                  <span class="ids2-secret-card-info">
+                    <span class="ids2-highlight">[1][4][5]</span>번째
+                  </span>
+
+                  <div class="ids2-secret-card-container">
+                    <!-- 실제 입력 필드 (3개 예시) -->
+                    <input
+                          type="password"
+                          class="ids2-secret-card-input"
+                          maxlength="1"
+                    />
+                    <span class="ids2-secret-card-mask">*</span>
+                    <span class="ids2-secret-card-mask">*</span>
+                    <input
+                          type="password"
+                          class="ids2-secret-card-input"
+                          maxlength="1"
+                    />
+                    <input
+                          type="password"
+                          class="ids2-secret-card-input"
+                          maxlength="1"
+                    />
+                    <span class="ids2-secret-card-mask">*</span>
+                    <span class="ids2-secret-card-mask">*</span>
+                  </div>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">라인</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Text Field > 라인</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field-line</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-text-field ids2-text-field-line">
+                <div class="ids2-text-field-container">
+                  <input type="text"
+                         class="ids2-text-field-input"
+                         id="textField-input"
+                         maxlength="21"
+                         placeholder="한도금액을 입력하세요"
+                  />
+                  <button class="ids2-input-clear">
+                    <i class="ids2-icon ids2-icon-clear">Clear</i>
+                  </button>
+                </div>
+                <div class="ids2-text-field-functions">
+                  <div class="ids2-text-field-amount-symbol"></div>
+                  <div class="ids2-text-field-amount-note"></div>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">라인 큰글씨</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Text Field > 라인 큰글씨</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field-line</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field-line-large</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-text-field ids2-text-field-line
+                            ids2-text-field-line-large">
+                <div class="ids2-text-field-container">
+                  <input
+                    type="text"
+                    class="ids2-text-field-input"
+                    id="textField-input"
+                    maxlength="21"
+                    placeholder="한도금액을 입력하세요"
+                  />
+                  <button class="ids2-input-clear">
+                    <i class="ids2-icon ids2-icon-clear">Clear</i>
+                  </button>
+                </div>
+                <div class="ids2-text-field-functions">
+                  <div class="ids2-text-field-amount-symbol"></div>
+                  <div class="ids2-text-field-amount-note"></div>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="ids2-docs-section">
+    <h2 class="ids2-docs-section-title">라인 검색</h2>
+
+    <p class="ids2-body4 ids2-mt-8 ids2-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids2-bold">Text Field > 라인 검색</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids2-docs-reference ids2-mt-3">
+      <div class="ids2-docs-reference-button">
+        Style Reference Table <i class="ids2-icon ids2-icon-xxs ids2-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids2-table ids2-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids2-cell-left">Name</th>
+          <th class="ids2-cell-left">Class</th>
+          <th class="ids2-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids2-docs-section-label">Examples</h4>
+
+    <div class="ids2-docs-examples">
+      <div class="ids2-docs-example-block">
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-text-field-line</span>
+        <span class="ids2-label ids2-label-line ids2-label-blue">.ids2-input-search</span>
+        <div class="ids2-docs-example-code">
+          <div class="ids2-docs-example"></div>
+          <div class="ids2-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids2-text-field ids2-text-field-line
+                            ids2-input-search">
+                <div class="ids2-text-field-container">
+                  <input type="text" id="textField-input" placeholder="검색어를 입력하세요." class="ids2-text-field-input">
+                  <button class="ids2-input-clear">
+                    <i class="ids2-icon ids2-icon-clear">Clear</i>
+                  </button>
+                  <button class="ids2-button ids2-button-icon ids2-button-text ids2-search-button">
+                    <i class="ids2-icon ids2-icon-search">Search</i>
+                  </button>
                 </div>
               </div>
             </script>

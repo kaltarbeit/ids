@@ -1,5 +1,5 @@
-@import "authCode/styles.css";
-@import "secretCard/styles.css";
+@import "../../components/textField/authCode/styles.css";
+@import "../../components/textField/secretCard/styles.css";
 
 .ids2-text-field-examples {
     display: flex;
@@ -77,15 +77,20 @@
 }
 
 
-.ids2-text-field .ids2-text-field-label {
+.ids2-text-field-label {
     margin-bottom: 8px;
+    display: flex;
+}
+
+.ids2-text-field-label > span {
+    display: block;
 }
 
 .ids2-text-field .ids2-text-field-input {
     width: 100%;
     border: none;
     background: transparent;
-    padding: 17px 16px;
+    padding: 15px 16px;
     font-size: 16px;
     font-weight: 500;
     color: #101116;
@@ -154,6 +159,11 @@
     display: none;
 }
 
+
+.ids2-text-field .ids2-input-clear .ids2-icon {
+    display: block;
+}
+
 .ids2-text-field .ids2-input-success {
     position: absolute;
     right: 13px;
@@ -164,7 +174,6 @@
     appearance: none;
     border: none;
     background: none;
-    cursor: pointer;
     padding: 0;
     margin: 0;
     display: none;
@@ -177,6 +186,11 @@
 .ids2-text-field.ids2-text-field-filled .ids2-input-clear {
     display: block;
 }
+
+.ids2-text-field.ids2-text-field-filled.ids2-text-field-success .ids2-input-clear {
+    display: none;
+}
+
 
 .ids2-exchange-container {
     display: flex;
@@ -500,12 +514,4 @@ input::-webkit-inner-spin-button {
     font-weight: 700;
     line-height: 16px;
     color: #737684;
-}
-
-.ids2-text-field.ids2-input-auth-time .ids2-input-function {
-    display: none;
-}
-
-.ids2-text-field.ids2-input-auth-time.ids2-text-field-focused .ids2-input-function {
-    display: flex;
 }

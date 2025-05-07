@@ -16,7 +16,7 @@
 @import "components/chip.css";
 @import "../components/drawer/drawer.css";
 @import "../components/dropdown/dropdown.css";
-@import "../components/textField/textField.css";
+@import "components/textField.css";
 @import "components/table.css";
 @import "../components/footer/footer.css";
 @import "../components/infoBox/infoBox.css";
