@@ -179,13 +179,13 @@ td.ids2-docs-name {
 }
 
 .ids2-docs-example-code-highlight {
-    margin-right: -24px !important;
-    width: 50%;
+    margin-right: calc(var(--ids2-spacing-3) * -1) !important;
+    width: calc(50% + var(--ids2-spacing-3));
     font-size: 12px !important;
 }
 
 .ids2-docs-code-highlight {
-    margin-right: -24px !important;
+    margin-right: calc(var(--ids2-spacing-3) * -1) !important;
     font-size: 12px !important;
 }
 
