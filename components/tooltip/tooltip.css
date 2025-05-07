@@ -48,13 +48,10 @@
 .ids2-tooltip {
     position: absolute;
     z-index: 999;
-
-    /* 기본적으로 숨김 처리 */
-    display: none;
 }
 
 /* 툴팁 내용 박스 */
-.ids2-tooltip__content {
+.ids2-tooltip-content {
     position: relative;
     background: #fff;
     color: #4285f4;            /* 파란색 텍스트 */
@@ -69,7 +66,7 @@
 }
 
 /* 흰색 내부 화살표(안쪽) */
-.ids2-tooltip__content::after {
+.ids2-tooltip-content::after {
     content: "";
     position: absolute;
     top: -9px;
@@ -82,7 +79,7 @@
 /* ==================================
    5. 툴팁 닫기 버튼
 ================================== */
-.ids2-tooltip__close {
+.ids2-tooltip-close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -108,34 +105,34 @@
     Bottom / Top side
  */
 
-.ids2-tooltip.ids2-tooltip__bottom-left:after,
-.ids2-tooltip.ids2-tooltip__bottom-center:after,
-.ids2-tooltip.ids2-tooltip__bottom-right:after {
+.ids2-tooltip.ids2-tooltip-top-left:after,
+.ids2-tooltip.ids2-tooltip-top-center:after,
+.ids2-tooltip.ids2-tooltip-top-right:after {
     background-image: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_6041_49439)'%3E%3Cpath d='M6.42875 8.28542L11.5457 -0.242752C11.7456 -0.576014 11.5056 -1 11.1169 -1L0.883095 -1C0.494448 -1 0.254392 -0.576015 0.454348 -0.242753L5.57125 8.28542C5.76545 8.60909 6.23454 8.60909 6.42875 8.28542Z' fill='white' stroke='%232873E3'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_6041_49439'%3E%3Crect width='12' height='9' fill='white' transform='matrix(-1 -8.74228e-08 -8.74228e-08 1 12 0)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
     transform: rotate(180deg);
     top: -8px;
 }
 
-.ids2-tooltip.ids2-tooltip__top-left:after,
-.ids2-tooltip.ids2-tooltip__top-center:after,
-.ids2-tooltip.ids2-tooltip__top-right:after {
+.ids2-tooltip.ids2-tooltip-bottom-left:after,
+.ids2-tooltip.ids2-tooltip-bottom-center:after,
+.ids2-tooltip.ids2-tooltip-bottom-right:after {
     background-image: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_6041_49439)'%3E%3Cpath d='M6.42875 8.28542L11.5457 -0.242752C11.7456 -0.576014 11.5056 -1 11.1169 -1L0.883095 -1C0.494448 -1 0.254392 -0.576015 0.454348 -0.242753L5.57125 8.28542C5.76545 8.60909 6.23454 8.60909 6.42875 8.28542Z' fill='white' stroke='%232873E3'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_6041_49439'%3E%3Crect width='12' height='9' fill='white' transform='matrix(-1 -8.74228e-08 -8.74228e-08 1 12 0)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
     bottom: -8px;
 }
 
-.ids2-tooltip.ids2-tooltip__top-left:after,
-.ids2-tooltip.ids2-tooltip__bottom-left:after {
+.ids2-tooltip.ids2-tooltip-bottom-left:after,
+.ids2-tooltip.ids2-tooltip-top-left:after {
     left: 20px;
 }
 
-.ids2-tooltip.ids2-tooltip__top-center:after,
-.ids2-tooltip.ids2-tooltip__bottom-center:after {
+.ids2-tooltip.ids2-tooltip-bottom-center:after,
+.ids2-tooltip.ids2-tooltip-top-center:after {
     left: 50%;
     margin-left: -5px;
 }
 
-.ids2-tooltip.ids2-tooltip__top-right:after,
-.ids2-tooltip.ids2-tooltip__bottom-right:after {
+.ids2-tooltip.ids2-tooltip-bottom-right:after,
+.ids2-tooltip.ids2-tooltip-top-right:after {
     right: 20px;
 }
 
@@ -143,40 +140,40 @@
     Left / Right side
  */
 
-.ids2-tooltip.ids2-tooltip__left-top:after,
-.ids2-tooltip.ids2-tooltip__left-middle:after,
-.ids2-tooltip.ids2-tooltip__left-bottom:after {
+.ids2-tooltip.ids2-tooltip-right-top:after,
+.ids2-tooltip.ids2-tooltip-right-middle:after,
+.ids2-tooltip.ids2-tooltip-right-bottom:after {
     background-image: url("data:image/svg+xml,%3Csvg width='9' height='12' viewBox='0 0 9 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_6124_9141)'%3E%3Cpath d='M8.28542 5.57125L-0.242752 0.454349C-0.576014 0.254391 -1 0.494448 -1 0.883095L-1 11.1169C-1 11.5056 -0.576015 11.7456 -0.242753 11.5457L8.28542 6.42875C8.60909 6.23455 8.60909 5.76546 8.28542 5.57125Z' fill='white' stroke='%232873E3'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_6124_9141'%3E%3Crect width='12' height='9' fill='white' transform='matrix(-4.37114e-08 1 1 4.37114e-08 0 0)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
     right: -9px;
 }
 
-.ids2-tooltip.ids2-tooltip__right-top:after,
-.ids2-tooltip.ids2-tooltip__right-middle:after,
-.ids2-tooltip.ids2-tooltip__right-bottom:after {
+.ids2-tooltip.ids2-tooltip-left-top:after,
+.ids2-tooltip.ids2-tooltip-left-middle:after,
+.ids2-tooltip.ids2-tooltip-left-bottom:after {
     background-image: url("data:image/svg+xml,%3Csvg width='9' height='12' viewBox='0 0 9 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_6124_9141)'%3E%3Cpath d='M8.28542 5.57125L-0.242752 0.454349C-0.576014 0.254391 -1 0.494448 -1 0.883095L-1 11.1169C-1 11.5056 -0.576015 11.7456 -0.242753 11.5457L8.28542 6.42875C8.60909 6.23455 8.60909 5.76546 8.28542 5.57125Z' fill='white' stroke='%232873E3'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_6124_9141'%3E%3Crect width='12' height='9' fill='white' transform='matrix(-4.37114e-08 1 1 4.37114e-08 0 0)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
     transform: rotate(180deg);
     left: -9px;
 }
 
-.ids2-tooltip.ids2-tooltip__left-top:after,
-.ids2-tooltip.ids2-tooltip__right-top:after {
+.ids2-tooltip.ids2-tooltip-right-top:after,
+.ids2-tooltip.ids2-tooltip-left-top:after {
     top: 10px;
 }
 
 
-.ids2-tooltip.ids2-tooltip__left-middle:after,
-.ids2-tooltip.ids2-tooltip__right-middle:after {
+.ids2-tooltip.ids2-tooltip-right-middle:after,
+.ids2-tooltip.ids2-tooltip-left-middle:after {
     top: 50%;
     margin-top: -5px;
 }
 
 
-.ids2-tooltip.ids2-tooltip__left-bottom:after,
-.ids2-tooltip.ids2-tooltip__right-bottom:after {
+.ids2-tooltip.ids2-tooltip-right-bottom:after,
+.ids2-tooltip.ids2-tooltip-left-bottom:after {
     bottom: 10px;
 }
 
-.ids2-tooltip__image {
+.ids2-tooltip-image {
     height: 100px;
     margin-top: 8px;
     margin-bottom: 4px;
@@ -196,7 +193,7 @@
     cursor: pointer;
 }
 
-.ids2-tooltip__text {
+.ids2-tooltip-text {
     font-size: 12px;
     line-height: 16px;
     color: #454855;
