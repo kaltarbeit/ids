@@ -37,19 +37,139 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-slider</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: relative;
+              margin: var(--ids-spacing-2-half);
+              display: inline-block;
+              user-select: none;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-slider-track</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: absolute;
+              border-radius: 2px;
+              background-color: var(--ids-color-gray-100);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-slider-track-range</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: absolute;
+              border-radius: 2px;
+              z-index: 2;
+              background-color: var(--ids-color-point-blue);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-slider-handle</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: absolute;
+              width: 24px;
+              height: 24px;
+              border: 3px solid var(--ids-color-point-blue);
+              border-radius: var(--ids-radius-full);
+              cursor: pointer;
+              box-sizing: border-box;
+              background-color: var(--ids-color-white);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-slider-track-snap</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: absolute;
+              background-color: var(--ids-color-white);
+              z-index: 3;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-slider-vertical</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: 40px;
+              height: 282px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-slider-horizontal</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: 282px;
+              height: 40px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-slider-vertical .ids-slider-track</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">left: 50%;
+              top: 0;
+              transform: translateX(-50%);
+              width: 4px;
+              height: 100%;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-slider-horizontal .ids-slider-track</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+              width: 100%;
+              height: 4px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-slider-vertical .ids-slider-track-range</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">left: 50%;
+              bottom: 0;
+              transform: translateX(-50%);
+              width: 4px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-slider-horizontal .ids-slider-track-range</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+              height: 4px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-slider-vertical .ids-slider-track-snap</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: 100%;
+              height: 1px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-slider-horizontal .ids-slider-track-snap</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: 1px;
+              height: 100%;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -160,88 +280,6 @@
   </section>
 
   <section class="ids-docs-section">
-    <h2 class="ids-docs-section-title">Large</h2>
-
-    <p class="ids-body4 ids-mt-8 ids-text-gray-500">
-      컴포넌트 스타일 가이드 <span class="ids-bold">Slider > Large</span> 를 구현한 클래스입니다.
-    </p>
-
-    <div class="ids-docs-reference ids-mt-3">
-      <div class="ids-docs-reference-button">
-        Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
-      </div>
-
-      <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
-        <thead>
-        <tr>
-          <th class="ids-cell-left">Name</th>
-          <th class="ids-cell-left">Class</th>
-          <th class="ids-cell-left">Style</th>
-        </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
-    </div>
-
-    <h4 class="ids-docs-section-label">Examples</h4>
-
-    <div class="ids-docs-examples">
-
-      <div class="ids-docs-example-block">
-        <span class="ids-label ids-label-line ids-label-blue">.ids-slider</span>
-        <span class="ids-label ids-label-line ids-label-blue">.ids-slider-vertical</span>
-        <span class="ids-label ids-label-line ids-label-blue">.ids-slider-large</span>
-        <div class="ids-docs-example-code">
-          <div class="ids-docs-example"></div>
-          <div class="ids-docs-example-code-highlight">
-            <script type="text/plain" class="language-markup">
-              <div class="ids-slider ids-slider-vertical ids-slider-large" data-value="25">
-                <div class="ids-slider-track">
-                  <div class="ids-slider-track-range" style="top: 50%;"></div>
-                </div>
-                <div class="ids-slider-handle" style="top: 50%;">
-                  <div class="ids-slider-tooltip">텍스트</div>
-                </div>
-                <div class="ids-slider-range-end">50</div>
-                <div class="ids-slider-range-start">0</div>
-              </div>
-            </script>
-          </div>
-        </div>
-      </div>
-
-      <div class="ids-docs-example-block">
-        <span class="ids-label ids-label-line ids-label-blue">.ids-slider</span>
-        <span class="ids-label ids-label-line ids-label-blue">.ids-slider-horizontal</span>
-        <span class="ids-label ids-label-line ids-label-blue">.ids-slider-large</span>
-        <div class="ids-docs-example-code">
-          <div class="ids-docs-example"></div>
-          <div class="ids-docs-example-code-highlight">
-            <script type="text/plain" class="language-markup">
-              <div class="ids-slider ids-slide-horizontal ids-slider-large" data-value="25">
-                <div class="ids-slider-track">
-                    <div class="ids-slider-track-range" style="width: 50%;"></div>
-                </div>
-                <div class="ids-slider-handle" style="left: 50%;">
-                    <div class="ids-slider-tooltip">텍스트</div>
-                </div>
-                <div class="ids-slider-range-start">0</div>
-                <div class="ids-slider-range-end">50</div>
-            </div>
-            </script>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="ids-docs-section">
     <h2 class="ids-docs-section-title">Range</h2>
 
     <p class="ids-body4 ids-mt-8 ids-text-gray-500">
@@ -254,19 +292,43 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-slider-handle-min</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: absolute;
+              width: 24px;
+              height: 24px;
+              border: 3px solid var(--ids-color-point-blue);
+              border-radius: var(--ids-radius-full);
+              cursor: pointer;
+              box-sizing: border-box;
+              background-color: var(--ids-color-white);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-slider-vertical .ids-slider-handle-min</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">left: 50%;
+              transform: translate(-50%, -50%);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-slider-horizontal .ids-slider-handle-min</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">top: 50%;
+              transform: translate(-50%, -50%);
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -380,6 +442,170 @@
                     <div class="ids-slider-track-snap" style="left: 50%;"></div>
                     <div class="ids-slider-track-snap" style="left: 66.66%;"></div>
                     <div class="ids-slider-track-snap" style="left: 83.33%;"></div>
+                </div>
+
+                <div class="ids-slider-handle-min" style="left: 33.33%">
+                    <div class="ids-slider-tooltip">텍스트</div>
+                </div>
+
+                <div class="ids-slider-handle" style="left: 83.33%">
+                    <div class="ids-slider-tooltip">텍스트</div>
+                </div>
+                <div class="ids-slider-range-start">0</div>
+                <div class="ids-slider-range-end">50</div>
+            </div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Large</h2>
+
+    <p class="ids-body4 ids-mt-8 ids-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids-bold">Slider > Large</span> 를 구현한 클래스입니다.
+    </p>
+
+    <div class="ids-docs-reference ids-mt-3">
+      <div class="ids-docs-reference-button">
+        Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
+      </div>
+
+
+
+      <table class="ids-table ids-table-sm">
+        <thead>
+        <tr>
+          <th class="ids-cell-left">Class</th>
+          <th class="ids-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-slide-vertical.ids-slider-large .ids-slider-track</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: 16px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-slide-vertical.ids-slider-large .ids-slider-track-range</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: 16px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-slide-horizontal.ids-slider-large .ids-slider-track</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">height: 16px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-slide-horizontal.ids-slider-large .ids-slider-track-range</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">height: 16px;
+              padding-left: 5px;
+            </code>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids-docs-section-label">Examples</h4>
+
+    <div class="ids-docs-examples">
+
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-slider</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-slider-vertical</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-slider-large</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-slider ids-slider-vertical ids-slider-large" data-value="25">
+                <div class="ids-slider-track">
+                  <div class="ids-slider-track-range" style="top: 50%;"></div>
+                </div>
+                <div class="ids-slider-handle" style="top: 50%;">
+                  <div class="ids-slider-tooltip">텍스트</div>
+                </div>
+                <div class="ids-slider-range-end">50</div>
+                <div class="ids-slider-range-start">0</div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-slider</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-slider-horizontal</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-slider-large</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-slider ids-slide-horizontal ids-slider-large" data-value="25">
+                <div class="ids-slider-track">
+                    <div class="ids-slider-track-range" style="width: 50%;"></div>
+                </div>
+                <div class="ids-slider-handle" style="left: 50%;">
+                    <div class="ids-slider-tooltip">텍스트</div>
+                </div>
+                <div class="ids-slider-range-start">0</div>
+                <div class="ids-slider-range-end">50</div>
+            </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-slider</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-slider-vertical</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-slider-large</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-slider ids-slider-vertical ids-slider-large" data-value="25">
+                <div class="ids-slider-track">
+                  <div class="ids-slider-track-range" style="top: 33.33%; bottom: 16.66%;"></div>
+                </div>
+
+                <div class="ids-slider-handle" style="top: 33.33%;">
+                  <div class="ids-slider-tooltip">텍스트</div>
+                </div>
+
+                <div class="ids-slider-handle-min" style="top: 83.33%;">
+                    <div class="ids-slider-tooltip">텍스트</div>
+                </div>
+
+                <div class="ids-slider-range-end">50</div>
+                <div class="ids-slider-range-start">0</div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-slider</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-slider-horizontal</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-slider-large</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-slider ids-slide-horizontal ids-slider-large" data-value="25">
+                <div class="ids-slider-track">
+                    <div class="ids-slider-track-range" style="left: 33.33%; right: 16.66%"></div>
                 </div>
 
                 <div class="ids-slider-handle-min" style="left: 33.33%">

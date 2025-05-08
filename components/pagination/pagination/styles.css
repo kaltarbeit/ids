@@ -9,16 +9,15 @@
 .ids-pagination {
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 14px;
+    gap: var(--ids-spacing-1);
 }
 
 .ids-pagination-numbers {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
-    font-size: 14px;
+    gap: var(--ids-spacing-1);
+    font-size: var(--ids-size-body4);
 }
 
 .ids-pagination-button {
@@ -44,26 +43,26 @@
 }
 
 .ids-pagination-number {
-    border-radius: 12px;
-    font-size: 13px;
-    font-weight: 700;
-    padding: 0 4px;
-    color: #737684;
+    border-radius: var(--ids-radius-12);
+    font-size: var(--ids-size-body5);
+    font-weight: var(--ids-font-bold);
+    padding: 0 var(--ids-spacing-half);
+    color: var(--ids-color-gray-500);
 }
 
 .ids-pagination-number:hover {
-    color: #000;
+    color: var(--ids-color-black);
 }
 
 .ids-pagination-number.ids-pagination-number-active {
-    background: #000000;
-    color: #fff;
-    font-weight: bold;
+    background: var(--ids-color-black);
+    color: var(--ids-color-white);
+    font-weight: var(--ids-font-bold);
 }
 
 .ids-pagination-ellipsis {
-    color: #777;
-    font-size: 14px;
+    color: var(--ids-color-gray-500);
+    font-size: var(--ids-size-body4);
 }
 
 .ids-pagination-first {

@@ -36,13 +36,13 @@
 .ids-popover .ids-popover-content {
     display: flex;
     align-items: flex-start;
-    gap: 4px;
+    gap: var(--ids-spacing-half);
     background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+    color: var(--ids-color-white);
+    font-size: var(--ids-size-caption);
+    line-height: var(--ids-line-caption);
     padding: 6px 8px;
     border-radius: 8px;
-    font-size: 12px;
-    line-height: 16px;
 }
 
 .ids-popover.ids-arrow-side-bottom:after {

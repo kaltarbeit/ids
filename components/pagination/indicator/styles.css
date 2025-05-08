@@ -1,20 +1,20 @@
 .pagination-indicator-example {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: var(--ids-spacing-6);
 }
 
 .ids-indicator-dot {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: var(--ids-spacing-half);
 }
 
 .ids-indicator-dot-item {
     width: 6px;
     height: 6px;
-    border-radius: 6px;
-    border: 1px solid #737684;
+    border-radius: var(--ids-radius-6);
+    border: var(--ids-border-1-500);
     cursor: pointer;
     transition: width 0.3s ease;
     font-size: 0;
@@ -24,8 +24,8 @@
 .ids-indicator-dot-item.ids-indicator-dot-item-active {
     width: 28px;
     height: 6px;
-    background-color: #000;
-    border-radius: 6px;
+    background-color: var(--ids-color-gray-900);
+    border-radius: var(--ids-radius-6);
 }
 
 .ids-indicator-page {
@@ -40,10 +40,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #555;
-    border-radius: 50%;
-    color: white;
-    font-size: 14px;
+    background-color: #000000B2;
+    border-radius: var(--ids-radius-full);
+    color: var(--ids-color-white);
+    font-size: var(--ids-size-body4);
     cursor: pointer;
 }
 
@@ -52,12 +52,12 @@
 }
 
 .ids-indicator-page-text {
-    font-size: 10px;
-    line-height: 12px;
-    color: white;
-    font-weight: bold;
+    font-size: var(--ids-size-caption-sm);
+    line-height: var(--ids-line-caption-sm);
+    color: var(--ids-color-white);
+    font-weight: var(--ids-font-bold);
     padding: 3px 6px;
-    background-color: #555;
-    border-radius: 20px;
+    background-color: #000000B2;
+    border-radius: var(--ids-radius-full);
 }
 

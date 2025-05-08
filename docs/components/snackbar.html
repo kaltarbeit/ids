@@ -25,7 +25,6 @@
   </div>
 
   <section class="ids-docs-section">
-    <h2 class="ids-docs-section-title">Default</h2>
 
     <p class="ids-body4 ids-mt-8 ids-text-gray-500">
       컴포넌트 스타일 가이드 <span class="ids-bold">Snackbar</span>을 구현한 클래스입니다.
@@ -37,48 +36,96 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td class="ids-cell-left ids-docs-name" rowspan="3">
-            Default
-          </td>
-          <td class="ids-cell-left ids-docs-classname">.ids-profile</td>
+          <td class="ids-cell-left ids-docs-classname">ids-snackbar</td>
           <td class="ids-cell-left">
-            <code class="ids-docs-code">position: relative;
-              width: 110px;
-              height: 110px;
+            <code class="ids-docs-code">display: flex;
+              align-items: flex-start;
+              justify-content: space-between;
+              background-color: #3A3D45;
+              color: white;
+              padding: var(--ids-spacing-2);
+              border-radius: var(--ids-radius-12);
+              width: 100%;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translateX(-50%) translateY(-50%);
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             </code>
           </td>
         </tr>
         <tr>
-          <td class="ids-cell-left ids-docs-classname">.ids-profile-image</td>
+          <td class="ids-cell-left ids-docs-classname">.ids-snackbar-content</td>
           <td class="ids-cell-left">
-            <code class="ids-docs-code">width: 100%;
+            <code class="ids-docs-code">display: flex;
+              flex-direction: column;
+              flex: 1;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-snackbar-title</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: var(--ids-size-body4);
+              font-weight: var(--ids-font-semibold);
+              line-height: var(--ids-line-body4-tight);
+              display: flex;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-snackbar-description</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: var(--ids-size-caption);
+              line-height: var(--ids-line-caption);
+              color: var(--ids-color-gray-200);
+              margin-top: var(--ids-spacing-half);
+              vertical-align: middle;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-snackbar-action</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: var(--ids-size-caption);
+              line-height: var(--ids-line-caption);
+              font-weight: var(--ids-font-bold);
+              color: var(--ids-color-white);
+              margin-top: 16px;
+              cursor: pointer;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-snackbar-close</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: var(--ids-size-h3);
+              cursor: pointer;
+              margin-left: var(--ids-spacing-2);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-snackbar-function</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              align-items: flex-end;
               height: 100%;
-              border-radius: 50%;
-              overflow: hidden;
             </code>
           </td>
         </tr>
         <tr>
-          <td class="ids-cell-left ids-docs-classname">.ids-profile-image:empty</td>
+          <td class="ids-cell-left ids-docs-classname">.ids-snackbar-without-close</td>
           <td class="ids-cell-left">
-            <code class="ids-docs-code">background-image: url("data:image/svg+xml,...");
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: cover;
+            <code class="ids-docs-code">align-items: flex-end;
             </code>
           </td>
         </tr>

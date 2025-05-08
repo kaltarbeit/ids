@@ -38,19 +38,47 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-overflow-menu-list</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin: 0;
+              padding: 0;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-overflow-menu-item</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">list-style: none;
+              padding: var(--ids-spacing-1-half) var(--ids-spacing-half);
+              margin: 0;
+              font-size: var(--ids-size-body2);
+              line-height: var(--ids-line-body2-tight);
+              font-weight: var(--ids-font-medium);
+              color: var(--ids-color-gray-500);
+              cursor: pointer;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-overflow-menu-item-selected</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: relative;
+              color: var(--ids-color-gray-900);
+              background: var(--ids-color-gray-100);
+              font-weight: var(--ids-font-bold);
+              padding: var(--ids-spacing-1-half) var(--ids-spacing-3);
+              margin: 0 -20px;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -105,19 +133,74 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">ids-fab-menu</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              position: absolute;
+              bottom: var(--ids-spacing-3);
+              right: var(--ids-spacing-3);
+              z-index: 1001;
+              gap: var(--ids-spacing-1-half);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-fab-menu-list</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              flex-direction: column;
+              gap: var(--ids-spacing-1-half);
+              transform: translateY(10px);
+              opacity: 0;
+              transition: opacity 0.3s ease, transform 0.3s ease;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-fab-menu-item</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              gap: var(--ids-spacing-1);
+              cursor: pointer;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-fab-menu-open</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-fab-menu-open .ids-fab-menu-list</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">opacity: 1;
+              transform: translateY(0);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-fab-menu-text</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: var(--ids-size-body5);
+              line-height: var(--ids-line-body5-tight);
+              color: var(--ids-color-white);
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -153,10 +236,8 @@
                   </div>
                 </div>
                 <div class="ids-fab-menu-toggle">
-                  <div class="ids-fab-menu-toggle-icon">
-                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.9951 15.5352C17.2855 15.8256 17.2855 16.2965 16.9951 16.587C16.7046 16.8775 16.2337 16.8775 15.9432 16.587L9.03214 9.67591L2.12104 16.587C1.83059 16.8775 1.35967 16.8775 1.06922 16.587C0.778769 16.2965 0.77877 15.8256 1.06922 15.5352L7.98032 8.62409L1.06891 1.71269C0.778461 1.42223 0.778461 0.951316 1.06891 0.660863C1.35937 0.37041 1.83028 0.37041 2.12073 0.660863L9.03214 7.57227L15.9435 0.660863C16.234 0.37041 16.7049 0.37041 16.9954 0.660863C17.2858 0.951316 17.2858 1.42223 16.9954 1.71269L10.084 8.62409L16.9951 15.5352Z" fill="white"/>
-                    </svg>
+                  <div class="ids-fab-menu-toggle-icon-wrap">
+                    <div class="ids-fab-menu-toggle-icon">Menu</div>
                   </div>
                 </div>
               </div>
@@ -195,10 +276,8 @@
                   </div>
                 </div>
                 <div class="ids-fab-menu-toggle">
-                  <div class="ids-fab-menu-toggle-icon">
-                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.9951 15.5352C17.2855 15.8256 17.2855 16.2965 16.9951 16.587C16.7046 16.8775 16.2337 16.8775 15.9432 16.587L9.03214 9.67591L2.12104 16.587C1.83059 16.8775 1.35967 16.8775 1.06922 16.587C0.778769 16.2965 0.77877 15.8256 1.06922 15.5352L7.98032 8.62409L1.06891 1.71269C0.778461 1.42223 0.778461 0.951316 1.06891 0.660863C1.35937 0.37041 1.83028 0.37041 2.12073 0.660863L9.03214 7.57227L15.9435 0.660863C16.234 0.37041 16.7049 0.37041 16.9954 0.660863C17.2858 0.951316 17.2858 1.42223 16.9954 1.71269L10.084 8.62409L16.9951 15.5352Z" fill="white"/>
-                    </svg>
+                  <div class="ids-fab-menu-toggle-icon-wrap">
+                    <div class="ids-fab-menu-toggle-icon">Menu</div>
                   </div>
                 </div>
               </div>

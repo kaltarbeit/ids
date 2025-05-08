@@ -37,48 +37,53 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td class="ids-cell-left ids-docs-name" rowspan="3">
-            Default
+          <td class="ids-cell-left ids-docs-classname">.ids-toggle</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: inline-flex;
+              align-items: center;
+              cursor: pointer;
+              user-select: none;
+            </code>
           </td>
-          <td class="ids-cell-left ids-docs-classname">.ids-profile</td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-toggle-input</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: none;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-toggle-slider</td>
           <td class="ids-cell-left">
             <code class="ids-docs-code">position: relative;
-              width: 110px;
-              height: 110px;
+              width: 44px;
+              height: 24px;
+              background-color: #ffffff;
+              border-radius: 20px;
+              border: 2px solid #737684;
+              transition: background-color 0.3s;
+              margin-left: 6px;
+              box-sizing: border-box;
+              flex-shrink: 0;
             </code>
           </td>
         </tr>
         <tr>
-          <td class="ids-cell-left ids-docs-classname">.ids-profile-image</td>
+          <td class="ids-cell-left ids-docs-classname">.ids-toggle-label</td>
           <td class="ids-cell-left">
-            <code class="ids-docs-code">width: 100%;
-              height: 100%;
-              border-radius: 50%;
-              overflow: hidden;
-            </code>
-          </td>
-        </tr>
-        <tr>
-          <td class="ids-cell-left ids-docs-classname">.ids-profile-image:empty</td>
-          <td class="ids-cell-left">
-            <code class="ids-docs-code">background-image: url("data:image/svg+xml,...");
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: cover;
+            <code class="ids-docs-code">font-size: 14px;
+              font-weight: 700;
+              line-height: 18px;
+              color: #101116;
             </code>
           </td>
         </tr>
@@ -121,19 +126,82 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-toggle-inner-label</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: absolute;
+              z-index: 1;
+              top: 50%;
+              transform: translateY(-50%);
+              left: calc(50% - 6px);
+              color: #737684;
+              font-size: 12px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-toggle-black .ids-toggle-slider</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: 68px;
+              height: 28px;
+              background-color: #E1E3EA;
+              border: none;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-toggle-onoff .ids-toggle-slider</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: 69px;
+              height: 32px;
+              background-color: #E1E3EA;
+              border: none;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-toggle-with-label .ids-toggle-slider</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: 122px;
+              height: 32px;
+              background-color: #E1E3EA;
+              border: none;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-toggle-slider</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: relative;
+              width: 44px;
+              height: 24px;
+              background-color: #ffffff;
+              border-radius: 20px;
+              border: 2px solid #737684;
+              transition: background-color 0.3s;
+              margin-left: 6px;
+              box-sizing: border-box;
+              flex-shrink: 0;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-toggle-label</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: 14px;
+              font-weight: 700;
+              line-height: 18px;
+              color: #101116;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>

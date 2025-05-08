@@ -4,7 +4,7 @@
     right: 0;
     top: 0;
     height: 100%;
-    background: #ffffff;
+    background: var(--ids-color-white);
     z-index: 1001;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
@@ -19,20 +19,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: var(--ids-spacing-2);
 }
 
 .ids-popup-navigation-left {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 600;
-    color: #101116;
+    font-size: var(--ids-size-h3);
+    line-height: var(--ids-line-h3-tight);
+    font-weight: var(--ids-font-semibold);
+    color: var(--ids-color-gray-900);
 }
 
 .ids-popup-navigation-right {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: var(--ids-spacing-2-half);
     justify-content: right;
 }
 

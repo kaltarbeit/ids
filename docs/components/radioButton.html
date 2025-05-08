@@ -37,19 +37,91 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-radio</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              align-items: center;
+              cursor: pointer;
+              font-size: var(--ids-size-body2);
+              line-height: var(--ids-line-body2);
+              color: var(--ids-color-gray-900);
+              vertical-align: middle;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-radio-group</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              gap: var(--ids-spacing-4);
+              width: 100%;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-radio-input</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: none;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-radio label</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              align-items: center;
+              cursor: pointer;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-radio:before</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">content: "";
+              width: 24px;
+              height: 24px;
+              border: var(--ids-border-1-500);
+              border-radius: var(--ids-radius-full);
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              margin-right: var(--ids-spacing-1);
+              transition: border-color 0.2s ease-in-out;
+              box-sizing: border-box;
+              flex-shrink: 0;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-radio:has(.ids-radio-input:checked):before</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: 7px solid var(--ids-color-point-blue);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-radio:has(.ids-radio-input:disabled):before</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">background-color: var(--ids-color-gray-400);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-radio:has(.ids-radio-input:disabled:checked):before</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">background-color: var(--ids-color-gray-700);
+              border: 7px solid var(--ids-color-gray-100);
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -94,19 +166,41 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-radio-check</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">content: "";
+              width: 24px;
+              height: 24px;
+              background-image: url("data:image/svg+xml,...");
+              background-repeat: no-repeat;
+              background-position: center;
+              border: none;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-radio-check:has(.ids-radio-input:checked)</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-weight: var(--ids-font-bold);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-radio-check:has(.ids-radio-input:checked):before</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: none;
+              background-image: url("data:image/svg+xml,...");
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -152,19 +246,91 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-radio-box</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: 100%;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              gap: var(--ids-spacing-half);
+              background-color: var(--ids-color-white);
+              border: var(--ids-border-1-400);
+              border-radius: var(--ids-radius-12);
+              padding: var(--ids-spacing-2)  var(--ids-spacing-2-half);
+              position: relative;
+              cursor: pointer;
+              box-sizing: border-box;
+              color: var(--ids-color-gray-900);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-radio-box-lg</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">justify-content: space-between;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-radio-box-group</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              justify-content: space-between;
+              align-items: center;
+              gap: var(--ids-spacing-4);
+              width: 100%;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-radio-box:has(.ids-radio-box-input:checked):after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">content: " ";
+              width: 24px;
+              height: 24px;
+              background-image: url("data:image/svg+xml,...");
+              background-repeat: no-repeat;
+              background-position: center;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-radio-box:has(.ids-radio-box-input:checked)</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">background-color: var(--ids-color-blue-50);
+              border: 2px solid var(--ids-color-point-blue);
+              padding: 15px 19px;
+              box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.08);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-radio-box-label</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: var(--ids-size-h3);
+              line-height: var(--ids-line-h3);
+              font-weight: var(--ids-font-medium);
+              color: var(--ids-color-gray-700);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-radio-box:has(.ids-radio-box-input:checked) .ids-radio-box-label</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-weight: var(--ids-font-bold);
+              color: var(--ids-color-point-blue);
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -206,19 +372,17 @@
                   <label class="ids-radio-box ids-radio-box-lg">
                       <span class="ids-radio-box-content">
                           <input type="radio" name="radiobox2" class="ids-radio-box-input" checked />
-                          <span class="ids-radio-box-header">텍스트를 노출합니다</span>
-                          <span class="ids-radio-box-title">타이틀</span>
-                          <span class="ids-radio-box-text">텍스트를 노출합니다</span>
-                          <span class="ids-radio-box-text">텍스트를 노출합니다</span>
+                          <div class="ids-body4 ids-medium ids-mb-half">텍스트를 노출합니다</div>
+                          <div class="ids-h3 ids-bold ids-mb-1">타이틀</div>
+                          <div class="ids-body4 ids-text-gray-600">텍스트를 노출합니다<br/>텍스트를 노출합니다</div>
                       </span>
                   </label>
                   <label class="ids-radio-box ids-radio-box-lg">
                       <span class="ids-radio-box-content">
-                          <input type="radio" name="radiobox2" class="ids-radio-box-input" />
-                          <span class="ids-radio-box-header">텍스트를 노출합니다</span>
-                          <span class="ids-radio-box-title">타이틀</span>
-                          <span class="ids-radio-box-text">텍스트를 노출합니다</span>
-                          <span class="ids-radio-box-text">텍스트를 노출합니다</span>
+                          <input type="radio" name="radiobox2" class="ids-radio-box-input" checked />
+                          <div class="ids-body4 ids-medium ids-mb-half">텍스트를 노출합니다</div>
+                          <div class="ids-h3 ids-bold ids-mb-1">타이틀</div>
+                          <div class="ids-body4 ids-text-gray-600">텍스트를 노출합니다<br/>텍스트를 노출합니다</div>
                       </span>
                   </label>
               </div>

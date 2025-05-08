@@ -25,10 +25,8 @@
   </div>
 
   <section class="ids-docs-section">
-    <h2 class="ids-docs-section-title">Default</h2>
-
     <p class="ids-body4 ids-mt-8 ids-text-gray-500">
-      컴포넌트 스타일 가이드 <span class="ids-bold">Snackbar</span>을 구현한 클래스입니다.
+      컴포넌트 스타일 가이드 <span class="ids-bold">Text Area</span>을 구현한 클래스입니다.
     </p>
 
     <div class="ids-docs-reference ids-mt-3">
@@ -37,48 +35,89 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td class="ids-cell-left ids-docs-name" rowspan="3">
-            Default
-          </td>
-          <td class="ids-cell-left ids-docs-classname">.ids-profile</td>
+          <td class="ids-cell-left ids-docs-classname">.ids-text-area</td>
           <td class="ids-cell-left">
-            <code class="ids-docs-code">position: relative;
-              width: 110px;
-              height: 110px;
+            <code class="ids-docs-code">display: flex;
+              position: relative;
+              flex-direction: column;
+              padding: 12px;
+              border-radius: 8px;
+              font-family: Arial, sans-serif;
             </code>
           </td>
         </tr>
         <tr>
-          <td class="ids-cell-left ids-docs-classname">.ids-profile-image</td>
+          <td class="ids-cell-left ids-docs-classname">.ids-text-area-label</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: 14px;
+              font-weight: 500;
+              line-height: 18px;
+              color: #454855;
+              margin: 0 0 4px 8px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-text-area-field</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: relative;
+              width: 100%;
+              height: 120px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-text-area-input</td>
           <td class="ids-cell-left">
             <code class="ids-docs-code">width: 100%;
               height: 100%;
-              border-radius: 50%;
-              overflow: hidden;
+              padding: 16px;
+              font-size: 16px;
+              border: 1px solid #C5C8D3;
+              border-radius: 12px;
+              resize: none;
+              background-color: #fff;
+              box-sizing: border-box;
             </code>
           </td>
         </tr>
         <tr>
-          <td class="ids-cell-left ids-docs-classname">.ids-profile-image:empty</td>
+          <td class="ids-cell-left ids-docs-classname">.ids-text-area-footer</td>
           <td class="ids-cell-left">
-            <code class="ids-docs-code">background-image: url("data:image/svg+xml,...");
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: cover;
+            <code class="ids-docs-code">display: flex;
+              justify-content: flex-end;
+              font-size: 12px;
+              font-weight: 700;
+              line-height: 16px;
+              color: #737684;
+              margin-top: 6px;
+              padding-right: 4px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-text-area-clear</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: absolute;
+              right: 13px;
+              bottom: 13px;
+              width: 24px;
+              height: 24px;
+              appearance: none;
+              border: none;
+              background: none;
+              cursor: pointer;
+              padding: 0;
+              margin: 0;
+              display: none;
             </code>
           </td>
         </tr>
@@ -105,35 +144,7 @@
                   </div>
                   <div class="ids-text-area-footer">
                       <div class="ids-text-area-counter">
-                          <span class="ids-text-area-count">0</span>
-                          <span>/</span>
-                          <span class="ids-text-area-max-length"></span>자
-                      </div>
-                  </div>
-              </div>
-            </script>
-          </div>
-        </div>
-      </div>
-
-      <div class="ids-docs-example-block">
-        <span class="ids-label ids-label-line ids-label-blue">.ids-text-area</span>
-        <span class="ids-label ids-label-line ids-label-blue">.ids-text-area-lg</span>
-        <div class="ids-docs-example-code">
-          <div class="ids-docs-example"></div>
-          <div class="ids-docs-example-code-highlight">
-            <script type="text/plain" class="language-markup">
-              <div class="ids-text-area ids-text-area-lg">
-                  <label for="textarea" class="ids-text-area-label">타이틀</label>
-                  <div class="ids-text-area-field">
-                      <textarea id="textarea" class="ids-text-area-input" placeholder="플레이스 홀더" maxlength="500"></textarea>
-                      <button class="ids-text-area-clear">
-                          <i class="ids-icon ids-icon-clear">Clear</i>
-                      </button>
-                  </div>
-                  <div class="ids-text-area-footer">
-                      <div class="ids-text-area-counter">
-                          <span class="ids-text-area-count">0</span>
+                          <span class="ids-text-area-count ids-text-gray-900">0</span>
                           <span>/</span>
                           <span class="ids-text-area-max-length"></span>자
                       </div>

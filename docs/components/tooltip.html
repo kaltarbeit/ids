@@ -25,6 +25,97 @@
   </div>
 
   <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Base Style</h2>
+
+    <p class="ids-body4 ids-mt-8 ids-text-gray-500">
+      Popover 의 Base style 을 구현한 클래스입니다. 방향 표시가 포함되지 않은 Box 형 디자인으로 아래 제공되는 클래스와 조합으로 사용합니다.
+    </p>
+
+    <div class="ids-docs-reference ids-mt-3">
+      <div class="ids-docs-reference-button">
+        Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids-table ids-table-sm">
+        <thead>
+        <tr>
+          <th class="ids-cell-left">Class</th>
+          <th class="ids-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: absolute;
+              z-index: 999;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip:after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">content: "";
+              position: absolute;
+              width: 12px;
+              height: 9px;
+              background-repeat: no-repeat;
+              background-position: center;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip-content</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: relative;
+              background: #fff;
+              color: #4285f4;
+              border: 1px solid #4285f4;
+              border-radius: 8px;
+              font-size: 12px;
+              line-height: 16px;
+              font-weight: 700;
+              padding: 8px 12px;
+              min-width: 180px;
+              box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip-content::after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">content: "";
+              position: absolute;
+              top: -9px;
+              left: 50%;
+              transform: translateX(-50%);
+              border: 9px solid transparent;
+              border-bottom-color: #fff;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip-close</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: absolute;
+              top: 8px;
+              right: 8px;
+              background: none;
+              border: none;
+              font-size: 14px;
+              color: #4285f4;
+              cursor: pointer;
+              line-height: 1;
+              padding: 0;
+            </code>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="ids-docs-section">
     <h2 class="ids-docs-section-title">Top Pointer</h2>
 
     <p class="ids-body4 ids-mt-8 ids-text-gray-500">
@@ -37,19 +128,44 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip[class*="ids-tooltip-top-"]:after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">background-image: url("data:image/svg+xml,...");
+              transform: rotate(180deg);
+              top: -8px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip.ids-tooltip-top-center:after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">left: 50%;
+              margin-left: -5px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip.ids-tooltip-top-left:after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">left: 20px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip.ids-tooltip-top-right:after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">right: 20px;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -139,19 +255,43 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip[class*="ids-tooltip-bottom-"]:after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">background-image: url("data:image/svg+xml,...");
+              bottom: -8px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip.ids-tooltip-bottom-center:after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">left: 50%;
+              margin-left: -5px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip.ids-tooltip-bottom-left:after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">left: 20px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip.ids-tooltip-bottom-right:after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">right: 20px;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -241,19 +381,43 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip[class*="ids-tooltip-right-"]:after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">background-image: url("data:image/svg+xml,...");
+              right: -9px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip.ids-tooltip-right-top:after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">top: 10px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip.ids-tooltip-right-middle:after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">top: 50%;
+              margin-top: -5px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip.ids-tooltip-right-bottom:after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">bottom: 10px;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -343,19 +507,44 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip[class*="ids-tooltip-left-"]:after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">background-image: url("data:image/svg+xml,...");
+              transform: rotate(180deg);
+              left: -9px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip.ids-tooltip-left-top:after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">top: 10px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip.ids-tooltip-left-middle:after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">top: 50%;
+              margin-top: -5px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip.ids-tooltip-left-bottom:after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">bottom: 10px;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -444,22 +633,33 @@
         Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
       </div>
 
-      <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
-        <thead>
-        <tr>
-          <th class="ids-cell-left">Name</th>
-          <th class="ids-cell-left">Class</th>
-          <th class="ids-cell-left">Style</th>
-        </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
+
+
+      <div class="ids-docs-reference ids-mt-3">
+        <div class="ids-docs-reference-button">
+          Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
+        </div>
+
+        <table class="ids-table ids-table-sm">
+          <thead>
+          <tr>
+            <th class="ids-cell-left">Class</th>
+            <th class="ids-cell-left">Style</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="ids-cell-left ids-docs-classname">.ids-tooltip-image</td>
+            <td class="ids-cell-left">
+              <code class="ids-docs-code">height: 100px;
+                margin-top: 8px;
+                margin-bottom: 4px;
+              </code>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <h4 class="ids-docs-section-label">Examples</h4>
@@ -509,19 +709,24 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tooltip-text</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: 12px;
+              line-height: 16px;
+              color: #454855;
+              font-weight: 400;
+              margin-top: 8px;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>

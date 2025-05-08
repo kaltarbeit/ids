@@ -30,7 +30,7 @@
 
 .ids-radio-group {
     display: flex;
-    gap: 36px;
+    gap: var(--ids-spacing-4);
     width: 100%;
 }
 
@@ -38,10 +38,10 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    font-size: 16px;
-    line-height: 23px;
+    font-size: var(--ids-size-body2);
+    line-height: var(--ids-line-body2);
+    color: var(--ids-color-gray-900);
     vertical-align: middle;
-    color: #333;
 }
 
 .ids-radio-input {
@@ -58,28 +58,28 @@
     content: "";
     width: 24px;
     height: 24px;
-    border: 1px solid #737684;
-    border-radius: 50%;
+    border: var(--ids-border-1-500);
+    border-radius: var(--ids-radius-full);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-right: 8px;
+    margin-right: var(--ids-spacing-1);
     transition: border-color 0.2s ease-in-out;
     box-sizing: border-box;
     flex-shrink: 0;
 }
 
 .ids-radio:has(.ids-radio-input:checked):before {
-    border: 7px solid #3d8bf5;
+    border: 7px solid var(--ids-color-point-blue);
 }
 
 .ids-radio:has(.ids-radio-input:disabled):before {
-    background-color: #979BAA;
+    background-color: var(--ids-color-gray-400);
 }
 
 .ids-radio:has(.ids-radio-input:disabled:checked):before {
-    background-color: #454855;
-    border: 7px solid #E1E3EA;
+    background-color: var(--ids-color-gray-700);
+    border: 7px solid var(--ids-color-gray-100);
 }
 
 .ids-radio.ids-radio-check:before {
@@ -93,7 +93,7 @@
 }
 
 .ids-radio.ids-radio-check:has(.ids-radio-input:checked) {
-    font-weight: 700;
+    font-weight: var(--ids-font-bold);
 }
 
 .ids-radio.ids-radio-check:has(.ids-radio-input:checked):before {

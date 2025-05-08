@@ -2,15 +2,15 @@
 .ids-indicator-more {
     display: flex;
     align-items: center;
-    font-size: 14px;
-    line-height: 18px;
-    color: #30323B;
+    font-size: var(--ids-size-body4);
+    line-height: var(--ids-line-body4-tight);
+    font-weight: var(--ids-font-medium);
+    color: var(--ids-color-gray-800);
     cursor: pointer;
-    font-weight: 500;
 }
 
 .ids-indicator-more-count {
-    margin-left: 4px;
+    margin-left: var(--ids-spacing-half);
 }
 
 .ids-indicator-more-icon {

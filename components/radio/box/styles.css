@@ -2,8 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 36px;
-    font-family: Arial, sans-serif;
+    gap: var(--ids-spacing-4);
     width: 100%;
 }
 
@@ -22,32 +21,18 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 4px;
-    background-color: #fff;
-    border: 1px solid #979BAA;
-    border-radius: 12px;
-    padding: 18px 20px;
+    gap: var(--ids-spacing-half);
+    background-color: var(--ids-color-white);
+    border: var(--ids-border-1-400);
+    border-radius: var(--ids-radius-12);
+    padding: var(--ids-spacing-2)  var(--ids-spacing-2-half);
     position: relative;
     cursor: pointer;
-    box-sizing: border-box;
-    color: #101116;
+    color: var(--ids-color-gray-900);
 }
 
 .ids-radio-box-lg {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    gap: 4px;
-    background-color: #fff;
-    border: 1px solid #979BAA;
-    border-radius: 12px;
-    padding: 18px 20px;
-    position: relative;
-    cursor: pointer;
-    box-sizing: border-box;
-    color: #101116;
 }
 
 .ids-radio-box:has(.ids-radio-box-input:checked):after {
@@ -60,22 +45,22 @@
 }
 
 .ids-radio-box:has(.ids-radio-box-input:checked) {
-    background-color: #F3F9FF;
-    border: 2px solid #2873E3;
-    padding: 17px 19px;
+    background-color: var(--ids-color-blue-50);
+    border: 2px solid var(--ids-color-point-blue);
+    padding: 15px 19px;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.08);
 }
 
 .ids-radio-box .ids-radio-box-label {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26px;
-    color: #454855;
+    font-size: var(--ids-size-h3);
+    line-height: var(--ids-line-h3);
+    font-weight: var(--ids-font-medium);
+    color: var(--ids-color-gray-700);
 }
 
 .ids-radio-box:has(.ids-radio-box-input:checked) .ids-radio-box-label {
-    font-weight: 700;
-    color: #2873E3;
+    font-weight: var(--ids-font-bold);
+    color: var(--ids-color-point-blue);
 }
 
 .ids-radio-box .ids-radio-box-label > * {
@@ -103,32 +88,6 @@
 
 .ids-radio-box .ids-radio-box-content {
     text-align: left;
-}
-
-.ids-radio-box .ids-radio-box-header {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    color: #101116;
-    margin-bottom: 4px;
-}
-
-.ids-radio-box .ids-radio-box-title {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.ids-radio-box .ids-radio-box-text {
-    display: block;
-    font-size: 14px;
-    color: #5A5E6C;
-    line-height: 20px;
-    font-weight: 400;
 }
 
 .ids-radio-box .ids-radio-box-input {

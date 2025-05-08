@@ -29,7 +29,7 @@
     <h2 class="ids-docs-section-title">Default</h2>
 
     <p class="ids-body4 ids-mt-8 ids-text-gray-500">
-      컴포넌트 스타일 가이드 <span class="ids-bold">Profile</span>을 구현한 클래스입니다.
+      컴포넌트 스타일 가이드 <span class="ids-bold">Progress Step > Horizontal</span>을 구현한 클래스입니다.
     </p>
 
     <div class="ids-docs-reference ids-mt-3">
@@ -38,19 +38,103 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-progress-step</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              align-items: center;
+              gap: var(--ids-spacing-1);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-progress-step-item</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: 24px;
+              height: 24px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: var(--ids-radius-12);
+              font-size: var(--ids-size-body5);
+              line-height: var(--ids-line-body5-tight);
+              font-weight: var(--ids-font-bold);
+              box-sizing: border-box;
+              padding: 3px 0 1px 0;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-progress-step-item</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: 24px;
+              height: 24px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: var(--ids-radius-12);
+              font-size: var(--ids-size-body5);
+              line-height: var(--ids-line-body5-tight);
+              font-weight: var(--ids-font-bold);
+              box-sizing: border-box;
+              padding: 3px 0 1px 0;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-progress-step-item.completed</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: 1px solid var(--ids-color-point-blue);
+              position: relative;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-progress-step-item.completed::before</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">content: " ";
+              font-size: 0;
+              width: 14px;
+              height: 10px;
+              background-image: url("data:image/svg+xml,...");
+              background-repeat: no-repeat;
+              background-position: center;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-progress-step-item.active</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: 1px solid var(--ids-color-point-blue);
+              background: var(--ids-color-point-blue);
+              color: var(--ids-color-white);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-progress-step-item.inactive</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: 1px solid var(--ids-color-gray-100);
+              background: var(--ids-color-gray-100);
+              color: var(--ids-color-gray-600);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-progress-step-item.with-label</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: auto;
+              padding: 3px 8px 1px 9px;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -109,19 +193,95 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-progress-bar</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 100%;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-progress-bar-labels</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              justify-content: space-between;
+              width: 100%;
+              margin-bottom: 17px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-progress-bar-label</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: var(--ids-size-body2);
+              font-weight: var(--ids-font-medium);
+              color: var(--ids-color-gray-500);
+              position: relative;
+              padding: 6px 8px 4px 8px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-progress-bar-label.active</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-weight: var(--ids-font-bold);
+              background: rgba(0, 0, 0, 0.7);
+              color: white;
+              font-size: var(--ids-size-body4);
+              border-radius: var(--ids-radius-6);
+              white-space: nowrap;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-progress-bar-container</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: 100%;
+              height: 16px;
+              background: #E5EAF7;
+              border-radius: var(--ids-radius-full);
+              overflow: hidden;
+              position: relative;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-progress-bar-fill</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">height: 100%;
+              background: linear-gradient(to right, #51A5FF, #7F82F5);
+              border-radius: var(--ids-radius-full);
+              transition: width 0.3s ease-in-out;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-progress-step-item.inactive</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: 1px solid var(--ids-color-gray-100);
+              background: var(--ids-color-gray-100);
+              color: var(--ids-color-gray-600);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-progress-step-item.with-label</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: auto;
+              padding: 3px 8px 1px 9px;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>

@@ -39,23 +39,14 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td class="ids-cell-left ids-docs-name">
-            Default
-          </td>
           <td class="ids-cell-left ids-docs-classname">.ids-popup</td>
           <td class="ids-cell-left">
             <code class="ids-docs-code">position: fixed;
@@ -65,6 +56,60 @@
               transform: translate(-50%, -50%);
               box-sizing: border-box;
               z-index: 1001;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-popup-body</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">background: var(--ids-color-white);
+              border-radius: var(--ids-radius-12);
+              box-shadow: 0 10px 24px 0 rgba(0, 0, 0, 0.24);
+              text-align: center;
+              overflow: hidden;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-popup-title</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding: var(--ids-spacing-2-half);
+              font-size: var(--ids-size-h3);
+              line-height: var(--ids-line-h3-tight);
+              font-weight: var(--ids-font-bold);
+              margin-bottom: var(--ids-spacing-2-half);
+              margin-left: var(--ids-spacing-quarter);
+              text-align: left;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-popup-footer</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              gap: var(--ids-spacing-1);
+              padding: 0 var(--ids-spacing-2-half) var(--ids-spacing-3);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-popup-button-group</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              gap: var(--ids-spacing-1);
+              padding: 0 var(--ids-spacing-2-half) var(--ids-spacing-3);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-popup-checkbox</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              align-items: center;
+              font-size: var(--ids-size-body4);
+              color: var(--ids-color-white);
+              margin-bottom: 14px;
+              margin-left: 20px;
             </code>
           </td>
         </tr>
@@ -156,23 +201,14 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td class="ids-cell-left ids-docs-name">
-            Default
-          </td>
           <td class="ids-cell-left ids-docs-classname">.ids-popup-full</td>
           <td class="ids-cell-left">
             <code class="ids-docs-code">position: fixed;
@@ -180,10 +216,51 @@
               right: 0;
               top: 0;
               height: 100%;
-              background: #ffffff;
+              background: var(--ids-color-white);
               z-index: 1001;
               opacity: 1;
               transition: opacity 0.3s ease-in-out;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-popup-navigation</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">height: 56px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: var(--ids-spacing-2);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-popup-navigation-left</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: var(--ids-size-h3);
+              line-height: var(--ids-line-h3-tight);
+              font-weight: var(--ids-font-semibold);
+              color: var(--ids-color-gray-900);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-popup-navigation-right</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              align-items: center;
+              gap: var(--ids-spacing-2-half);
+              justify-content: right;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-popup-full-footer</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: 100%;
+              position: absolute;
+              bottom: 0;
+              box-sizing: border-box;
             </code>
           </td>
         </tr>

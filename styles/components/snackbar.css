@@ -17,12 +17,11 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    background-color: #3a3d45;
+    background-color: #3A3D45;
     color: white;
-    padding: 16px;
-    border-radius: 12px;
+    padding: var(--ids-spacing-2);
+    border-radius: var(--ids-radius-12);
     width: 100%;
-    font-family: Arial, sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -41,9 +40,9 @@
 }
 
 .ids-snackbar-title {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 18px;
+    font-size: var(--ids-size-body4);
+    font-weight: var(--ids-font-semibold);
+    line-height: var(--ids-line-body4-tight);
     display: flex;
 }
 
@@ -52,25 +51,25 @@
 }
 
 .ids-snackbar-description {
-    font-size: 12px;
-    line-height: 16px;
-    color: #C5C8D3;
-    margin-top: 4px;
+    font-size: var(--ids-size-caption);
+    line-height: var(--ids-line-caption);
+    color: var(--ids-color-gray-200);
+    margin-top: var(--ids-spacing-half);
     vertical-align: middle;
 }
 
 .ids-snackbar-action {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 16px;
-    color: #FFFFFF;
+    font-size: var(--ids-size-caption);
+    line-height: var(--ids-line-caption);
+    font-weight: var(--ids-font-bold);
+    color: var(--ids-color-white);
     margin-top: 16px;
     cursor: pointer;
 }
 .ids-snackbar-close {
-    font-size: 18px;
+    font-size: var(--ids-size-h3);
     cursor: pointer;
-    margin-left: 16px;
+    margin-left: var(--ids-spacing-2);
 }
 
 .ids-snackbar-function {

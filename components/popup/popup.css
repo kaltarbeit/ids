@@ -29,9 +29,9 @@
 }
 
 .ids-popup-body {
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: var(--ids-color-white);
+    border-radius: var(--ids-radius-12);
+    box-shadow: 0 10px 24px 0 rgba(0, 0, 0, 0.24);
     text-align: center;
     overflow: hidden;
 }
@@ -40,33 +40,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px;
-    color: #454855;
+    padding: var(--ids-spacing-3);
+    color: var(--ids-color-gray-700);
 
 }
 
 .ids-popup-title {
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-    margin-bottom: 20px;
-    margin-left: 4px;
+    padding: var(--ids-spacing-2-half);
+    font-size: var(--ids-size-h3);
+    line-height: var(--ids-line-h3-tight);
+    font-weight: var(--ids-font-bold);
+    margin-bottom: var(--ids-spacing-2-half);
+    margin-left: var(--ids-spacing-quarter);
     text-align: left;
 }
 
 .ids-popup-buttons {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: var(--ids-spacing-2-half);
 }
 
 /* 체크박스 */
 .ids-popup-checkbox {
     display: flex;
     align-items: center;
-    font-size: 14px;
-    color: #ffffff;
+    font-size: var(--ids-size-body4);
+    color: var(--ids-color-white);
     margin-bottom: 14px;
     margin-left: 20px;
 }
@@ -81,10 +81,10 @@
     opacity: 1;
 }
 
-.ids-popup .ids-popup-button-group {
+.ids-popup-button-group {
     display: flex;
-    gap: 8px;
-    padding: 0 20px 24px;
+    gap: var(--ids-spacing-1);
+    padding: 0 var(--ids-spacing-2-half) var(--ids-spacing-3);
 }
 
 .ids-popup-close {
