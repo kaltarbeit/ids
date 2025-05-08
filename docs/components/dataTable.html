@@ -25,11 +25,11 @@
   </div>
 
   <section class="ids-docs-section">
-    <h2 class="ids-docs-section-title">Base Style</h2>
+    <h2 class="ids-docs-section-title">Default</h2>
 
     <p class="ids-body4 ids-mt-8 ids-text-gray-500">
       Data Table 기본 스타일을 구성합니다.<br/>
-      <span class="ids-bold">.ids-chip-tag</span> 와의 조합으로 Tag형 Chip 표현이 가능합니다.
+      컴포넌트 스타일 가이드 <span class="ids-bold">Data Table > Default</span>을 구현한 클래스입니다.
     </p>
 
     <div class="ids-docs-reference ids-mt-3">
@@ -38,23 +38,14 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td class="ids-cell-left ids-docs-name" rowspan="3">
-            Base Table
-          </td>
           <td class="ids-cell-left ids-docs-classname">.ids-table</td>
           <td class="ids-cell-left">
             <code class="ids-docs-code">width: 100%;
@@ -89,7 +80,7 @@
           <div class="ids-docs-example"></div>
           <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
-              <h3 class="ids-h3">타이틀</h3>
+              <h3 class="ids-body1">타이틀</h3>
               <table class="ids-table">
                 <thead>
                 <tr>
@@ -122,7 +113,7 @@
           <div class="ids-docs-example"></div>
           <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
-              <h3 class="ids-h3">타이틀</h3>
+              <h3 class="ids-body1">타이틀</h3>
               <table class="ids-table">
                 <tbody>
                 <tr>
@@ -150,7 +141,7 @@
           <div class="ids-docs-example"></div>
           <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
-              <h3 class="ids-h3">타이틀</h3>
+              <h3 class="ids-body1">타이틀</h3>
               <table class="ids-table">
                 <thead>
                 <tr>
@@ -204,27 +195,42 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td class="ids-cell-left ids-docs-name" rowspan="3">
-            Base Table
-          </td>
           <td class="ids-cell-left ids-docs-classname">.ids-row-expandable</td>
           <td class="ids-cell-left">
-            <code class="ids-docs-code">
+            <code class="ids-docs-code">cursor: pointer;
             </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-row-expandable > th:after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">content: ' ';
+              display: inline-block;
+              position: absolute;
+              right: 10px;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 18px;
+              height: 18px;
+              background-image: url("data:image/svg+xml,...");
+              background-repeat: no-repeat;
+              background-position: center;
+              margin-left: 10px;
+              transition: transform 0.3s cubic-bezier(.7,.2,.9,.6);</code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-row-expandable > th</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding-right: 28px;</code>
           </td>
         </tr>
         <tr>
@@ -237,6 +243,19 @@
           <td class="ids-cell-left ids-docs-classname">.ids-row-sub.ids-row-sub-collapsed</td>
           <td class="ids-cell-left">
             <code class="ids-docs-code">display: none;</code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-row-sub th </td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-weight: 500;
+              padding-left: 30px;</code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-row-sub th </td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">background-color: #E4F2FF;</code>
           </td>
         </tr>
         </tbody>
@@ -252,7 +271,7 @@
           <div class="ids-docs-example"></div>
           <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
-              <h3 class="ids-h3">타이틀</h3>
+              <h3 class="ids-body1">타이틀</h3>
               <table class="ids-table ids-table-sm">
                 <colgroup>
                   <col style="width: 33.33%;" />
@@ -320,39 +339,30 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td class="ids-cell-left ids-docs-name" rowspan="3">
-            Base Table
-          </td>
-          <td class="ids-cell-left ids-docs-classname">.ids-row-expandable</td>
+          <td class="ids-cell-left ids-docs-classname">.ids-row-selectable</td>
           <td class="ids-cell-left">
             <code class="ids-docs-code">
             </code>
           </td>
         </tr>
         <tr>
-          <td class="ids-cell-left ids-docs-classname">.ids-row-sub</td>
+          <td class="ids-cell-left ids-docs-classname">.ids-row-selectable:has(input:checked) th</td>
           <td class="ids-cell-left">
-            <code class="ids-docs-code"></code>
+            <code class="ids-docs-code">background-color: #E4F2FF;</code>
           </td>
         </tr>
         <tr>
-          <td class="ids-cell-left ids-docs-classname">.ids-row-sub.ids-row-sub-collapsed</td>
+          <td class="ids-cell-left ids-docs-classname">.ids-row-selectable:has(input:checked) td</td>
           <td class="ids-cell-left">
-            <code class="ids-docs-code">display: none;</code>
+            <code class="ids-docs-code">background-color: var(--ids-color-blue-50);</code>
           </td>
         </tr>
         </tbody>

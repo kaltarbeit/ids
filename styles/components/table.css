@@ -32,6 +32,11 @@
 .ids-table.ids-table-sm th, .ids-table.ids-table-sm td {
     padding: 12px 10px;
 }
+
+
+.ids-table .ids-row-expandable {
+    cursor: pointer;
+}
 .ids-table .ids-row-expandable > th:after {
     content: ' ';
     display: inline-block;
@@ -52,10 +57,6 @@
     padding-right: 28px;
 }
 
-.ids-table .ids-row-expandable {
-    cursor: pointer;
-}
-
 .ids-table .ids-row-expandable.ids-row-expendable-collapsed > th:after {
     transform:  translateY(-50%) rotate(180deg);
 }
@@ -74,5 +75,5 @@
 }
 
 .ids-row-selectable:has(input:checked) td {
-    background-color: #F3F9FF;
+    background-color: var(--ids-color-blue-50);
 }
