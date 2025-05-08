@@ -238,3 +238,7 @@
 .ids-text-middle {
     vertical-align: middle !important;
 }
+
+.ids-text-right {
+    text-align: right !important;
+}

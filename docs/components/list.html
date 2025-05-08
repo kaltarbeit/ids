@@ -38,19 +38,67 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-list</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">background: white;
+              margin: auto;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-list-item</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 10px 0;
+              background: white;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-list-info</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              align-items: center;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-list-details</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              gap: 6px;
+              flex-direction: column;
+              margin-left: 12px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-list-item-icon</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: 32px;
+              height: 32px;
+              border-radius: var(--ids-radius-full);
+              overflow: hidden;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-favorite</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">cursor: pointer;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -80,12 +128,12 @@
                   </div>
                   <div class="ids-accordion-details ids-px-3">
                     <div class="ids-list">
-                      <div class="ids-item">
-                        <div class="ids-info">
-                          <div class="ids-bank-icon">
+                      <div class="ids-list-item">
+                        <div class="ids-list-info">
+                          <div class="ids-list-item-icon">
                             <i class="ids-icon ids-icon-xxl ids-icon-bank-ibk">IBK</i>
                           </div>
-                          <div class="ids-details ids-bold">
+                          <div class="ids-list-details ids-bold">
                             <div class="ids-body2-tight ids-text-gray-700">정다운</div>
                             <div class="ids-caption ids-text-gray-500">IBK기업 488-087904-00-201</div>
                           </div>
@@ -94,12 +142,12 @@
                           <i class="ids-icon ids-icon-star">Favorite</i>
                         </div>
                       </div>
-                      <div class="ids-item">
-                        <div class="ids-info">
-                          <div class="ids-bank-icon">
+                      <div class="ids-list-item">
+                        <div class="ids-list-info">
+                          <div class="ids-list-item-icon">
                             <i class="ids-icon ids-icon-xxl ids-icon-bank-kbank">K뱅크</i>
                           </div>
-                          <div class="ids-details ids-bold">
+                          <div class="ids-list-details ids-bold">
                             <div class="ids-body2-tight ids-text-gray-700">이지은</div>
                             <div class="ids-caption ids-text-gray-500">K뱅크 663-243-305890</div>
                           </div>
@@ -109,12 +157,12 @@
                         </div>
                       </div>
 
-                      <div class="ids-item">
-                        <div class="ids-info">
-                          <div class="ids-bank-icon">
+                      <div class="ids-list-item">
+                        <div class="ids-list-info">
+                          <div class="ids-list-item-icon">
                             <i class="ids-icon ids-icon-xxl ids-icon-bank-kb">국민</i>
                           </div>
-                          <div class="ids-details ids-bold">
+                          <div class="ids-list-details ids-bold">
                             <div class="ids-body2-tight ids-text-gray-700">기은센</div>
                             <div class="ids-caption ids-text-gray-500">국민 109876-54-321098</div>
                           </div>
@@ -124,12 +172,12 @@
                         </div>
                       </div>
 
-                      <div class="ids-item">
-                        <div class="ids-info">
-                          <div class="ids-bank-icon">
+                      <div class="ids-list-item">
+                        <div class="ids-list-info">
+                          <div class="ids-list-item-icon">
                             <i class="ids-icon ids-icon-xxl ids-icon-bank-ibk">IBK</i>
                           </div>
-                          <div class="ids-details ids-bold">
+                          <div class="ids-list-details ids-bold">
                             <div class="ids-body2-tight ids-text-gray-700">이지은</div>
                             <div class="ids-caption ids-text-gray-500">IBK기업 11-23-459794-01</div>
                           </div>
@@ -163,19 +211,51 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-card-list</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              flex-direction: column;
+              gap: var(--ids-spacing-1-half);
+              margin-top: var(--ids-spacing-2);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-card-header</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              align-items: center;
+              justify-content: space-between;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-card-header-wrap</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              gap: var(--ids-spacing-half);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-menu-button</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: var(--ids-size-h3);
+              color: var(--ids-color-gray-900);
+              cursor: pointer;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -214,34 +294,34 @@
                             <div class="ids-card-header">
                                 <div class="ids-card-header-wrap">
                                     <span class="ids-label ids-label-blue-600">레이블</span>
-                                    <span class="ids-account-type">개인사업자통장</span>
+                                    <span class="ids-caption ids-bold ids-text-gray-500">개인사업자통장</span>
                                 </div>
                                 <div class="ids-menu-button">⋮</div>
                             </div>
-                            <div class="ids-account">기업 030-093995-01-010</div>
-                            <div class="ids-balance">69,000,123 원</div>
+                            <div class="ids-body4 ids-semibold ids-mt-half">기업 030-093995-01-010</div>
+                            <div class="ids-body2 ids-bold ids-mt-half ids-text-right">69,000,123 원</div>
                         </div>
                         <div class="ids-card ids-card-outlined">
                             <div class="ids-card-header">
                                 <div class="ids-card-header-wrap">
                                     <span class="ids-label ids-label-blue-600">레이블</span>
-                                    <span class="ids-account-type">개인사업자통장</span>
+                                    <span class="ids-caption ids-bold ids-text-gray-500">개인사업자통장</span>
                                 </div>
                                 <div class="ids-menu-button">⋮</div>
                             </div>
-                            <div class="ids-account">기업 030-093995-01-010</div>
-                            <div class="ids-balance">69,000,123 원</div>
+                            <div class="ids-body4 ids-semibold ids-mt-half">기업 030-093995-01-010</div>
+                            <div class="ids-body2 ids-bold ids-mt-half ids-text-right">69,000,123 원</div>
                         </div>
                         <div class="ids-card ids-card-outlined">
                             <div class="ids-card-header">
                                 <div class="ids-card-header-wrap">
                                     <span class="ids-label ids-label-blue-600">레이블</span>
-                                    <span class="ids-account-type">개인사업자통장</span>
+                                    <span class="ids-caption ids-bold ids-text-gray-500">개인사업자통장</span>
                                 </div>
                                 <div class="ids-menu-button">⋮</div>
                             </div>
-                            <div class="ids-account">기업 030-093995-01-010</div>
-                            <div class="ids-balance">69,000,123 원</div>
+                            <div class="ids-body4 ids-semibold ids-mt-half">기업 030-093995-01-010</div>
+                            <div class="ids-body2 ids-bold ids-mt-half ids-text-right">69,000,123 원</div>
                         </div>
                     </div>
                   </div>
@@ -268,19 +348,51 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-menu</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">background: var(--ids-color-white);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-menu-section</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin: var(--ids-spacing-5) var(--ids-spacing-3);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-menu-title</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: var(--ids-size-body4);
+              line-height: var(--ids-line-body4);
+              color: var(--ids-color-gray-500);
+              font-weight: var(--ids-font-bold);
+              margin-top: var(--ids-spacing-5);
+              margin-bottom: var(--ids-spacing-3);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-menu-item</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: var(--ids-size-h3);
+              font-weight: var(--ids-font-bold);
+              line-height: var(--ids-line-h3-tight);
+              color: var(--ids-color-gray-900);
+              padding: var(--ids-spacing-1-half) 0;
+              cursor: pointer;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -331,19 +443,40 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-list-item-read</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">background: #E4F2FF;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-list-point-icon</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: absolute;
+              top:0;
+              left: 0;
+              width: 32px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-list-content</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">flex-grow: 1;
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -389,62 +522,48 @@
                   </div>
               </div>
               <div class="ids-list">
-                  <div class="ids-item read">
-                      <div class="ids-item-wrap">
-                          <div class="ids-point-icon">
-                              <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <g clip-path="url(#clip0_4912_6656)">
-                                      <path d="M10.072 19.8902C15.2895 19.8902 19.5191 15.6606 19.5191 10.4431C19.5191 5.22568 15.2895 0.996094 10.072 0.996094C4.85459 0.996094 0.625 5.22568 0.625 10.4431C0.625 15.6606 4.85459 19.8902 10.072 19.8902Z" fill="#4393F0"/>
-                                      <path d="M10.7734 12.2644H9.06725C8.08178 12.2644 7.28125 11.4626 7.28125 10.4784V7.86022C7.28125 6.87475 8.08305 6.07422 9.06725 6.07422H10.7734C12.4809 6.07422 13.8692 7.46248 13.8692 9.16995C13.8692 10.8774 12.4809 12.2657 10.7734 12.2657V12.2644ZM9.06725 7.84628C9.05965 7.84628 9.05458 7.85262 9.05458 7.85895V10.4771C9.05458 10.4847 9.06091 10.4898 9.06725 10.4898H10.7734C11.503 10.4898 12.0958 9.89701 12.0958 9.16741C12.0958 8.43782 11.503 7.84502 10.7734 7.84502H9.06725V7.84628Z" fill="white"/>
-                                      <path d="M8.16792 15.0145C7.67772 15.0145 7.28125 14.618 7.28125 14.1278V8.50385C7.28125 8.01365 7.67772 7.61719 8.16792 7.61719C8.65811 7.61719 9.05458 8.01365 9.05458 8.50385V14.1278C9.05458 14.618 8.65811 15.0145 8.16792 15.0145Z" fill="white"/>
-                                  </g>
-                                  <defs>
-                                      <clipPath id="clip0_4912_6656">
-                                          <rect width="19.0909" height="19.0909" fill="white" transform="translate(0.59375 0.957031)"/>
-                                      </clipPath>
-                                  </defs>
-                              </svg>
+                  <div class="ids-list-item ids-list-item-read">
+                      <div class="ids-list-item-wrap">
+                          <div class="ids-list-point-icon">
+                              <i class="ids-icon ids-icon-point">Point</i>
                           </div>
                           <div class="ids-list-content">
-                              <div class="ids-list-title">포인트</div>
-                              <div class="ids-list-text">김기업님<br>출석체크 포인트 10P가 적립되었어요.</div>
-                              <div class="ids-list-time">2024.05.05 | 18:01</div>
+                              <div class="ids-body2-tight ids-bold">
+                                포인트
+                              </div>
+                              <div class="ids-body4">
+                                김기업님<br>출석체크 포인트 10P가 적립되었어요.
+                              </div>
+                              <div class="ids-caption ids-text-gray-500">
+                                2024.05.05 | 18:01
+                              </div>
                           </div>
                           <div class="ids-list-arrow">
-                              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M5.625 2.75L12.375 9.5L5.625 16.25" stroke="#101116" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.19917 2.32417C5.43349 2.08986 5.81339 2.08986 6.0477 2.32417L12.7977 9.07418C13.032 9.30849 13.032 9.68839 12.7977 9.9227L6.0477 16.6727C5.81338 16.907 5.43349 16.907 5.19917 16.6727C4.96486 16.4384 4.96486 16.0585 5.19917 15.8242L11.5249 9.49844L5.19917 3.1727C4.96486 2.93839 4.96486 2.55849 5.19917 2.32417Z" fill="#101116"/>
-                              </svg>
+                              <i class="ids-icon ids-icon-xs
+                                            ids-icon-arrow-right">Arrow</i>
                           </div>
                       </div>
                   </div>
                   <hr class="ids-divider ids-my-0 ids-bg-gray" />
-                  <div class="ids-item">
-                      <div class="ids-item-wrap">
-                          <div class="ids-point-icon">
-                              <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <g clip-path="url(#clip0_4912_6656)">
-                                      <path d="M10.072 19.8902C15.2895 19.8902 19.5191 15.6606 19.5191 10.4431C19.5191 5.22568 15.2895 0.996094 10.072 0.996094C4.85459 0.996094 0.625 5.22568 0.625 10.4431C0.625 15.6606 4.85459 19.8902 10.072 19.8902Z" fill="#4393F0"/>
-                                      <path d="M10.7734 12.2644H9.06725C8.08178 12.2644 7.28125 11.4626 7.28125 10.4784V7.86022C7.28125 6.87475 8.08305 6.07422 9.06725 6.07422H10.7734C12.4809 6.07422 13.8692 7.46248 13.8692 9.16995C13.8692 10.8774 12.4809 12.2657 10.7734 12.2657V12.2644ZM9.06725 7.84628C9.05965 7.84628 9.05458 7.85262 9.05458 7.85895V10.4771C9.05458 10.4847 9.06091 10.4898 9.06725 10.4898H10.7734C11.503 10.4898 12.0958 9.89701 12.0958 9.16741C12.0958 8.43782 11.503 7.84502 10.7734 7.84502H9.06725V7.84628Z" fill="white"/>
-                                      <path d="M8.16792 15.0145C7.67772 15.0145 7.28125 14.618 7.28125 14.1278V8.50385C7.28125 8.01365 7.67772 7.61719 8.16792 7.61719C8.65811 7.61719 9.05458 8.01365 9.05458 8.50385V14.1278C9.05458 14.618 8.65811 15.0145 8.16792 15.0145Z" fill="white"/>
-                                  </g>
-                                  <defs>
-                                      <clipPath id="clip0_4912_6656">
-                                          <rect width="19.0909" height="19.0909" fill="white" transform="translate(0.59375 0.957031)"/>
-                                      </clipPath>
-                                  </defs>
-                              </svg>
+                  <div class="ids-list-item">
+                      <div class="ids-list-item-wrap">
+                          <div class="ids-list-point-icon">
+                              <i class="ids-icon ids-icon-point">Point</i>
                           </div>
                           <div class="ids-list-content">
-                              <div class="ids-list-title">포인트</div>
-                              <div class="ids-list-text">김기업님<br>출석체크 포인트 10P가 적립되었어요.</div>
-                              <div class="ids-list-time">2024.05.05 | 18:01</div>
+                              <div class="ids-body2-tight ids-bold">
+                                포인트
+                              </div>
+                              <div class="ids-body4">
+                                김기업님<br>출석체크 포인트 10P가 적립되었어요.
+                              </div>
+                              <div class="ids-caption ids-text-gray-500">
+                                2024.05.05 | 18:01
+                              </div>
                           </div>
-                          <div class="ids-arrow">
-                              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M5.625 2.75L12.375 9.5L5.625 16.25" stroke="#101116" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.19917 2.32417C5.43349 2.08986 5.81339 2.08986 6.0477 2.32417L12.7977 9.07418C13.032 9.30849 13.032 9.68839 12.7977 9.9227L6.0477 16.6727C5.81338 16.907 5.43349 16.907 5.19917 16.6727C4.96486 16.4384 4.96486 16.0585 5.19917 15.8242L11.5249 9.49844L5.19917 3.1727C4.96486 2.93839 4.96486 2.55849 5.19917 2.32417Z" fill="#101116"/>
-                              </svg>
+                          <div class="ids-list-arrow">
+                              <i class="ids-icon ids-icon-xs
+                                            ids-icon-arrow-right">Arrow</i>
                           </div>
                       </div>
                   </div>
