@@ -1,27 +1,26 @@
 
 .ids-info-box {
-    background-color: #F3F4F7;
-    padding: 16px;
-    border-radius: 12px;
-    font-family: Arial, sans-serif;
+    background-color: var(--ids-color-gray-50);
+    padding: var(--ids-spacing-2);
+    border-radius: var(--ids-radius-12);
 }
 
 .ids-info-box-title {
-    font-size: 14px;
-    font-weight: 600;
-    color: #101116;
+    font-size: var(--ids-size-body4);
+    line-height: var(--ids-line-body4);
+    font-weight: var(--ids-font-semibold);
+    color: var(--ids-color-gray-900);
     display: flex;
     align-items: center;
-    line-height: 20px;
     gap: 6px;
 }
 
 .ids-info-box-text {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    color: #5A5E6C;
-    margin-top: 8px;
+    font-size: var(--ids-size-body4);
+    line-height: var(--ids-line-body4);
+    font-weight: var(--ids-font-regular);
+    color: var(--ids-color-gray-600);
+    margin-top: var(--ids-spacing-1);
 }
 
 

@@ -15,6 +15,7 @@
     /* Color Grayscale  */
     --ids-color-white: #ffffff;
     --ids-color-black: #000000;
+    --ids-color-gray-50: #F3F4F7;
     --ids-color-gray-100: #E1E3EA;
     --ids-color-gray-150: #D3D6DE;
     --ids-color-gray-200: #C5C8D3;
@@ -122,6 +123,10 @@
     --ids-border-1-500: 1px solid var(--ids-color-gray-500);
     --ids-border-2-500: 2px solid var(--ids-color-gray-500);
     --ids-border-3-500: 3px solid var(--ids-color-gray-500);
+
+    --ids-border-1-800: 1px solid var(--ids-color-gray-800);
+    --ids-border-2-800: 2px solid var(--ids-color-gray-800);
+    --ids-border-3-800: 3px solid var(--ids-color-gray-800);
 
     --ids-border-1-hide: 1px solid transparent;
     --ids-border-2-hide: 2px solid transparent;

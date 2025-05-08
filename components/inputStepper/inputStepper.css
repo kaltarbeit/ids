@@ -8,10 +8,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #30323B;
-    border-radius: 8px;
+    border: 1px solid var(--ids-color-gray-800);
+    border-radius: var(--ids-radius-6);
     overflow: hidden;
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: var(--ids-shadow);
     margin:0;
     padding:0;
 }
@@ -22,10 +22,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
-    font-weight: bold;
     cursor: pointer;
-    background-color: #fff;
+    background-color: var(--ids-color-white);
     border: none;
     padding: 6px 5px;
     margin:0;
@@ -44,9 +42,9 @@
 .ids-input-stepper-horizontal {
     display: flex;
     align-items: center;
-    gap: 12px;
-    font-size: 18px;
-    font-weight: bold;
+    gap: var(--ids-spacing-1-half);
+    font-size: var(--ids-size-h3);
+    font-weight: var(--ids-font-bold);
 }
 
 .ids-input-stepper-horizontal-button {
@@ -55,23 +53,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #D3D6DE;
-    border-radius: 6px;
-    background-color: #fff;
+    border: 1px solid var(--ids-color-gray-150);
+    border-radius: var(--ids-radius-6);
+    background-color: var(--ids-color-white);
     cursor: pointer;
     padding: 5px 6px 5px 4px;
     box-sizing: border-box;
 }
 
 .ids-input-stepper-horizontal-button:active {
-    background-color: #D3D6DE;
-    border-color: #C5C8D3;
+    background-color: var(--ids-color-gray-150);
+    border-color: var(--ids-color-gray-150);
 }
 
 .ids-input-stepper-horizontal-label {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-    color: #101116;
-    padding: 0 8px;
+    font-size: var(--ids-size-h3);
+    line-height: var(--ids-line-h3-tight);
+    font-weight: var(--ids-font-bold);
+    color: var(--ids-color-gray-900);
+    padding: 0 var(--ids-spacing-1);
 }

@@ -26,10 +26,9 @@
 
 
   <section class="ids-docs-section">
-    <h2 class="ids-docs-section-title">Default</h2>
 
     <p class="ids-body4 ids-mt-8 ids-text-gray-500">
-      컴포넌트 스타일 가이드 <span class="ids-bold">Info Box > Default</span> 을 구현한 클래스입니다.
+      컴포넌트 스타일 가이드 <span class="ids-bold">Info Box</span> 를 구현한 클래스입니다.
     </p>
 
     <div class="ids-docs-reference ids-mt-3">
@@ -38,19 +37,69 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-info-box</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">background-color: var(--ids-color-gray-50);
+              padding: var(--ids-spacing-2);
+              border-radius: var(--ids-radius-12);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-info-box-title</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: var(--ids-size-body4);
+              line-height: var(--ids-line-body4);
+              font-weight: var(--ids-font-semibold);
+              color: var(--ids-color-gray-900);
+              display: flex;
+              align-items: center;
+              gap: 6px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-info-box-text</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: var(--ids-size-body4);
+              line-height: var(--ids-line-body4);
+              font-weight: var(--ids-font-regular);
+              color: var(--ids-color-gray-600);
+              margin-top: var(--ids-spacing-1);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-info-box-button-container</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin-top: 12px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-info-list</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin: 0;
+              font-size: var(--ids-size-body5);
+              font-weight: var(--ids-font-regular);
+              line-height: var(--ids-line-body5);
+              color: var(--ids-color-gray-600);
+              padding: 0;
+              gap: var(--ids-spacing-1);
+              box-sizing: border-box;
+              display: flex;
+              flex-direction: column;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -95,8 +144,13 @@
                   서브 텍스트를 노출합니다.
                 </div>
                 <div class="ids-info-box-button-container">
-                  <button class="ids-button ids-button-tertiary ids-button-sm">
-                    <i class="ids-icon ids-icon-xs ids-icon-image">Image</i>
+                  <button
+                    class="ids-button
+                              ids-button-tertiary ids-button-sm"
+                 >
+                    <i class="ids-icon ids-icon-xs ids-icon-image">
+                      Image
+                    </i>
                     레이블
                   </button>
                 </div>

@@ -38,19 +38,112 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-dropdown</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              flex-direction: column;
+              gap: var(--ids-spacing-1);
+              box-sizing: border-box;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-dropdown-label</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: var(--ids-size-body4);
+              color: var(--ids-color-gray-700);
+              line-height: var(--ids-line-body4-tight);
+              padding-left: var(--ids-spacing-half);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-dropdown-container</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              align-items: center;
+              position: relative;
+              border: var(--ids-border-1-200);
+              border-radius: var(--ids-radius-12);
+              padding: var(--ids-spacing-2);
+              padding-right: var(--ids-spacing-6);
+              background: var(--ids-color-white);
+              cursor: pointer;
+              box-sizing: border-box;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-dropdown-container:after</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">content: " ";
+              position: absolute;
+              right: 15px;
+              width: 18px;
+              height: 18px;
+              background-image: url("data:image/svg+xml,...");
+              background-repeat: no-repeat;
+              background-position: center;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-dropdown-button</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">appearance: none;
+              border: none;
+              outline: none;
+              width: 100%;
+              background: transparent;
+              font-size: var(--ids-size-body2);
+              color: var(--ids-color-gray-500);
+              text-align: left;
+              vertical-align: middle;
+              padding: 0;
+              line-height: var(--ids-line-body2-tight);
+              cursor: pointer;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-dropdown-sm</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-dropdown-sm .ids-dropdown-container </td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding: var(--ids-spacing-1-half);
+              padding-right: 42px;
+              border-radius: var(--ids-radius-6);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-dropdown-xs</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: inline-flex;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-dropdown-xs .ids-dropdown-container</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding: 7px 24px 7px 12px;
+              border-radius: var(--ids-radius-6);
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -165,19 +258,39 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.dropdown-bank-title</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              gap: var(--ids-spacing-1);
+              align-items: center;
+              padding: 0;
+              margin: 0;
+              font-size: var(--ids-size-body4);
+              line-height: var(--ids-line-body4-tight);
+              color: var(--ids-color-gray-500);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-dropdown-bank-account</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: var(--ids-size-body2);
+              font-weight: var(--ids-font-medium);
+              line-height: var(--ids-line-body2-tight);
+              color: var(--ids-color-gray-900);
+              padding: 0;
+              margin: var(--ids-spacing-1) 0 0;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -187,17 +300,16 @@
     <div class="ids-docs-examples">
       <div class="ids-docs-example-block">
         <span class="ids-label ids-label-line ids-label-blue">.ids-dropdown</span>
-        <span class="ids-label ids-label-line ids-label-blue">.ids-dropdown-bank</span>
         <div class="ids-docs-example-code">
           <div class="ids-docs-example"></div>
           <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
-              <div class="ids-dropdown ids-dropdown-bank">
+              <div class="ids-dropdown">
                 <label class="ids-dropdown-label">타이틀</label>
                 <div class="ids-dropdown-container">
                   <button class="ids-dropdown-button" id="dropdownButton">
                     <p class="ids-dropdown-bank-title">
-                      <span class="ids-label ids-label-tint">레이블</span>
+                      <span class="ids-label ids-label-blue-600">레이블</span>
                       계좌별명
                     </p>
                     <p class="ids-dropdown-bank-account">
@@ -226,19 +338,71 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-dropdown-bank-icon</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-dropdown-bank-icon .ids-dropdown-container</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: none;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-dropdown-bank-icon .ids-dropdown-bank-account-alias</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              gap: var(--ids-spacing-half);
+              align-items: center;
+              padding: 0;
+              margin: 0;
+              font-size: var(--ids-size-body4);
+              line-height: var(--ids-line-body4-tight);
+              font-weight: var(--ids-font-bold);
+              color: var(--ids-color-gray-900);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-dropdown-bank-icon .ids-dropdown-bank-account</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              gap: var(--ids-spacing-1);
+              align-items: center;
+              font-size: var(--ids-size-body5);
+              line-height: var(--ids-line-body5);
+              font-weight: var(--ids-font-medium);
+              color: var(--ids-color-gray-500);
+              padding: 0;
+              margin: var(--ids-spacing-half) 0 0;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-dropdown-bank-icon .ids-dropdown-bank-balance</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              gap: var(--ids-spacing-1);
+              align-items: center;
+              font-size: var(--ids-size-body5);
+              line-height: var(--ids-line-body5);
+              color: var(--ids-color-gray-500);
+              padding: 0;
+              margin: 0;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -258,7 +422,7 @@
                     <div class="ids-dropdown-container">
                         <button class="ids-dropdown-button" id="dropdownButton">
                             <div class="ids-bank-icon-dropdown-icon">
-                              <i class="ids-icon ids-icon-xxl ids-bank-ibk">IBK</i>
+                              <i class="ids-icon ids-icon-xxl ids-icon-bank-ibk">IBK</i>
                             </div>
                             <div class="ids-bank-icon-dropdown-content">
                                 <p class="ids-dropdown-bank-title">
@@ -287,31 +451,8 @@
     <h2 class="ids-docs-section-title">Bank Select</h2>
 
     <p class="ids-body4 ids-mt-8 ids-text-gray-500">
-      컴포넌트 스타일 가이드 <span class="ids-bold">Dropdown > Bank Select</span> 을 구현한 클래스입니다.
+      컴포넌트 스타일 가이드 <span class="ids-bold">Dropdown > Bank Select</span> 을 구현한 예제입니다.
     </p>
-
-    <div class="ids-docs-reference ids-mt-3">
-      <div class="ids-docs-reference-button">
-        Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
-      </div>
-
-      <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
-        <thead>
-        <tr>
-          <th class="ids-cell-left">Name</th>
-          <th class="ids-cell-left">Class</th>
-          <th class="ids-cell-left">Style</th>
-        </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
-    </div>
 
     <h4 class="ids-docs-section-label">Examples</h4>
 
@@ -351,19 +492,37 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-dropdown-text</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-dropdown-text .ids-dropdown-button</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-dropdown-text .ids-dropdown-container</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding: 0 var(--ids-spacing-3) 0 0;
+              border: none;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>

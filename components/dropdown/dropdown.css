@@ -32,14 +32,14 @@
 .ids-dropdown {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: var(--ids-spacing-1);
     box-sizing: border-box;
 }
 .ids-dropdown-label {
-    font-size: 14px;
-    color: #454855;
-    line-height: 18px;
-    padding-left: 4px;
+    font-size: var(--ids-size-body4);
+    color: var(--ids-color-gray-700);
+    line-height: var(--ids-line-body4-tight);
+    padding-left: var(--ids-spacing-half);
 }
 
 
@@ -47,10 +47,11 @@
     display: flex;
     align-items: center;
     position: relative;
-    border: 1px solid #C5C8D3;
-    border-radius: 12px;
-    padding: 16px 48px 16px 16px;
-    background: white;
+    border: var(--ids-border-1-200);
+    border-radius: var(--ids-radius-12);
+    padding: var(--ids-spacing-2);
+    padding-right: var(--ids-spacing-6);
+    background: var(--ids-color-white);
     cursor: pointer;
     box-sizing: border-box;
 }
@@ -60,15 +61,15 @@
     outline: none;
     width: 100%;
     background: transparent;
-    font-size: 16px;
-    color: #737684;
+    font-size: var(--ids-size-body2);
+    color: var(--ids-color-gray-500);
     text-align: left;
     vertical-align: middle;
     padding: 0;
-    line-height: 22px;
+    line-height: var(--ids-line-body2-tight);
     cursor: pointer;
 }
-.ids-dropdown .ids-dropdown-container::after {
+.ids-dropdown .ids-dropdown-container:after {
     content: " ";
     position: absolute;
     right: 15px;
@@ -81,8 +82,9 @@
 
 
 .ids-dropdown.ids-dropdown-sm .ids-dropdown-container {
-    padding: 12px 42px 12px 16px;
-    border-radius: 6px;
+    padding: var(--ids-spacing-1-half);
+    padding-right: 42px;
+    border-radius: var(--ids-radius-6);
 }
 .ids-dropdown.ids-dropdown-sm .ids-dropdown-button {
     font-size: 14px;
@@ -99,7 +101,7 @@
     overflow: hidden;
 }
 .ids-dropdown.ids-dropdown-text .ids-dropdown-container {
-    padding: 0 26px 0 0;
+    padding: 0 var(--ids-spacing-3) 0 0;
     border: none;
 }
 .ids-dropdown.ids-dropdown-text .ids-dropdown-container:after {
@@ -112,7 +114,7 @@
 
 .ids-dropdown.ids-dropdown-xs .ids-dropdown-container {
     padding: 7px 24px 7px 12px;
-    border-radius: 6px;
+    border-radius: var(--ids-radius-6);
 }
 .ids-dropdown.ids-dropdown-xs .ids-dropdown-container:after {
     background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.216767 0.466767C0.372976 0.310557 0.626242 0.310557 0.782452 0.466767L4.99961 4.68392L9.21677 0.466767C9.37298 0.310557 9.62624 0.310557 9.78245 0.466767C9.93866 0.622976 9.93866 0.876242 9.78245 1.03245L5.28245 5.53245C5.12624 5.68866 4.87298 5.68866 4.71677 5.53245L0.216767 1.03245C0.0605569 0.876242 0.0605569 0.622976 0.216767 0.466767Z' fill='%23101116'/%3E%3C/svg%3E%0A");
@@ -171,22 +173,22 @@
 
 .ids-dropdown-button .ids-dropdown-bank-title {
     display: flex;
-    gap: 8px;
+    gap: var(--ids-spacing-1);
     align-items: center;
     padding: 0;
     margin: 0;
-    font-size: 14px;
-    line-height: 18px;
-    color: #737684;
+    font-size: var(--ids-size-body4);
+    line-height: var(--ids-line-body4-tight);
+    color: var(--ids-color-gray-500);
 }
 
 .ids-dropdown-button .ids-dropdown-bank-account {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-    color: #101116;
+    font-size: var(--ids-size-body2);
+    font-weight: var(--ids-font-medium);
+    line-height: var(--ids-line-body2-tight);
+    color: var(--ids-color-gray-900);
     padding: 0;
-    margin: 8px 0 0;
+    margin: var(--ids-spacing-1) 0 0;
 }
 
 .ids-dropdown-bank-icon .ids-dropdown-button {
@@ -226,14 +228,14 @@
 
 .ids-dropdown-bank-icon .ids-dropdown-bank-account-alias {
     display: flex;
-    gap: 4px;
+    gap: var(--ids-spacing-half);
     align-items: center;
     padding: 0;
     margin: 0;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 700;
-    color: #101116;
+    font-size: var(--ids-size-body4);
+    line-height: var(--ids-line-body4-tight);
+    font-weight: var(--ids-font-bold);
+    color: var(--ids-color-gray-900);
 }
 
 .ids-dropdown-bank-icon .ids-dropdown-bank-account-alias .ids-icon {
@@ -242,24 +244,24 @@
 
 .ids-dropdown-bank-icon .ids-dropdown-bank-account {
     display: flex;
-    gap: 8px;
+    gap: var(--ids-spacing-1);
     align-items: center;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 20px;
-    color: #737684;
+    font-size: var(--ids-size-body5);
+    line-height: var(--ids-line-body5);
+    font-weight: var(--ids-font-medium);
+    color: var(--ids-color-gray-500);
     padding: 0;
-    margin: 4px 0 0;
+    margin: var(--ids-spacing-half) 0 0;
 }
 
 .ids-dropdown-bank-icon .ids-dropdown-bank-balance {
     display: flex;
-    gap: 8px;
+    gap: var(--ids-spacing-1);
     align-items: center;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 20px;
-    color: #737684;
+    font-size: var(--ids-size-body5);
+    line-height: var(--ids-line-body5);
+    font-weight: var(--ids-font-medium);
+    color: var(--ids-color-gray-500);
     padding: 0;
     margin: 0;
 }

@@ -27,25 +27,100 @@
 
   <section class="ids-docs-section">
 
+
+    <p class="ids-body4 ids-mt-8 ids-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids-bold">Footer</span> 를 구현한 클래스입니다.
+    </p>
+
     <div class="ids-docs-reference ids-mt-3">
       <div class="ids-docs-reference-button">
         Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 20%"/>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-footer</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">background: var(--ids-color-white);
+              padding: var(--ids-spacing-3);
+              font-size: var(--ids-size-body4);
+              line-height: var(--ids-line-body4-tight);
+              border-top: var(--ids-border-1);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-footer-logo</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin-bottom: var(--ids-spacing-2);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-footer-logo-img</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: 124px;
+              height: 24px;
+              background-image: url("data:image/svg+xml,...");
+              background-repeat: no-repeat;
+              background-position: center;
+              font-size: 0;
+              color: transparent;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-footer-menu</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin: 10px 0 16px;
+              color: var(--ids-color-gray-700);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-footer-info</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: var(--ids-size-body5);
+              line-height: var(--ids-line-body5);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-footer-info-label</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-weight: var(--ids-font-semibold);
+              color: var(--ids-color-gray-900);
+              margin-right: var(--ids-spacing-half);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-footer-info-text</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-weight: var(--ids-font-regular);
+              color: var(--ids-color-gray-900);
+              margin-right: var(--ids-spacing-1);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-footer-copyright</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin-top: var(--ids-spacing-1-half);
+              font-size: var(--ids-size-caption-sm);
+              font-weight: var(--ids-font-semibold);
+              line-height: var(--ids-line-caption-sm);
+              color: var(--ids-color-gray-400);
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -71,7 +146,9 @@
                 <div class="ids-footer-info">
                   <p>
                      <span class="ids-footer-info-label">주소</span>
-                     <span class="ids-footer-info-text">서울특별시 중구 을지로 79</span>
+                     <span class="ids-footer-info-text">
+                        서울특별시 중구 을지로 79
+                     </span>
                   </p>
                   <p>
                     <span class="ids-footer-info-label">대표명</span>
@@ -88,7 +165,8 @@
                   </p>
                 </div>
                 <div class="ids-footer-copyright">
-                  Copyright © IBK(INDUSTRIAL BANK OF KOREA). All rights reserved.
+                  Copyright © IBK(INDUSTRIAL BANK OF KOREA).
+                  All rights reserved.
                 </div>
               </div>
             </script>

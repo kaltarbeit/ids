@@ -45,12 +45,13 @@
 }
 
 .ids-label.ids-label-ad {
-    color: #454855;
+    color: var(--ids-color-gray-700);
     background-color: var(--ids-color-white);
 }
 
 .ids-label.ids-label-ad.ids-label-gray {
-    background-color: #D3D6DE;
+    color: var(--ids-color-gray-700);
+    background-color: var(--ids-color-gray-150);
 }
 
 
