@@ -67,19 +67,13 @@
 }
 
 .ids-text-field-label {
-    display: block;
+    display: flex;
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
     color: #454855;
-    margin: 0 4px;
     min-height: 18px;
-}
-
-
-.ids-text-field-label {
-    margin-bottom: 8px;
-    display: flex;
+    margin: 0 4px 8px;
 }
 
 .ids-text-field-label > span {
