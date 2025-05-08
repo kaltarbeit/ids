@@ -41,10 +41,12 @@
 .ids-label.ids-label-activity {
     border: 1px solid var(--ids-color-gray-150);
     color: var(--ids-color-gray-700);
+    background-color: var(--ids-color-white);
 }
 
 .ids-label.ids-label-ad {
     color: #454855;
+    background-color: var(--ids-color-white);
 }
 
 .ids-label.ids-label-ad.ids-label-gray {

@@ -187,13 +187,25 @@ a.ids-button:focus {
 
 
 
+.ids-button-icon-wrap {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
 .ids-button.ids-button-icon + .ids-button-label {
+    min-width: 48px;
+    text-align: center;
     font-size: 14px;
     line-height: 18px;
     color: #5A5E6C;
 }
 
 .ids-button.ids-button-secondary.ids-button-icon {
+    width: fit-content;
     min-width: 48px;
     height: 48px;
     background-color: #2873E3;

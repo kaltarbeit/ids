@@ -111,6 +111,10 @@
     --ids-border-2: 2px solid var(--ids-color-gray-100);
     --ids-border-3: 3px solid var(--ids-color-gray-100);
 
+    --ids-border-1-200: 1px solid var(--ids-color-gray-200);
+    --ids-border-2-200: 2px solid var(--ids-color-gray-200);
+    --ids-border-3-200: 3px solid var(--ids-color-gray-200);
+
     --ids-border-1-400: 1px solid var(--ids-color-gray-400);
     --ids-border-2-400: 2px solid var(--ids-color-gray-400);
     --ids-border-3-400: 3px solid var(--ids-color-gray-400);

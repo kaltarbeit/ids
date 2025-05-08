@@ -139,19 +139,19 @@
  */
 
 .ids-bold {
-    font-weight: var(--ids-font-bold);
+    font-weight: var(--ids-font-bold) !important;
 }
 
 .ids-semibold {
-    font-weight: var(--ids-font-semibold);
+    font-weight: var(--ids-font-semibold) !important;
 }
 
 .ids-medium {
-    font-weight: var(--ids-font-medium);
+    font-weight: var(--ids-font-medium) !important;
 }
 
 .ids-regular {
-    font-weight: var(--ids-font-regular);
+    font-weight: var(--ids-font-regular) !important;
 }
 
 .ids-anchor {
@@ -170,71 +170,71 @@
 }
 
 .ids-text-primary {
-    color: var(--ids-color-point-blue);
+    color: var(--ids-color-point-blue) !important;
 }
 
 .ids-text-point-blue {
-    color: var(--ids-color-point-blue);
+    color: var(--ids-color-point-blue) !important;
 }
 
 .ids-text-blue-50 {
-    color: var(--ids-color-blue-50);
+    color: var(--ids-color-blue-50) !important;
 }
 
 .ids-text-blue-100 {
-    color: var(--ids-color-blue-100);
+    color: var(--ids-color-blue-100) !important;
 }
 
 .ids-text-blue-400 {
-    color: var(--ids-color-blue-400);
+    color: var(--ids-color-blue-400) !important;
 }
 
 .ids-text-blue-700 {
-    color: var(--ids-color-blue-700);
+    color: var(--ids-color-blue-700) !important;
 }
 
 .ids-text-blue-900 {
-    color: var(--ids-color-blue-900);
+    color: var(--ids-color-blue-900) !important;
 }
 
 .ids-text-white {
-    color: var(--ids-color-white);
+    color: var(--ids-color-white) !important;
 }
 
 .ids-text-black {
-    color: var(--ids-color-black);
+    color: var(--ids-color-black) !important;
 }
 
 
 
 .ids-text-gray-100 {
-    color: var(--ids-color-gray-100);
+    color: var(--ids-color-gray-100) !important;
 }
 .ids-text-gray-200 {
-    color: var(--ids-color-gray-200);
+    color: var(--ids-color-gray-200) !important;
 }
 .ids-text-gray-300 {
-    color: var(--ids-color-gray-300);
+    color: var(--ids-color-gray-300) !important;
 }
 .ids-text-gray-400 {
-    color: var(--ids-color-gray-400);
+    color: var(--ids-color-gray-400) !important;
 }
 .ids-text-gray-500 {
-    color: var(--ids-color-gray-500);
+    color: var(--ids-color-gray-500) !important;
 }
 .ids-text-gray-600 {
-    color: var(--ids-color-gray-600);
+    color: var(--ids-color-gray-600) !important;
 }
 .ids-text-gray-700 {
-    color: var(--ids-color-gray-700);
+    color: var(--ids-color-gray-700) !important;
 }
 .ids-text-gray-800 {
-    color: var(--ids-color-gray-800);
+    color: var(--ids-color-gray-800) !important;
 }
 .ids-text-gray-900 {
-    color: var(--ids-color-gray-900);
+    color: var(--ids-color-gray-900) !important;
 }
 
 .ids-text-middle {
-    vertical-align: middle;
+    vertical-align: middle !important;
 }

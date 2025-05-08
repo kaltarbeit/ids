@@ -46,11 +46,11 @@
     transition: height 0.3s cubic-bezier(.7,.5,.6,.9);
 }
 
-.ids-accordion-item.ids-accordion-item-open .ids-accordion-arrow {
+.ids-accordion-item-open .ids-accordion-arrow {
     transform: rotate(-180deg);
 }
 
-.ids-accordion-item.ids-accordion-item-open .ids-accordion-details {
+.ids-accordion-item-open .ids-accordion-details {
     display: block;
 }
 
@@ -97,14 +97,15 @@
     padding: var(--ids-spacing-2-half) var(--ids-spacing-3);
 }
 
-.ids-accordion-info .ids-accordion-item-open .ids-accordion-head {
-    padding-bottom: var(--ids-spacing-half);
-}
-
 .ids-accordion-info .ids-accordion-details {
     padding: var(--ids-spacing-2-half);
     padding-top: var(--ids-spacing-1);
 }
+
+.ids-accordion-info .ids-accordion-item-open .ids-accordion-head {
+    padding-bottom: var(--ids-spacing-half);
+}
+
 
 .ids-total {
     display: flex;

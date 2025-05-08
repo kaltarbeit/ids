@@ -96,7 +96,7 @@ td.ids-docs-name {
     vertical-align: top;
 }
 
-.ids-docs-classname {
+td.ids-docs-classname {
     color: var(--ids-color-point-blue);
     font-weight: var(--ids-font-bold);
     font-family: monospace;
@@ -117,8 +117,8 @@ td.ids-docs-name {
 }
 
 .ids-docs-reference {
-    height: 30px;
-    overflow: hidden;
+    /*height: 30px;
+    overflow: hidden;*/
     transition: height 0.3s ease-in-out;
 }
 

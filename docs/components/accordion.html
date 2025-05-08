@@ -46,23 +46,14 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 12%"/>
-          <col style="width: 28%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td class="ids-cell-left ids-docs-name" rowspan="5">
-            Accordion
-          </td>
           <td class="ids-cell-left ids-docs-classname">.ids-accordion</td>
           <td class="ids-cell-left">
             <code class="ids-docs-code">width: 100%;
@@ -104,6 +95,33 @@
             </code>
           </td>
         </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-accordion-arrow</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: 18px;
+              height: 18px;
+              right: var(--ids-spacing-3);
+              display: flex;
+              align-items: center;
+              transition: transform 0.3s cubic-bezier(.7,.2,.9,.6);
+              justify-content: right;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-accordion-item-open .ids-accordion-arrow</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">transform: rotate(-180deg);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-accordion-item-open .ids-accordion-details</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: block;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -111,7 +129,7 @@
   </section>
 
   <section class="ids-docs-section">
-    <h2 class="ids-docs-section-title">컨텐츠형</h2>
+    <h2 class="ids-docs-section-title">콘텐츠형</h2>
     <h4 class="ids-docs-section-label">Examples</h4>
     <div class="ids-docs-examples">
       <div class="ids-docs-example-block">
@@ -182,7 +200,7 @@
                     </div>
                   </div>
                   <div class="ids-accordion-details">
-                    <div class="ids-pt-2 ids-body4">
+                    <div class="ids-body4 ids-py-2 ids-px-3">
                       <ul class="ids-sub-list">
                         <li>텍스트를 노출합니다.</li>
                         <li>텍스트를 노출합니다.</li>
@@ -352,6 +370,56 @@
 
   <section class="ids-docs-section">
     <h2 class="ids-docs-section-title">조합형</h2>
+
+    <div class="ids-docs-reference ids-mt-3">
+      <div class="ids-docs-reference-button">
+        Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids-table ids-table-sm">
+        <thead>
+        <tr>
+          <th class="ids-cell-left">Class</th>
+          <th class="ids-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-accordion-card</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border-radius: var(--ids-radius-16);
+              border: var(--ids-border-1);
+              background: var(--ids-color-white);
+              box-sizing: border-box;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-accordion-card .ids-accordion-head</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding: var(--ids-spacing-2-half);</code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-accordion-card .ids-accordion-details</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding: var(--ids-spacing-2-half);
+              padding-top: 0;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-accordion-card .ids-divider</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin-top: 0;
+              margin-bottom: var(--ids-spacing-2-half);
+            </code>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
     <h4 class="ids-docs-section-label">Examples</h4>
     <div class="ids-docs-examples">
       <div class="ids-docs-example-block">
@@ -368,7 +436,11 @@
                       <div class="ids-title">
                         <div class="ids-checkbox">
                           <label class="">
-                            <input type="checkbox" name="checkbox" class="ids-checkbox-all">
+                            <input
+                              type="checkbox"
+                              name="checkbox"
+                              class="ids-checkbox-all"
+                            >
                             <span class="ids-input-label-text">타이틀</span>
                             <span class="ids-label-required">필수</span>
                           </label>
@@ -402,7 +474,11 @@
                       <div class="ids-title">
                         <div class="ids-checkbox">
                           <label class="">
-                            <input type="checkbox" name="checkbox" class="ids-checkbox-all">
+                            <input
+                              type="checkbox"
+                              name="checkbox"
+                              class="ids-checkbox-all"
+                            >
                             <span class="ids-input-label-text">타이틀</span>
                             <span class="ids-label-required">필수</span>
                           </label>
@@ -421,51 +497,86 @@
                         <div class="ids-checkbox ids-checkbox-sm">
                           <label>
                             <input type="checkbox" name="checkbox">
-                            <span class="ids-input-label-text">상세내용을 노출합니다</span>
+                            <span class="ids-input-label-text">
+                              상세내용을 노출합니다
+                            </span>
                             <span class="ids-label-required">필수</span>
                           </label>
                         </div>
-                        <a href="#" class="ids-anchor ids-anchor-sm ids-underline">보기</a>
+                        <a
+                          href="#"
+                          class="ids-anchor ids-anchor-sm ids-underline"
+                        >
+                          보기
+                        </a>
                       </div>
                       <div class="ids-checkbox-list-item">
                         <div class="ids-checkbox ids-checkbox-sm">
                           <label>
                             <input type="checkbox" name="checkbox">
-                            <span class="ids-input-label-text">상세내용을 노출합니다</span>
+                            <span class="ids-input-label-text">
+                              상세내용을 노출합니다
+                            </span>
                             <span class="ids-label-required">필수</span>
                           </label>
                         </div>
-                        <a href="#" class="ids-anchor ids-anchor-sm ids-underline">보기</a>
+                        <a
+                          href="#"
+                          class="ids-anchor ids-anchor-sm ids-underline"
+                        >
+                          보기
+                        </a>
                       </div>
                       <div class="ids-checkbox-list-item">
                         <div class="ids-checkbox ids-checkbox-sm">
                           <label>
                             <input type="checkbox" name="checkbox">
-                            <span class="ids-input-label-text">상세내용을 노출합니다</span>
+                            <span class="ids-input-label-text">
+                              상세내용을 노출합니다
+                            </span>
                             <span class="ids-label-required">필수</span>
                           </label>
                         </div>
-                        <a href="#" class="ids-anchor ids-anchor-sm ids-underline">보기</a>
+                        <a
+                          href="#"
+                          class="ids-anchor ids-anchor-sm ids-underline"
+                        >
+                          보기
+                        </a>
                       </div>
                       <div class="ids-checkbox-list-item">
                         <div class="ids-checkbox ids-checkbox-sm">
                           <label>
                             <input type="checkbox" name="checkbox">
-                            <span class="ids-input-label-text">상세내용을 노출합니다</span>
+                            <span class="ids-input-label-text">
+                              상세내용을 노출합니다
+                            </span>
                             <span class="ids-label-required">필수</span>
                           </label>
                         </div>
-                        <a href="#" class="ids-anchor ids-anchor-sm ids-underline">보기</a>
+                        <a
+                          href="#"
+                          class="ids-anchor ids-anchor-sm ids-underline"
+                        >
+                          보기
+                        </a>
                       </div>
                       <div class="ids-checkbox-list-item">
                         <div class="ids-checkbox ids-checkbox-sm">
                           <label>
                             <input type="checkbox" name="checkbox">
-                            <span class="ids-input-label-text">상세내용을 노출합니다</span>
+                            <span class="ids-input-label-text">
+                              상세내용을 노출합니다
+                            </span>
                             <span class="ids-label-required">필수</span>
                           </label>
                         </div>
-                        <a href="#" class="ids-anchor ids-anchor-sm ids-underline">보기</a>
+                        <a
+                          href="#"
+                          class="ids-anchor ids-anchor-sm ids-underline"
+                        >
+                          보기
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -481,6 +592,52 @@
 
   <section class="ids-docs-section">
     <h2 class="ids-docs-section-title">도움말형</h2>
+
+    <div class="ids-docs-reference ids-mt-3">
+      <div class="ids-docs-reference-button">
+        Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids-table ids-table-sm">
+        <thead>
+        <tr>
+          <th class="ids-cell-left">Class</th>
+          <th class="ids-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-accordion-info</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">background-color: var(--ids-color-white);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-accordion-info .ids-accordion-head</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding: var(--ids-spacing-2-half) var(--ids-spacing-3);</code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-accordion-info .ids-accordion-details</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding: var(--ids-spacing-2-half);
+              padding-top: var(--ids-spacing-1);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-accordion-info .ids-accordion-item-open .ids-accordion-head</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding-bottom: var(--ids-spacing-half);
+            </code>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
     <h4 class="ids-docs-section-label">Examples</h4>
     <div class="ids-docs-examples">
       <div class="ids-docs-example-block">
@@ -526,7 +683,7 @@
                 <div
                     class="ids-accordion-item ids-accordion-item-open"
                 >
-                  <div class="ids-accordion-head ids-py-2-half">
+                  <div class="ids-accordion-head">
                     <div class="ids-accordion-summary">
                       <i class="ids-icon ids-icon-info">Info</i>
                       <span

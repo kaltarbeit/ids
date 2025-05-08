@@ -25,11 +25,10 @@
   </div>
 
   <section class="ids-docs-section">
-    <h2 class="ids-docs-section-title">Base Style</h2>
+    <h2 class="ids-docs-section-title">Default</h2>
 
     <p class="ids-body4 ids-mt-8 ids-text-gray-500">
-      Chip 기본 스타일을 구성합니다.<br/>
-      <span class="ids-bold">.ids-chip-tag</span> 와의 조합으로 Tag형 Chip 표현이 가능합니다.
+      Chip 기본 스타일을 구성합니다.
     </p>
 
     <div class="ids-docs-reference ids-mt-3">
@@ -39,69 +38,124 @@
 
       <table class="ids-table ids-table-sm">
         <colgroup>
-          <col style="width: 20%"/>
           <col style="width: 30%"/>
           <col style="width: 50%"/>
         </colgroup>
         <thead>
         <tr>
-          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td class="ids-cell-left ids-docs-name" rowspan="4">
-            Chip
-          </td>
-          <td class="ids-cell-left ids-docs-classname">.ids-chip-group</td>
-          <td class="ids-cell-left">
-            <code class="ids-docs-code">display: flex;
-              gap: 8px;
-            </code>
-          </td>
-        </tr>
-        <tr>
           <td class="ids-cell-left ids-docs-classname">.ids-chip</td>
           <td class="ids-cell-left">
             <code class="ids-docs-code">display: flex;
               align-items: center;
-              gap: 4px;
-              background-color: #fff;
-              border-radius: 48px;
-              border: 1px solid #C5C8D3;
-              font-size: 16px;
-              line-height: 24px;
-              padding: 8px 12px;
-              font-weight: 500;
-              color: #454855;
+              gap: var(--ids-spacing-half);
+              background-color: var(--ids-color-white);
+              border-radius: var(--ids-radius-full);
+              border: var(--ids-border-1-200);
+              padding: var(--ids-spacing-1) var(--ids-spacing-1-half);
               cursor: pointer;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-chip.ids-chip-selected</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">background-color: var(--ids-color-black);
+              border: 1px solid var(--ids-color-black);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-chip-text</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: var(--ids-size-body2);
+              line-height: var(--ids-line-body2);
+              font-weight: var(--ids-font-medium);
+              color: var(--ids-color-gray-700);
             </code>
           </td>
         </tr>
         <tr>
           <td class="ids-cell-left ids-docs-classname">.ids-chip-count</td>
           <td class="ids-cell-left">
-            <code class="ids-docs-code">font-size: 14px;
-              font-weight: 700;
-              color: #737684;
+            <code class="ids-docs-code">font-size: var(--ids-size-body4);
+              font-weight: var(--ids-font-bold);
+              color: var(--ids-color-gray-500);
             </code>
           </td>
         </tr>
         <tr>
-          <td class="ids-cell-left ids-docs-classname">.ids-chip-selected</td>
+          <td class="ids-cell-left ids-docs-classname">.ids-chip.ids-chip-selected .ids-chip-text,<br/>
+            .ids-chip.ids-chip-selected .ids-chip-count</td>
           <td class="ids-cell-left">
-            <code class="ids-docs-code">color: #fff;
-              background-color: #000;
-              border: 1px solid #000;
+            <code class="ids-docs-code">color: var(--ids-color-white);
             </code>
           </td>
         </tr>
         <tr>
-          <td class="ids-cell-left ids-docs-name" rowspan="2">
-            Tag
+          <td class="ids-cell-left ids-docs-classname">.ids-chip-group</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              gap: var(--ids-spacing-1);
+            </code>
           </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids-docs-section-label">Examples</h4>
+
+    <div class="ids-docs-examples">
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-chip</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-chip-group">
+                  <div class="ids-chip ids-chip-selected">
+                      <div class="ids-chip-text">#레이블</div>
+                      <div class="ids-chip-count">99</div>
+                  </div>
+                  <div class="ids-chip">
+                      <div class="ids-chip-text">#레이블</div>
+                      <div class="ids-chip-count">99</div>
+                  </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Default</h2>
+
+    <p class="ids-body4 ids-mt-8 ids-text-gray-500">
+      Chip 기본 스타일을 구성합니다.
+    </p>
+
+    <div class="ids-docs-reference ids-mt-3">
+      <div class="ids-docs-reference-button">
+        Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids-table ids-table-sm">
+        <thead>
+        <tr>
+          <th class="ids-cell-left">Class</th>
+          <th class="ids-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
           <td class="ids-cell-left ids-docs-classname">.ids-chip-tag</td>
           <td class="ids-cell-left">
             <code class="ids-docs-code">font-size: 14px;

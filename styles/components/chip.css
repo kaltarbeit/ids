@@ -1,49 +1,49 @@
 .ids-chip-examples {
     display: flex;
     justify-content: center;
-    gap: 48px;
+    gap: var(--ids-spacing-6);
 }
 
 .ids-chip {
     display: flex;
     align-items: center;
-    gap: 4px;
-    background-color: #fff;
-    border-radius: 48px;
-    border: 1px solid #C5C8D3;
-    font-size: 16px;
-    line-height: 24px;
-    padding: 8px 12px;
-    font-weight: 500;
-    color: #454855;
+    gap: var(--ids-spacing-half);
+    background-color: var(--ids-color-white);
+    border-radius: var(--ids-radius-full);
+    border: var(--ids-border-1-200);
+    padding: var(--ids-spacing-1) var(--ids-spacing-1-half);
     cursor: pointer;
 }
 
 .ids-chip-group {
     display: flex;
-    gap: 8px;
+    gap: var(--ids-spacing-1);
 }
 
-.ids-chip .ids-chip-count {
-    font-size: 14px;
-    font-weight: 700;
-    color: #737684;
+.ids-chip-text {
+    font-size: var(--ids-size-body2);
+    line-height: var(--ids-line-body2);
+    font-weight: var(--ids-font-medium);
+    color: var(--ids-color-gray-700);
+}
+
+.ids-chip-count {
+    font-size: var(--ids-size-body4);
+    font-weight: var(--ids-font-bold);
+    color: var(--ids-color-gray-500);
 }
 
 .ids-chip.ids-chip-selected {
-    color: #fff;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: var(--ids-color-black);
+    border: 1px solid var(--ids-color-black);
 }
 
+.ids-chip.ids-chip-selected .ids-chip-text,
 .ids-chip.ids-chip-selected .ids-chip-count {
-    color: #fff;
+    color: var(--ids-color-white);
 }
 
 .ids-chip.ids-chip-tag {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 18px;
     padding: 7px 12px;
     cursor: default;
 }
@@ -57,6 +57,12 @@
     cursor: pointer;
     font-size: 0;
     color: transparent;
+}
+
+.ids-chip.ids-chip-tag .ids-chip-text {
+    font-size: var(--ids-size-body4);
+    line-height: var(--ids-line-body4-tight);
+    font-weight: var(--ids-font-semibold);
 }
 
 

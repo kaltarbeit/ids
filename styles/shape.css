@@ -1,23 +1,23 @@
 .ids-radius-6 {
-    border-radius: var(--ids-radius-6);
+    border-radius: var(--ids-radius-6) !important;;
 }
 
 .ids-radius-12 {
-    border-radius: var(--ids-radius-12);
+    border-radius: var(--ids-radius-12) !important;;
 }
 
 .ids-radius-16 {
-    border-radius: var(--ids-radius-16);
+    border-radius: var(--ids-radius-16) !important;;
 }
 
 .ids-radius-20 {
-    border-radius: var(--ids-radius-20);
+    border-radius: var(--ids-radius-20) !important;;
 }
 
 .ids-radius-28 {
-    border-radius: var(--ids-radius-28);
+    border-radius: var(--ids-radius-28) !important;;
 }
 
 *.ids-radius-full {
-    border-radius: var(--ids-radius-full);
+    border-radius: var(--ids-radius-full) !important;;
 }
