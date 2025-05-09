@@ -141,7 +141,6 @@
     margin: 40px auto;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
     border: 1px solid #E1E3EA;
 }
 
@@ -157,6 +156,7 @@
     font-size: 14px;
     line-height: 20px;
     border-radius: 9999px;
+    white-space: nowrap;
     transition: background-color 0.2s, color 0.2s;
 }
 

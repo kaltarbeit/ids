@@ -25,10 +25,10 @@
   </div>
 
   <section class="ids-docs-section">
-    <h2 class="ids-docs-section-title">Default</h2>
+    <h2 class="ids-docs-section-title">Primary Tab</h2>
 
     <p class="ids-body4 ids-mt-8 ids-text-gray-500">
-      컴포넌트 스타일 가이드 <span class="ids-bold">Snackbar</span>을 구현한 클래스입니다.
+      컴포넌트 스타일 가이드 <span class="ids-bold">Tabs > Primary Tab</span>을 구현한 클래스입니다.
     </p>
 
     <div class="ids-docs-reference ids-mt-3">
@@ -200,6 +200,222 @@
                   </div>
               </div>
           </div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Secondary Tab</h2>
+
+    <p class="ids-body4 ids-mt-8 ids-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids-bold">Tabs > Secondary Tab > Default</span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids-docs-reference ids-mt-3">
+      <div class="ids-docs-reference-button">
+        Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids-table ids-table-sm">
+        <thead>
+        <tr>
+          <th class="ids-cell-left">Class</th>
+          <th class="ids-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tab</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              justify-content: space-around;
+              background: white;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tab-secondary</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">background-color: #F4F5F7;
+              padding: 4px;
+              border-radius: 8px;
+              font-family: sans-serif;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tab-secondary-list</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">list-style: none;
+              margin: 0;
+              padding: 0;
+              display: flex;
+              gap: 24px;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tab-secondary-item</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: 33.33%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 4px;
+              padding: 13px 23px;
+              border-radius: 8px;
+              cursor: pointer;
+              color: #737684;
+              font-size: 16px;
+              font-weight: 500;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tab-secondary-item.active</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">background-color: #FFFFFF;
+              color: #101116;
+              font-weight: 700;
+              box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.08);
+            </code>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids-docs-section-label">Examples</h4>
+
+    <div class="ids-docs-examples">
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-tab-secondary</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-tab-secondary">
+                  <ul class="ids-tab-secondary-list">
+                      <li class="ids-tab-secondary-item active" data-tab="tab1">
+                          <span class="ids-tab-secondary-label">레이블</span>
+                          <span class="ids-badge-count">0</span>
+                      </li>
+                      <li class="ids-tab-secondary-item" data-tab="tab2">
+                          <span class="ids-tab-secondary-label">레이블</span>
+                          <span class="ids-badge-count">0</span>
+                      </li>
+                      <li class="ids-tab-secondary-item" data-tab="tab3">
+                          <span class="ids-tab-secondary-label">레이블</span>
+                          <span class="ids-badge-count">0</span>
+                      </li>
+                  </ul>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Segment Tab</h2>
+
+    <p class="ids-body4 ids-mt-8 ids-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids-bold">Tabs > Secondary Tab > Segment </span>을 구현한 클래스입니다.
+    </p>
+
+    <div class="ids-docs-reference ids-mt-3">
+      <div class="ids-docs-reference-button">
+        Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids-table ids-table-sm">
+        <thead>
+        <tr>
+          <th class="ids-cell-left">Class</th>
+          <th class="ids-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tab</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              justify-content: space-around;
+              background: white;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tab-segment</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: inline-flex;
+              background-color: #FFFFFF;
+              border-radius: 9999px;
+              overflow: hidden;
+              margin: 40px auto;
+              padding: 0;
+              box-sizing: border-box;
+              border: 1px solid #E1E3EA;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-tab-segment-item</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">flex: 1;
+              padding: 7px 16px;
+              border: none;
+              background: transparent;
+              color: #454855;
+              cursor: pointer;
+              outline: none;
+              font-size: 14px;
+              line-height: 20px;
+              border-radius: 9999px;
+              white-space: nowrap;
+              transition: background-color 0.2s, color 0.2s;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">ids-tab-segment-item.active</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">background-color: #1654D1;
+              color: #ffffff;
+              font-weight: 700;
+            </code>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids-docs-section-label">Examples</h4>
+
+    <div class="ids-docs-examples">
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-tab-segment</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-tab-segment">
+                  <button
+                          class="ids-tab-segment-item active"
+                          data-segment="segment1">
+                      레이블1
+                  </button>
+
+                  <button
+                          class="ids-tab-segment-item"
+                          data-segment="segment2">
+                      레이블2
+                  </button>
+              </div>
             </script>
           </div>
         </div>
