@@ -244,79 +244,50 @@
     </div>
   </section>
 
-
   <section class="ids-docs-section">
-    <h2 class="ids-docs-section-title">Bank</h2>
+    <h2 class="ids-docs-section-title">Bank Select</h2>
 
     <p class="ids-body4 ids-mt-8 ids-text-gray-500">
-      컴포넌트 스타일 가이드 <span class="ids-bold">Dropdown > Bank</span> 을 구현한 클래스입니다.
+      컴포넌트 스타일 가이드 <span class="ids-bold">Dropdown > Bank Select</span> 을 구현한 예제입니다.
     </p>
-
-    <div class="ids-docs-reference ids-mt-3">
-      <div class="ids-docs-reference-button">
-        Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
-      </div>
-
-      <table class="ids-table ids-table-sm">
-        <thead>
-        <tr>
-          <th class="ids-cell-left">Class</th>
-          <th class="ids-cell-left">Style</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td class="ids-cell-left ids-docs-classname">.dropdown-bank-title</td>
-          <td class="ids-cell-left">
-            <code class="ids-docs-code">display: flex;
-              gap: var(--ids-spacing-1);
-              align-items: center;
-              padding: 0;
-              margin: 0;
-              font-size: var(--ids-size-body4);
-              line-height: var(--ids-line-body4-tight);
-              color: var(--ids-color-gray-500);
-            </code>
-          </td>
-        </tr>
-        <tr>
-          <td class="ids-cell-left ids-docs-classname">.ids-dropdown-bank-account</td>
-          <td class="ids-cell-left">
-            <code class="ids-docs-code">font-size: var(--ids-size-body2);
-              font-weight: var(--ids-font-medium);
-              line-height: var(--ids-line-body2-tight);
-              color: var(--ids-color-gray-900);
-              padding: 0;
-              margin: var(--ids-spacing-1) 0 0;
-            </code>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
 
     <h4 class="ids-docs-section-label">Examples</h4>
 
     <div class="ids-docs-examples">
+
       <div class="ids-docs-example-block">
         <span class="ids-label ids-label-line ids-label-blue">.ids-dropdown</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-dropdown-sm</span>
         <div class="ids-docs-example-code">
           <div class="ids-docs-example"></div>
           <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
-              <div class="ids-dropdown">
-                <label class="ids-dropdown-label">타이틀</label>
-                <div class="ids-dropdown-container">
-                  <button class="ids-dropdown-button" id="dropdownButton">
-                    <p class="ids-dropdown-bank-title">
-                      <span class="ids-label ids-label-blue-600">레이블</span>
-                      계좌별명
-                    </p>
-                    <p class="ids-dropdown-bank-account">
-                      000-000000-00000
-                    </p>
-                  </button>
-                </div>
+              <div class="ids-dropdown ids-dropdown-sm ids-dropdown-selected">
+                  <div class="ids-dropdown-container">
+                      <button class="ids-dropdown-button" id="dropdownButton">
+                          0000-000-00000 [통장이름]
+                      </button>
+                  </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-dropdown</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-dropdown-sm</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-dropdown ids-dropdown-sm ids-dropdown-selected">
+                  <div class="ids-dropdown-container">
+                      <button class="ids-dropdown-button" id="dropdownButton">
+                          <span class="ids-label ids-label-black">한도</span>
+                          0000-000-00000 [통장이름]
+                      </button>
+                  </div>
               </div>
             </script>
           </div>
@@ -440,38 +411,6 @@
                     </div>
                 </div>
             </div>
-            </script>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="ids-docs-section">
-    <h2 class="ids-docs-section-title">Bank Select</h2>
-
-    <p class="ids-body4 ids-mt-8 ids-text-gray-500">
-      컴포넌트 스타일 가이드 <span class="ids-bold">Dropdown > Bank Select</span> 을 구현한 예제입니다.
-    </p>
-
-    <h4 class="ids-docs-section-label">Examples</h4>
-
-    <div class="ids-docs-examples">
-      <div class="ids-docs-example-block">
-        <span class="ids-label ids-label-line ids-label-blue">.ids-dropdown</span>
-        <span class="ids-label ids-label-line ids-label-blue">.ids-dropdown-sm</span>
-        <div class="ids-docs-example-code">
-          <div class="ids-docs-example"></div>
-          <div class="ids-docs-example-code-highlight">
-            <script type="text/plain" class="language-markup">
-              <div class="ids-dropdown ids-dropdown-sm">
-                  <div class="ids-dropdown-container">
-                      <button class="ids-dropdown-button" id="dropdownButton">
-                          <span class="ids-label ids-label-black">한도</span>
-                          0000-000-00000 [통장이름]
-                      </button>
-                  </div>
-              </div>
             </script>
           </div>
         </div>
