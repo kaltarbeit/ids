@@ -24,6 +24,428 @@
     <p class="ids-body1 ids-my-24 ids-text-gray-500">Border 디자인 표현을 위한 스타일시트 입니다.</p>
   </div>
 
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Default</h2>
+
+    <p class="ids-body4 ids-mt-8 ids-text-gray-500">
+      스타일 가이드 <span class="ids-bold">Object > Border</span> 를 구현한 클래스입니다.<br/>
+      Gray Scale 100 으로 구현되어 있습니다.
+    </p>
+
+    <div class="ids-docs-reference ids-mt-3">
+      <div class="ids-docs-reference-button">
+        Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids-table ids-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 20%"/>
+          <col style="width: 60%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids-cell-left">Name</th>
+          <th class="ids-cell-left">Class</th>
+          <th class="ids-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-name">
+            Border 1px
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-1</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-1); /* 1px solid var(--ids-color-gray-100) */</code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-name">
+            Border 2px
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-2</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-2); /* 2px solid var(--ids-color-gray-100) */</code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-name">
+            Border 3px
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-3</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-3); /* 2px solid var(--ids-color-gray-100) */</code>
+          </td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+
+    <h4 class="ids-docs-section-label">Examples</h4>
+
+    <div class="ids-docs-examples">
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-border-1</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div
+                class="ids-border-1"
+                style="width: 100px; height: 100px;"
+                >
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-border-2</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div
+                class="ids-border-2"
+                style="width: 100px; height: 100px;"
+                >
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-border-3</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div
+                class="ids-border-2"
+                style="width: 100px; height: 100px;"
+                >
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Border Color</h2>
+
+    <p class="ids-body4 ids-mt-8 ids-text-gray-500">
+      Default Border 에서 Border Color 변경을 위해 Gray Scale 200 ~ 900 의 컬러를 함께 제공합니다.
+      <span class="ids-bold">ids-border-[px]-[color]</span> 로 사용 가능합니다.
+    </p>
+
+    <div class="ids-docs-reference ids-mt-3">
+      <div class="ids-docs-reference-button">
+        Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids-table ids-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 20%"/>
+          <col style="width: 60%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids-cell-left">Name</th>
+          <th class="ids-cell-left">Class</th>
+          <th class="ids-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-name" rowspan="8">
+            Border 1px <br/> Gray Scale 200 ~ 900
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-1-200</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-1-200);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-1-300</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-1-300);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-1-400</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-1-400);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-1-500</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-1-500);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-1-600</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-1-600);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-1-700</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-1-700);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-1-800</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-1-800);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-1-900</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-1-900);
+            </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-name" rowspan="8">
+            Border 2px <br/> Gray Scale 200 ~ 900
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-2-200</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-2-200);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-2-300</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-2-300);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-2-400</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-2-400);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-2-500</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-2-500);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-2-600</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-2-600);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-2-700</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-2-700);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-2-800</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-2-800);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-2-900</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-2-900);
+            </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-name" rowspan="8">
+            Border 3px <br/> Gray Scale 200 ~ 900
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-3-200</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-3-200);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-3-300</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-3-300);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-3-400</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-3-400);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-3-500</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-3-500);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-3-600</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-3-600);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-3-700</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-3-700);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-3-800</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-3-800);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-border-3-900</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">border: var(--ids-border-3-900);
+            </code>
+          </td>
+        </tr>
+
+
+        </tbody>
+      </table>
+    </div>
+
+
+    <h4 class="ids-docs-section-label">Examples</h4>
+
+    <div class="ids-docs-examples">
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-border-1-200</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div
+                class="ids-border-1-200"
+                style="width: 100px; height: 100px;"
+                >
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-border-1-900</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div
+                class="ids-border-1-900"
+                style="width: 100px; height: 100px;"
+                >
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-border-2-400</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div
+                class="ids-border-2-400"
+                style="width: 100px; height: 100px;"
+                >
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-border-2-900</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div
+                class="ids-border-2-900"
+                style="width: 100px; height: 100px;"
+                >
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-border-3-200</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div
+                class="ids-border-3-200"
+                style="width: 100px; height: 100px;"
+                >
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-border-3-800</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div
+                class="ids-border-3-800"
+                style="width: 100px; height: 100px;"
+                >
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </div>
 
 <script src="../scripts/docs.js"></script>

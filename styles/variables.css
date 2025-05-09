@@ -112,9 +112,17 @@
     --ids-border-2: 2px solid var(--ids-color-gray-100);
     --ids-border-3: 3px solid var(--ids-color-gray-100);
 
+    --ids-border-1-150: 1px solid var(--ids-color-gray-150);
+    --ids-border-2-150: 2px solid var(--ids-color-gray-150);
+    --ids-border-3-150: 3px solid var(--ids-color-gray-150);
+
     --ids-border-1-200: 1px solid var(--ids-color-gray-200);
     --ids-border-2-200: 2px solid var(--ids-color-gray-200);
     --ids-border-3-200: 3px solid var(--ids-color-gray-200);
+
+    --ids-border-1-300: 1px solid var(--ids-color-gray-300);
+    --ids-border-2-300: 2px solid var(--ids-color-gray-300);
+    --ids-border-3-300: 3px solid var(--ids-color-gray-300);
 
     --ids-border-1-400: 1px solid var(--ids-color-gray-400);
     --ids-border-2-400: 2px solid var(--ids-color-gray-400);
@@ -124,9 +132,21 @@
     --ids-border-2-500: 2px solid var(--ids-color-gray-500);
     --ids-border-3-500: 3px solid var(--ids-color-gray-500);
 
+    --ids-border-1-600: 1px solid var(--ids-color-gray-600);
+    --ids-border-2-600: 2px solid var(--ids-color-gray-600);
+    --ids-border-3-600: 3px solid var(--ids-color-gray-600);
+
+    --ids-border-1-700: 1px solid var(--ids-color-gray-700);
+    --ids-border-2-700: 2px solid var(--ids-color-gray-700);
+    --ids-border-3-700: 3px solid var(--ids-color-gray-700);
+
     --ids-border-1-800: 1px solid var(--ids-color-gray-800);
     --ids-border-2-800: 2px solid var(--ids-color-gray-800);
     --ids-border-3-800: 3px solid var(--ids-color-gray-800);
+
+    --ids-border-1-900: 1px solid var(--ids-color-gray-900);
+    --ids-border-2-900: 2px solid var(--ids-color-gray-900);
+    --ids-border-3-900: 3px solid var(--ids-color-gray-900);
 
     --ids-border-1-hide: 1px solid transparent;
     --ids-border-2-hide: 2px solid transparent;
