@@ -28,7 +28,7 @@
     <h2 class="ids-docs-section-title">선택형</h2>
 
     <p class="ids-body4 ids-mt-8 ids-text-gray-500">
-      컴포넌트 스타일 가이드 <span class="ids-bold">Chips > 선택형</span> 를 구현한 클래스입니다.
+      컴포넌트 스타일 가이드 <span class="ids-bold">Chips > 선택형 > Default</span> 를 구현한 클래스입니다.
     </p>
 
     <div class="ids-docs-reference ids-mt-3">
@@ -97,14 +97,6 @@
             </code>
           </td>
         </tr>
-        <tr>
-          <td class="ids-cell-left ids-docs-classname">.ids-chip-group</td>
-          <td class="ids-cell-left">
-            <code class="ids-docs-code">display: flex;
-              gap: var(--ids-spacing-1);
-            </code>
-          </td>
-        </tr>
         </tbody>
       </table>
     </div>
@@ -127,6 +119,192 @@
                       <div class="ids-chip-text">#레이블</div>
                       <div class="ids-chip-count">99</div>
                   </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Group</h2>
+
+    <p class="ids-body4 ids-mt-8 ids-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids-bold">Chips > 선택형 > Group1~2</span> 를 구현한 클래스입니다.
+    </p>
+
+    <div class="ids-docs-reference ids-mt-3">
+      <div class="ids-docs-reference-button">
+        Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids-table ids-table-sm">
+        <colgroup>
+          <col style="width: 30%"/>
+          <col style="width: 50%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids-cell-left">Class</th>
+          <th class="ids-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-chip-group-wrapper</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              gap: var(--ids-spacing-1);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-chip-group-collapse .ids-chip-group</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">height: 42px;
+              overflow: hidden;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-chip-group-collapse .ids-chip-group-button button </td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">transform: rotate(180deg);
+            </code>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids-docs-section-label">Examples</h4>
+
+    <div class="ids-docs-examples">
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-chip</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-chip-group-wrapper ids-chip-group-collapse">
+                <div class="ids-chip-group">
+                    <div class="ids-chip ids-chip-selected">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                </div>
+                <div class="ids-chip-group-button">
+                  <button class="ids-button ids-button-icon-round ids-button-icon">
+                      <i class="ids-icon ids-icon-collapse">Collapse</i>
+                  </div>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-chip</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-chip-group-wrapper">
+                <div class="ids-chip-group">
+                    <div class="ids-chip ids-chip-selected">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                </div>
+                <div class="ids-chip-group-button">
+                  <button class="ids-button ids-button-icon-round ids-button-icon">
+                      <i class="ids-icon ids-icon-collapse">Collapse</i>
+                  </div>
+                </div>
               </div>
             </script>
           </div>
@@ -185,26 +363,6 @@
     <h4 class="ids-docs-section-label">Examples</h4>
 
     <div class="ids-docs-examples">
-      <div class="ids-docs-example-block">
-        <span class="ids-label ids-label-line ids-label-blue">.ids-chip</span>
-        <div class="ids-docs-example-code">
-          <div class="ids-docs-example"></div>
-          <div class="ids-docs-example-code-highlight">
-            <script type="text/plain" class="language-markup">
-              <div class="ids-chip-group">
-                  <div class="ids-chip ids-chip-selected">
-                      <div class="ids-chip-text">#레이블</div>
-                      <div class="ids-chip-count">99</div>
-                  </div>
-                  <div class="ids-chip">
-                      <div class="ids-chip-text">#레이블</div>
-                      <div class="ids-chip-count">99</div>
-                  </div>
-              </div>
-            </script>
-          </div>
-        </div>
-      </div>
       <div class="ids-docs-example-block">
         <span class="ids-label ids-label-line ids-label-blue">.ids-chip</span>
         <span class="ids-label ids-label-line ids-label-blue">.ids-chip-tag</span>

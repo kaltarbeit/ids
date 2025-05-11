@@ -13,11 +13,33 @@
     border: var(--ids-border-1-200);
     padding: var(--ids-spacing-1) var(--ids-spacing-1-half);
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .ids-chip-group {
     display: flex;
     gap: var(--ids-spacing-1);
+    flex-wrap: wrap;
+}
+
+.ids-chip-group-wrapper {
+    padding: var(--ids-spacing-2) var(--ids-spacing-2-half);
+}
+
+.ids-chip-group-wrapper.ids-chip-group-collapse .ids-chip-group {
+    height: 42px;
+    overflow: hidden;
+}
+
+.ids-chip-group-wrapper.ids-chip-group-collapse .ids-chip-group-button button {
+    transform: rotate(180deg);
+}
+
+.ids-chip-group-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--ids-spacing-2);
 }
 
 .ids-chip-text {

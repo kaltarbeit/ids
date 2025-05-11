@@ -254,3 +254,13 @@ a.ids-button:focus {
     width: 66.66%;
 }
 
+.ids-button.ids-button-icon-round.ids-button-icon {
+    min-width: 40px;
+    height: 40px;
+    border: var(--ids-border-1-700);
+    background-color: var(--ids-color-white);
+    border-radius: var(--ids-radius-full);
+    box-shadow: var(--ids-shadow);
+}
+
+
