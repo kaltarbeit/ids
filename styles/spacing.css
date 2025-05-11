@@ -64,6 +64,10 @@
     margin-top: var(--ids-spacing-3) !important;;
 }
 
+.ids-mt-4 {
+    margin-top: var(--ids-spacing-4) !important;;
+}
+
 .ids-mt-5 {
     margin-top: var(--ids-spacing-5) !important;;
 }

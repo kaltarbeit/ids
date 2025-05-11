@@ -117,8 +117,8 @@ td.ids-docs-classname {
 }
 
 .ids-docs-reference {
-    /*height: 30px;
-    overflow: hidden;*/
+    height: 30px;
+    overflow: hidden;
     transition: height 0.3s ease-in-out;
 }
 
@@ -234,6 +234,26 @@ td.ids-docs-classname {
     width: 24px;
     display: inline-block;
     vertical-align: middle;
+}
+
+.ex-p-outer {
+    background: #FF8686;
+    border: var(--ids-border-1);
+}
+
+.ex-p-inner {
+    height: 100px;
+    background: white;
+}
+
+.ex-m-outer {
+    background: #D5F3DF;
+    border: var(--ids-border-1);
+}
+
+.ex-m-inner {
+    height: 100px;
+    background: white;
 }
 
 @media print {

@@ -21,16 +21,581 @@
   <div class="ids-docs-header">
     <h1 class="ids-title1 ids-bold">Spacing</h1>
 
-    <p class="ids-body1 ids-my-24 ids-text-gray-500">Spacing 디자인 표현을 위한 스타일시트 입니다.</p>
+    <p class="ids-body1 ids-my-24 ids-text-gray-500">Margin, Padding 표현을 위한 스타일시트 입니다.</p>
   </div>
 
-
-
   <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Margin</h2>
 
     <p class="ids-body4 ids-mt-8 ids-text-gray-500">
-      스타일 가이드 <span class="ids-bold">Layout > Spacing</span> 을 구현한 클래스입니다.<br/>
+      스타일 가이드 <span class="ids-bold">Layout > Spacing</span>을 기반으로 Margin 스타일을 구현한 클래스입니다.<br/>
+      <span class="ids-bold">8px</span> 배수를 기반으로 하며, <span class="ids-bold">*-half</span>를 이용해 <span class="ids-bold">+0.5(4px)</span>
+      표현이 가능합니다.<br/>
+      예) ma-1 = 8px, ma-2 = 16px, ma-2-half = 20px, ma-3 = 24px, ...
     </p>
+    <div class="ids-docs-reference ids-mt-3">
+      <div class="ids-docs-reference-button">
+        Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids-table ids-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 20%"/>
+          <col style="width: 60%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids-cell-left">Name</th>
+          <th class="ids-cell-left">Class</th>
+          <th class="ids-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-name" rowspan="5">
+            Margin All
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-ma-1</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin: var(--ids-spacing); /* 8px */</code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-ma-h</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin: calc(var(--ids-spacing)/2); /* 4px */</code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-ma-q</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin: calc(var(--ids-spacing)/4); /* 2px */</code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-ma-[number]</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin: calc(var(--ids-spacing) * [number]); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-ma-[number]-h</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin: calc(var(--ids-spacing) * ([number] + 0.5)); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-name" rowspan="2">
+            Margin Top
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-mt-[number]</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin-top: calc(var(--ids-spacing) * [number]); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-mt-[number]-h</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin-top: calc(var(--ids-spacing) * ([number] + 0.5)); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-name" rowspan="2">
+            Margin Bottom
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-mb-[number]</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin-bottom: calc(var(--ids-spacing) * [number]); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-mb-[number]-h</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin-bottom: calc(var(--ids-spacing) * ([number] + 0.5)); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-name" rowspan="2">
+            Margin Left
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-ml-[number]</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin-left: calc(var(--ids-spacing) * [number]); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-ml-[number]-h</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin-left: calc(var(--ids-spacing) * ([number] + 0.5)); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-name" rowspan="2">
+            Margin Right
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-mr-[number]</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin-right: calc(var(--ids-spacing) * [number]); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-mr-[number]-h</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin-right: calc(var(--ids-spacing) * ([number] + 0.5)); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-name" rowspan="2">
+            Margin Vertical
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-my-[number]</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin-top: calc(var(--ids-spacing) * [number]);
+              margin-bottom: calc(var(--ids-spacing) * [number]); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-my-[number]-h</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin-top: calc(var(--ids-spacing) * ([number] + 0.5));
+              margin-bottom: calc(var(--ids-spacing) * ([number] + 0.5)); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-name" rowspan="2">
+            Margin Horizontal
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-mx-[number]</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin-left: calc(var(--ids-spacing) * [number]);
+              margin-right: calc(var(--ids-spacing) * [number]); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-mx-[number]-h</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">margin-left: calc(var(--ids-spacing) * ([number] + 0.5));
+              margin-right: calc(var(--ids-spacing) * ([number] + 0.5)); </code>
+          </td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids-docs-section-label">Examples</h4>
+
+    <div class="ids-docs-examples">
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-ma-1</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ex-m-outer">
+                <div class="ids-ma-1 ex-m-inner"></div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-ma-2</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ex-m-outer">
+                <div class="ids-ma-2 ex-m-inner"></div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-ml-2</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ex-m-outer">
+                <div class="ids-ml-2 ex-m-inner"></div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-mr-3</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ex-m-outer">
+                <div class="ids-mr-3 ex-m-inner"></div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-mt-4</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ex-m-outer">
+                <div class="ids-mt-4 ex-m-inner"></div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-mb-5</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ex-m-outer">
+                <div class="ids-mb-5 ex-m-inner"></div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-my-1</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ex-m-outer">
+                <div class="ids-my-1 ex-m-inner"></div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-mx-1</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ex-m-outer">
+                <div class="ids-mx-1 ex-m-inner"></div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ids-docs-section">
+    <h2 class="ids-docs-section-title">Padding</h2>
+
+    <p class="ids-body4 ids-mt-8 ids-text-gray-500">
+      스타일 가이드 <span class="ids-bold">Layout > Spacing</span>을 기반으로 Padding 스타일을 구현한 클래스입니다.<br/>
+      <span class="ids-bold">8px</span> 배수를 기반으로 하며, <span class="ids-bold">*-half</span>를 이용해 <span class="ids-bold">+0.5(4px)</span>
+      표현이 가능합니다.<br/>
+      예) pa-1 = 8px, pa-2 = 16px, pa-2-half = 20px, pa-3 = 24px, ...
+    </p>
+    <div class="ids-docs-reference ids-mt-3">
+      <div class="ids-docs-reference-button">
+        Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids-table ids-table-sm">
+        <colgroup>
+          <col style="width: 20%"/>
+          <col style="width: 20%"/>
+          <col style="width: 60%"/>
+        </colgroup>
+        <thead>
+        <tr>
+          <th class="ids-cell-left">Name</th>
+          <th class="ids-cell-left">Class</th>
+          <th class="ids-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-name" rowspan="5">
+            Padding All
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-pa-1</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding: var(--ids-spacing); /* 8px */</code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-pa-h</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding: calc(var(--ids-spacing)/2); /* 4px */</code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-pa-q</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding: calc(var(--ids-spacing)/4); /* 2px */</code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-pa-[number]</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding: calc(var(--ids-spacing) * [number]); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-pa-[number]-h</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding: calc(var(--ids-spacing) * ([number] + 0.5)); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-name" rowspan="2">
+            Padding Top
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-pt-[number]</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding-top: calc(var(--ids-spacing) * [number]); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-pt-[number]-h</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding-top: calc(var(--ids-spacing) * ([number] + 0.5)); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-name" rowspan="2">
+            Padding Bottom
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-pb-[number]</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding-bottom: calc(var(--ids-spacing) * [number]); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-pb-[number]-h</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding-bottom: calc(var(--ids-spacing) * ([number] + 0.5)); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-name" rowspan="2">
+            Padding Left
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-pl-[number]</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding-left: calc(var(--ids-spacing) * [number]); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-pl-[number]-h</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding-left: calc(var(--ids-spacing) * ([number] + 0.5)); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-name" rowspan="2">
+            Padding Right
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-pr-[number]</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding-right: calc(var(--ids-spacing) * [number]); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-pr-[number]-h</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding-right: calc(var(--ids-spacing) * ([number] + 0.5)); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-name" rowspan="2">
+            Padding Vertical
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-py-[number]</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding-top: calc(var(--ids-spacing) * [number]);
+              padding-bottom: calc(var(--ids-spacing) * [number]); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-py-[number]-h</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding-top: calc(var(--ids-spacing) * ([number] + 0.5));
+              padding-bottom: calc(var(--ids-spacing) * ([number] + 0.5)); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-name" rowspan="2">
+            Padding Horizontal
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-px-[number]</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding-left: calc(var(--ids-spacing) * [number]);
+              padding-right: calc(var(--ids-spacing) * [number]); </code>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-px-[number]-h</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding-left: calc(var(--ids-spacing) * ([number] + 0.5));
+              padding-right: calc(var(--ids-spacing) * ([number] + 0.5)); </code>
+          </td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids-docs-section-label">Examples</h4>
+
+    <div class="ids-docs-examples">
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-pa-1</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-pa-1 ex-p-outer">
+                <div class="ex-p-inner"></div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-pa-2</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-pa-2 ex-p-outer">
+                <div class="ex-p-inner"></div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-pl-2</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-pl-2 ex-p-outer">
+                <div class="ex-p-inner"></div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-pr-3</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-pr-3 ex-p-outer">
+                <div class="ex-p-inner"></div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-pt-4</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-pt-4 ex-p-outer">
+                <div class="ex-p-inner"></div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-pb-5</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-pb-5 ex-p-outer">
+                <div class="ex-p-inner"></div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-py-1</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-py-1 ex-p-outer">
+                <div class="ex-p-inner"></div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-px-1</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-px-1 ex-p-outer">
+                <div class="ex-p-inner"></div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
 </div>
