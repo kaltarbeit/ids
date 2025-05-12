@@ -5,7 +5,7 @@ export const createBottomSheet = () => {
     wrapper.insertAdjacentHTML('afterbegin', html);
     const bottomSheet = wrapper.querySelector('.ids-bottom-sheet');
     const bottomSheetContainer = wrapper.querySelector('.ids-bottom-sheet-container');
-    const backdrop = wrapper.querySelector('.ids-backdrop');
+    const backdrop = wrapper.querySelector('.ids-dimmed');
     const button = wrapper.querySelector('.ids-button');
     const closeButton = wrapper.querySelector('.ids-bottom-sheet-close');
     const handler = wrapper.querySelector('.ids-bottom-sheet-handle');
@@ -21,7 +21,7 @@ export const createBottomSheet = () => {
         closeButton.style.display = 'none';
         setTimeout(() => {
             bottomSheet.classList.remove('ids-bottom-sheet-hide');
-            backdrop.classList.remove('ids-backdrop-hide');
+            backdrop.classList.remove('ids-dimmed-hide');
         }, 10);
     }
 
@@ -31,7 +31,7 @@ export const createBottomSheet = () => {
 
     const hideBottomSheet = () => {
         bottomSheet.classList.add('ids-bottom-sheet-hide');
-        backdrop.classList.add('ids-backdrop-hide');
+        backdrop.classList.add('ids-dimmed-hide');
         bottomSheet.classList.remove('ids-bottom-sheet-full');
     }
 

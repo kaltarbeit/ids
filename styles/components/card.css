@@ -2,13 +2,13 @@
     background: var(--ids-color-white);
     border-radius: var(--ids-radius-16);
     padding: var(--ids-spacing-2-half);
-    box-shadow: var(--ids-shadow);
+    box-shadow: var(--ids-shadow-1);
     box-sizing: border-box;
     width: 100%;
 }
 
 .ids-card-blur {
-    box-shadow: var(--ids-shadow-blur);
+    box-shadow: var(--ids-shadow-4);
 }
 
 .ids-card-filled {

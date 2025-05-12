@@ -6,7 +6,7 @@ export const createPopup = () => {
     wrapper.insertAdjacentHTML('afterbegin', html);
 
     const popup = wrapper.querySelector('.ids-popup');
-    const backdrop = wrapper.querySelector('.ids-backdrop');
+    const backdrop = wrapper.querySelector('.ids-dimmed');
     const openButton = wrapper.querySelector('.ids-popup-examples-open-button');
     const closeButtons = wrapper.querySelectorAll('.ids-button, input[name="checkbox"]');
 
@@ -15,7 +15,7 @@ export const createPopup = () => {
             e.preventDefault();
 
             popup.classList.add('ids-popup-hide');
-            backdrop.classList.add('ids-backdrop-hide');
+            backdrop.classList.add('ids-dimmed-hide');
         });
     });
 
@@ -24,12 +24,12 @@ export const createPopup = () => {
 
         setTimeout(() => {
             popup.classList.remove('ids-popup-hide');
-            backdrop.classList.remove('ids-backdrop-hide');
+            backdrop.classList.remove('ids-dimmed-hide');
         }, 10);
     });
 
     backdrop.addEventListener('transitionend', () => {
-        if(backdrop.classList.contains('ids-backdrop-hide'))
+        if(backdrop.classList.contains('ids-dimmed-hide'))
             backdrop.style.display = 'none';
     });
 

@@ -5,7 +5,7 @@ export const createDrawer = () => {
     wrapper.insertAdjacentHTML('afterbegin', html);
 
     const drawer = wrapper.querySelector('.ids-drawer');
-    const backdrop = wrapper.querySelector('.ids-backdrop');
+    const backdrop = wrapper.querySelector('.ids-dimmed');
     const closeButton = wrapper.querySelector('.ids-drawer-close');
     const menuButton = wrapper.querySelector('.ids-navigation-example');
 
@@ -14,13 +14,13 @@ export const createDrawer = () => {
         backdrop.style.display = 'block';
         setTimeout(() => {
             drawer.classList.remove('ids-drawer-hide');
-            backdrop.classList.remove('ids-backdrop-hide');
+            backdrop.classList.remove('ids-dimmed-hide');
         }, 10);
     });
 
     closeButton.addEventListener('click', () => {
         drawer.classList.add('ids-drawer-hide');
-        backdrop.classList.add('ids-backdrop-hide');
+        backdrop.classList.add('ids-dimmed-hide');
     });
 
     drawer.addEventListener('transitionend', () => {
@@ -29,7 +29,7 @@ export const createDrawer = () => {
     });
 
     backdrop.addEventListener('transitionend', () => {
-        if(backdrop.classList.contains('ids-backdrop-hide'))
+        if(backdrop.classList.contains('ids-dimmed-hide'))
             backdrop.style.display = 'none';
     });
 

@@ -260,7 +260,7 @@ a.ids-button:focus {
     border: var(--ids-border-1-700);
     background-color: var(--ids-color-white);
     border-radius: var(--ids-radius-full);
-    box-shadow: var(--ids-shadow);
+    box-shadow: var(--ids-shadow-4);
 }
 
 

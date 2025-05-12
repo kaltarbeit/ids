@@ -11,7 +11,7 @@
     border: 1px solid var(--ids-color-gray-800);
     border-radius: var(--ids-radius-6);
     overflow: hidden;
-    box-shadow: var(--ids-shadow);
+    box-shadow: var(--ids-shadow-2);
     margin:0;
     padding:0;
 }

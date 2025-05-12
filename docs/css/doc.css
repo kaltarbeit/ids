@@ -236,6 +236,15 @@ td.ids-docs-classname {
     vertical-align: middle;
 }
 
+.ex-box {
+    height: 100px;
+    border: var(--ids-border-1);
+}
+
+.ex-card-box {
+    height: 100px;
+}
+
 .ex-p-outer {
     background: #FF8686;
     border: var(--ids-border-1);
@@ -247,13 +256,12 @@ td.ids-docs-classname {
 }
 
 .ex-m-outer {
-    background: #D5F3DF;
     border: var(--ids-border-1);
 }
 
 .ex-m-inner {
     height: 100px;
-    background: white;
+    background: #D5F3DF;
 }
 
 @media print {

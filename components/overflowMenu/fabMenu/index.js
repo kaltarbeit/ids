@@ -7,7 +7,7 @@ export const createOverflowMenu = () => {
 
     const fabToggle = wrapper.querySelector(".ids-fab-menu-toggle");
     const fabMenu = wrapper.querySelector(".ids-fab-menu");
-    const backdrop = wrapper.querySelector('.ids-backdrop');
+    const backdrop = wrapper.querySelector('.ids-dimmed');
 
     fabToggle.addEventListener("click", () => {
         fabMenu.classList.toggle("show");
@@ -15,17 +15,17 @@ export const createOverflowMenu = () => {
         if(fabMenu.classList.contains('show')) {
             backdrop.style.display = 'block';
             setTimeout(() => {
-                backdrop.classList.remove('ids-backdrop-hide');
+                backdrop.classList.remove('ids-dimmed-hide');
             });
         } else {
             setTimeout(() => {
-                backdrop.classList.add('ids-backdrop-hide');
+                backdrop.classList.add('ids-dimmed-hide');
             });
         }
     });
 
     backdrop.addEventListener('transitionend', () => {
-        if(backdrop.classList.contains('ids-backdrop-hide'))
+        if(backdrop.classList.contains('ids-dimmed-hide'))
             backdrop.style.display = 'none';
     });
 

@@ -1,0 +1,42 @@
+/**
+ * Shadows
+ */
+
+.ids-shadow-1 {
+    box-shadow: var(--ids-shadow-1) !important;
+}
+
+.ids-shadow-2 {
+    box-shadow: var(--ids-shadow-2) !important;
+}
+
+.ids-shadow-3 {
+    box-shadow: var(--ids-shadow-3) !important;
+}
+
+.ids-shadow-4 {
+    box-shadow: var(--ids-shadow-4) !important;
+}
+
+.ids-shadow-5 {
+    box-shadow: var(--ids-shadow-5) !important;
+}
+
+
+/**
+    Dimmed
+ */
+.ids-dimmed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ids-dimmed.ids-dimmed-hide {
+    opacity: 0;
+}
