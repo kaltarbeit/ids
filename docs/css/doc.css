@@ -83,11 +83,6 @@ code.ids-docs-code {
     font-size: 12px;
 }
 
-.ids-docs-file-list {
-    height: 405px;
-    overflow: auto;
-}
-
 
 td.ids-docs-name {
     font-size: var(--ids-size-body2);
@@ -202,7 +197,8 @@ td.ids-docs-classname {
 }
 
 .treeview-folder,
-.treeview-file {
+.treeview-file,
+.treeview-no-icon {
     padding-left: 24px;
 }
 
