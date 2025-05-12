@@ -23,6 +23,7 @@
 }
 
 .ids-chip-group-wrapper {
+    position: relative;
     padding: var(--ids-spacing-2) var(--ids-spacing-2-half);
 }
 
@@ -31,7 +32,8 @@
     overflow: hidden;
 }
 
-.ids-chip-group-wrapper.ids-chip-group-collapse .ids-chip-group-button button {
+.ids-chip-group-wrapper.ids-chip-group-collapse .ids-chip-group-button button,
+.ids-chip-group-wrapper.ids-chip-group-collapse .ids-chip-group-button-floating button {
     transform: rotate(180deg);
 }
 
@@ -40,6 +42,19 @@
     align-items: center;
     justify-content: center;
     margin-top: var(--ids-spacing-2);
+}
+
+.ids-chip-group-button-floating {
+    position: absolute;
+    width: 72px;
+    height: 42px;
+    top: var(--ids-spacing-2);
+    right: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(270deg, #FFFFFF 27.5%, rgba(255, 255, 255, 0) 100%);
 }
 
 .ids-chip-text {
@@ -95,3 +110,27 @@
     text-align: center;
     cursor: pointer;
 }
+
+.ids2-chip-bank {
+    padding: 5px 10px 5px 6px;
+    background-color: var(--ids-color-gray-50);
+    border: none;
+}
+
+.ids-chip.ids2-chip-bank .ids-chip-text {
+    font-size: var(--ids-size-body4);
+    line-height: var(--ids-line-body4-tight);
+    font-weight: var(--ids-font-medium);
+    color: var(--ids-color-gray-700);
+}
+
+.ids2-chip-bank.ids-chip-bank-lg {
+    display: flex;
+    width: 101px;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--ids-spacing-1);
+    padding: 16px 10px 12px;
+    border-radius: var(--ids-radius-12);
+}
+

@@ -37,10 +37,6 @@
       </div>
 
       <table class="ids-table ids-table-sm">
-        <colgroup>
-          <col style="width: 30%"/>
-          <col style="width: 50%"/>
-        </colgroup>
         <thead>
         <tr>
           <th class="ids-cell-left">Class</th>
@@ -141,7 +137,7 @@
 
       <table class="ids-table ids-table-sm">
         <colgroup>
-          <col style="width: 30%"/>
+          <col style="width: 50%"/>
           <col style="width: 50%"/>
         </colgroup>
         <thead>
@@ -168,9 +164,28 @@
           </td>
         </tr>
         <tr>
-          <td class="ids-cell-left ids-docs-classname">.ids-chip-group-collapse .ids-chip-group-button button </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-chip-group-button</td>
           <td class="ids-cell-left">
-            <code class="ids-docs-code">transform: rotate(180deg);
+            <code class="ids-docs-code">display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-top: var(--ids-spacing-2);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-chip-group-button-floating </td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">position: absolute;
+              width: 72px;
+              height: 42px;
+              top: 16px;
+              right: 0;
+              margin: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background: linear-gradient(270deg, #FFFFFF 27.5%, rgba(255, 255, 255, 0) 100%);
             </code>
           </td>
         </tr>
@@ -182,7 +197,8 @@
 
     <div class="ids-docs-examples">
       <div class="ids-docs-example-block">
-        <span class="ids-label ids-label-line ids-label-blue">.ids-chip</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-chip-group-wrapper</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-chip-group-collapse</span>
         <div class="ids-docs-example-code">
           <div class="ids-docs-example"></div>
           <div class="ids-docs-example-code-highlight">
@@ -247,7 +263,7 @@
       </div>
 
       <div class="ids-docs-example-block">
-        <span class="ids-label ids-label-line ids-label-blue">.ids-chip</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-chip-group-wrapper</span>
         <div class="ids-docs-example-code">
           <div class="ids-docs-example"></div>
           <div class="ids-docs-example-code-highlight">
@@ -310,6 +326,140 @@
           </div>
         </div>
       </div>
+
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-chip-group-wrapper</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-chip-group-collapse</span><br/>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-chip-group-button-floating</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-chip-group-wrapper ids-chip-group-collapse">
+                <div class="ids-chip-group">
+                    <div class="ids-chip ids-chip-selected">
+                        <div class="ids-chip-text">#레이블</div>
+
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                </div>
+                <div class="ids-chip-group-button-floating">
+                  <button class="ids-button ids-button-icon-round ids-button-icon">
+                      <i class="ids-icon ids-icon-collapse">Collapse</i>
+                  </div>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-chip-group-wrapper</span><br/>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-chip-group-button-floating</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-chip-group-wrapper">
+                <div class="ids-chip-group">
+                    <div class="ids-chip ids-chip-selected">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                    <div class="ids-chip">
+                        <div class="ids-chip-text">#레이블</div>
+                    </div>
+                </div>
+                <div class="ids-chip-group-button-floating">
+                  <button class="ids-button ids-button-icon-round ids-button-icon">
+                      <i class="ids-icon ids-icon-collapse">Collapse</i>
+                  </div>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -336,11 +486,17 @@
         <tr>
           <td class="ids-cell-left ids-docs-classname">.ids-chip-tag</td>
           <td class="ids-cell-left">
-            <code class="ids-docs-code">font-size: 14px;
-              font-weight: 600;
-              line-height: 18px;
+            <code class="ids-docs-code">
               padding: 7px 12px;
               cursor: default;</code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-chip-tag .ids-chip-text</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: var(--ids-size-body4);
+              line-height: var(--ids-line-body4-tight);
+              font-weight: var(--ids-font-semibold);</code>
           </td>
         </tr>
         <tr>
@@ -391,13 +547,125 @@
     </div>
   </section>
 
-
   <section class="ids-docs-section">
     <h2 class="ids-docs-section-title">은행선택형</h2>
 
     <p class="ids-body4 ids-mt-8 ids-text-gray-500">
-      컴포넌트 스타일 가이드 <span class="ids-bold">Chips > 태그형</span> 를 구현한 클래스입니다.
+      컴포넌트 스타일 가이드 <span class="ids-bold">Chips > 은행선택형</span> 을 구현한 클래스입니다.
     </p>
+
+    <div class="ids-docs-reference ids-mt-3">
+      <div class="ids-docs-reference-button">
+        Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
+      </div>
+
+      <table class="ids-table ids-table-sm">
+        <thead>
+        <tr>
+          <th class="ids-cell-left">Class</th>
+          <th class="ids-cell-left">Style</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids2-chip-bank</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">padding: 5px 10px 5px 6px;
+              background-color: var(--ids-color-gray-50);
+              border: none;</code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids2-chip-bank .ids-chip-text</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">font-size: var(--ids-size-body4);
+              line-height: var(--ids-line-body4-tight);
+              font-weight: var(--ids-font-semibold);
+              color: var(--ids-color-gray-700);</code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">.ids-chip-bank-lg</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              width: 101px;
+              flex-direction: column;
+              align-items: center;
+              gap: var(--ids-spacing-1);
+              padding: 16px 10px 12px;
+              border-radius: var(--ids-radius-12);</code>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="ids-docs-section-label">Examples</h4>
+
+    <div class="ids-docs-examples">
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-chip</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids2-chip-bank</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-chip-group">
+                <div class="ids-chip ids2-chip-bank">
+                  <div class="ids-chip-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0_1088_1903" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                    <circle cx="12" cy="12" r="12" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0_1088_1903)">
+                    <path d="M2.91515 -3.99826C1.99882 -3.5401 1.32075 -2.77039 1.0092 -1.79909L-5.07518 16.4907C-5.40506 17.462 -5.31343 18.4883 -4.87359 19.4046C-4.41543 20.3026 -3.62739 20.9807 -2.67442 21.3105L17.3014 28.018C18.2727 28.3479 19.299 28.2746 20.2153 27.8164C21.1316 27.3583 21.8097 26.5886 22.1213 25.6173L28.2056 7.32748C28.8654 5.3299 27.7841 3.16738 25.7865 2.50762L5.82905 -4.21818C4.85775 -4.52973 3.83147 -4.47475 2.91515 -4.01659" fill="white"/>
+                    <path d="M12.683 13.5765C11.6017 14.786 10.2456 15.7573 8.66948 16.3804L7.77149 16.7286V8.24346L8.65116 8.59166C10.2272 9.19643 11.5834 10.1677 12.6646 11.3773C13.4344 10.1311 13.9292 8.68329 14.0208 7.10722C14.259 3.03875 11.73 -0.681518 8.22965 -1.9827L5.3524 -2.954C4.05122 -3.39383 2.65841 -2.66077 2.2369 -1.3596L-3.8658 16.9302C-4.30564 18.2314 -3.57258 19.6425 -2.2714 20.0823L11.5834 24.7189C12.9945 23.2162 13.9108 21.2186 14.0391 19.0011C14.1674 17.0218 13.6543 15.1525 12.6646 13.5948M4.67432 7.73032V17.2417H3.29984V7.73032H4.67432Z" fill="#0092D8"/>
+                    <path d="M25.3468 3.71751L12.6282 -0.534226C14.3326 1.33507 15.3772 3.82747 15.3955 6.53978C15.3955 8.7023 14.7174 10.7365 13.5629 12.4775C14.7357 14.2002 15.4138 16.2528 15.4138 18.397C15.4138 20.9627 14.4792 23.3268 12.9581 25.1594L17.7413 26.7538C19.0425 27.1937 20.4169 26.4789 20.8568 25.1594L26.9595 6.85133C27.3993 5.55015 26.6663 4.13902 25.3651 3.71751M21.993 17.2058H20.2703L16.7333 12.4592L20.3253 7.71267H22.048L18.456 12.4775L21.9747 17.2241L21.993 17.2058Z" fill="#004B9D"/>
+                    <path d="M11.8764 12.4593C11.1067 11.5613 10.1721 10.7916 9.09081 10.2418V14.7135C10.1721 14.1637 11.1067 13.394 11.8764 12.4776" fill="#EA5504"/>
+                    </g>
+                    </svg>
+
+                  </div>
+                  <div class="ids-chip-text">은행명</div>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-blue">.ids-chip</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids2-chip-bank</span>
+        <span class="ids-label ids-label-line ids-label-blue">.ids-chip-bank-lg</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-chip-group">
+                <div class="ids-chip ids2-chip-bank ids-chip-bank-lg">
+                  <div class="ids-chip-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0_1088_1903" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                    <circle cx="12" cy="12" r="12" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0_1088_1903)">
+                    <path d="M2.91515 -3.99826C1.99882 -3.5401 1.32075 -2.77039 1.0092 -1.79909L-5.07518 16.4907C-5.40506 17.462 -5.31343 18.4883 -4.87359 19.4046C-4.41543 20.3026 -3.62739 20.9807 -2.67442 21.3105L17.3014 28.018C18.2727 28.3479 19.299 28.2746 20.2153 27.8164C21.1316 27.3583 21.8097 26.5886 22.1213 25.6173L28.2056 7.32748C28.8654 5.3299 27.7841 3.16738 25.7865 2.50762L5.82905 -4.21818C4.85775 -4.52973 3.83147 -4.47475 2.91515 -4.01659" fill="white"/>
+                    <path d="M12.683 13.5765C11.6017 14.786 10.2456 15.7573 8.66948 16.3804L7.77149 16.7286V8.24346L8.65116 8.59166C10.2272 9.19643 11.5834 10.1677 12.6646 11.3773C13.4344 10.1311 13.9292 8.68329 14.0208 7.10722C14.259 3.03875 11.73 -0.681518 8.22965 -1.9827L5.3524 -2.954C4.05122 -3.39383 2.65841 -2.66077 2.2369 -1.3596L-3.8658 16.9302C-4.30564 18.2314 -3.57258 19.6425 -2.2714 20.0823L11.5834 24.7189C12.9945 23.2162 13.9108 21.2186 14.0391 19.0011C14.1674 17.0218 13.6543 15.1525 12.6646 13.5948M4.67432 7.73032V17.2417H3.29984V7.73032H4.67432Z" fill="#0092D8"/>
+                    <path d="M25.3468 3.71751L12.6282 -0.534226C14.3326 1.33507 15.3772 3.82747 15.3955 6.53978C15.3955 8.7023 14.7174 10.7365 13.5629 12.4775C14.7357 14.2002 15.4138 16.2528 15.4138 18.397C15.4138 20.9627 14.4792 23.3268 12.9581 25.1594L17.7413 26.7538C19.0425 27.1937 20.4169 26.4789 20.8568 25.1594L26.9595 6.85133C27.3993 5.55015 26.6663 4.13902 25.3651 3.71751M21.993 17.2058H20.2703L16.7333 12.4592L20.3253 7.71267H22.048L18.456 12.4775L21.9747 17.2241L21.993 17.2058Z" fill="#004B9D"/>
+                    <path d="M11.8764 12.4593C11.1067 11.5613 10.1721 10.7916 9.09081 10.2418V14.7135C10.1721 14.1637 11.1067 13.394 11.8764 12.4776" fill="#EA5504"/>
+                    </g>
+                    </svg>
+
+                  </div>
+                  <div class="ids-chip-text">은행명</div>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </div>
 
