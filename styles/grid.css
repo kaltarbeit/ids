@@ -1,3 +1,15 @@
 .ids-full-width {
     width: 100% !important;;
 }
+
+.ids-items-start {
+    align-items: flex-start !important;
+}
+
+.ids-items-center {
+    align-items: center !important;
+}
+
+.ids-items-end {
+    align-items: flex-end !important;
+}
