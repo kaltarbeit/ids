@@ -40,3 +40,19 @@
 .ids-dimmed.ids-dimmed-hide {
     opacity: 0;
 }
+
+/**
+    Position
+ */
+
+.ids-fixed {
+    position: fixed !important;
+}
+
+.ids-relative {
+    position: relative !important;
+}
+
+.ids-absolute {
+    position: absolute !important;
+}
