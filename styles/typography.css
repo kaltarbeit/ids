@@ -242,3 +242,7 @@
 .ids-text-right {
     text-align: right !important;
 }
+
+.ids-text-center {
+    text-align: center !important;
+}

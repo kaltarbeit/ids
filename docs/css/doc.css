@@ -189,6 +189,34 @@ td.ids-docs-classname {
 }
 
 
+.ids-docs-examples-wide {
+    background: none;
+    overflow: hidden;
+}
+
+.ids-docs-examples-wide .ids-docs-example-code {
+    flex-direction: column;
+    gap: var(--ids-spacing-3);
+}
+
+
+
+.ids-docs-examples-wide .ids-docs-example {
+    width: 100%;
+}
+
+
+
+.ids-docs-examples-wide .ids-docs-example-code-highlight {
+    width: calc(100% + var(--ids-spacing-3)*2);
+    margin: calc(var(--ids-spacing-3)  * -1);
+    margin-top: var(--ids-spacing-3);
+}
+
+.ids-docs-examples-wide .ids-docs-example-code pre[class*=language-] {
+    padding: var(--ids-spacing-3);
+}
+
 .treeview {
     font-size: inherit;
     font-style: normal;
@@ -258,6 +286,17 @@ td.ids-docs-classname {
 .ex-m-inner {
     height: 100px;
     background: #D5F3DF;
+}
+
+.ex-col-box {
+    height: 100px;
+    border: var(--ids-border-1);
+    border-radius: var(--ids-radius-6);
+    box-shadow: var(--ids-shadow-1);
+    font-size: var(--ids-size-body5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media print {

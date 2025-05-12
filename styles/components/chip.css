@@ -111,20 +111,20 @@
     cursor: pointer;
 }
 
-.ids2-chip-bank {
+.ids-chip-bank {
     padding: 5px 10px 5px 6px;
     background-color: var(--ids-color-gray-50);
     border: none;
 }
 
-.ids-chip.ids2-chip-bank .ids-chip-text {
+.ids-chip.ids-chip-bank .ids-chip-text {
     font-size: var(--ids-size-body4);
     line-height: var(--ids-line-body4-tight);
     font-weight: var(--ids-font-medium);
     color: var(--ids-color-gray-700);
 }
 
-.ids2-chip-bank.ids-chip-bank-lg {
+.ids-chip-bank.ids-chip-bank-lg {
     display: flex;
     width: 101px;
     flex-direction: column;
