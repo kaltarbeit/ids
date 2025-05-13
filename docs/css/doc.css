@@ -145,7 +145,8 @@ td.ids-docs-classname {
     gap:  var(--ids-spacing-3);
 }
 
-.ids-docs-example-code {
+.ids-docs-example-code,
+.ids-docs-example-code-static {
     margin-top: var(--ids-spacing-1-half);
     display: flex;
 }
