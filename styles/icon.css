@@ -54,6 +54,10 @@
     filter: invert(90%) sepia(6%) saturate(436%) hue-rotate(187deg) brightness(97%) contrast(93%);
 }
 
+.ids-icon-gray-300 {
+    filter: invert(81%) sepia(9%) saturate(353%) hue-rotate(185deg) brightness(95%) contrast(93%);
+}
+
 .ids-icon-gray-500 {
     filter: invert(28%) sepia(8%) saturate(416%) hue-rotate(180deg) brightness(95%) contrast(90%);
 }
