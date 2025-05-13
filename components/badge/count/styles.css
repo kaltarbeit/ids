@@ -1,4 +1,4 @@
-.ids-icon-menu {
+.ids-icon-navigation {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,7 +8,7 @@
     height: 32px;
 }
 
-.ids-icon-menu-icon {
+.ids-icon-navigation-icon {
     width: 32px;
     height: 32px;
     background-color: #E4F2FF;
@@ -18,7 +18,7 @@
     justify-content: center;
 }
 
-.ids-icon-menu-label {
+.ids-icon-navigation-label {
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;

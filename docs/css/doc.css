@@ -319,6 +319,7 @@ td.ids-docs-classname {
 .ids-docs-icon-list-item .ids-docs-icon-label {
     font-size: var(--ids-size-body5);
     font-weight: var(--ids-font-bold);
+    text-align: center;
 }
 
 @media print {
