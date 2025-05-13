@@ -31,6 +31,12 @@
       컴포넌트 스타일 가이드 <span class="ids-bold">Layout > 컬럼과 거터(Columns & Gutters), 여백(Margins)</span> 를 구현한 클래스입니다.
     </p>
 
+    <p class="ids-body4 ids-mt-8 ids-text-gray-500">
+      기본 Margin (24px), Gutter (12px) 가 지정된 <span class="ids-bold">.ids-cols</span>를 이용하여 4 column grid 사용이 가능하며,
+      <span class="ids-bold">.ids-col-[number]</span>로 1~4 까지의 column size 지정이 가능합니다.<br/>
+      <span class="ids-bold">.ids-cols-tight</span>를 이용하면 Margin (20px), Gutter (8px) 로 변경 가능합니다.
+    </p>
+
     <div class="ids-docs-reference ids-mt-3">
       <div class="ids-docs-reference-button">
         Style Reference Table <i class="ids-icon ids-icon-xxs ids-icon-arrow-right"></i>
@@ -39,12 +45,70 @@
       <table class="ids-table ids-table-sm">
         <thead>
         <tr>
+          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
-
+        <tr>
+          <td class="ids-cell-left ids-docs-name" rowspan="5">
+            4 Columns
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-cols</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              gap: var(--ids-spacing-1-half);
+              box-sizing: border-box;
+              margin: 0 var(--ids-spacing-3);
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">ids-col-1</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: calc(25% - (var(--ids-spacing-1-half) - var(--ids-spacing-1-half) / 4));
+              box-sizing: border-box;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">ids-col-2</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: calc(50% - (var(--ids-spacing-1-half) - var(--ids-spacing-1-half) / 2));
+              box-sizing: border-box;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">ids-col-3</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: calc(75% - (var(--ids-spacing-1-half) - var(--ids-spacing-1-half) / 1.33333));
+              box-sizing: border-box;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">ids-col-4</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: calc(75% - (var(--ids-spacing-1-half) - var(--ids-spacing-1-half) / 1.33333));
+              box-sizing: border-box;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-name" rowspan="5">
+            Columns Tight
+          </td>
+          <td class="ids-cell-left ids-docs-classname">.ids-cols-tight</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">gap: var(--ids-spacing-1);
+              margin: 0 var(--ids-spacing-2-half);
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -59,7 +123,6 @@
           <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
               <div class="ids-cols">
-
                   <div class="ids-col-1 ids-col-lg-1 ex-col-box">col-1</div>
                   <div class="ids-col-1 ids-col-lg-1 ex-col-box">col-1</div>
                   <div class="ids-col-2 ids-col-lg-2 ex-col-box">col-2</div>
@@ -84,7 +147,6 @@
           <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
               <div class="ids-cols ids-cols-tight">
-
                   <div class="ids-col-1 ex-col-box">col-1</div>
                   <div class="ids-col-1 ex-col-box">col-1</div>
                   <div class="ids-col-2 ex-col-box">col-2</div>
@@ -107,8 +169,12 @@
   <section class="ids-docs-section">
     <h2 class="ids-docs-section-title">Responsive Columns</h2>
 
-    <p class="ids-body4 ids-mt-8 ids-text-gray-500">
-      컴포넌트 스타일 가이드 <span class="ids-bold">Layout > 반응형 레이아웃 그리드(Responsive Grid)</span> 를 구현한 클래스입니다.
+    <p class="ids-body4 ids-mt-1 ids-text-gray-500">
+      컴포넌트 스타일 가이드 <span class="ids-bold">Layout > 반응형 레이아웃 그리드(Responsive Grid)</span> 를 구현한 클래스입니다.<br/>
+    </p>
+    <p class="ids-body4 ids-mt-1 ids-text-gray-500">
+      <span class="ids-bold">.ids-col-lg-*</span> 를 이용하여 <span class="ids-bold">8 column grid</span> 지정 가능합니다.<br/>
+      <span class="ids-bold">.ids-col-lg-*</span> 를 지정하지 않으면 Wide Screen에서도 기본 <span class="ids-bold">4 column grid</span> 으로 동작합니다.
     </p>
 
     <div class="ids-docs-reference ids-mt-3">
@@ -119,65 +185,167 @@
       <table class="ids-table ids-table-sm">
         <thead>
         <tr>
+          <th class="ids-cell-left">Name</th>
           <th class="ids-cell-left">Class</th>
           <th class="ids-cell-left">Style</th>
         </tr>
         </thead>
         <tbody>
-
+        <tr>
+          <td class="ids-cell-left ids-docs-name" rowspan="8">
+            8 Columns
+          </td>
+          <td class="ids-cell-left ids-docs-classname">ids-col-lg-1</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: calc(12.5% - (var(--ids-spacing-1-half) - var(--ids-spacing-1-half) / 8));
+              box-sizing: border-box;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">ids-col-lg-2</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: calc(25% - (var(--ids-spacing-1-half) - var(--ids-spacing-1-half) / 4));
+              box-sizing: border-box;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">ids-col-lg-3</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: calc(37.5% - (var(--ids-spacing-1-half) - var(--ids-spacing-1-half) / 2.666666));
+              box-sizing: border-box;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">ids-col-lg-4</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: calc(50% - (var(--ids-spacing-1-half) - var(--ids-spacing-1-half) / 2));
+              box-sizing: border-box;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">ids-col-lg-5</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: calc(62.5% - (var(--ids-spacing-1-half) - var(--ids-spacing-1-half) / 1.5999999));
+              box-sizing: border-box;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">ids-col-lg-6</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: calc(75% - (var(--ids-spacing-1-half) - var(--ids-spacing-1-half) / 1.3333));
+              box-sizing: border-box;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">ids-col-lg-7</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: calc(87.5% - (var(--ids-spacing-1-half) - var(--ids-spacing-1-half) /2));
+              box-sizing: border-box;
+            </code>
+          </td>
+        </tr>
+        <tr>
+          <td class="ids-cell-left ids-docs-classname">ids-col-lg-8</td>
+          <td class="ids-cell-left">
+            <code class="ids-docs-code">width: 100%;
+              box-sizing: border-box;
+            </code>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
 
-    <h4 class="ids-docs-section-label">Examples</h4>
+    <h4 class="ids-docs-section-label">Basic Usage</h4>
 
     <div class="ids-docs-examples">
       <div class="ids-docs-example-block">
-        <span class="ids-label ids-label-line ids-label-blue">.ids-cols</span>
+        <span class="ids-label ids-label-line ids-label-line">Mobile Screen</span>
         <div class="ids-docs-example-code">
           <div class="ids-docs-example"></div>
           <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
               <div class="ids-cols">
+                  <div class="ids-col-1 ids-col-lg-1 ex-col-box">col-1</div>
+                  <div class="ids-col-1 ids-col-lg-2 ex-col-box">col-1</div>
+                  <div class="ids-col-2 ids-col-lg-5 ex-col-box">col-2</div>
 
-                  <div class="ids-col-1 ex-col-box">col-1</div>
-                  <div class="ids-col-1 ex-col-box">col-1</div>
-                  <div class="ids-col-2 ex-col-box">col-2</div>
+                  <div class="ids-col-2 ids-col-lg-4 ex-col-box">col-2</div>
+                  <div class="ids-col-2 ids-col-lg-4 ex-col-box">col-2</div>
 
-                  <div class="ids-col-2 ex-col-box">col-2</div>
-                  <div class="ids-col-2 ex-col-box">col-2</div>
+                  <div class="ids-col-3 ids-col-lg-5 ex-col-box">col-3</div>
+                  <div class="ids-col-1 ids-col-lg-3 ex-col-box">col-1</div>
 
-                  <div class="ids-col-3 ex-col-box">col-3</div>
-                  <div class="ids-col-1 ex-col-box">col-1</div>
-
-                  <div class="ids-col-4 ex-col-box">col-4</div>
+                  <div class="ids-col-4 ids-col-lg-8 ex-col-box">col-4</div>
               </div>
             </script>
           </div>
         </div>
       </div>
     </div>
+
+
     <div class="ids-docs-examples ids-docs-examples-wide">
+      <p class="ids-body4 ids-my-2 ids-text-gray-500">
+        Wide Screen 에서는 <span class="ids-bold">.ids-col-lg-*</span>로 지정된 8 column 기준으로 동작합니다.
+      </p>
       <div class="ids-docs-example-block">
-        <span class="ids-label ids-label-line ids-label-blue">.ids-cols</span>
-        <span class="ids-label ids-label-line ids-label-blue">.ids-cols-tight</span>
+        <span class="ids-label ids-label-line ids-label-line">Wide Screen</span>
         <div class="ids-docs-example-code">
           <div class="ids-docs-example"></div>
           <div class="ids-docs-example-code-highlight">
             <script type="text/plain" class="language-markup">
-              <div class="ids-cols ids-cols-tight">
+              <div class="ids-screen-lg">
+                <div class="ids-cols">
+                    <div class="ids-col-1 ids-col-lg-1 ex-col-box">col-lg-1</div>
+                    <div class="ids-col-1 ids-col-lg-1 ex-col-box">col-lg-1</div>
+                    <div class="ids-col-2 ids-col-lg-2 ex-col-box">col-lg-2</div>
 
-                  <div class="ids-col-1 ex-col-box">col-1</div>
-                  <div class="ids-col-1 ex-col-box">col-1</div>
-                  <div class="ids-col-2 ex-col-box">col-2</div>
+                    <div class="ids-col-2 ids-col-lg-2 ex-col-box">col-lg-2</div>
+                    <div class="ids-col-2 ids-col-lg-2 ex-col-box">col-lg-2</div>
 
-                  <div class="ids-col-2 ex-col-box">col-2</div>
-                  <div class="ids-col-2 ex-col-box">col-2</div>
+                    <div class="ids-col-3 ids-col-lg-5 ex-col-box">col-lg-5</div>
+                    <div class="ids-col-1 ids-col-lg-3 ex-col-box">col-lg-3</div>
 
-                  <div class="ids-col-3 ex-col-box">col-3</div>
-                  <div class="ids-col-1 ex-col-box">col-1</div>
+                    <div class="ids-col-4 ids-col-lg-8 ex-col-box">col-lg-8</div>
+                </div>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                  <div class="ids-col-4 ex-col-box">col-4</div>
+    <div class="ids-docs-examples ids-docs-examples-wide">
+      <p class="ids-body4 ids-my-2 ids-text-gray-500">
+        <span class="ids-bold">.ids-col-lg-*</span> 를 지정하지 않으면 Wide Screen에서도 기본 4 column 으로 동작합니다.
+      </p>
+      <div class="ids-docs-example-block">
+        <span class="ids-label ids-label-line ids-label-line">Wide Screen</span>
+        <div class="ids-docs-example-code">
+          <div class="ids-docs-example"></div>
+          <div class="ids-docs-example-code-highlight">
+            <script type="text/plain" class="language-markup">
+              <div class="ids-screen-lg">
+                <div class="ids-cols">
+                    <div class="ids-col-1 ex-col-box">col-1</div>
+                    <div class="ids-col-1 ex-col-box">col-1</div>
+                    <div class="ids-col-2 ex-col-box">col-2</div>
+
+                    <div class="ids-col-2 ex-col-box">col-2</div>
+                    <div class="ids-col-2 ex-col-box">col-2</div>
+
+                    <div class="ids-col-3 ex-col-box">col-3</div>
+                    <div class="ids-col-1 ex-col-box">col-1</div>
+
+                    <div class="ids-col-4 ex-col-box">col-4</div>
+                </div>
               </div>
             </script>
           </div>
