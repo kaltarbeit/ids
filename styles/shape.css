@@ -181,3 +181,15 @@
 .ids-border-3-point-blue {
     border: var(--ids-border-3-point-blue) !important;
 }
+
+.ids-border-1-negative {
+    border: var(--ids-border-1-negative) !important;
+}
+
+.ids-border-2-negative {
+    border: var(--ids-border-2-negative) !important;
+}
+
+.ids-border-3-negative {
+    border: var(--ids-border-3-negative) !important;
+}

@@ -160,6 +160,10 @@
     --ids-border-2-point-blue: 2px solid var(--ids-color-point-blue);
     --ids-border-3-point-blue: 3px solid var(--ids-color-point-blue);
 
+    --ids-border-1-negative: 1px solid var(--ids-color-negative);
+    --ids-border-2-negative: 2px solid var(--ids-color-negative);
+    --ids-border-3-negative: 3px solid var(--ids-color-negative);
+
     --ids-border-1-hide: 1px solid transparent;
     --ids-border-2-hide: 2px solid transparent;
     --ids-border-3-hide: 3px solid transparent;
