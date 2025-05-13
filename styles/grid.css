@@ -85,7 +85,7 @@
     box-sizing: border-box;
 }
 .ids-screen-lg .ids-col-lg-5 {
-    width: calc(62.5% - (var(--ids-spacing-1-half) - var(--ids-spacing-1-half) / 1.5999999));
+    width: calc(62.5% - (var(--ids-spacing-1-half) - var(--ids-spacing-1-half) / 1.599999));
     box-sizing: border-box;
 }
 .ids-screen-lg .ids-col-lg-6 {
@@ -93,7 +93,7 @@
     box-sizing: border-box;
 }
 .ids-screen-lg .ids-col-lg-7 {
-    width: calc(87.5% - (var(--ids-spacing-1-half) - var(--ids-spacing-1-half) /2));
+    width: calc(87.5% - (var(--ids-spacing-1-half) - var(--ids-spacing-1-half) /1.1429999));
     box-sizing: border-box;
 }
 .ids-screen-lg .ids-col-lg-8 {
