@@ -1,7 +1,6 @@
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
 
-@import "normalize.css";
-@import "common/variables.css";
+@import "../normalize.css";
+@import "variables.css";
 
 @import "components/accordion.css";
 @import "components/badge.css";
@@ -40,16 +39,13 @@
 @import "components/slider.css";
 
 
-@import "common/icon.css";
-@import "common/skeleton.css";
-@import "common/elevation.css";
-@import "common/spacing.css";
-@import "common/shape.css";
-@import "common/typography.css";
-@import "common/grid.css";
-@import "common/color.css";
+@import "icon.css";
+@import "skeleton.css";
+@import "elevation.css";
+@import "spacing.css";
+@import "shape.css";
+@import "typography.css";
+@import "grid.css";
+@import "color.css";
 
-
-body {
-    font-family: "Pretendard", sans-serif;
-}
+@import "common.css";

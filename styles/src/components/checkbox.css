@@ -1,5 +1,5 @@
-@import "../../components/checkbox/multiple/styles.css";
-@import "../../components/checkbox/mark/styles.css";
+@import "../../../components/checkbox/multiple/styles.css";
+@import "../../../components/checkbox/mark/styles.css";
 
 .ids-checkbox-examples {
     display: flex;
