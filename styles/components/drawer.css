@@ -1,4 +1,8 @@
-@import "./full/styles.css";
+.ids-navigation-example {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
 
 .ids-drawer {
     position: absolute;
