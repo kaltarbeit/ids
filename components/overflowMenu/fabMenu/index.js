@@ -10,9 +10,9 @@ export const createOverflowMenu = () => {
     const backdrop = wrapper.querySelector('.ids-dimmed');
 
     fabToggle.addEventListener("click", () => {
-        fabMenu.classList.toggle("show");
+        fabMenu.classList.toggle("ids-fab-menu-open");
 
-        if(fabMenu.classList.contains('show')) {
+        if(fabMenu.classList.contains('ids-fab-menu-open')) {
             backdrop.style.display = 'block';
             setTimeout(() => {
                 backdrop.classList.remove('ids-dimmed-hide');

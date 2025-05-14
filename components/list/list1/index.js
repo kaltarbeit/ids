@@ -5,7 +5,7 @@ export const createList = () => {
     const wrapper = document.createElement('div');
     wrapper.insertAdjacentHTML('afterbegin', html);
 
-    const stars = wrapper.querySelectorAll('.ids-star');
+    const stars = wrapper.querySelectorAll('.ids-favorite');
 
     /** Examples **/
     function toggleAccordion(e) {
@@ -13,13 +13,13 @@ export const createList = () => {
         const detail = item.querySelector('.ids-accordion-details');
 
         if(!!detail) {
-            const opened = item.hasAttribute('open');
+            const opened = item.classList.contains('ids-accordion-item-open');
 
             if(opened) {
-                item.removeAttribute('open');
+                item.classList.remove('ids-accordion-item-open');
                 detail.style.height = 0;
             } else {
-                item.setAttribute('open', '');
+                item.classList.add('ids-accordion-item-open');
                 detail.style.height = detail.scrollHeight+'px';
             }
         }
@@ -27,7 +27,7 @@ export const createList = () => {
 
     function openAccordion(item) {
         const detail = item.querySelector('.ids-accordion-details');
-        item.setAttribute('open', '');
+        item.classList.add('ids-accordion-item-open');
 
         setTimeout(() => {
             detail.style.height = detail.scrollHeight+'px';
