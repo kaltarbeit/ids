@@ -57,8 +57,8 @@
               min-width: 180px;
 
               background-color: rgba(0, 0, 0, 0.85);
-              border-radius: 24px;
-              padding: 8px 20px;
+              border-radius: var(--ids-radius-full);
+              padding: var(--ids-spacing-1) var(--ids-spacing-2-half);
 
               opacity: 1;
               transform: translateX(-50%) translateY(0);
@@ -71,18 +71,17 @@
           <td class="ids-cell-left ids-docs-classname">.ids-toast-icon</td>
           <td class="ids-cell-left">
             <code class="ids-docs-code">margin-right: 8px;
-              color: #4caf50; /* 초록색 체크 아이콘 */
-              font-size: 16px;
+              color: #4caf50;
             </code>
           </td>
         </tr>
         <tr>
           <td class="ids-cell-left ids-docs-classname">.ids-toast-message</td>
           <td class="ids-cell-left">
-            <code class="ids-docs-code">font-size: 14px;
-              font-weight: 400;
-              line-height: 18px;
-              color: #fff;
+            <code class="ids-docs-code">font-size: var(--ids-size-body4);
+              line-height: var(--ids-line-body4-tight);
+              font-weight: var(--ids-font-regular);
+              color: var(--ids-color-white);
             </code>
           </td>
         </tr>

@@ -22,7 +22,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    gap: var(--ids-spacing-3);
 }
 
 /* 전체 컨테이너 (label) */
@@ -43,11 +43,11 @@
     position: relative;
     width: 44px;
     height: 24px;
-    background-color: #ffffff;      /* 토글 OFF 상태 배경색 */
-    border-radius: 20px;         /* 둥근 모서리 */
-    border: 2px solid #737684;
+    background-color: var(--ids-color-white);
+    border-radius: var(--ids-radius-20);
+    border: var(--ids-border-2-500);
     transition: background-color 0.3s;
-    margin-left: 6px;           /* 슬라이더와 라벨 사이 간격 */
+    margin-left: 6px;
     box-sizing: border-box;
     flex-shrink: 0;
 }
@@ -56,21 +56,21 @@
 .ids-toggle.ids-toggle-black .ids-toggle-slider {
     width: 68px;
     height: 28px;
-    background-color: #E1E3EA;      /* 토글 OFF 상태 배경색 */
+    background-color: var(--ids-color-gray-100);
     border: none;
 }
 
 .ids-toggle.ids-toggle-onoff .ids-toggle-slider {
     width: 69px;
     height: 32px;
-    background-color: #E1E3EA;      /* 토글 OFF 상태 배경색 */
+    background-color: var(--ids-color-gray-100);
     border: none;
 }
 
 .ids-toggle.ids-toggle-with-label .ids-toggle-slider {
     width: 122px;
     height: 32px;
-    background-color: #E1E3EA;      /* 토글 OFF 상태 배경색 */
+    background-color: var(--ids-color-gray-100);
     border: none;
 }
 
@@ -84,8 +84,8 @@
     height: 16px;
     top: 2px;
     left: 2px;
-    background-color: #737684;      /* 흰색 원 */
-    border-radius: 50%;
+    background-color: var(--ids-color-gray-500);
+    border-radius: var(--ids-radius-full);
     transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
@@ -95,25 +95,25 @@
     height: 20px;
     top: 4px;
     left: 4px;
-    background-color: #ffffff;      /* 흰색 원 */
-    box-shadow: 0 4px 6px 0 #00000014;
+    background-color: var(--ids-color-white);
+    box-shadow: var(--ids-shadow-2);
 }
 
 /* 토글 핸들 (슬라이더 위의 원) */
 .ids-toggle.ids-toggle-onoff .ids-toggle-slider::before {
     width: 28px;
     height: 28px;
-    background-color: #ffffff;      /* 흰색 원 */
-    box-shadow: 0 4px 6px 0 #00000014;
+    background-color: var(--ids-color-white);
+    box-shadow: var(--ids-shadow-2);
 }
 
 /* 토글 핸들 (슬라이더 위의 원) */
 .ids-toggle.ids-toggle-with-label .ids-toggle-slider::before {
     width: 61px;
     height: 28px;
-    border-radius: 20px;         /* 둥근 모서리 */
-    background-color: #ffffff;      /* 흰색 원 */
-    box-shadow: 0 4px 6px 0 #00000014;
+    border-radius: var(--ids-radius-20);
+    background-color: #ffffff;
+    box-shadow: var(--ids-shadow-2);
 }
 
 /* 토글 핸들 (슬라이더 위의 원) */
@@ -122,10 +122,10 @@
     position: absolute;
     top: 6px;
     left: 33px;
-    color: #737684;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
+    color: var(--ids-color-gray-500);
+    font-size: var(--ids-size-body4);
+    line-height: var(--ids-line-body4);
+    font-weight: var(--ids-font-bold);
 }
 
 
@@ -135,49 +135,49 @@
     position: absolute;
     top: 6px;
     left: 10px;
-    color: #E4F2FF;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
+    color: var(--ids-color-blue-100);
+    font-size: var(--ids-size-body4);
+    line-height: var(--ids-line-body4);
+    font-weight: var(--ids-font-bold);
 }
 
 /* 체크되었을 때 (ON 상태) */
 .ids-toggle .ids-toggle-input:checked + .ids-toggle-slider {
-    background-color: #4285f4;
-    border: 2px solid #4285f4;
+    background-color: var(--ids-color-point-blue);
+    border: var(--ids-border-2-point-blue);
 }
 
 /* 체크되었을 때 (ON 상태) */
 .ids-toggle .ids-toggle-input:disabled + .ids-toggle-slider {
-    background-color: #979BAA;
+    background-color: var(--ids-color-gray-400);
 }
 
 /* 체크되었을 때 (ON 상태) */
 .ids-toggle .ids-toggle-input:disabled:checked + .ids-toggle-slider {
-    background-color: #E1E3EA;
-    border: 2px solid #E1E3EA;
+    background-color: var(--ids-color-gray-100);
+    border: var(--ids-border-2);
 }
 
 /* 체크되었을 때 (ON 상태) */
 .ids-toggle .ids-toggle-input:disabled:checked + .ids-toggle-slider:before {
-    background-color: #454855;
+    background-color: var(--ids-color-gray-700);
 }
 
 /* 체크되었을 때 (ON 상태) */
 .ids-toggle.ids-toggle-black .ids-toggle-input:checked + .ids-toggle-slider {
-    background-color: #30323B;
+    background-color: var(--ids-color-gray-800);
     border: none;
 }
 
 /* 체크되었을 때 (ON 상태) */
 .ids-toggle.ids-toggle-onoff .ids-toggle-input:checked + .ids-toggle-slider {
-    background-color: #4285f4;
+    background-color: var(--ids-color-point-blue);
     border: none;
 }
 
 /* 체크되었을 때 (ON 상태) */
 .ids-toggle.ids-toggle-with-label .ids-toggle-input:checked + .ids-toggle-slider {
-    background-color: #4285f4;
+    background-color: var(--ids-color-point-blue);
     border: none;
 }
 
@@ -207,10 +207,10 @@
 
 /* 라벨 텍스트 */
 .ids-toggle .ids-toggle-label {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 18px;
-    color: #101116;
+    font-size: var(--ids-size-body4);
+    line-height: var(--ids-line-body4-tight);
+    font-weight: var(--ids-font-bold);
+    color: var(--ids-color-gray-900);
 }
 
 .ids-toggle .ids-toggle-slider .ids-toggle-inner-label {

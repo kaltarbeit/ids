@@ -1,4 +1,3 @@
-@import "../../components/textField/authCode/styles.css";
 @import "../../components/textField/secretCard/styles.css";
 
 .ids-text-field-examples {
@@ -36,44 +35,44 @@
 
 .ids-text-field .ids-text-field-container {
     position: relative;
-    border: 1px solid #C5C8D3;
-    border-radius: 12px;
-    background: #fff;
+    border: var(--ids-border-1-200);
+    border-radius: var(--ids-radius-12);
+    background: var(--ids-color-white);
     box-sizing: border-box;
 }
 
 .ids-text-field .ids-text-field-container:has(.ids-text-field-input:focus),
 .ids-text-field.ids-text-field-focused .ids-text-field-container {
     outline: none;
-    border: 1px solid #30323B;
+    border: var(--ids-border-1-800);
 }
 
 .ids-text-field .ids-text-field-container:has(.ids-text-field-input:disabled) {
-    background: #F3F4F7;
-    border: 1px solid #C5C8D3;
+    background: var(--ids-color-gray-50);
+    border: var(--ids-border-1-200);
 }
 
 .ids-text-field:not(.ids-email-field) .ids-text-field-container:has(.ids-text-field-input:read-only) {
-    background: #F3F4F7;
-    border: 1px solid #C5C8D3;
+    background: var(--ids-color-gray-50);
+    border: var(--ids-border-1-200);
 }
 
 .ids-text-field .ids-text-field-input:disabled {
-    color: #737684;
+    color: var(--ids-color-gray-500);
 }
 
 .ids-text-field.ids-text-field-error .ids-text-field-container {
-    border: 1px solid #E32502;
+    border: var(--ids-border-1-negative);
 }
 
 .ids-text-field-label {
     display: flex;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 18px;
-    color: #454855;
+    font-size: var(--ids-size-body4);
+    line-height: var(--ids-line-body4-tight);
+    font-weight: var(--ids-font-medium);
+    color: var(--ids-color-gray-700);
     min-height: 18px;
-    margin: 0 4px 8px;
+    margin: 0 var(--ids-spacing-half) var(--ids-spacing-1);
 }
 
 .ids-text-field-label > span {
@@ -84,10 +83,10 @@
     width: 100%;
     border: none;
     background: transparent;
-    padding: 15px 16px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #101116;
+    padding: var(--ids-spacing-2);
+    font-size: var(--ids-size-body2);
+    font-weight: var(--ids-font-medium);
+    color: var(--ids-color-gray-900);
     appearance: none;
     outline: none;
     box-sizing: border-box;
@@ -100,9 +99,9 @@
 
 .ids-text-field.ids-text-field-amount.ids-text-field-filled .ids-text-field-container:after {
     content: '원';
-    font-size: 16px;
-    font-weight: 500;
-    color: #101116;
+    font-size: var(--ids-size-body2);
+    font-weight: var(--ids-font-medium);
+    color: var(--ids-color-gray-900);
     position: absolute;
     top: 50%;
     right: 52px;
@@ -132,9 +131,9 @@
 }
 
 .ids-text-field .ids-text-field-input::placeholder {
-    font-size: 16px;
-    font-weight: 500;
-    color: #737684;
+    font-size: var(--ids-size-body2);
+    font-weight: var(--ids-font-medium);
+    color: var(--ids-color-gray-500);
 }
 
 .ids-text-field .ids-input-clear {
@@ -189,7 +188,7 @@
 .ids-exchange-container {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: var(--ids-spacing-1-half);
 }
 
 .ids-text-field.ids-input-top-search {
@@ -209,12 +208,12 @@ input::-webkit-inner-spin-button {
 
 .ids-text-field.ids-input-top-search .ids-text-field-input {
     width: 100%;
-    background: #F3F4F7;
+    background: var(--ids-color-gray-50);
     border: none;
-    border-radius: 12px;
-    font-size: 16px;
-    line-height: 22px;
-    padding: 13px 16px;
+    border-radius: var(--ids-radius-12);
+    font-size: var(--ids-size-body2);
+    line-height: var(--ids-line-body2-tight);
+    padding: var(--ids-spacing-1-half) var(--ids-spacing-2);
     box-sizing: border-box;
 }
 
@@ -236,36 +235,36 @@ input::-webkit-inner-spin-button {
 }
 
 .ids-text-field .ids-text-field-note {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 16px;
-    color: #737684;
-    margin: 4px;
+    font-size: var(--ids-size-caption);
+    line-height: var(--ids-line-caption);
+    font-weight: var(--ids-font-bold);
+    color: var(--ids-color-gray-500);
+    margin: var(--ids-spacing-half);
 }
 
 .ids-text-field .ids-text-field-error-note {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 16px;
-    color: #E32502;
-    margin: 4px;
+    font-size: var(--ids-size-caption);
+    font-weight: var(--ids-font-bold);
+    line-height: var(--ids-line-caption);
+    color: var(--ids-color-negative);
+    margin: var(--ids-spacing-half);
 }
 
 .ids-text-field .ids-text-field-success-note {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 16px;
-    color: #1654D1;
-    margin: 4px;
+    font-size: var(--ids-size-caption);
+    font-weight: var(--ids-font-bold);
+    line-height: var(--ids-line-caption);
+    color: var(--ids-color-positive);
+    margin: var(--ids-spacing-half);
 }
 
 .ids-text-field .ids-text-field-counter {
     display: none;
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 700;
-    color: #737684;
-    margin: 4px;
+    font-size: var(--ids-size-caption);
+    font-weight: var(--ids-font-bold);
+    line-height: var(--ids-line-caption);
+    color: var(--ids-color-gray-500);
+    margin: var(--ids-spacing-half);
 }
 
 .ids-text-field .ids-text-field-counter.visible,
@@ -274,26 +273,26 @@ input::-webkit-inner-spin-button {
 }
 
 .ids-text-field .ids-text-field-counter .ids-text-field-count {
-    color: #101116;
+    color: var(--ids-color-gray-900);
 }
 
 .ids-text-field.ids-text-field-error .ids-text-field-counter .ids-text-field-count {
-    color: #E32502;
+    color: var(--ids-color-negative);
 }
 
 .ids-input-form {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: var(--ids-spacing-1);
 }
 
 .ids-input-group {
     display: flex;
-    gap: 8px;
+    gap: var(--ids-spacing-1);
 }
 
 .ids-input-group.ids-input-exchange {
-    gap: 16px;
+    gap: var(--ids-spacing-2);
 }
 
 .ids-input-group.ids-input-exchange > .ids-text-field:first-child {
@@ -309,16 +308,17 @@ input::-webkit-inner-spin-button {
     bottom: 0;
     right: -10px;
     content: ".";
-    font-size: 20px;
-    color: #101116;
-    font-weight: 700;
+    font-size: var(--ids-size-h2);
+    line-height: var(--ids-line-h2);
+    color: var(--ids-color-gray-900);
+    font-weight: var(--ids-font-bold);
 }
 
 
 
 
 .ids-input-group.ids-input-range {
-    gap: 16px;
+    gap: var(--ids-spacing-2);
 }
 
 .ids-input-group.ids-input-range > .ids-text-field:first-child:after {
@@ -327,9 +327,9 @@ input::-webkit-inner-spin-button {
     right: -13px;
     transform: translateY(-50%);
     content: "~";
-    font-size: 16px;
-    line-height: 22px;
-    color: #101116;
+    font-size: var(--ids-size-body2);
+    line-height: var(--ids-line-body2-tight);
+    color: var(--ids-color-gray-900);
 }
 
 .ids-input-group.ids-input-range > .ids-text-field:first-child {
@@ -380,8 +380,8 @@ input::-webkit-inner-spin-button {
 
 .ids-text-field.ids-email-field .ids-email-field-separator {
     text-align: center;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: var(--ids-size-body2);
+    line-height: var(--ids-line-body2-tight);
 }
 
 .ids-input-group.ids-input-open-banking .ids-dropdown {
@@ -393,9 +393,9 @@ input::-webkit-inner-spin-button {
 }
 
 .ids-input-group.ids-input-verify-number .ids-input-timer {
-    font-size: 14px;
-    line-height: 18px;
-    color: #454855;
+    font-size: var(--ids-size-body4);
+    line-height: var(--ids-line-body4-tight);
+    color: var(--ids-color-gray-700);
 }
 
 .ids-input-group.ids-input-verify-number .ids-text-field.ids-text-field-filled .ids-input-timer {
@@ -434,7 +434,7 @@ input::-webkit-inner-spin-button {
     content: " ";
     width: 6px;
     height: 1px;
-    background: #C5C8D3;
+    background: var(--ids-color-gray-200);
     position: absolute;
     top: 50%;
     right: -10px;
@@ -444,7 +444,7 @@ input::-webkit-inner-spin-button {
 .ids-text-field .ids-input-function {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--ids-spacing-1);
     position: absolute;
     top: 50%;
     right: 16px;
@@ -460,35 +460,35 @@ input::-webkit-inner-spin-button {
 .ids-text-field.ids-text-field-line .ids-text-field-container {
     border: none;
     border-radius: 0;
-    border-bottom: 3px solid #C5C8D3;
+    border-bottom: var(--ids-border-3-200);
 }
 
 .ids-text-field.ids-text-field-line .ids-text-field-container:has(.ids-text-field-input:focus) {
     outline: none;
     border: none;
     border-radius: 0;
-    border-bottom: 3px solid #2873E3;
+    border-bottom: var(--ids-border-3-point-blue);
 }
 
 .ids-text-field.ids-text-field-line .ids-text-field-input {
-    font-size: 20px;
-    line-height: 26px;
-    color: #101116;
-    padding: 15px 0;
+    font-size: var(--ids-size-h2);
+    line-height: var(--ids-line-h2-tight);
+    color: var(--ids-color-gray-900);
+    padding: var(--ids-spacing-2) 0;
 }
 
 .ids-text-field.ids-text-field-line .ids-text-field-input::placeholder {
-    font-size: 20px;
-    line-height: 26px;
-    color: #737684;
+    font-size: var(--ids-size-h2);
+    line-height: var(--ids-line-h2-tight);
+    color: var(--ids-color-gray-500);
 }
 
 .ids-text-field.ids-text-field-line-large .ids-text-field-input {
-    font-size: 28px;
+    font-size: var(--ids-size-title2);
+    line-height: var(--ids-line-title2-tight);
+    color: var(--ids-color-gray-900);
+    padding: var(--ids-spacing-2) 0;
     text-align: right;
-    line-height: 26px;
-    color: #101116;
-    padding: 15px 0;
 }
 
 .ids-text-field.ids-text-field-line-large.ids-text-field-filled .ids-text-field-input {
@@ -496,16 +496,153 @@ input::-webkit-inner-spin-button {
 }
 
 .ids-text-field.ids-text-field-line-large .ids-text-field-input::placeholder {
-    font-size: 28px;
+    font-size: var(--ids-size-title2);
+    line-height: var(--ids-line-title2-tight);
+    color: var(--ids-color-gray-500);
     text-align: right;
-    line-height: 26px;
-    color: #737684;
 }
 
 .ids-text-field-amount-note {
-    margin-top: 4px;
-    font-size: 12px;
+    font-size: var(--ids-size-caption);
+    line-height: var(--ids-line-caption);
+    font-weight: var(--ids-font-bold);
+    color: var(--ids-color-gray-500);
+    margin: var(--ids-spacing-half);
+}
+
+/**
+    Auth Code
+ */
+
+.ids-verification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* 중앙 정렬 */
+    justify-content: center;
+    margin: 80px auto;   /* 페이지 상하 여백 예시 */
+    font-family: sans-serif;
+}
+
+.ids-verification-title {
+    font-size: var(--ids-size-h1);
+    font-weight: var(--ids-font-semibold);
+    margin: 0;
+    margin-bottom: 30px;
+    color: var(--ids-color-gray-900);
+}
+
+.ids-code-inputs {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+
+.ids-circle-input {
+    width: 38px;
+    height: 38px;
+    border: none;
+    text-align: center;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 16px;
+    color: #222222;
+    outline: none;
+    box-sizing: border-box;
+    background-image: url("data:image/svg+xml,%3Csvg width='19' height='18' viewBox='0 0 19 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='9.5' cy='8.99805' r='9' fill='%23C5C8D3'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ids-circle-input::placeholder {
+    color: transparent;
+}
+
+.ids-circle-input:not(:placeholder-shown) {
+    color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg width='19' height='18' viewBox='0 0 19 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='9.5' cy='8.99805' r='9' fill='%232873E3'/%3E%3C/svg%3E%0A");
+}
+
+
+.ids-verification-help {
+    font-size: 14px;
+    line-height: 18px;
     color: #737684;
+}
+
+
+
+/**
+    Secret Card
+ */
+
+.ids-input-secret-card {
+    min-width: 375px; /* 페이지 폭에 맞춰 조정 가능 */
+    margin: 40px auto;
+}
+
+.ids-input-secret-card-label {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #101116;
+    padding:0;
+    margin:0;
+    margin-bottom: 12px;
+}
+
+.ids-secret-card-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;             /* 내부 요소 간 간격 */
+    background-color: #F3F4F7;
+    border-radius: 12px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+
+.ids-secret-card-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    line-height: 40px;
+}
+
+.ids-secret-card-info {
+    color: #000;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.ids-secret-card-mask {
+    width: 8px;
+    height: 8px;
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_5763_4068)'%3E%3Cpath d='M5.065 8H3.185L3.365 5.28747L1.065 6.80098L0.125 5.20885L2.605 4.00983L0.125 2.79115L1.065 1.19902L3.365 2.71253L3.185 0H5.065L4.885 2.71253L7.185 1.19902L8.125 2.79115L5.645 4.00983L8.125 5.20885L7.185 6.80098L4.885 5.28747L5.065 8Z' fill='%23454855'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_5763_4068'%3E%3Crect width='8' height='8' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+}
+
+.ids-highlight {
+    color: #235FD2;
+    font-weight: 700;
+}
+
+.ids-secret-card-input {
+    width: 32px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid #C5C8D3;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #000;
+    outline: none;     /* 포커스 시 기본 파란 테두리 제거 */
+    box-sizing: border-box;
+}
+
+.ids-secret-card-input:focus {
+    border-color: #2873E3;
+    box-shadow: 0 0 0 1px #2873E3;
 }

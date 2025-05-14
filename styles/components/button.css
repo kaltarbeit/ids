@@ -1,9 +1,3 @@
-@import "primary/styles.css";
-@import "secondary/styles.css";
-@import "tertiary/styles.css";
-@import "text/styles.css";
-@import "icon/styles.css";
-
 .ids-button {
     appearance: none;
     -webkit-font-smoothing: inherit;
@@ -199,29 +193,29 @@ a.ids-button:focus {
 .ids-button.ids-button-icon + .ids-button-label {
     min-width: 48px;
     text-align: center;
-    font-size: 14px;
-    line-height: 18px;
-    color: #5A5E6C;
+    font-size: var(--ids-size-body4);
+    line-height: var(--ids-line-body4-tight);
+    color: var(--ids-color-gray-600);
 }
 
 .ids-button.ids-button-secondary.ids-button-icon {
     width: fit-content;
     min-width: 48px;
     height: 48px;
-    background-color: #2873E3;
+    background-color: var(--ids-color-point-blue);
     border: transparent;
-    border-radius: 20px;
+    border-radius: var(--ids-radius-20);
     padding: 0 8px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-    color: #30323B;
+    font-size: var(--ids-size-body2);
+    line-height: var(--ids-line-body2-tight);
+    font-weight: var(--ids-font-medium);
+    color: var(--ids-color-gray-800);
 }
 
 .ids-button.ids-button-primary.ids-button-icon {
     min-width: 64px;
     font-size: 1px;
-    padding: 12px 16px;
+    padding: var(--ids-spacing-1-half) var(--ids-spacing-2);
 }
 
 /**
@@ -230,20 +224,20 @@ a.ids-button:focus {
 .ids-button.ids-button-fab {
     min-width: 40px;
     height: 40px;
-    background-color: #454855;
+    background-color: var(--ids-color-gray-700);
     border: transparent;
-    border-radius: 12px;
-    padding: 8px 12px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 25px;
-    color: #ffffff;
-    gap: 4px;
-    box-shadow: 0 10px 34px 0 rgba(0, 0, 0, 0.14);
+    border-radius: var(--ids-radius-12);
+    padding: var(--ids-spacing-1) var(--ids-spacing-1-half);
+    font-size: var(--ids-size-body2);
+    line-height: var(--ids-line-body2);
+    font-weight: var(--ids-font-medium);
+    color: var(--ids-color-white);
+    gap: var(--ids-spacing-half);
+    box-shadow: var(--ids-shadow-4);
 }
 
 .ids-button.ids-button-fab.ids-button-sm {
-    background-color: #234EAA;
+    background-color: var(--ids-color-blue-900);
 }
 
 .ids-button.ids-col-1 {
@@ -263,4 +257,159 @@ a.ids-button:focus {
     box-shadow: var(--ids-shadow-2);
 }
 
+/**
+    Button Primary Default
+ */
+.ids-button.ids-button-primary {
+    min-width: 100px;
+    width: 100%;
+    box-sizing: border-box;
 
+    padding: var(--ids-spacing-2);
+    gap: var(--ids-spacing-1);
+    border-radius: var(--ids-radius-12);
+    font-size: var(--ids-size-h3);
+    line-height: var(--ids-line-h3-tight);
+    font-weight: var(--ids-font-bold);
+
+    background-color: var(--ids-color-primary);
+    border: var(--ids-color-primary);
+    color: var(--ids-color-white);
+}
+
+.ids-button.ids-button-primary:active,
+.ids-button.ids-button-primary-active {
+    background-color: var(--ids-color-blue-900);
+    border-color: var(--ids-color-blue-900);
+}
+
+.ids-button.ids-button-primary:disabled {
+    background-color: var(--ids-color-gray-150);
+    border-color: var(--ids-color-gray-150);
+    color: var(--ids-color-gray-500);
+}
+
+.ids-button.ids-button-primary.ids-button-fit-width {
+    width: fit-content;
+}
+
+
+/**
+    Button Secondary Default
+ */
+.ids-button.ids-button-secondary {
+    min-width: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    gap: var(--ids-spacing-1);
+
+    padding: var(--ids-spacing-1-half);
+    border-radius: var(--ids-radius-12);
+    font-size: var(--ids-size-body2);
+    line-height: var(--ids-line-body2);
+    font-weight: var(--ids-font-bold);
+
+    background-color: var(--ids-color-primary);
+    border: var(--ids-color-primary);
+    color: var(--ids-color-white);
+}
+
+.ids-button.ids-button-secondary:active {
+    background-color: var(--ids-color-blue-900);
+    border-color: var(--ids-color-blue-900);
+}
+
+.ids-button.ids-button-secondary:disabled {
+    background-color: var(--ids-color-gray-150);
+    border-color: var(--ids-color-gray-150);
+    color: var(--ids-color-gray-500);
+}
+
+.ids-button.ids-button-secondary.ids-button-sm {
+    padding: var(--ids-spacing-1);
+}
+
+/**
+    Button Tertiary Default
+ */
+.ids-button-tertiary {
+    height: 40px;
+
+    background-color: var(--ids-color-white);
+    border: var(--ids-border-1-500);
+    border-radius: var(--ids-radius-full);
+    padding: 0 var(--ids-spacing-2-half);
+
+    font-size: var(--ids-size-body2);
+    font-weight: var(--ids-font-medium);
+    line-height: var(--ids-line-body2);
+    color: var(--ids-color-gray-800);
+    gap: var(--ids-spacing-half);
+}
+
+.ids-button-tertiary:active {
+    background-color: var(--ids-color-gray-150);
+    border-color: var(--ids-color-gray-200);
+}
+
+.ids-button-tertiary:disabled {
+    background-color: var(--ids-color-white);
+    border-color: var(--ids-color-gray-200);
+    color: var(--ids-color-gray-500);
+}
+
+.ids-button.ids-button-tertiary.ids-button-sm {
+    height: 32px;
+    font-size: var(--ids-size-body4);
+    padding: 0 var(--ids-spacing-1-half);
+    gap: var(--ids-spacing-half);
+}
+
+.ids-button.ids-button-tertiary.ids-button-xs {
+    height: 24px;
+    font-size: var(--ids-size-caption);
+    padding: 0 var(--ids-spacing-1);
+    gap: var(--ids-spacing-quarter);
+}
+
+.ids-button.ids-button-tertiary.ids-button-square {
+    border-radius: var(--ids-radius-6);
+}
+
+/**
+    Button Text Default
+ */
+.ids-button.ids-button-text {
+    min-width: 0;
+    height: 22px;
+    background-color: transparent;
+    border: transparent;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #30323B;
+    gap: 6px;
+}
+
+.ids-button.ids-button-text:disabled {
+    background-color: #F3F4F7;
+    border-color: #E1E3EA;
+    color: #737684;
+}
+
+.ids-button.ids-button-text.ids-button-sm {
+    font-size: 14px;
+    line-height: 22px;
+    height: 18px;
+    gap: 2px;
+}
+
+.ids-button.ids-button-text.ids-button-xs {
+    font-size: 12px;
+    height: 24px;
+}
+
+.ids-button.ids-button-text.ids-button-square {
+    border-radius: 6px;
+}

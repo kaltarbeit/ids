@@ -324,10 +324,14 @@ td.ids-docs-classname {
 }
 
 @media print {
-    .ids-docs-back {
+    .ids-docs-back,
+    .ids-docs-toc,
+    .ids-menu {
         display: none;
     }
-    .ids-docs-toc {
-        display: none;
+
+    .ids-docs-index > .ids-docs-index-description {
+        width: 90%;
+        box-sizing: border-box;
     }
 }
