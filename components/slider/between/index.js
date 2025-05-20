@@ -18,11 +18,11 @@ export const createSlider = () => {
      * 슬라이더 위치와 툴팁을 갱신하는 함수
      */
     function updateSliderPosition(slider, value, isMin = false) {
-        const handleMax = slider.querySelector('.ids-slider__handle');
-        const handleMin = slider.querySelector('.ids-slider__handle-min');
-        const trackRange = slider.querySelector('.ids-slider__track-range');
+        const handleMax = slider.querySelector('.ids-slider-handle');
+        const handleMin = slider.querySelector('.ids-slider-handle-min');
+        const trackRange = slider.querySelector('.ids-slider-track-range');
 
-        const isVertical = slider.classList.contains('ids-slider__vertical');
+        const isVertical = slider.classList.contains('ids-slider-vertical');
 
         // 범위를 벗어나지 않도록 보정
         if (value < MIN_VALUE) value = MIN_VALUE;
@@ -89,8 +89,8 @@ export const createSlider = () => {
 
         if (!isDragging || !currentSlider) return;
 
-        const isVertical = currentSlider.classList.contains('ids-slider__vertical');
-        const isSnap = currentSlider.classList.contains('ids-slider__snap');
+        const isVertical = currentSlider.classList.contains('ids-slider-vertical');
+        const isSnap = currentSlider.classList.contains('ids-slider-snap');
 
         // 슬라이더 컨테이너의 위치 & 크기
         const rect = currentSlider.getBoundingClientRect();
@@ -176,10 +176,10 @@ export const createSlider = () => {
 
         sliders.forEach(slider => {
 
-            const handle = slider.querySelector('.ids-slider__handle');
-            const handleMin = slider.querySelector('.ids-slider__handle-min');
+            const handle = slider.querySelector('.ids-slider-handle');
+            const handleMin = slider.querySelector('.ids-slider-handle-min');
 
-            const isVertical = slider.classList.contains('ids-slider__vertical');
+            const isVertical = slider.classList.contains('ids-slider-vertical');
 
             // 핸들에 마우스 이벤트 연결
             handle.addEventListener('mousedown', () => onMouseDown(slider));
