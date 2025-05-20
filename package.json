@@ -22,15 +22,13 @@
     "@storybook/html-webpack5": "^8.5.5",
     "@storybook/test": "^8.5.5",
     "chromatic": "^11.25.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-concat-css": "^3.1.0",
-    "gulp-cssmin": "^0.2.0",
-    "gulp-uglify": "^3.0.2",
     "raw-loader": "^4.0.2",
     "storybook": "^8.5.5"
   },
   "dependencies": {
     "gulp": "^5.0.0",
-    "gulp-uglifycss": "^1.1.0"
+    "gulp-uglifycss": "^1.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.2"
   }
 }
